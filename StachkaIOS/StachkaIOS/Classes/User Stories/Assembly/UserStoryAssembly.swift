@@ -6,11 +6,11 @@
 //  Copyright © 2017 m.rakhmanov. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 protocol UserStoryAssembly: Assembly {
-    func filtersModuleAssembly() -> Assembly
-    func conferencesModuleAssembly() -> Assembly
-    func favouritesModuleAssembly() -> Assembly
-    func logoModuleAssembly() -> Assembly
+    func tabBar() -> UITabBarController
+    func feedModule() -> UIViewController
+    func detailModule() -> UIViewController
+    func filterModule() -> UIViewController
 }

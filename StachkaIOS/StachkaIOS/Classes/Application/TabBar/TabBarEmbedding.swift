@@ -8,11 +8,7 @@
 
 import UIKit
 
-protocol TabBarEmbedding {
-    func embed(viewController: UIViewController)
-}
-
-extension TabBarEmbedding where Self: UITabBarController {
+extension UITabBarController {
     func embed(viewController: UIViewController) {
         guard viewControllers != nil else {
             viewControllers = [viewController]

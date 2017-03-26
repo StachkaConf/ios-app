@@ -19,8 +19,6 @@
 		9ED902981E86BA6F004CBEFD /* AssemblyFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902971E86BA6F004CBEFD /* AssemblyFactory.swift */; };
 		9ED9029E1E86BC1E004CBEFD /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED9029D1E86BC1E004CBEFD /* ApplicationCoordinator.swift */; };
 		9ED902A01E86BC4A004CBEFD /* ApplicationCoordinatorImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED9029F1E86BC4A004CBEFD /* ApplicationCoordinatorImplementation.swift */; };
-		9ED902A61E86BDAD004CBEFD /* ApplicationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902A51E86BDAD004CBEFD /* ApplicationRouter.swift */; };
-		9ED902A81E86C020004CBEFD /* ApplicationRouterImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902A71E86C020004CBEFD /* ApplicationRouterImplementation.swift */; };
 		9ED902AB1E86C0B4004CBEFD /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902AA1E86C0B4004CBEFD /* TabBarController.swift */; };
 		9ED902AD1E86C0E4004CBEFD /* TabBarEmbedding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902AC1E86C0E4004CBEFD /* TabBarEmbedding.swift */; };
 		9ED902AF1E87A1A2004CBEFD /* AssemblyFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902AE1E87A1A2004CBEFD /* AssemblyFactoryImplementation.swift */; };
@@ -34,6 +32,13 @@
 		9ED902C41E87A7A6004CBEFD /* CoreAssemblyImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902C31E87A7A6004CBEFD /* CoreAssemblyImplementation.swift */; };
 		9ED902C61E87A7D0004CBEFD /* UserStoryAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902C51E87A7D0004CBEFD /* UserStoryAssembly.swift */; };
 		9ED902C81E87A7EC004CBEFD /* UserStoryAssemblyImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902C71E87A7EC004CBEFD /* UserStoryAssemblyImplementation.swift */; };
+		9ED902CB1E87C4C7004CBEFD /* ModuleOutputProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902CA1E87C4C7004CBEFD /* ModuleOutputProvider.swift */; };
+		9ED902CE1E87C52B004CBEFD /* ModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902CD1E87C52B004CBEFD /* ModuleOutput.swift */; };
+		9ED902D61E87C715004CBEFD /* Conferences.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ED902D51E87C715004CBEFD /* Conferences.storyboard */; };
+		9ED902DA1E87C82B004CBEFD /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902D91E87C82B004CBEFD /* FeedViewController.swift */; };
+		9ED902DD1E87C925004CBEFD /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902DC1E87C925004CBEFD /* UIViewController.swift */; };
+		9ED902DF1E87D41A004CBEFD /* ConferencesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902DE1E87D41A004CBEFD /* ConferencesCoordinator.swift */; };
+		9ED902E11E87D467004CBEFD /* ConferencesCoordinatorImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902E01E87D467004CBEFD /* ConferencesCoordinatorImplementation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,8 +69,6 @@
 		9ED902971E86BA6F004CBEFD /* AssemblyFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssemblyFactory.swift; sourceTree = "<group>"; };
 		9ED9029D1E86BC1E004CBEFD /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		9ED9029F1E86BC4A004CBEFD /* ApplicationCoordinatorImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinatorImplementation.swift; sourceTree = "<group>"; };
-		9ED902A51E86BDAD004CBEFD /* ApplicationRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationRouter.swift; sourceTree = "<group>"; };
-		9ED902A71E86C020004CBEFD /* ApplicationRouterImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationRouterImplementation.swift; sourceTree = "<group>"; };
 		9ED902AA1E86C0B4004CBEFD /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		9ED902AC1E86C0E4004CBEFD /* TabBarEmbedding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarEmbedding.swift; sourceTree = "<group>"; };
 		9ED902AE1E87A1A2004CBEFD /* AssemblyFactoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssemblyFactoryImplementation.swift; sourceTree = "<group>"; };
@@ -79,6 +82,13 @@
 		9ED902C31E87A7A6004CBEFD /* CoreAssemblyImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreAssemblyImplementation.swift; sourceTree = "<group>"; };
 		9ED902C51E87A7D0004CBEFD /* UserStoryAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserStoryAssembly.swift; sourceTree = "<group>"; };
 		9ED902C71E87A7EC004CBEFD /* UserStoryAssemblyImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserStoryAssemblyImplementation.swift; sourceTree = "<group>"; };
+		9ED902CA1E87C4C7004CBEFD /* ModuleOutputProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleOutputProvider.swift; sourceTree = "<group>"; };
+		9ED902CD1E87C52B004CBEFD /* ModuleOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleOutput.swift; sourceTree = "<group>"; };
+		9ED902D51E87C715004CBEFD /* Conferences.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Conferences.storyboard; sourceTree = "<group>"; };
+		9ED902D91E87C82B004CBEFD /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		9ED902DC1E87C925004CBEFD /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		9ED902DE1E87D41A004CBEFD /* ConferencesCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConferencesCoordinator.swift; sourceTree = "<group>"; };
+		9ED902E01E87D467004CBEFD /* ConferencesCoordinatorImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConferencesCoordinatorImplementation.swift; sourceTree = "<group>"; };
 		CEA2A6E714E84E1F33ADB781 /* Pods-StachkaIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StachkaIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StachkaIOS/Pods-StachkaIOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -154,6 +164,7 @@
 		9ED902841E86B8D7004CBEFD /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				9ED902DB1E87C903004CBEFD /* Extensions */,
 				9ED9028E1E86B97D004CBEFD /* Coordinators */,
 				9ED9028A1E86B949004CBEFD /* Helpers */,
 				9ED9028B1E86B949004CBEFD /* Services */,
@@ -168,7 +179,6 @@
 			isa = PBXGroup;
 			children = (
 				9ED902A91E86C087004CBEFD /* TabBar */,
-				9ED902A41E86BD9A004CBEFD /* Router */,
 				9ED9029C1E86BC12004CBEFD /* Coordinator */,
 				9ED902961E86BA5E004CBEFD /* AssemblyFactory */,
 				9ED902861E86B940004CBEFD /* AppDelegate.swift */,
@@ -181,6 +191,8 @@
 		9ED9028A1E86B949004CBEFD /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				9ED902CC1E87C51E004CBEFD /* ModuleOutput */,
+				9ED902C91E87C4BA004CBEFD /* ModuleOutputProvider */,
 				9ED902B31E87A600004CBEFD /* Assembly */,
 			);
 			name = Helpers;
@@ -208,6 +220,8 @@
 		9ED9028D1E86B949004CBEFD /* User Stories */ = {
 			isa = PBXGroup;
 			children = (
+				9ED902D31E87C64B004CBEFD /* Favourites */,
+				9ED902CF1E87C637004CBEFD /* Conferences */,
 				9ED902B01E87A5AD004CBEFD /* Assembly */,
 			);
 			name = "User Stories";
@@ -249,15 +263,6 @@
 				9ED9029F1E86BC4A004CBEFD /* ApplicationCoordinatorImplementation.swift */,
 			);
 			path = Coordinator;
-			sourceTree = "<group>";
-		};
-		9ED902A41E86BD9A004CBEFD /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				9ED902A51E86BDAD004CBEFD /* ApplicationRouter.swift */,
-				9ED902A71E86C020004CBEFD /* ApplicationRouterImplementation.swift */,
-			);
-			path = Router;
 			sourceTree = "<group>";
 		};
 		9ED902A91E86C087004CBEFD /* TabBar */ = {
@@ -312,6 +317,97 @@
 				9ED902B61E87A662004CBEFD /* CoordinatorAssemblyImplementation.swift */,
 			);
 			path = Assembly;
+			sourceTree = "<group>";
+		};
+		9ED902C91E87C4BA004CBEFD /* ModuleOutputProvider */ = {
+			isa = PBXGroup;
+			children = (
+				9ED902CA1E87C4C7004CBEFD /* ModuleOutputProvider.swift */,
+			);
+			path = ModuleOutputProvider;
+			sourceTree = "<group>";
+		};
+		9ED902CC1E87C51E004CBEFD /* ModuleOutput */ = {
+			isa = PBXGroup;
+			children = (
+				9ED902CD1E87C52B004CBEFD /* ModuleOutput.swift */,
+			);
+			path = ModuleOutput;
+			sourceTree = "<group>";
+		};
+		9ED902CF1E87C637004CBEFD /* Conferences */ = {
+			isa = PBXGroup;
+			children = (
+				9ED902D41E87C6F0004CBEFD /* Coordinator */,
+				9ED902D01E87C637004CBEFD /* Detail */,
+				9ED902D11E87C637004CBEFD /* Feed */,
+				9ED902D21E87C637004CBEFD /* Filters */,
+				9ED902D51E87C715004CBEFD /* Conferences.storyboard */,
+			);
+			path = Conferences;
+			sourceTree = "<group>";
+		};
+		9ED902D01E87C637004CBEFD /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		9ED902D11E87C637004CBEFD /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				9ED902D71E87C788004CBEFD /* ViewModel */,
+				9ED902D81E87C788004CBEFD /* View */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		9ED902D21E87C637004CBEFD /* Filters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Filters;
+			sourceTree = "<group>";
+		};
+		9ED902D31E87C64B004CBEFD /* Favourites */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Favourites;
+			sourceTree = "<group>";
+		};
+		9ED902D41E87C6F0004CBEFD /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				9ED902DE1E87D41A004CBEFD /* ConferencesCoordinator.swift */,
+				9ED902E01E87D467004CBEFD /* ConferencesCoordinatorImplementation.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		9ED902D71E87C788004CBEFD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9ED902D81E87C788004CBEFD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9ED902D91E87C82B004CBEFD /* FeedViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9ED902DB1E87C903004CBEFD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9ED902DC1E87C925004CBEFD /* UIViewController.swift */,
+			);
+			name = Extensions;
+			path = Classes/Extensions;
 			sourceTree = "<group>";
 		};
 		E164D3AA8056481FDA9D5DE5 /* Frameworks */ = {
@@ -410,6 +506,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9ED902D61E87C715004CBEFD /* Conferences.storyboard in Resources */,
 				9ED9026F1E86B8BC004CBEFD /* LaunchScreen.storyboard in Resources */,
 				9ED9026C1E86B8BC004CBEFD /* Assets.xcassets in Resources */,
 				9ED9026A1E86B8BC004CBEFD /* Main.storyboard in Resources */,
@@ -478,23 +575,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9ED902DA1E87C82B004CBEFD /* FeedViewController.swift in Sources */,
 				9ED902891E86B940004CBEFD /* ViewController.swift in Sources */,
-				9ED902A61E86BDAD004CBEFD /* ApplicationRouter.swift in Sources */,
-				9ED902A81E86C020004CBEFD /* ApplicationRouterImplementation.swift in Sources */,
 				9ED902C01E87A74C004CBEFD /* ServiceAssemblyImplementation.swift in Sources */,
 				9ED902C41E87A7A6004CBEFD /* CoreAssemblyImplementation.swift in Sources */,
+				9ED902CB1E87C4C7004CBEFD /* ModuleOutputProvider.swift in Sources */,
 				9ED902981E86BA6F004CBEFD /* AssemblyFactory.swift in Sources */,
 				9ED902AF1E87A1A2004CBEFD /* AssemblyFactoryImplementation.swift in Sources */,
 				9ED902B81E87A662004CBEFD /* CoordinatorAssemblyImplementation.swift in Sources */,
 				9ED902951E86BA25004CBEFD /* CoordinatorWithDependencies.swift in Sources */,
 				9ED902C21E87A770004CBEFD /* CoreAssembly.swift in Sources */,
+				9ED902E11E87D467004CBEFD /* ConferencesCoordinatorImplementation.swift in Sources */,
 				9ED902A01E86BC4A004CBEFD /* ApplicationCoordinatorImplementation.swift in Sources */,
 				9ED902881E86B940004CBEFD /* AppDelegate.swift in Sources */,
 				9ED902AD1E86C0E4004CBEFD /* TabBarEmbedding.swift in Sources */,
 				9ED902C61E87A7D0004CBEFD /* UserStoryAssembly.swift in Sources */,
+				9ED902DD1E87C925004CBEFD /* UIViewController.swift in Sources */,
 				9ED902AB1E86C0B4004CBEFD /* TabBarController.swift in Sources */,
+				9ED902DF1E87D41A004CBEFD /* ConferencesCoordinator.swift in Sources */,
 				9ED902BE1E87A718004CBEFD /* ServiceAssembly.swift in Sources */,
 				9ED902C81E87A7EC004CBEFD /* UserStoryAssemblyImplementation.swift in Sources */,
+				9ED902CE1E87C52B004CBEFD /* ModuleOutput.swift in Sources */,
 				9ED902931E86BA02004CBEFD /* Coordinator.swift in Sources */,
 				9ED9029E1E86BC1E004CBEFD /* ApplicationCoordinator.swift in Sources */,
 				9ED902B71E87A662004CBEFD /* CoordinatorAssembly.swift in Sources */,

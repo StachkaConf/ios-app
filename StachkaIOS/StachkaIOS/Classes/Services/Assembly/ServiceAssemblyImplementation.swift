@@ -8,4 +8,10 @@
 
 import Foundation
 
-class ServiceAssemblyImplementation: ServiceAssembly {}
+class ServiceAssemblyImplementation: ServiceAssembly {
+    let assemblyFactory: AssemblyFactory
+
+    init(assemblyFactory: AssemblyFactory) {
+        self.assemblyFactory =  assemblyFactory
+    }
+}

@@ -8,21 +8,21 @@
 
 import Foundation
 
-protocol CoordinatorWithDependencies {
+protocol CoordinatorWithDependencies: class {
     var childCoordinators: [Coordinator] { get set }
 
-    mutating func add(coordinator: Coordinator)
-    mutating func remove(coordinator: Coordinator?)
+    func add(coordinator: Coordinator)
+    func remove(coordinator: Coordinator?)
 }
 
 extension CoordinatorWithDependencies {
-    mutating func add(coordinator: Coordinator) {
+    func add(coordinator: Coordinator) {
         if !childCoordinators.contains { return coordinator === $0 } {
             childCoordinators.append(coordinator)
         }
     }
 
-    mutating func remove(coordinator: Coordinator?) {
+    func remove(coordinator: Coordinator?) {
         guard let coordinator = coordinator,
             let index = childCoordinators.index(where: { coordinator === $0 })
             else {

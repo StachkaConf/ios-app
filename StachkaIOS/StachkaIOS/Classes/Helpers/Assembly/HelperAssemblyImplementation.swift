@@ -8,4 +8,11 @@
 
 import Foundation
 
-class HelperAssemblyImplementation: HelperAssembly {}
+class HelperAssemblyImplementation: HelperAssembly {
+
+    let assemblyFactory: AssemblyFactory
+
+    init(assemblyFactory: AssemblyFactory) {
+        self.assemblyFactory =  assemblyFactory
+    }
+}
