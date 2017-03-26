@@ -11,15 +11,25 @@ import RxCocoa
 import RxSwift
 
 class FeedViewController: UIViewController {
+
+    enum Constants {
+        static let title = "Расписание"
+        static let filterButtonTitle = "Фильтр"
+    }
+
     fileprivate var indexPublisher: PublishSubject<IndexPath> = PublishSubject()
     fileprivate var indexSelecter: PublishSubject<IndexPath> = PublishSubject()
+    fileprivate var filterSelecter: PublishSubject<Void> = PublishSubject()
 
     var viewModel: FeedViewModel?
     private let disposeBag = DisposeBag()
 
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
+        title = Constants.title
+        
         setupTabBar()
+        setupNavigationBar()
         setupTableView()
         setupBindings()
     }
@@ -30,11 +40,22 @@ class FeedViewController: UIViewController {
     }
 
     private func setupTabBar() {
-        tabBarItem = UITabBarItem(title: "", image: UIImage.TabBar.calendar, selectedImage: UIImage.TabBar.calendar)
-        tabBarItem.imageInsets = TabBarConstants.imageInsets
+        tabBarItem = UITabBarItem(title: Constants.title, image: UIImage.TabBar.calendar, selectedImage: UIImage.TabBar.calendar)
+    }
+
+    private func setupNavigationBar() {
+        let barButtonItem = UIBarButtonItem(title: Constants.filterButtonTitle, style: .plain, target: nil, action: nil)
+        navigationItem.rightBarButtonItem = barButtonItem
     }
 
     private func setupBindings() {
+        navigationItem.rightBarButtonItem?.rx
+            .tap
+            .subscribe(onNext: { [weak self] in
+                self?.filterSelecter.onNext()
+            })
+            .disposed(by: disposeBag)
+
         tableView.rx
             .willDisplayCell
             .subscribe(onNext: { [weak self] event in
@@ -75,5 +96,9 @@ extension FeedViewController: FeedView {
 
     var indexDisplayed: Observable<IndexPath> {
         return indexPublisher.asObservable()
+    }
+
+    var filterSelected: Observable<Void> {
+        return filterSelecter.asObservable()
     }
 }

@@ -53,6 +53,7 @@
 		9ED903001E880EE8004CBEFD /* PresentationCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902FF1E880EE8004CBEFD /* PresentationCellViewModel.swift */; };
 		9ED903021E882901004CBEFD /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED903011E882901004CBEFD /* UIImage.swift */; };
 		9ED903041E882D99004CBEFD /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED903031E882D99004CBEFD /* UIColor.swift */; };
+		9ED903061E8845CC004CBEFD /* FeedModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED903051E8845CC004CBEFD /* FeedModuleOutput.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +118,7 @@
 		9ED902FF1E880EE8004CBEFD /* PresentationCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationCellViewModel.swift; sourceTree = "<group>"; };
 		9ED903011E882901004CBEFD /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		9ED903031E882D99004CBEFD /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		9ED903051E8845CC004CBEFD /* FeedModuleOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedModuleOutput.swift; sourceTree = "<group>"; };
 		CEA2A6E714E84E1F33ADB781 /* Pods-StachkaIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StachkaIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StachkaIOS/Pods-StachkaIOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -422,6 +424,7 @@
 			children = (
 				9ED902E81E87DCC1004CBEFD /* FeedViewModel.swift */,
 				9ED902EC1E87DE20004CBEFD /* FeedViewModelImplementation.swift */,
+				9ED903051E8845CC004CBEFD /* FeedModuleOutput.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -710,6 +713,7 @@
 				9ED902E91E87DCC1004CBEFD /* FeedViewModel.swift in Sources */,
 				9ED902F21E87E3BD004CBEFD /* FavouritesCoordinator.swift in Sources */,
 				9ED902B71E87A662004CBEFD /* CoordinatorAssembly.swift in Sources */,
+				9ED903061E8845CC004CBEFD /* FeedModuleOutput.swift in Sources */,
 				9ED903021E882901004CBEFD /* UIImage.swift in Sources */,
 				9ED902BA1E87A6BF004CBEFD /* HelperAssembly.swift in Sources */,
 				9ED902BC1E87A6DC004CBEFD /* HelperAssemblyImplementation.swift in Sources */,

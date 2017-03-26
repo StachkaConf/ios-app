@@ -1,5 +1,5 @@
 //
-//  FeedView.swift
+//  FeedModuleOutput.swift
 //  StachkaIOS
 //
 //  Created by m.rakhmanov on 26.03.17.
@@ -7,10 +7,7 @@
 //
 
 import RxSwift
-import Foundation
 
-protocol FeedView: class {
-    var indexSelected: Observable<IndexPath> { get }
-    var indexDisplayed: Observable<IndexPath> { get }
+protocol FeedModuleOutput: ModuleOutput {
     var filterSelected: Observable<Void> { get }
 }

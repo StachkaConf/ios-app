@@ -19,16 +19,19 @@ class FeedViewModelImplementation {
         let secondCellViewModel = PresentationCellViewModel(title: "Bvcd")
         _presentations.value = [firstCellViewModel, secondCellViewModel]
 
-        view
-            .indexSelected
+        view.indexSelected
             .subscribe(onNext: { indexPath in
                 print("Selected: \(indexPath)")
             })
             .disposed(by: disposeBag)
-        view
-            .indexDisplayed
+        view.indexDisplayed
             .subscribe(onNext: { indexPath in
                 print("Displayed: \(indexPath)")
+            })
+            .disposed(by: disposeBag)
+        view.filterSelected
+            .subscribe(onNext: {
+                print("Filter")
             })
             .disposed(by: disposeBag)
     }
@@ -40,5 +43,10 @@ extension FeedViewModelImplementation: FeedViewModel {
     var presentations: Observable<[PresentationCellViewModel]> {
         return _presentations.asObservable()
     }
+}
 
+extension FeedViewModelImplementation: FeedModuleOutput {
+    var filterSelected: Observable<Void> {
+        return view?.filterSelected ?? Observable.empty()
+    }
 }
