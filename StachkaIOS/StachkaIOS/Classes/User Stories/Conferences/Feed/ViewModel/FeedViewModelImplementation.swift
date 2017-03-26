@@ -15,6 +15,10 @@ class FeedViewModelImplementation {
 
     init(view: FeedView) {
         self.view = view
+        let firstCellViewModel = PresentationCellViewModel(title: "Ancd")
+        let secondCellViewModel = PresentationCellViewModel(title: "Bvcd")
+        _presentations.value = [firstCellViewModel, secondCellViewModel]
+
         view
             .indexSelected
             .subscribe(onNext: { _ in
@@ -23,11 +27,11 @@ class FeedViewModelImplementation {
             .disposed(by: disposeBag)
     }
 
-    fileprivate var _presentations: Variable<[String]> = Variable([])
+    fileprivate var _presentations: Variable<[PresentationCellViewModel]> = Variable([])
 }
 
 extension FeedViewModelImplementation: FeedViewModel {
-    var presentations: Observable<[String]> {
+    var presentations: Observable<[PresentationCellViewModel]> {
         return _presentations.asObservable()
     }
 
