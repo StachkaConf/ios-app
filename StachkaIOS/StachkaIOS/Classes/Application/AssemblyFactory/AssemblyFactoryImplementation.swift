@@ -10,22 +10,22 @@ import Foundation
 
 class AssemblyFactoryImplementation: AssemblyFactory {
     func userStories() -> UserStoryAssembly {
-        return UserStoryAssemblyImplementation()
+        return UserStoryAssemblyImplementation(assemblyFactory: self)
     }
     
     func services() -> ServiceAssembly {
-        return ServiceAssemblyImplementation()
+        return ServiceAssemblyImplementation(assemblyFactory: self)
     }
 
     func core() -> CoreAssembly {
-        return CoreAssemblyImplementation()
+        return CoreAssemblyImplementation(assemblyFactory: self)
     }
 
     func helpers() -> HelperAssembly {
-        return HelperAssemblyImplementation()
+        return HelperAssemblyImplementation(assemblyFactory: self)
     }
 
     func coordinators() -> CoordinatorAssembly {
-        return CoordinatorAssemblyImplementation()
+        return CoordinatorAssemblyImplementation(assemblyFactory: self)
     }
 }

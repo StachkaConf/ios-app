@@ -6,17 +6,30 @@
 //  Copyright © 2017 m.rakhmanov. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class ApplicationCoordinatorImplementation: ApplicationCoordinator, CoordinatorWithDependencies {
     var childCoordinators: [Coordinator] = []
-    let router: ApplicationRouter
     let assembly: AssemblyFactory
+    weak var window: UIWindow?
+    var tabBarController: UITabBarController?
 
-    init(router: ApplicationRouter, assembly: AssemblyFactory) {
-        self.router = router
+    init(assembly: AssemblyFactory, window: UIWindow?) {
         self.assembly = assembly
+        self.window = window
     }
 
-    func start() {}
+    func start() {
+        tabBarController = assembly.userStories().tabBar()
+        let feed = assembly.userStories().feedModule()
+        let navigationController = UINavigationController(rootViewController: feed)
+        tabBarController?.embed(viewController: navigationController)
+        let conferencesCoordinator = assembly.coordinators().conferencesCoordinator(rootController: feed)
+        add(coordinator: conferencesCoordinator)
+
+        window?.rootViewController = tabBarController
+        window?.makeKeyAndVisible()
+        
+        conferencesCoordinator.start()
+    }
 }

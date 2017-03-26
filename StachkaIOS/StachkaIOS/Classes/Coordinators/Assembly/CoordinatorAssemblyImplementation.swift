@@ -9,9 +9,18 @@
 import UIKit
 
 class CoordinatorAssemblyImplementation: CoordinatorAssembly {
+
+    let assemblyFactory: AssemblyFactory
+
+    init(assemblyFactory: AssemblyFactory) {
+        self.assemblyFactory =  assemblyFactory
+    }
+
     func applicationCoordinator(window: UIWindow) -> ApplicationCoordinator {
-        let tabBarController = AppTabBarController()
-        let router = ApplicationRouterImplementation(window: window, tabBarEmbedding: tabBarController)
-        return ApplicationCoordinatorImplementation(router: router, assembly: AssemblyFactoryImplementation())
+        return ApplicationCoordinatorImplementation(assembly: AssemblyFactoryImplementation(), window: window)
+    }
+
+    func conferencesCoordinator(rootController: UIViewController) -> ConferencesCoordinator {
+        return ConferencesCoordinatorImplementation(assembly: assemblyFactory, rootController: rootController)
     }
 }

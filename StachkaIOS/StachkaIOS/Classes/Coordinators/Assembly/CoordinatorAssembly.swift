@@ -11,4 +11,5 @@ import UIKit
 
 protocol CoordinatorAssembly {
     func applicationCoordinator(window: UIWindow) -> ApplicationCoordinator
+    func conferencesCoordinator(rootController: UIViewController) -> ConferencesCoordinator
 }
