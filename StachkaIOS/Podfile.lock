@@ -1,0 +1,19 @@
+PODS:
+  - RectangleDissolve (0.1.1)
+  - RxCocoa (3.2.0):
+    - RxSwift (~> 3.1)
+  - RxSwift (3.2.0)
+
+DEPENDENCIES:
+  - RectangleDissolve (~> 0.1.1)
+  - RxCocoa (~> 3.0)
+  - RxSwift (~> 3.0)
+
+SPEC CHECKSUMS:
+  RectangleDissolve: f00b2482ecc00800cec5026e82a16ac68f0916e2
+  RxCocoa: ccdf43101a70407097a29082f648ba1676075b30
+  RxSwift: 46574f70d416b7923c237195939cc488a7fbf3a0
+
+PODFILE CHECKSUM: 57d5c384aeef584955008bee361ae3e0c82d1fc1
+
+COCOAPODS: 1.1.1

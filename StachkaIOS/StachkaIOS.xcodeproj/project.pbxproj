@@ -1,0 +1,730 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5AF5A1545E1A8BF150582F85 /* Pods_StachkaIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19E758D4E38E6E1B9BEB60EF /* Pods_StachkaIOS.framework */; };
+		9ED9026A1E86B8BC004CBEFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ED902681E86B8BC004CBEFD /* Main.storyboard */; };
+		9ED9026C1E86B8BC004CBEFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9ED9026B1E86B8BC004CBEFD /* Assets.xcassets */; };
+		9ED9026F1E86B8BC004CBEFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ED9026D1E86B8BC004CBEFD /* LaunchScreen.storyboard */; };
+		9ED9027A1E86B8BC004CBEFD /* StachkaIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902791E86B8BC004CBEFD /* StachkaIOSTests.swift */; };
+		9ED902881E86B940004CBEFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902861E86B940004CBEFD /* AppDelegate.swift */; };
+		9ED902891E86B940004CBEFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902871E86B940004CBEFD /* ViewController.swift */; };
+		9ED902931E86BA02004CBEFD /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902921E86BA02004CBEFD /* Coordinator.swift */; };
+		9ED902951E86BA25004CBEFD /* CoordinatorWithDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902941E86BA25004CBEFD /* CoordinatorWithDependencies.swift */; };
+		9ED902981E86BA6F004CBEFD /* AssemblyFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902971E86BA6F004CBEFD /* AssemblyFactory.swift */; };
+		9ED9029E1E86BC1E004CBEFD /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED9029D1E86BC1E004CBEFD /* ApplicationCoordinator.swift */; };
+		9ED902A01E86BC4A004CBEFD /* ApplicationCoordinatorImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED9029F1E86BC4A004CBEFD /* ApplicationCoordinatorImplementation.swift */; };
+		9ED902A61E86BDAD004CBEFD /* ApplicationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902A51E86BDAD004CBEFD /* ApplicationRouter.swift */; };
+		9ED902A81E86C020004CBEFD /* ApplicationRouterImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902A71E86C020004CBEFD /* ApplicationRouterImplementation.swift */; };
+		9ED902AB1E86C0B4004CBEFD /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902AA1E86C0B4004CBEFD /* TabBarController.swift */; };
+		9ED902AD1E86C0E4004CBEFD /* TabBarEmbedding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902AC1E86C0E4004CBEFD /* TabBarEmbedding.swift */; };
+		9ED902AF1E87A1A2004CBEFD /* AssemblyFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902AE1E87A1A2004CBEFD /* AssemblyFactoryImplementation.swift */; };
+		9ED902B71E87A662004CBEFD /* CoordinatorAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902B51E87A662004CBEFD /* CoordinatorAssembly.swift */; };
+		9ED902B81E87A662004CBEFD /* CoordinatorAssemblyImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902B61E87A662004CBEFD /* CoordinatorAssemblyImplementation.swift */; };
+		9ED902BA1E87A6BF004CBEFD /* HelperAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902B91E87A6BF004CBEFD /* HelperAssembly.swift */; };
+		9ED902BC1E87A6DC004CBEFD /* HelperAssemblyImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902BB1E87A6DC004CBEFD /* HelperAssemblyImplementation.swift */; };
+		9ED902BE1E87A718004CBEFD /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902BD1E87A718004CBEFD /* ServiceAssembly.swift */; };
+		9ED902C01E87A74C004CBEFD /* ServiceAssemblyImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902BF1E87A74C004CBEFD /* ServiceAssemblyImplementation.swift */; };
+		9ED902C21E87A770004CBEFD /* CoreAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902C11E87A770004CBEFD /* CoreAssembly.swift */; };
+		9ED902C41E87A7A6004CBEFD /* CoreAssemblyImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902C31E87A7A6004CBEFD /* CoreAssemblyImplementation.swift */; };
+		9ED902C61E87A7D0004CBEFD /* UserStoryAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902C51E87A7D0004CBEFD /* UserStoryAssembly.swift */; };
+		9ED902C81E87A7EC004CBEFD /* UserStoryAssemblyImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902C71E87A7EC004CBEFD /* UserStoryAssemblyImplementation.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9ED902761E86B8BC004CBEFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ED902591E86B8BC004CBEFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9ED902601E86B8BC004CBEFD;
+			remoteInfo = StachkaIOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03D475E69874851AD2BBC16E /* Pods-StachkaIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StachkaIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-StachkaIOS/Pods-StachkaIOS.release.xcconfig"; sourceTree = "<group>"; };
+		19E758D4E38E6E1B9BEB60EF /* Pods_StachkaIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StachkaIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9ED902611E86B8BC004CBEFD /* StachkaIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StachkaIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9ED902691E86B8BC004CBEFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9ED9026B1E86B8BC004CBEFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9ED9026E1E86B8BC004CBEFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9ED902701E86B8BC004CBEFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9ED902751E86B8BC004CBEFD /* StachkaIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StachkaIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9ED902791E86B8BC004CBEFD /* StachkaIOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StachkaIOSTests.swift; sourceTree = "<group>"; };
+		9ED9027B1E86B8BC004CBEFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9ED902861E86B940004CBEFD /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9ED902871E86B940004CBEFD /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9ED902921E86BA02004CBEFD /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		9ED902941E86BA25004CBEFD /* CoordinatorWithDependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorWithDependencies.swift; sourceTree = "<group>"; };
+		9ED902971E86BA6F004CBEFD /* AssemblyFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssemblyFactory.swift; sourceTree = "<group>"; };
+		9ED9029D1E86BC1E004CBEFD /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		9ED9029F1E86BC4A004CBEFD /* ApplicationCoordinatorImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinatorImplementation.swift; sourceTree = "<group>"; };
+		9ED902A51E86BDAD004CBEFD /* ApplicationRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationRouter.swift; sourceTree = "<group>"; };
+		9ED902A71E86C020004CBEFD /* ApplicationRouterImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationRouterImplementation.swift; sourceTree = "<group>"; };
+		9ED902AA1E86C0B4004CBEFD /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		9ED902AC1E86C0E4004CBEFD /* TabBarEmbedding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarEmbedding.swift; sourceTree = "<group>"; };
+		9ED902AE1E87A1A2004CBEFD /* AssemblyFactoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssemblyFactoryImplementation.swift; sourceTree = "<group>"; };
+		9ED902B51E87A662004CBEFD /* CoordinatorAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorAssembly.swift; sourceTree = "<group>"; };
+		9ED902B61E87A662004CBEFD /* CoordinatorAssemblyImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorAssemblyImplementation.swift; sourceTree = "<group>"; };
+		9ED902B91E87A6BF004CBEFD /* HelperAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperAssembly.swift; sourceTree = "<group>"; };
+		9ED902BB1E87A6DC004CBEFD /* HelperAssemblyImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperAssemblyImplementation.swift; sourceTree = "<group>"; };
+		9ED902BD1E87A718004CBEFD /* ServiceAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
+		9ED902BF1E87A74C004CBEFD /* ServiceAssemblyImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceAssemblyImplementation.swift; sourceTree = "<group>"; };
+		9ED902C11E87A770004CBEFD /* CoreAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreAssembly.swift; sourceTree = "<group>"; };
+		9ED902C31E87A7A6004CBEFD /* CoreAssemblyImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreAssemblyImplementation.swift; sourceTree = "<group>"; };
+		9ED902C51E87A7D0004CBEFD /* UserStoryAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserStoryAssembly.swift; sourceTree = "<group>"; };
+		9ED902C71E87A7EC004CBEFD /* UserStoryAssemblyImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserStoryAssemblyImplementation.swift; sourceTree = "<group>"; };
+		CEA2A6E714E84E1F33ADB781 /* Pods-StachkaIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StachkaIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StachkaIOS/Pods-StachkaIOS.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9ED9025E1E86B8BC004CBEFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AF5A1545E1A8BF150582F85 /* Pods_StachkaIOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9ED902721E86B8BC004CBEFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9A43D1B1BE2F9F15D41DDA93 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CEA2A6E714E84E1F33ADB781 /* Pods-StachkaIOS.debug.xcconfig */,
+				03D475E69874851AD2BBC16E /* Pods-StachkaIOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9ED902581E86B8BC004CBEFD = {
+			isa = PBXGroup;
+			children = (
+				9ED902631E86B8BC004CBEFD /* StachkaIOS */,
+				9ED902781E86B8BC004CBEFD /* StachkaIOSTests */,
+				9ED902621E86B8BC004CBEFD /* Products */,
+				9A43D1B1BE2F9F15D41DDA93 /* Pods */,
+				E164D3AA8056481FDA9D5DE5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9ED902621E86B8BC004CBEFD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9ED902611E86B8BC004CBEFD /* StachkaIOS.app */,
+				9ED902751E86B8BC004CBEFD /* StachkaIOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9ED902631E86B8BC004CBEFD /* StachkaIOS */ = {
+			isa = PBXGroup;
+			children = (
+				9ED902841E86B8D7004CBEFD /* Classes */,
+				9ED902681E86B8BC004CBEFD /* Main.storyboard */,
+				9ED9026B1E86B8BC004CBEFD /* Assets.xcassets */,
+				9ED9026D1E86B8BC004CBEFD /* LaunchScreen.storyboard */,
+				9ED902701E86B8BC004CBEFD /* Info.plist */,
+			);
+			path = StachkaIOS;
+			sourceTree = "<group>";
+		};
+		9ED902781E86B8BC004CBEFD /* StachkaIOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				9ED902791E86B8BC004CBEFD /* StachkaIOSTests.swift */,
+				9ED9027B1E86B8BC004CBEFD /* Info.plist */,
+			);
+			path = StachkaIOSTests;
+			sourceTree = "<group>";
+		};
+		9ED902841E86B8D7004CBEFD /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9ED9028E1E86B97D004CBEFD /* Coordinators */,
+				9ED9028A1E86B949004CBEFD /* Helpers */,
+				9ED9028B1E86B949004CBEFD /* Services */,
+				9ED9028C1E86B949004CBEFD /* Core */,
+				9ED9028D1E86B949004CBEFD /* User Stories */,
+				9ED902851E86B940004CBEFD /* Application */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		9ED902851E86B940004CBEFD /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				9ED902A91E86C087004CBEFD /* TabBar */,
+				9ED902A41E86BD9A004CBEFD /* Router */,
+				9ED9029C1E86BC12004CBEFD /* Coordinator */,
+				9ED902961E86BA5E004CBEFD /* AssemblyFactory */,
+				9ED902861E86B940004CBEFD /* AppDelegate.swift */,
+				9ED902871E86B940004CBEFD /* ViewController.swift */,
+			);
+			name = Application;
+			path = Classes/Application;
+			sourceTree = "<group>";
+		};
+		9ED9028A1E86B949004CBEFD /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9ED902B31E87A600004CBEFD /* Assembly */,
+			);
+			name = Helpers;
+			path = Classes/Helpers;
+			sourceTree = "<group>";
+		};
+		9ED9028B1E86B949004CBEFD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9ED902B21E87A5E6004CBEFD /* Assembly */,
+			);
+			name = Services;
+			path = Classes/Services;
+			sourceTree = "<group>";
+		};
+		9ED9028C1E86B949004CBEFD /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				9ED902B11E87A5CE004CBEFD /* Assembly */,
+			);
+			name = Core;
+			path = Classes/Core;
+			sourceTree = "<group>";
+		};
+		9ED9028D1E86B949004CBEFD /* User Stories */ = {
+			isa = PBXGroup;
+			children = (
+				9ED902B01E87A5AD004CBEFD /* Assembly */,
+			);
+			name = "User Stories";
+			path = "Classes/User Stories";
+			sourceTree = "<group>";
+		};
+		9ED9028E1E86B97D004CBEFD /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				9ED902B41E87A662004CBEFD /* Assembly */,
+				9ED902911E86BA02004CBEFD /* Abstract */,
+			);
+			name = Coordinators;
+			path = Classes/Coordinators;
+			sourceTree = "<group>";
+		};
+		9ED902911E86BA02004CBEFD /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				9ED902921E86BA02004CBEFD /* Coordinator.swift */,
+				9ED902941E86BA25004CBEFD /* CoordinatorWithDependencies.swift */,
+			);
+			path = Abstract;
+			sourceTree = "<group>";
+		};
+		9ED902961E86BA5E004CBEFD /* AssemblyFactory */ = {
+			isa = PBXGroup;
+			children = (
+				9ED902971E86BA6F004CBEFD /* AssemblyFactory.swift */,
+				9ED902AE1E87A1A2004CBEFD /* AssemblyFactoryImplementation.swift */,
+			);
+			path = AssemblyFactory;
+			sourceTree = "<group>";
+		};
+		9ED9029C1E86BC12004CBEFD /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				9ED9029D1E86BC1E004CBEFD /* ApplicationCoordinator.swift */,
+				9ED9029F1E86BC4A004CBEFD /* ApplicationCoordinatorImplementation.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		9ED902A41E86BD9A004CBEFD /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				9ED902A51E86BDAD004CBEFD /* ApplicationRouter.swift */,
+				9ED902A71E86C020004CBEFD /* ApplicationRouterImplementation.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		9ED902A91E86C087004CBEFD /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				9ED902AA1E86C0B4004CBEFD /* TabBarController.swift */,
+				9ED902AC1E86C0E4004CBEFD /* TabBarEmbedding.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		9ED902B01E87A5AD004CBEFD /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				9ED902C51E87A7D0004CBEFD /* UserStoryAssembly.swift */,
+				9ED902C71E87A7EC004CBEFD /* UserStoryAssemblyImplementation.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		9ED902B11E87A5CE004CBEFD /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				9ED902C11E87A770004CBEFD /* CoreAssembly.swift */,
+				9ED902C31E87A7A6004CBEFD /* CoreAssemblyImplementation.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		9ED902B21E87A5E6004CBEFD /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				9ED902BD1E87A718004CBEFD /* ServiceAssembly.swift */,
+				9ED902BF1E87A74C004CBEFD /* ServiceAssemblyImplementation.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		9ED902B31E87A600004CBEFD /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				9ED902B91E87A6BF004CBEFD /* HelperAssembly.swift */,
+				9ED902BB1E87A6DC004CBEFD /* HelperAssemblyImplementation.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		9ED902B41E87A662004CBEFD /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				9ED902B51E87A662004CBEFD /* CoordinatorAssembly.swift */,
+				9ED902B61E87A662004CBEFD /* CoordinatorAssemblyImplementation.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		E164D3AA8056481FDA9D5DE5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19E758D4E38E6E1B9BEB60EF /* Pods_StachkaIOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9ED902601E86B8BC004CBEFD /* StachkaIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9ED9027E1E86B8BC004CBEFD /* Build configuration list for PBXNativeTarget "StachkaIOS" */;
+			buildPhases = (
+				51DAF60D779CF7A8E6E2FACB /* [CP] Check Pods Manifest.lock */,
+				9ED9025D1E86B8BC004CBEFD /* Sources */,
+				9ED9025E1E86B8BC004CBEFD /* Frameworks */,
+				9ED9025F1E86B8BC004CBEFD /* Resources */,
+				D00316BC4E00748A7F9F15AC /* [CP] Embed Pods Frameworks */,
+				5478376588D980A09A33F54B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StachkaIOS;
+			productName = StachkaIOS;
+			productReference = 9ED902611E86B8BC004CBEFD /* StachkaIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9ED902741E86B8BC004CBEFD /* StachkaIOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9ED902811E86B8BC004CBEFD /* Build configuration list for PBXNativeTarget "StachkaIOSTests" */;
+			buildPhases = (
+				9ED902711E86B8BC004CBEFD /* Sources */,
+				9ED902721E86B8BC004CBEFD /* Frameworks */,
+				9ED902731E86B8BC004CBEFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9ED902771E86B8BC004CBEFD /* PBXTargetDependency */,
+			);
+			name = StachkaIOSTests;
+			productName = StachkaIOSTests;
+			productReference = 9ED902751E86B8BC004CBEFD /* StachkaIOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9ED902591E86B8BC004CBEFD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = m.rakhmanov;
+				TargetAttributes = {
+					9ED902601E86B8BC004CBEFD = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 346J5L65KC;
+						ProvisioningStyle = Automatic;
+					};
+					9ED902741E86B8BC004CBEFD = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 346J5L65KC;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9ED902601E86B8BC004CBEFD;
+					};
+				};
+			};
+			buildConfigurationList = 9ED9025C1E86B8BC004CBEFD /* Build configuration list for PBXProject "StachkaIOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9ED902581E86B8BC004CBEFD;
+			productRefGroup = 9ED902621E86B8BC004CBEFD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9ED902601E86B8BC004CBEFD /* StachkaIOS */,
+				9ED902741E86B8BC004CBEFD /* StachkaIOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9ED9025F1E86B8BC004CBEFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ED9026F1E86B8BC004CBEFD /* LaunchScreen.storyboard in Resources */,
+				9ED9026C1E86B8BC004CBEFD /* Assets.xcassets in Resources */,
+				9ED9026A1E86B8BC004CBEFD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9ED902731E86B8BC004CBEFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		51DAF60D779CF7A8E6E2FACB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5478376588D980A09A33F54B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StachkaIOS/Pods-StachkaIOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D00316BC4E00748A7F9F15AC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StachkaIOS/Pods-StachkaIOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9ED9025D1E86B8BC004CBEFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ED902891E86B940004CBEFD /* ViewController.swift in Sources */,
+				9ED902A61E86BDAD004CBEFD /* ApplicationRouter.swift in Sources */,
+				9ED902A81E86C020004CBEFD /* ApplicationRouterImplementation.swift in Sources */,
+				9ED902C01E87A74C004CBEFD /* ServiceAssemblyImplementation.swift in Sources */,
+				9ED902C41E87A7A6004CBEFD /* CoreAssemblyImplementation.swift in Sources */,
+				9ED902981E86BA6F004CBEFD /* AssemblyFactory.swift in Sources */,
+				9ED902AF1E87A1A2004CBEFD /* AssemblyFactoryImplementation.swift in Sources */,
+				9ED902B81E87A662004CBEFD /* CoordinatorAssemblyImplementation.swift in Sources */,
+				9ED902951E86BA25004CBEFD /* CoordinatorWithDependencies.swift in Sources */,
+				9ED902C21E87A770004CBEFD /* CoreAssembly.swift in Sources */,
+				9ED902A01E86BC4A004CBEFD /* ApplicationCoordinatorImplementation.swift in Sources */,
+				9ED902881E86B940004CBEFD /* AppDelegate.swift in Sources */,
+				9ED902AD1E86C0E4004CBEFD /* TabBarEmbedding.swift in Sources */,
+				9ED902C61E87A7D0004CBEFD /* UserStoryAssembly.swift in Sources */,
+				9ED902AB1E86C0B4004CBEFD /* TabBarController.swift in Sources */,
+				9ED902BE1E87A718004CBEFD /* ServiceAssembly.swift in Sources */,
+				9ED902C81E87A7EC004CBEFD /* UserStoryAssemblyImplementation.swift in Sources */,
+				9ED902931E86BA02004CBEFD /* Coordinator.swift in Sources */,
+				9ED9029E1E86BC1E004CBEFD /* ApplicationCoordinator.swift in Sources */,
+				9ED902B71E87A662004CBEFD /* CoordinatorAssembly.swift in Sources */,
+				9ED902BA1E87A6BF004CBEFD /* HelperAssembly.swift in Sources */,
+				9ED902BC1E87A6DC004CBEFD /* HelperAssemblyImplementation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9ED902711E86B8BC004CBEFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ED9027A1E86B8BC004CBEFD /* StachkaIOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9ED902771E86B8BC004CBEFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9ED902601E86B8BC004CBEFD /* StachkaIOS */;
+			targetProxy = 9ED902761E86B8BC004CBEFD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9ED902681E86B8BC004CBEFD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9ED902691E86B8BC004CBEFD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9ED9026D1E86B8BC004CBEFD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9ED9026E1E86B8BC004CBEFD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9ED9027C1E86B8BC004CBEFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9ED9027D1E86B8BC004CBEFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9ED9027F1E86B8BC004CBEFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEA2A6E714E84E1F33ADB781 /* Pods-StachkaIOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 346J5L65KC;
+				INFOPLIST_FILE = StachkaIOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mr.StachkaIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9ED902801E86B8BC004CBEFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03D475E69874851AD2BBC16E /* Pods-StachkaIOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 346J5L65KC;
+				INFOPLIST_FILE = StachkaIOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mr.StachkaIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		9ED902821E86B8BC004CBEFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 346J5L65KC;
+				INFOPLIST_FILE = StachkaIOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mr.StachkaIOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StachkaIOS.app/StachkaIOS";
+			};
+			name = Debug;
+		};
+		9ED902831E86B8BC004CBEFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 346J5L65KC;
+				INFOPLIST_FILE = StachkaIOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mr.StachkaIOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StachkaIOS.app/StachkaIOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9ED9025C1E86B8BC004CBEFD /* Build configuration list for PBXProject "StachkaIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9ED9027C1E86B8BC004CBEFD /* Debug */,
+				9ED9027D1E86B8BC004CBEFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9ED9027E1E86B8BC004CBEFD /* Build configuration list for PBXNativeTarget "StachkaIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9ED9027F1E86B8BC004CBEFD /* Debug */,
+				9ED902801E86B8BC004CBEFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9ED902811E86B8BC004CBEFD /* Build configuration list for PBXNativeTarget "StachkaIOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9ED902821E86B8BC004CBEFD /* Debug */,
+				9ED902831E86B8BC004CBEFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9ED902591E86B8BC004CBEFD /* Project object */;
+}

@@ -1,0 +1,10 @@
+use_frameworks!
+
+target 'StachkaIOS' do
+    # Animators
+    pod 'RectangleDissolve', '~> 0.1.1'
+
+    # Reactive extensions
+    pod 'RxSwift', '~> 3.0'
+    pod 'RxCocoa', '~> 3.0'
+end

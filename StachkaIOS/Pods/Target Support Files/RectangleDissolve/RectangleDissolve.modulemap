@@ -1,0 +1,6 @@
+framework module RectangleDissolve {
+  umbrella header "RectangleDissolve-umbrella.h"
+
+  export *
+  module * { export * }
+}
