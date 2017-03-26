@@ -19,6 +19,7 @@ class FeedViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
+        setupTabBar()
         setupTableView()
         setupBindings()
     }
@@ -26,6 +27,11 @@ class FeedViewController: UIViewController {
     private func setupTableView() {
         let presentationCell = UINib(nibName: PresentationCell.identifier, bundle: Bundle.main)
         tableView.register(presentationCell, forCellReuseIdentifier: PresentationCell.identifier)
+    }
+
+    private func setupTabBar() {
+        tabBarItem = UITabBarItem(title: "", image: UIImage.TabBar.calendar, selectedImage: UIImage.TabBar.calendar)
+        tabBarItem.imageInsets = TabBarConstants.imageInsets
     }
 
     private func setupBindings() {

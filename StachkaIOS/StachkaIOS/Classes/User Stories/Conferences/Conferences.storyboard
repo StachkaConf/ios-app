@@ -24,9 +24,10 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="woV-Dr-xBS">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.011691640772805822" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="woV-Dr-xBS" firstAttribute="leading" secondItem="FkI-5X-Vsi" secondAttribute="leading" id="6VU-1j-Kb0"/>
                             <constraint firstItem="woV-Dr-xBS" firstAttribute="top" secondItem="GRv-yb-yIi" secondAttribute="bottom" id="730-Tn-phS"/>
