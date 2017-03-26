@@ -12,6 +12,8 @@ import RxSwift
 
 class FeedViewController: UIViewController {
     fileprivate var indexPublisher: PublishSubject<IndexPath> = PublishSubject()
+    fileprivate var indexSelecter: PublishSubject<IndexPath> = PublishSubject()
+
     var viewModel: FeedViewModel?
     private let disposeBag = DisposeBag()
 
@@ -27,6 +29,20 @@ class FeedViewController: UIViewController {
     }
 
     private func setupBindings() {
+        tableView.rx
+            .willDisplayCell
+            .subscribe(onNext: { [weak self] event in
+                self?.indexPublisher.onNext(event.indexPath)
+            })
+            .disposed(by: disposeBag)
+
+        tableView.rx
+            .itemSelected
+            .subscribe(onNext: { [weak self] indexPath in
+                self?.indexSelecter.onNext(indexPath)
+            })
+            .disposed(by: disposeBag)
+
         viewModel?
             .presentations
             .bindTo(tableView.rx.items(cellIdentifier: PresentationCell.identifier)) {
@@ -48,6 +64,10 @@ extension FeedViewController: ModuleOutputProvider {
 
 extension FeedViewController: FeedView {
     var indexSelected: Observable<IndexPath> {
+        return indexSelecter.asObservable()
+    }
+
+    var indexDisplayed: Observable<IndexPath> {
         return indexPublisher.asObservable()
     }
 }

@@ -21,8 +21,14 @@ class FeedViewModelImplementation {
 
         view
             .indexSelected
-            .subscribe(onNext: { _ in
-
+            .subscribe(onNext: { indexPath in
+                print("Selected: \(indexPath)")
+            })
+            .disposed(by: disposeBag)
+        view
+            .indexDisplayed
+            .subscribe(onNext: { indexPath in
+                print("Displayed: \(indexPath)")
             })
             .disposed(by: disposeBag)
     }
