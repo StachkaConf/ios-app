@@ -47,6 +47,13 @@
 		9ED902EF1E87DF22004CBEFD /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902EE1E87DF22004CBEFD /* FeedView.swift */; };
 		9ED902F21E87E3BD004CBEFD /* FavouritesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902F11E87E3BD004CBEFD /* FavouritesCoordinator.swift */; };
 		9ED902F41E87E3D5004CBEFD /* FavouritesCoordinatorImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902F31E87E3D5004CBEFD /* FavouritesCoordinatorImplementation.swift */; };
+		9ED902FA1E880DA7004CBEFD /* ConfigurableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902F91E880DA7004CBEFD /* ConfigurableCell.swift */; };
+		9ED902FC1E880EBC004CBEFD /* PresentationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ED902FB1E880EBC004CBEFD /* PresentationCell.xib */; };
+		9ED902FE1E880ED5004CBEFD /* PresentationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902FD1E880ED5004CBEFD /* PresentationCell.swift */; };
+		9ED903001E880EE8004CBEFD /* PresentationCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902FF1E880EE8004CBEFD /* PresentationCellViewModel.swift */; };
+		9ED903021E882901004CBEFD /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED903011E882901004CBEFD /* UIImage.swift */; };
+		9ED903041E882D99004CBEFD /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED903031E882D99004CBEFD /* UIColor.swift */; };
+		9ED903061E8845CC004CBEFD /* FeedModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED903051E8845CC004CBEFD /* FeedModuleOutput.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +112,13 @@
 		9ED902EE1E87DF22004CBEFD /* FeedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		9ED902F11E87E3BD004CBEFD /* FavouritesCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouritesCoordinator.swift; sourceTree = "<group>"; };
 		9ED902F31E87E3D5004CBEFD /* FavouritesCoordinatorImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouritesCoordinatorImplementation.swift; sourceTree = "<group>"; };
+		9ED902F91E880DA7004CBEFD /* ConfigurableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurableCell.swift; sourceTree = "<group>"; };
+		9ED902FB1E880EBC004CBEFD /* PresentationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PresentationCell.xib; sourceTree = "<group>"; };
+		9ED902FD1E880ED5004CBEFD /* PresentationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationCell.swift; sourceTree = "<group>"; };
+		9ED902FF1E880EE8004CBEFD /* PresentationCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationCellViewModel.swift; sourceTree = "<group>"; };
+		9ED903011E882901004CBEFD /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		9ED903031E882D99004CBEFD /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		9ED903051E8845CC004CBEFD /* FeedModuleOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedModuleOutput.swift; sourceTree = "<group>"; };
 		CEA2A6E714E84E1F33ADB781 /* Pods-StachkaIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StachkaIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StachkaIOS/Pods-StachkaIOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -207,6 +221,7 @@
 		9ED9028A1E86B949004CBEFD /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				9ED902F81E880D9B004CBEFD /* ConfigurableCell */,
 				9ED902CC1E87C51E004CBEFD /* ModuleOutput */,
 				9ED902C91E87C4BA004CBEFD /* ModuleOutputProvider */,
 				9ED902B31E87A600004CBEFD /* Assembly */,
@@ -409,6 +424,7 @@
 			children = (
 				9ED902E81E87DCC1004CBEFD /* FeedViewModel.swift */,
 				9ED902EC1E87DE20004CBEFD /* FeedViewModelImplementation.swift */,
+				9ED903051E8845CC004CBEFD /* FeedModuleOutput.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -416,6 +432,7 @@
 		9ED902D81E87C788004CBEFD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9ED902F51E880D54004CBEFD /* Cells */,
 				9ED902D91E87C82B004CBEFD /* FeedViewController.swift */,
 				9ED902EE1E87DF22004CBEFD /* FeedView.swift */,
 			);
@@ -426,6 +443,8 @@
 			isa = PBXGroup;
 			children = (
 				9ED902DC1E87C925004CBEFD /* UIViewController.swift */,
+				9ED903011E882901004CBEFD /* UIImage.swift */,
+				9ED903031E882D99004CBEFD /* UIColor.swift */,
 			);
 			name = Extensions;
 			path = Classes/Extensions;
@@ -456,6 +475,40 @@
 				9ED902F31E87E3D5004CBEFD /* FavouritesCoordinatorImplementation.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		9ED902F51E880D54004CBEFD /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9ED902F61E880D54004CBEFD /* PresentationCell */,
+				9ED902F71E880D54004CBEFD /* TimeSection */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		9ED902F61E880D54004CBEFD /* PresentationCell */ = {
+			isa = PBXGroup;
+			children = (
+				9ED902FB1E880EBC004CBEFD /* PresentationCell.xib */,
+				9ED902FD1E880ED5004CBEFD /* PresentationCell.swift */,
+				9ED902FF1E880EE8004CBEFD /* PresentationCellViewModel.swift */,
+			);
+			path = PresentationCell;
+			sourceTree = "<group>";
+		};
+		9ED902F71E880D54004CBEFD /* TimeSection */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TimeSection;
+			sourceTree = "<group>";
+		};
+		9ED902F81E880D9B004CBEFD /* ConfigurableCell */ = {
+			isa = PBXGroup;
+			children = (
+				9ED902F91E880DA7004CBEFD /* ConfigurableCell.swift */,
+			);
+			path = ConfigurableCell;
 			sourceTree = "<group>";
 		};
 		E164D3AA8056481FDA9D5DE5 /* Frameworks */ = {
@@ -558,6 +611,7 @@
 				9ED9026F1E86B8BC004CBEFD /* LaunchScreen.storyboard in Resources */,
 				9ED9026C1E86B8BC004CBEFD /* Assets.xcassets in Resources */,
 				9ED9026A1E86B8BC004CBEFD /* Main.storyboard in Resources */,
+				9ED902FC1E880EBC004CBEFD /* PresentationCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,11 +682,14 @@
 				9ED902C01E87A74C004CBEFD /* ServiceAssemblyImplementation.swift in Sources */,
 				9ED902C41E87A7A6004CBEFD /* CoreAssemblyImplementation.swift in Sources */,
 				9ED902CB1E87C4C7004CBEFD /* ModuleOutputProvider.swift in Sources */,
+				9ED902FE1E880ED5004CBEFD /* PresentationCell.swift in Sources */,
 				9ED902981E86BA6F004CBEFD /* AssemblyFactory.swift in Sources */,
+				9ED903001E880EE8004CBEFD /* PresentationCellViewModel.swift in Sources */,
 				9ED902AF1E87A1A2004CBEFD /* AssemblyFactoryImplementation.swift in Sources */,
 				9ED902ED1E87DE20004CBEFD /* FeedViewModelImplementation.swift in Sources */,
 				9ED902F41E87E3D5004CBEFD /* FavouritesCoordinatorImplementation.swift in Sources */,
 				9ED902B81E87A662004CBEFD /* CoordinatorAssemblyImplementation.swift in Sources */,
+				9ED902FA1E880DA7004CBEFD /* ConfigurableCell.swift in Sources */,
 				9ED902E71E87DB0C004CBEFD /* FavouritesFeedModuleOutput.swift in Sources */,
 				9ED902951E86BA25004CBEFD /* CoordinatorWithDependencies.swift in Sources */,
 				9ED902C21E87A770004CBEFD /* CoreAssembly.swift in Sources */,
@@ -642,6 +699,7 @@
 				9ED902881E86B940004CBEFD /* AppDelegate.swift in Sources */,
 				9ED902AD1E86C0E4004CBEFD /* TabBarEmbedding.swift in Sources */,
 				9ED902C61E87A7D0004CBEFD /* UserStoryAssembly.swift in Sources */,
+				9ED903041E882D99004CBEFD /* UIColor.swift in Sources */,
 				9ED902DD1E87C925004CBEFD /* UIViewController.swift in Sources */,
 				9ED902AB1E86C0B4004CBEFD /* TabBarController.swift in Sources */,
 				9ED902DF1E87D41A004CBEFD /* ConferencesCoordinator.swift in Sources */,
@@ -655,6 +713,8 @@
 				9ED902E91E87DCC1004CBEFD /* FeedViewModel.swift in Sources */,
 				9ED902F21E87E3BD004CBEFD /* FavouritesCoordinator.swift in Sources */,
 				9ED902B71E87A662004CBEFD /* CoordinatorAssembly.swift in Sources */,
+				9ED903061E8845CC004CBEFD /* FeedModuleOutput.swift in Sources */,
+				9ED903021E882901004CBEFD /* UIImage.swift in Sources */,
 				9ED902BA1E87A6BF004CBEFD /* HelperAssembly.swift in Sources */,
 				9ED902BC1E87A6DC004CBEFD /* HelperAssemblyImplementation.swift in Sources */,
 			);

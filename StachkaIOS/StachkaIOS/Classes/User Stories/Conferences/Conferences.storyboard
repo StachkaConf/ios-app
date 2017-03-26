@@ -12,7 +12,7 @@
         <!--Feed View Controller-->
         <scene sceneID="Mxv-J9-rOv">
             <objects>
-                <viewController storyboardIdentifier="FeedViewController" id="FCK-Uj-FRs" customClass="FeedViewController" customModule="StachkaIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FeedViewController" automaticallyAdjustsScrollViewInsets="NO" id="FCK-Uj-FRs" customClass="FeedViewController" customModule="StachkaIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GRv-yb-yIi"/>
                         <viewControllerLayoutGuide type="bottom" id="0Mf-Z4-5DJ"/>
@@ -20,8 +20,24 @@
                     <view key="view" contentMode="scaleToFill" id="FkI-5X-Vsi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.011691640772805822" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="woV-Dr-xBS">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="woV-Dr-xBS" firstAttribute="leading" secondItem="FkI-5X-Vsi" secondAttribute="leading" id="6VU-1j-Kb0"/>
+                            <constraint firstItem="woV-Dr-xBS" firstAttribute="top" secondItem="GRv-yb-yIi" secondAttribute="bottom" id="730-Tn-phS"/>
+                            <constraint firstAttribute="trailing" secondItem="woV-Dr-xBS" secondAttribute="trailing" id="obt-fT-38u"/>
+                            <constraint firstItem="0Mf-Z4-5DJ" firstAttribute="top" secondItem="woV-Dr-xBS" secondAttribute="bottom" id="uhH-os-Yma"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="woV-Dr-xBS" id="d8Q-bD-sly"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MkB-Hk-lJz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -1,5 +1,5 @@
 //
-//  FeedViewInput.swift
+//  FeedModuleOutput.swift
 //  StachkaIOS
 //
 //  Created by m.rakhmanov on 26.03.17.
@@ -8,6 +8,6 @@
 
 import RxSwift
 
-protocol FeedViewModel {
-    var presentations: Observable<[PresentationCellViewModel]> { get }
+protocol FeedModuleOutput: ModuleOutput {
+    var filterSelected: Observable<Void> { get }
 }

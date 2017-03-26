@@ -11,4 +11,6 @@ import Foundation
 
 protocol FeedView: class {
     var indexSelected: Observable<IndexPath> { get }
+    var indexDisplayed: Observable<IndexPath> { get }
+    var filterSelected: Observable<Void> { get }
 }

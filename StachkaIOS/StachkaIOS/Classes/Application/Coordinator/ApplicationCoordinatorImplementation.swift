@@ -35,6 +35,7 @@ class ApplicationCoordinatorImplementation: ApplicationCoordinator, CoordinatorW
         window?.makeKeyAndVisible()
         
         conferencesCoordinator.start()
+        favouritesCoordinator.start()
     }
 
     private func embedInTabBarWithNavigationController(controller: UIViewController) {

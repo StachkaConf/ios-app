@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import RxSwift
 
 class ConferencesCoordinatorImplementation: ConferencesCoordinator {
 
     private let rootController: UIViewController
     private let assembly: AssemblyFactory
+    private let disposeBag = DisposeBag()
 
     init(assembly: AssemblyFactory, rootController: UIViewController) {
         self.rootController = rootController
@@ -19,6 +21,16 @@ class ConferencesCoordinatorImplementation: ConferencesCoordinator {
     }
 
     func start() {
-        
+        guard let moduleOutputProvider = rootController as? ModuleOutputProvider,
+              let output = moduleOutputProvider.moduleOutput as? FeedModuleOutput
+            else {
+                return
+        }
+
+        output.filterSelected
+            .subscribe(onNext: {
+                print("Router message received")
+            })
+            .disposed(by: disposeBag)
     }
 }
