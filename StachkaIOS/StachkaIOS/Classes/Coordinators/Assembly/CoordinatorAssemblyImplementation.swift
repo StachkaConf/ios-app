@@ -23,4 +23,8 @@ class CoordinatorAssemblyImplementation: CoordinatorAssembly {
     func conferencesCoordinator(rootController: UIViewController) -> ConferencesCoordinator {
         return ConferencesCoordinatorImplementation(assembly: assemblyFactory, rootController: rootController)
     }
+
+    func favouritesCoordinator(rootController: UIViewController) -> FavouritesCoordinator {
+        return FavouritesCoordinatorImplemenation(assembly: assemblyFactory, rootController: rootController)
+    }
 }

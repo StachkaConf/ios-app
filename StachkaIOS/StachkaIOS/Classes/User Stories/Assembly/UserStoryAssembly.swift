@@ -10,7 +10,9 @@ import UIKit
 
 protocol UserStoryAssembly: Assembly {
     func tabBar() -> UITabBarController
-    func feedModule() -> UIViewController
-    func detailModule() -> UIViewController
-    func filterModule() -> UIViewController
+    // TODO: Растащить по разным ассембли
+    func conferencesFeedModule() -> UIViewController
+    func conferencesDetailModule() -> UIViewController
+    func conferencesFilterModule() -> UIViewController
+    func favouritesFeedModule() -> UIViewController
 }

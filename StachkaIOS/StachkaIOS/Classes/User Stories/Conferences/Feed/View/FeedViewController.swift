@@ -7,5 +7,28 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
 
-class FeedViewController: UIViewController {}
+class FeedViewController: UIViewController {
+    fileprivate var indexPublisher: PublishSubject<IndexPath> = PublishSubject()
+    var viewModel: FeedViewModel?
+
+    override func viewDidLoad() {
+        viewModel?.presentations.subscribe(onNext: { _ in
+
+        })
+    }
+}
+
+extension FeedViewController: ModuleOutputProvider {
+    var moduleOutput: ModuleOutput? {
+        return viewModel as? ModuleOutput
+    }
+}
+
+extension FeedViewController: FeedView {
+    var indexSelected: Observable<IndexPath> {
+        return indexPublisher.asObservable()
+    }
+}

@@ -22,23 +22,37 @@ class UserStoryAssemblyImplementation: UserStoryAssembly {
         self.assemblyFactory =  assemblyFactory
     }
 
-    func feedModule() -> UIViewController {
+    func conferencesFeedModule() -> UIViewController {
         let storyboardId = Constants.StoryboardIds.conferences
         let storyboard = UIStoryboard(name: storyboardId, bundle: Bundle.main)
-        let viewController = storyboard.instantiateInitialViewController()!
+        let viewController = storyboard.instantiateInitialViewController() as! FeedViewController
+        let viewModel = FeedViewModelImplementation(view: viewController)
+        viewController.viewModel = viewModel
 
         return viewController
     }
 
-    func detailModule() -> UIViewController {
+    func conferencesDetailModule() -> UIViewController {
         return UIViewController()
     }
 
-    func filterModule() -> UIViewController {
+    func conferencesFilterModule() -> UIViewController {
         return UIViewController()
     }
 
     func tabBar() -> UITabBarController {
         return AppTabBarController()
+    }
+
+    func favouritesFeedModule() -> UIViewController {
+        let storyboardId = Constants.StoryboardIds.conferences
+        let storyboard = UIStoryboard(name: storyboardId, bundle: Bundle.main)
+        let viewController = storyboard.instantiateInitialViewController() as! FeedViewController
+        let viewModel = FavouritesFeedViewModelImplementation(view: viewController)
+        viewController.viewModel = viewModel
+        // FIXME: это заглушка, чтобы проверить работу табов
+        viewController.view.backgroundColor = UIColor.red
+
+        return viewController
     }
 }

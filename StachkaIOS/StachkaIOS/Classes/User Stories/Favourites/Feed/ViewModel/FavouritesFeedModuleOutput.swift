@@ -1,5 +1,5 @@
 //
-//  ModuleOutputProvider.swift
+//  FavouritesFeedViewModel.swift
 //  StachkaIOS
 //
 //  Created by m.rakhmanov on 26.03.17.
@@ -7,7 +7,6 @@
 //
 
 import Foundation
+import RxSwift
 
-protocol ModuleOutputProvider {
-    var moduleOutput: ModuleOutput? { get }
-}
+protocol FavouritesFeedModuleOutput: ModuleOutput {}

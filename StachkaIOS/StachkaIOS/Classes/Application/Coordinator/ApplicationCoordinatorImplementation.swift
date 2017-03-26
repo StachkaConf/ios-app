@@ -21,15 +21,24 @@ class ApplicationCoordinatorImplementation: ApplicationCoordinator, CoordinatorW
 
     func start() {
         tabBarController = assembly.userStories().tabBar()
-        let feed = assembly.userStories().feedModule()
-        let navigationController = UINavigationController(rootViewController: feed)
-        tabBarController?.embed(viewController: navigationController)
+        let feed = assembly.userStories().conferencesFeedModule()
+        embedInTabBarWithNavigationController(controller: feed)
         let conferencesCoordinator = assembly.coordinators().conferencesCoordinator(rootController: feed)
         add(coordinator: conferencesCoordinator)
+
+        let favourites = assembly.userStories().favouritesFeedModule()
+        embedInTabBarWithNavigationController(controller: favourites)
+        let favouritesCoordinator = assembly.coordinators().favouritesCoordinator(rootController: favourites)
+        add(coordinator: favouritesCoordinator)
 
         window?.rootViewController = tabBarController
         window?.makeKeyAndVisible()
         
         conferencesCoordinator.start()
+    }
+
+    private func embedInTabBarWithNavigationController(controller: UIViewController) {
+        let navigationController = UINavigationController(rootViewController: controller)
+        tabBarController?.embed(viewController: navigationController)
     }
 }
