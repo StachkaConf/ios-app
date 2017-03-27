@@ -54,6 +54,7 @@
 		9ED903021E882901004CBEFD /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED903011E882901004CBEFD /* UIImage.swift */; };
 		9ED903041E882D99004CBEFD /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED903031E882D99004CBEFD /* UIColor.swift */; };
 		9ED903061E8845CC004CBEFD /* FeedModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED903051E8845CC004CBEFD /* FeedModuleOutput.swift */; };
+		9ED9030A1E88E69E004CBEFD /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED903091E88E69E004CBEFD /* OnboardingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +120,7 @@
 		9ED903011E882901004CBEFD /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		9ED903031E882D99004CBEFD /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		9ED903051E8845CC004CBEFD /* FeedModuleOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedModuleOutput.swift; sourceTree = "<group>"; };
+		9ED903091E88E69E004CBEFD /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		CEA2A6E714E84E1F33ADB781 /* Pods-StachkaIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StachkaIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StachkaIOS/Pods-StachkaIOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -251,6 +253,7 @@
 		9ED9028D1E86B949004CBEFD /* User Stories */ = {
 			isa = PBXGroup;
 			children = (
+				9ED903071E88E68D004CBEFD /* Onboarding */,
 				9ED902D31E87C64B004CBEFD /* Favourites */,
 				9ED902CF1E87C637004CBEFD /* Conferences */,
 				9ED902B01E87A5AD004CBEFD /* Assembly */,
@@ -511,6 +514,22 @@
 			path = ConfigurableCell;
 			sourceTree = "<group>";
 		};
+		9ED903071E88E68D004CBEFD /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				9ED903081E88E68D004CBEFD /* View */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		9ED903081E88E68D004CBEFD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9ED903091E88E69E004CBEFD /* OnboardingViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		E164D3AA8056481FDA9D5DE5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -710,6 +729,7 @@
 				9ED902CE1E87C52B004CBEFD /* ModuleOutput.swift in Sources */,
 				9ED902931E86BA02004CBEFD /* Coordinator.swift in Sources */,
 				9ED9029E1E86BC1E004CBEFD /* ApplicationCoordinator.swift in Sources */,
+				9ED9030A1E88E69E004CBEFD /* OnboardingViewController.swift in Sources */,
 				9ED902E91E87DCC1004CBEFD /* FeedViewModel.swift in Sources */,
 				9ED902F21E87E3BD004CBEFD /* FavouritesCoordinator.swift in Sources */,
 				9ED902B71E87A662004CBEFD /* CoordinatorAssembly.swift in Sources */,

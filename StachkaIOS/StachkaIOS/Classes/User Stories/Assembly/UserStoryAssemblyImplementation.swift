@@ -13,6 +13,7 @@ class UserStoryAssemblyImplementation: UserStoryAssembly {
     enum Constants {
         enum StoryboardIds {
             static let conferences = "Conferences"
+            static let main = "Main"
         }
     }
 
@@ -20,6 +21,15 @@ class UserStoryAssemblyImplementation: UserStoryAssembly {
 
     init(assemblyFactory: AssemblyFactory) {
         self.assemblyFactory =  assemblyFactory
+    }
+
+    func onboardingModule() -> UIViewController {
+        // TODO: переписать в общей форме (на дженериках?)
+        let storyboardId = Constants.StoryboardIds.main
+        let storyboard = UIStoryboard(name: storyboardId, bundle: Bundle.main)
+        let viewController = storyboard.instantiateInitialViewController() as! OnboardingViewController
+
+        return viewController
     }
 
     func conferencesFeedModule() -> UIViewController {
