@@ -14,6 +14,7 @@ class ConferencesCoordinatorImplementation: ConferencesCoordinator {
     private let rootController: UIViewController
     private let assembly: AssemblyFactory
     private let disposeBag = DisposeBag()
+    private var filters = PublishSubject<[Filter]>()
 
     init(assembly: AssemblyFactory, rootController: UIViewController) {
         self.rootController = rootController
@@ -22,15 +23,30 @@ class ConferencesCoordinatorImplementation: ConferencesCoordinator {
 
     func start() {
         guard let moduleOutputProvider = rootController as? ModuleOutputProvider,
-              let output = moduleOutputProvider.moduleOutput as? FeedModuleOutput
+              let configurableOutput = moduleOutputProvider.moduleOutput as? FeedModuleOutput & CoordinatorConfigurable
             else {
                 return
         }
 
-        output.filterSelected
-            .subscribe(onNext: {
-                print("Router message received")
+        configurableOutput
+            .filterSelected
+            .subscribe(onNext: { [weak self] in
+                self?.openFilters()
             })
             .disposed(by: disposeBag)
+
+        configurableOutput.configure(withCoordinator: self)
+    }
+
+    private func openFilters() {
+        let filtersModule = assembly.userStories().conferencesFilterModule()
+        rootController.navigationController?.pushViewController(filtersModule, animated: true)
+    }
+
+    // MARK: ConferncesCoordinatorOutput
+
+    var filtersChanged: Observable<[Filter]> {
+        return filters.asObservable()
     }
 }
+

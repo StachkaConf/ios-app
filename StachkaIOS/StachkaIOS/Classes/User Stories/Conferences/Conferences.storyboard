@@ -41,7 +41,41 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MkB-Hk-lJz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18" y="-87"/>
+            <point key="canvasLocation" x="-20" y="-94"/>
+        </scene>
+        <!--Filters View Controller-->
+        <scene sceneID="ODl-Vc-goX">
+            <objects>
+                <viewController storyboardIdentifier="FiltersViewController" automaticallyAdjustsScrollViewInsets="NO" id="T17-KH-D4p" customClass="FiltersViewController" customModule="StachkaIOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tE1-v3-aar"/>
+                        <viewControllerLayoutGuide type="bottom" id="9mZ-HL-SCd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fp4-Ob-nxt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vnd-OO-EcI">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Vnd-OO-EcI" secondAttribute="trailing" id="44R-LY-5cd"/>
+                            <constraint firstItem="Vnd-OO-EcI" firstAttribute="top" secondItem="tE1-v3-aar" secondAttribute="bottom" id="Q3K-8J-QaO"/>
+                            <constraint firstItem="Vnd-OO-EcI" firstAttribute="leading" secondItem="fp4-Ob-nxt" secondAttribute="leading" id="R9H-UH-83F"/>
+                            <constraint firstItem="9mZ-HL-SCd" firstAttribute="top" secondItem="Vnd-OO-EcI" secondAttribute="bottom" id="g7G-4b-wJE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="Vnd-OO-EcI" id="w4M-r0-Flo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2hf-WP-fpA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="842" y="-94"/>
         </scene>
     </scenes>
 </document>

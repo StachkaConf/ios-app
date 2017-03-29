@@ -8,4 +8,4 @@
 
 import Foundation
 
-protocol ConferencesCoordinator: Coordinator {}
+protocol ConferencesCoordinator: Coordinator, ConferencesCoordinatorOutput {}

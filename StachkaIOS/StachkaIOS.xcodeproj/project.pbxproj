@@ -8,6 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		5AF5A1545E1A8BF150582F85 /* Pods_StachkaIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19E758D4E38E6E1B9BEB60EF /* Pods_StachkaIOS.framework */; };
+		9E1051381E8B592500B83411 /* FiltersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1051371E8B592500B83411 /* FiltersView.swift */; };
+		9E10513A1E8B5BD900B83411 /* FilterCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1051391E8B5BD900B83411 /* FilterCellViewModel.swift */; };
+		9E10513C1E8B5FC100B83411 /* UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E10513B1E8B5FC100B83411 /* UIStoryboard.swift */; };
+		9E5D0CBA1E8996E500E8B226 /* CoordinatorConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5D0CB91E8996E500E8B226 /* CoordinatorConfigurable.swift */; };
+		9E5D0CBD1E89975900E8B226 /* ModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5D0CBC1E89975900E8B226 /* ModuleInput.swift */; };
+		9E5D0CBF1E899D9F00E8B226 /* CoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5D0CBE1E899D9F00E8B226 /* CoordinatorOutput.swift */; };
+		9E5D0CC11E899E1800E8B226 /* ConferencesCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5D0CC01E899E1800E8B226 /* ConferencesCoordinatorOutput.swift */; };
+		9E5D0CC51E899E7700E8B226 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5D0CC41E899E7700E8B226 /* Filter.swift */; };
+		9E5D0CC71E899F1500E8B226 /* SectionFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5D0CC61E899F1500E8B226 /* SectionFilter.swift */; };
+		9E7F8A3B1E8B51B300BD1169 /* TickFilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7F8A3A1E8B51B300BD1169 /* TickFilterCell.swift */; };
+		9E7F8A3D1E8B528800BD1169 /* TickFilterCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7F8A3C1E8B528800BD1169 /* TickFilterCellViewModel.swift */; };
+		9E7F8A3F1E8B52D000BD1169 /* TickFilterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E7F8A3E1E8B52D000BD1169 /* TickFilterCell.xib */; };
+		9E7F8A411E8B534000BD1169 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7F8A401E8B534000BD1169 /* UITableView.swift */; };
 		9ED9026A1E86B8BC004CBEFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ED902681E86B8BC004CBEFD /* Main.storyboard */; };
 		9ED9026C1E86B8BC004CBEFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9ED9026B1E86B8BC004CBEFD /* Assets.xcassets */; };
 		9ED9026F1E86B8BC004CBEFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ED9026D1E86B8BC004CBEFD /* LaunchScreen.storyboard */; };
@@ -55,6 +68,10 @@
 		9ED903041E882D99004CBEFD /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED903031E882D99004CBEFD /* UIColor.swift */; };
 		9ED903061E8845CC004CBEFD /* FeedModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED903051E8845CC004CBEFD /* FeedModuleOutput.swift */; };
 		9ED9030A1E88E69E004CBEFD /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED903091E88E69E004CBEFD /* OnboardingViewController.swift */; };
+		9ED903101E890F59004CBEFD /* FiltersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED9030F1E890F59004CBEFD /* FiltersViewController.swift */; };
+		9ED903121E8913AE004CBEFD /* FiltersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED903111E8913AE004CBEFD /* FiltersViewModel.swift */; };
+		9ED903141E8913BE004CBEFD /* FiltersViewModelImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED903131E8913BE004CBEFD /* FiltersViewModelImplementation.swift */; };
+		9ED903161E8913D6004CBEFD /* FilterModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED903151E8913D6004CBEFD /* FilterModuleOutput.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +87,19 @@
 /* Begin PBXFileReference section */
 		03D475E69874851AD2BBC16E /* Pods-StachkaIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StachkaIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-StachkaIOS/Pods-StachkaIOS.release.xcconfig"; sourceTree = "<group>"; };
 		19E758D4E38E6E1B9BEB60EF /* Pods_StachkaIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StachkaIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E1051371E8B592500B83411 /* FiltersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltersView.swift; sourceTree = "<group>"; };
+		9E1051391E8B5BD900B83411 /* FilterCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterCellViewModel.swift; sourceTree = "<group>"; };
+		9E10513B1E8B5FC100B83411 /* UIStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboard.swift; sourceTree = "<group>"; };
+		9E5D0CB91E8996E500E8B226 /* CoordinatorConfigurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorConfigurable.swift; sourceTree = "<group>"; };
+		9E5D0CBC1E89975900E8B226 /* ModuleInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleInput.swift; sourceTree = "<group>"; };
+		9E5D0CBE1E899D9F00E8B226 /* CoordinatorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorOutput.swift; sourceTree = "<group>"; };
+		9E5D0CC01E899E1800E8B226 /* ConferencesCoordinatorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConferencesCoordinatorOutput.swift; sourceTree = "<group>"; };
+		9E5D0CC41E899E7700E8B226 /* Filter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
+		9E5D0CC61E899F1500E8B226 /* SectionFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionFilter.swift; sourceTree = "<group>"; };
+		9E7F8A3A1E8B51B300BD1169 /* TickFilterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TickFilterCell.swift; sourceTree = "<group>"; };
+		9E7F8A3C1E8B528800BD1169 /* TickFilterCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TickFilterCellViewModel.swift; sourceTree = "<group>"; };
+		9E7F8A3E1E8B52D000BD1169 /* TickFilterCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TickFilterCell.xib; sourceTree = "<group>"; };
+		9E7F8A401E8B534000BD1169 /* UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		9ED902611E86B8BC004CBEFD /* StachkaIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StachkaIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ED902691E86B8BC004CBEFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9ED9026B1E86B8BC004CBEFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -121,6 +151,10 @@
 		9ED903031E882D99004CBEFD /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		9ED903051E8845CC004CBEFD /* FeedModuleOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedModuleOutput.swift; sourceTree = "<group>"; };
 		9ED903091E88E69E004CBEFD /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		9ED9030F1E890F59004CBEFD /* FiltersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltersViewController.swift; sourceTree = "<group>"; };
+		9ED903111E8913AE004CBEFD /* FiltersViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltersViewModel.swift; sourceTree = "<group>"; };
+		9ED903131E8913BE004CBEFD /* FiltersViewModelImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltersViewModelImplementation.swift; sourceTree = "<group>"; };
+		9ED903151E8913D6004CBEFD /* FilterModuleOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterModuleOutput.swift; sourceTree = "<group>"; };
 		CEA2A6E714E84E1F33ADB781 /* Pods-StachkaIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StachkaIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StachkaIOS/Pods-StachkaIOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -150,6 +184,51 @@
 				03D475E69874851AD2BBC16E /* Pods-StachkaIOS.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		9E5D0CBB1E89974F00E8B226 /* ModuleInput */ = {
+			isa = PBXGroup;
+			children = (
+				9E5D0CBC1E89975900E8B226 /* ModuleInput.swift */,
+			);
+			path = ModuleInput;
+			sourceTree = "<group>";
+		};
+		9E5D0CC21E899E6B00E8B226 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				9E5D0CC31E899E6B00E8B226 /* Filter */,
+			);
+			name = Entities;
+			path = Classes/Entities;
+			sourceTree = "<group>";
+		};
+		9E5D0CC31E899E6B00E8B226 /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				9E5D0CC41E899E7700E8B226 /* Filter.swift */,
+				9E5D0CC61E899F1500E8B226 /* SectionFilter.swift */,
+			);
+			path = Filter;
+			sourceTree = "<group>";
+		};
+		9E7F8A381E8B518400BD1169 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9E7F8A391E8B518400BD1169 /* TickFilterCell */,
+				9E1051391E8B5BD900B83411 /* FilterCellViewModel.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		9E7F8A391E8B518400BD1169 /* TickFilterCell */ = {
+			isa = PBXGroup;
+			children = (
+				9E7F8A3A1E8B51B300BD1169 /* TickFilterCell.swift */,
+				9E7F8A3C1E8B528800BD1169 /* TickFilterCellViewModel.swift */,
+				9E7F8A3E1E8B52D000BD1169 /* TickFilterCell.xib */,
+			);
+			path = TickFilterCell;
 			sourceTree = "<group>";
 		};
 		9ED902581E86B8BC004CBEFD = {
@@ -196,6 +275,7 @@
 		9ED902841E86B8D7004CBEFD /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				9E5D0CC21E899E6B00E8B226 /* Entities */,
 				9ED902DB1E87C903004CBEFD /* Extensions */,
 				9ED9028E1E86B97D004CBEFD /* Coordinators */,
 				9ED9028A1E86B949004CBEFD /* Helpers */,
@@ -223,6 +303,7 @@
 		9ED9028A1E86B949004CBEFD /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				9E5D0CBB1E89974F00E8B226 /* ModuleInput */,
 				9ED902F81E880D9B004CBEFD /* ConfigurableCell */,
 				9ED902CC1E87C51E004CBEFD /* ModuleOutput */,
 				9ED902C91E87C4BA004CBEFD /* ModuleOutputProvider */,
@@ -365,6 +446,8 @@
 			isa = PBXGroup;
 			children = (
 				9ED902CD1E87C52B004CBEFD /* ModuleOutput.swift */,
+				9E5D0CB91E8996E500E8B226 /* CoordinatorConfigurable.swift */,
+				9E5D0CBE1E899D9F00E8B226 /* CoordinatorOutput.swift */,
 			);
 			path = ModuleOutput;
 			sourceTree = "<group>";
@@ -384,6 +467,8 @@
 		9ED902D01E87C637004CBEFD /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				9ED9030B1E890F1C004CBEFD /* ViewModel */,
+				9ED9030C1E890F1C004CBEFD /* View */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -400,6 +485,8 @@
 		9ED902D21E87C637004CBEFD /* Filters */ = {
 			isa = PBXGroup;
 			children = (
+				9ED9030D1E890F2A004CBEFD /* ViewModel */,
+				9ED9030E1E890F2A004CBEFD /* View */,
 			);
 			path = Filters;
 			sourceTree = "<group>";
@@ -418,6 +505,7 @@
 			children = (
 				9ED902DE1E87D41A004CBEFD /* ConferencesCoordinator.swift */,
 				9ED902E01E87D467004CBEFD /* ConferencesCoordinatorImplementation.swift */,
+				9E5D0CC01E899E1800E8B226 /* ConferencesCoordinatorOutput.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -448,6 +536,8 @@
 				9ED902DC1E87C925004CBEFD /* UIViewController.swift */,
 				9ED903011E882901004CBEFD /* UIImage.swift */,
 				9ED903031E882D99004CBEFD /* UIColor.swift */,
+				9E7F8A401E8B534000BD1169 /* UITableView.swift */,
+				9E10513B1E8B5FC100B83411 /* UIStoryboard.swift */,
 			);
 			name = Extensions;
 			path = Classes/Extensions;
@@ -526,6 +616,40 @@
 			isa = PBXGroup;
 			children = (
 				9ED903091E88E69E004CBEFD /* OnboardingViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9ED9030B1E890F1C004CBEFD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9ED9030C1E890F1C004CBEFD /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9ED9030D1E890F2A004CBEFD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9ED903111E8913AE004CBEFD /* FiltersViewModel.swift */,
+				9ED903131E8913BE004CBEFD /* FiltersViewModelImplementation.swift */,
+				9ED903151E8913D6004CBEFD /* FilterModuleOutput.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9ED9030E1E890F2A004CBEFD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9E1051371E8B592500B83411 /* FiltersView.swift */,
+				9ED9030F1E890F59004CBEFD /* FiltersViewController.swift */,
+				9E7F8A381E8B518400BD1169 /* Cells */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -626,6 +750,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E7F8A3F1E8B52D000BD1169 /* TickFilterCell.xib in Resources */,
 				9ED902D61E87C715004CBEFD /* Conferences.storyboard in Resources */,
 				9ED9026F1E86B8BC004CBEFD /* LaunchScreen.storyboard in Resources */,
 				9ED9026C1E86B8BC004CBEFD /* Assets.xcassets in Resources */,
@@ -696,25 +821,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E10513C1E8B5FC100B83411 /* UIStoryboard.swift in Sources */,
 				9ED902DA1E87C82B004CBEFD /* FeedViewController.swift in Sources */,
+				9E5D0CC51E899E7700E8B226 /* Filter.swift in Sources */,
 				9ED902891E86B940004CBEFD /* ViewController.swift in Sources */,
 				9ED902C01E87A74C004CBEFD /* ServiceAssemblyImplementation.swift in Sources */,
+				9E1051381E8B592500B83411 /* FiltersView.swift in Sources */,
+				9ED903121E8913AE004CBEFD /* FiltersViewModel.swift in Sources */,
+				9E7F8A411E8B534000BD1169 /* UITableView.swift in Sources */,
 				9ED902C41E87A7A6004CBEFD /* CoreAssemblyImplementation.swift in Sources */,
 				9ED902CB1E87C4C7004CBEFD /* ModuleOutputProvider.swift in Sources */,
+				9E5D0CC71E899F1500E8B226 /* SectionFilter.swift in Sources */,
+				9E7F8A3D1E8B528800BD1169 /* TickFilterCellViewModel.swift in Sources */,
+				9ED903161E8913D6004CBEFD /* FilterModuleOutput.swift in Sources */,
+				9E5D0CBF1E899D9F00E8B226 /* CoordinatorOutput.swift in Sources */,
 				9ED902FE1E880ED5004CBEFD /* PresentationCell.swift in Sources */,
 				9ED902981E86BA6F004CBEFD /* AssemblyFactory.swift in Sources */,
+				9E7F8A3B1E8B51B300BD1169 /* TickFilterCell.swift in Sources */,
 				9ED903001E880EE8004CBEFD /* PresentationCellViewModel.swift in Sources */,
 				9ED902AF1E87A1A2004CBEFD /* AssemblyFactoryImplementation.swift in Sources */,
 				9ED902ED1E87DE20004CBEFD /* FeedViewModelImplementation.swift in Sources */,
 				9ED902F41E87E3D5004CBEFD /* FavouritesCoordinatorImplementation.swift in Sources */,
 				9ED902B81E87A662004CBEFD /* CoordinatorAssemblyImplementation.swift in Sources */,
 				9ED902FA1E880DA7004CBEFD /* ConfigurableCell.swift in Sources */,
+				9ED903141E8913BE004CBEFD /* FiltersViewModelImplementation.swift in Sources */,
 				9ED902E71E87DB0C004CBEFD /* FavouritesFeedModuleOutput.swift in Sources */,
 				9ED902951E86BA25004CBEFD /* CoordinatorWithDependencies.swift in Sources */,
+				9E5D0CBD1E89975900E8B226 /* ModuleInput.swift in Sources */,
 				9ED902C21E87A770004CBEFD /* CoreAssembly.swift in Sources */,
+				9ED903101E890F59004CBEFD /* FiltersViewController.swift in Sources */,
 				9ED902E11E87D467004CBEFD /* ConferencesCoordinatorImplementation.swift in Sources */,
 				9ED902EB1E87DD9F004CBEFD /* FavouritesFeedViewModel.swift in Sources */,
 				9ED902A01E86BC4A004CBEFD /* ApplicationCoordinatorImplementation.swift in Sources */,
+				9E5D0CBA1E8996E500E8B226 /* CoordinatorConfigurable.swift in Sources */,
 				9ED902881E86B940004CBEFD /* AppDelegate.swift in Sources */,
 				9ED902AD1E86C0E4004CBEFD /* TabBarEmbedding.swift in Sources */,
 				9ED902C61E87A7D0004CBEFD /* UserStoryAssembly.swift in Sources */,
@@ -737,6 +876,8 @@
 				9ED903021E882901004CBEFD /* UIImage.swift in Sources */,
 				9ED902BA1E87A6BF004CBEFD /* HelperAssembly.swift in Sources */,
 				9ED902BC1E87A6DC004CBEFD /* HelperAssemblyImplementation.swift in Sources */,
+				9E10513A1E8B5BD900B83411 /* FilterCellViewModel.swift in Sources */,
+				9E5D0CC11E899E1800E8B226 /* ConferencesCoordinatorOutput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -880,6 +1021,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 346J5L65KC;
 				INFOPLIST_FILE = StachkaIOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mr.StachkaIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -894,6 +1036,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 346J5L65KC;
 				INFOPLIST_FILE = StachkaIOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mr.StachkaIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
