@@ -26,6 +26,7 @@ class FeedViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
+        super.viewDidLoad()
         title = Constants.title
         
         setupTabBar()
@@ -35,8 +36,7 @@ class FeedViewController: UIViewController {
     }
 
     private func setupTableView() {
-        let presentationCell = UINib(nibName: PresentationCell.identifier, bundle: Bundle.main)
-        tableView.register(presentationCell, forCellReuseIdentifier: PresentationCell.identifier)
+        tableView.register(PresentationCell.self)
     }
 
     private func setupTabBar() {

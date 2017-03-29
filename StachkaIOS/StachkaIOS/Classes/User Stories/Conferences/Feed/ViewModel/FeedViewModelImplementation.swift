@@ -45,8 +45,20 @@ extension FeedViewModelImplementation: FeedViewModel {
     }
 }
 
-extension FeedViewModelImplementation: FeedModuleOutput {
+extension FeedViewModelImplementation: FeedModuleOutput, CoordinatorConfigurable {
     var filterSelected: Observable<Void> {
         return view?.filterSelected ?? Observable.empty()
+    }
+
+    func configure(withCoordinator coordinator: Coordinator) {
+        guard let coordinator = coordinator as? ConferencesCoordinatorOutput else {
+            return
+        }
+        coordinator
+            .filtersChanged
+            .subscribe(onNext: { filter in
+                print("Filters changed")
+            })
+            .disposed(by: disposeBag)
     }
 }

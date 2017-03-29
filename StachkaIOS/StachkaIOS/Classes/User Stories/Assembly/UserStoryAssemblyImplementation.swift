@@ -24,18 +24,13 @@ class UserStoryAssemblyImplementation: UserStoryAssembly {
     }
 
     func onboardingModule() -> UIViewController {
-        // TODO: переписать в общей форме (на дженериках?)
-        let storyboardId = Constants.StoryboardIds.main
-        let storyboard = UIStoryboard(name: storyboardId, bundle: Bundle.main)
-        let viewController = storyboard.instantiateInitialViewController() as! OnboardingViewController
+        let viewController: OnboardingViewController = UIStoryboard.createController(withStoryboardId: Constants.StoryboardIds.main)
 
         return viewController
     }
 
     func conferencesFeedModule() -> UIViewController {
-        let storyboardId = Constants.StoryboardIds.conferences
-        let storyboard = UIStoryboard(name: storyboardId, bundle: Bundle.main)
-        let viewController = storyboard.instantiateInitialViewController() as! FeedViewController
+        let viewController: FeedViewController = UIStoryboard.createController(withStoryboardId: Constants.StoryboardIds.conferences)
         let viewModel = FeedViewModelImplementation(view: viewController)
         viewController.viewModel = viewModel
 
@@ -47,7 +42,11 @@ class UserStoryAssemblyImplementation: UserStoryAssembly {
     }
 
     func conferencesFilterModule() -> UIViewController {
-        return UIViewController()
+        let viewController: FiltersViewController = UIStoryboard.createController(withStoryboardId: Constants.StoryboardIds.conferences)
+        let viewModel = FiltersViewModelImplementation(view: viewController)
+        viewController.viewModel = viewModel
+
+        return viewController
     }
 
     func tabBar() -> UITabBarController {

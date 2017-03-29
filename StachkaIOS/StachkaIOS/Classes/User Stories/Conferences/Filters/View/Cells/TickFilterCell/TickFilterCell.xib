@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12106.1" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12074.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Light.ttf">
+            <string>Roboto-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="TickFilterCell" rowHeight="53" id="Pxz-qp-h6P" customClass="TickFilterCell" customModule="StachkaIOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="53"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Pxz-qp-h6P" id="IK8-IK-fMs">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="52.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark" translatesAutoresizingMaskIntoConstraints="NO" id="lPP-GV-GAb">
+                        <rect key="frame" x="340" y="20.5" width="12" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="12" id="ILr-8j-GMP"/>
+                            <constraint firstAttribute="height" constant="12" id="YR8-bf-hE3"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Подборочка" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Paj-eG-yok">
+                        <rect key="frame" x="23" y="17" width="92.5" height="19"/>
+                        <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="16"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="lPP-GV-GAb" secondAttribute="trailing" constant="23" id="5oo-Dc-x7R"/>
+                    <constraint firstItem="lPP-GV-GAb" firstAttribute="centerY" secondItem="IK8-IK-fMs" secondAttribute="centerY" id="HRC-i0-Qkp"/>
+                    <constraint firstItem="Paj-eG-yok" firstAttribute="centerY" secondItem="IK8-IK-fMs" secondAttribute="centerY" id="bg3-0H-0cT"/>
+                    <constraint firstItem="Paj-eG-yok" firstAttribute="leading" secondItem="IK8-IK-fMs" secondAttribute="leading" constant="23" id="v5m-gL-pMU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="filterLabel" destination="Paj-eG-yok" id="y3h-7g-fm5"/>
+                <outlet property="tickImageView" destination="lPP-GV-GAb" id="jq6-iF-YpR"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="checkmark" width="48" height="48"/>
+    </resources>
+</document>
