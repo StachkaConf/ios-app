@@ -7,4 +7,5 @@ target 'StachkaIOS' do
     # Reactive extensions
     pod 'RxSwift', '~> 3.0'
     pod 'RxCocoa', '~> 3.0'
+    pod 'RxRealm'
 end
