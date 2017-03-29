@@ -18,4 +18,10 @@ extension UIImage {
             return UIImage(named: "calendar")!
         }
     }
+
+    enum Filters {
+        static var checkmark: UIImage {
+            return UIImage(named: "checkmark")!
+        }
+    }
 }

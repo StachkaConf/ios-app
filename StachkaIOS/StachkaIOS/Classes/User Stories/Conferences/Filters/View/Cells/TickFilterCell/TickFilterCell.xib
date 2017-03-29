@@ -23,44 +23,35 @@
                 <rect key="frame" x="0.0" y="0.0" width="375" height="52.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lPP-GV-GAb">
-                        <rect key="frame" x="339" y="21.5" width="13" height="10"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark" translatesAutoresizingMaskIntoConstraints="NO" id="lPP-GV-GAb">
+                        <rect key="frame" x="340" y="20.5" width="12" height="12"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="13" id="ILr-8j-GMP"/>
-                            <constraint firstAttribute="height" constant="10" id="YR8-bf-hE3"/>
+                            <constraint firstAttribute="width" constant="12" id="ILr-8j-GMP"/>
+                            <constraint firstAttribute="height" constant="12" id="YR8-bf-hE3"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Подборочка" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Paj-eG-yok">
                         <rect key="frame" x="23" y="17" width="92.5" height="19"/>
                         <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="16"/>
-                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jVc-eW-E5g">
-                        <rect key="frame" x="23" y="52" width="329" height="1"/>
-                        <color key="backgroundColor" red="0.43529411759999997" green="0.46666666670000001" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="1" id="bQZ-rf-1dY"/>
-                        </constraints>
-                    </view>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="lPP-GV-GAb" secondAttribute="trailing" constant="23" id="5oo-Dc-x7R"/>
                     <constraint firstItem="lPP-GV-GAb" firstAttribute="centerY" secondItem="IK8-IK-fMs" secondAttribute="centerY" id="HRC-i0-Qkp"/>
-                    <constraint firstAttribute="trailing" secondItem="jVc-eW-E5g" secondAttribute="trailing" constant="23" id="LqG-RH-abu"/>
                     <constraint firstItem="Paj-eG-yok" firstAttribute="centerY" secondItem="IK8-IK-fMs" secondAttribute="centerY" id="bg3-0H-0cT"/>
-                    <constraint firstItem="jVc-eW-E5g" firstAttribute="leading" secondItem="IK8-IK-fMs" secondAttribute="leading" constant="23" id="cw4-m2-DiR"/>
-                    <constraint firstAttribute="bottom" secondItem="jVc-eW-E5g" secondAttribute="bottom" id="gFD-eq-LsR"/>
                     <constraint firstItem="Paj-eG-yok" firstAttribute="leading" secondItem="IK8-IK-fMs" secondAttribute="leading" constant="23" id="v5m-gL-pMU"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <connections>
                 <outlet property="filterLabel" destination="Paj-eG-yok" id="y3h-7g-fm5"/>
-                <outlet property="separator" destination="jVc-eW-E5g" id="ncF-0k-0kq"/>
                 <outlet property="tickImageView" destination="lPP-GV-GAb" id="jq6-iF-YpR"/>
             </connections>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="checkmark" width="48" height="48"/>
+    </resources>
 </document>

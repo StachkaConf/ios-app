@@ -13,10 +13,24 @@ class FiltersViewModelImplementation: FiltersViewModel {
         return _filters.asObservable()
     }
     var _filters: Variable<[FilterCellViewModel]> = Variable([])
+    let disposeBag = DisposeBag()
 
     weak var view: FiltersView?
 
     init(view: FiltersView) {
         self.view = view
+        let filters = [SectionFilterCellViewModel(sectionName: "Abcd"),  SectionFilterCellViewModel(sectionName: "Bcde")]
+
+        _filters.value = filters
+
+        view.indexSelected
+            .subscribe(onNext: { [weak self] indexPath in
+                guard var viewModel = self?._filters.value[indexPath.row] as? SectionFilterCellViewModel else {
+                    return
+                }
+                viewModel.selected = !viewModel.selected
+                self?._filters.value[indexPath.row] = viewModel
+            })
+            .disposed(by: disposeBag)
     }
 }
