@@ -13,9 +13,29 @@ class FilterCellViewModelFactoryImplementation: FilterCellViewModelFactory {
         let sectionFilters = filters as! [SectionFilter]
         let sectionModels = sectionFilters.map {
             SectionFilterCellViewModel(sectionName: $0.title,
-                                       associatedFilter: $0,
                                        selected: $0.selected)
         }
         return sectionModels
+    }
+
+    func filters(from viewModels: [FilterCellViewModel]) -> [Filter] {
+        return viewModels.flatMap(transform)
+    }
+
+    private func transform(_ filterViewModel: FilterCellViewModel) -> Filter? {
+        switch filterViewModel {
+        case is SectionFilterCellViewModel:
+            return transform(filterViewModel as! SectionFilterCellViewModel)
+        default:
+            return nil
+        }
+    }
+
+    private func transform(_ filterViewModel: SectionFilterCellViewModel) -> Filter? {
+        let sectionFilter = SectionFilter()
+        sectionFilter.title = filterViewModel.sectionName
+        sectionFilter.selected = filterViewModel.selected
+
+        return sectionFilter
     }
 }

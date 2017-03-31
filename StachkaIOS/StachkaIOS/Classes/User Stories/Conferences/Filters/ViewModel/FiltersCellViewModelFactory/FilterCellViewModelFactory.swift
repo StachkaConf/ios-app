@@ -10,4 +10,5 @@ import Foundation
 
 protocol FilterCellViewModelFactory: class {
     func viewModels(from filters: [Filter]) -> [FilterCellViewModel]
+    func filters(from viewModels: [FilterCellViewModel]) -> [Filter]
 }

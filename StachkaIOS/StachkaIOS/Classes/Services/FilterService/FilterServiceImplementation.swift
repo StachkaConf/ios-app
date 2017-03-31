@@ -18,15 +18,67 @@ class FilterServiceImplementation: FilterService {
     }
 
     func save(_ filters: [Filter]) -> Observable<Void> {
+        let keys = filters
+            .flatMap { $0 as? AutoObject }
+            .map { $0.compoundKey }
+
         return Observable.create { observer in
             guard let backgroundRealm = try? Realm() else {
                 observer.onCompleted()
                 return Disposables.create()
             }
-            let filterObjects = filters
-                .flatMap { $0 as? AutoObject }
+            let filterObjects = keys
+                .flatMap { backgroundRealm.object(ofType: AutoObject.self, forPrimaryKey: $0) }
             do {
                 try backgroundRealm.write {
+                    backgroundRealm.add(filterObjects)
+                }
+            } catch let error {
+                observer.onError(error)
+            }
+            return Disposables.create()
+            }
+            .subscribeOn(ConcurrentDispatchQueueScheduler(qos: .background))
+    }
+
+    func saveNew(_ filters: [Filter]) -> Observable<Void> {
+        return Observable.create { observer in
+            guard let backgroundRealm = try? Realm() else {
+                observer.onCompleted()
+                return Disposables.create()
+            }
+            let filterObjects = filters.flatMap { $0 as? AutoObject }
+            do {
+                try backgroundRealm.write {
+                    backgroundRealm.add(filterObjects)
+                }
+            } catch let error {
+                observer.onError(error)
+            }
+            return Disposables.create()
+        }
+        .subscribeOn(ConcurrentDispatchQueueScheduler(qos: .background))
+    }
+
+    func deleteAndSave(_ filters: [Filter]) -> Observable<[Filter]> {
+        var types: [AnyClass] = []
+        filters.forEach { element in
+            if !types.contains(where: { $0 == type(of: element) }) {
+                types.append(type(of: element))
+            }
+        }
+        
+        return Observable.create { observer in
+            guard let backgroundRealm = try? Realm() else {
+                observer.onCompleted()
+                return Disposables.create()
+            }
+            let filterObjects = filters.flatMap { $0 as? AutoObject }
+            do {
+                try backgroundRealm.write {
+                    types
+                        .flatMap { $0 as? Object.Type }
+                        .forEach { backgroundRealm.delete(backgroundRealm.objects($0)) }
                     backgroundRealm.add(filterObjects)
                 }
             } catch let error {
