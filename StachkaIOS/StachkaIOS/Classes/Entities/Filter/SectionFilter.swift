@@ -7,8 +7,17 @@
 //
 
 import Foundation
+import RealmSwift
 
-struct SectionFilter: Filter {
-    let title: String
-    var selected: Bool 
+class AutoObject: Object {
+    dynamic var compoundKey: String = UUID().uuidString
+
+    override class func primaryKey() -> String? {
+        return "compoundKey"
+    }
+}
+
+class SectionFilter: AutoObject, Filter {
+    dynamic var title: String = ""
+    dynamic var selected: Bool = false
 }

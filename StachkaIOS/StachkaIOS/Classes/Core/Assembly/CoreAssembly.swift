@@ -8,4 +8,6 @@
 
 import Foundation
 
-protocol CoreAssembly: Assembly {}
+protocol CoreAssembly: Assembly {
+    func realmConfigurator() -> RealmConfigurator
+}

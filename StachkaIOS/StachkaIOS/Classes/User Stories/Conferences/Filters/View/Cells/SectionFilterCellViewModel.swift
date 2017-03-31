@@ -13,7 +13,8 @@ struct SectionFilterCellViewModel: FilterCellViewModel {
     var sectionName: String
     var selected: Bool = false
 
-    init(sectionName: String) {
+    init(sectionName: String, selected: Bool) {
         self.sectionName = sectionName
+        self.selected = selected
     }
 }

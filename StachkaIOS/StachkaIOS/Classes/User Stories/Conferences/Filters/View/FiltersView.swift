@@ -10,4 +10,5 @@ import RxSwift
 
 protocol FiltersView: class {
     var indexSelected: Observable<IndexPath> { get }
+    var dissappear: Observable<Void> { get }
 }

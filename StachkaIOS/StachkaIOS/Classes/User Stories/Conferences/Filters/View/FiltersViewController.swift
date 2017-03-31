@@ -15,11 +15,17 @@ class FiltersViewController: UIViewController {
     var viewModel: FiltersViewModel?
 
     fileprivate var indexSelecter: PublishSubject<IndexPath> = PublishSubject()
+    fileprivate var dissappearEvent: PublishSubject<Void> = PublishSubject()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
         setupBindings()
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        dissappearEvent.onCompleted()
     }
 
     private func setupTableView() {
@@ -43,11 +49,16 @@ class FiltersViewController: UIViewController {
                 return configurableCell as! UITableViewCell
             }
             .disposed(by: disposeBag)
+
     }
 }
 
 extension FiltersViewController: FiltersView {
     var indexSelected: Observable<IndexPath> {
         return indexSelecter.asObservable()
+    }
+
+    var dissappear: Observable<Void> {
+        return dissappearEvent.asObservable()
     }
 }
