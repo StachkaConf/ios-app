@@ -7,6 +7,7 @@
 //
 
 import RxSwift
+import RealmSwift
 
 class FiltersViewModelImplementation: FiltersViewModel {
     var filters: Observable<[FilterCellViewModel]> {
@@ -15,15 +16,41 @@ class FiltersViewModelImplementation: FiltersViewModel {
     var _filters: Variable<[FilterCellViewModel]> = Variable([])
     let disposeBag = DisposeBag()
 
+    let filterFactory: FilterFactory
+    let filterCellViewModelFactory: FilterCellViewModelFactory
     let filterService: FilterService
     weak var view: FiltersView?
 
-    init(view: FiltersView, filterService: FilterService) {
+    init(view: FiltersView,
+         filterService: FilterService,
+         filterFactory: FilterFactory,
+         filterCellViewModelFactory: FilterCellViewModelFactory) {
         self.view = view
         self.filterService = filterService
-        let filters = [SectionFilterCellViewModel(sectionName: "Abcd"),  SectionFilterCellViewModel(sectionName: "Bcde")]
+        self.filterFactory = filterFactory
+        self.filterCellViewModelFactory = filterCellViewModelFactory
 
-        _filters.value = filters
+        let types: [Object.Type] = [SectionFilter.self]
+        filterService
+            .updateFilters(types)
+            .do(onNext: { [weak self] filters in
+                guard let strongSelf = self else { return }
+                if filters.count == 0 {
+                    let filters = strongSelf.filterFactory.createFilters()
+                    strongSelf.filterService.save(filters).subscribe().addDisposableTo(strongSelf.disposeBag)
+                    return
+                }
+            })
+            .map { [weak self] filters -> [FilterCellViewModel] in
+                guard let strongSelf = self else { return [] }
+                return strongSelf.filterCellViewModelFactory.viewModels(from: filters)
+            }
+            .subscribe(onNext: { [weak self] filterModels in
+                guard let strongSelf = self else { return }
+                strongSelf._filters.value = filterModels
+            })
+            .disposed(by: disposeBag)
+
 
         view.indexSelected
             .subscribe(onNext: { [weak self] indexPath in

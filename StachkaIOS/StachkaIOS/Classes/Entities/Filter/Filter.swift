@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol Filter {
+protocol Filter: class {
     var selected: Bool { get set }
 }

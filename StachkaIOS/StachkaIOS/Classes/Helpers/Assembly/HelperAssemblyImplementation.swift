@@ -15,4 +15,8 @@ class HelperAssemblyImplementation: HelperAssembly {
     init(assemblyFactory: AssemblyFactory) {
         self.assemblyFactory =  assemblyFactory
     }
+
+    func filterFactory() -> FilterFactory {
+        return FilterFactoryImplementation()
+    }
 }

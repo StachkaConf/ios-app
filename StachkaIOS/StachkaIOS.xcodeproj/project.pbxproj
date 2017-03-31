@@ -14,6 +14,12 @@
 		9E10513E1E8B673000B83411 /* SectionFilterCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E10513D1E8B673000B83411 /* SectionFilterCellViewModel.swift */; };
 		9E10514F1E8D939E00B83411 /* FilterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E10514E1E8D939E00B83411 /* FilterService.swift */; };
 		9E1051511E8D93EF00B83411 /* FilterServiceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1051501E8D93EF00B83411 /* FilterServiceImplementation.swift */; };
+		9E1051541E8E46EF00B83411 /* FilterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1051531E8E46EF00B83411 /* FilterFactory.swift */; };
+		9E1051561E8E470600B83411 /* FilterFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1051551E8E470600B83411 /* FilterFactoryImplementation.swift */; };
+		9E1051591E8E533600B83411 /* FilterCellViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1051581E8E533600B83411 /* FilterCellViewModelFactory.swift */; };
+		9E10515B1E8E538F00B83411 /* FilterCellViewModelFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E10515A1E8E538F00B83411 /* FilterCellViewModelFactoryImplementation.swift */; };
+		9E1051631E8EBB5700B83411 /* RealmConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1051621E8EBB5700B83411 /* RealmConfigurator.swift */; };
+		9E1051651E8EBB8400B83411 /* RealmConfiguratorImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1051641E8EBB8400B83411 /* RealmConfiguratorImplementation.swift */; };
 		9E5D0CBA1E8996E500E8B226 /* CoordinatorConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5D0CB91E8996E500E8B226 /* CoordinatorConfigurable.swift */; };
 		9E5D0CBD1E89975900E8B226 /* ModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5D0CBC1E89975900E8B226 /* ModuleInput.swift */; };
 		9E5D0CBF1E899D9F00E8B226 /* CoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5D0CBE1E899D9F00E8B226 /* CoordinatorOutput.swift */; };
@@ -109,6 +115,12 @@
 		9E10513D1E8B673000B83411 /* SectionFilterCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionFilterCellViewModel.swift; sourceTree = "<group>"; };
 		9E10514E1E8D939E00B83411 /* FilterService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterService.swift; sourceTree = "<group>"; };
 		9E1051501E8D93EF00B83411 /* FilterServiceImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterServiceImplementation.swift; sourceTree = "<group>"; };
+		9E1051531E8E46EF00B83411 /* FilterFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterFactory.swift; sourceTree = "<group>"; };
+		9E1051551E8E470600B83411 /* FilterFactoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterFactoryImplementation.swift; sourceTree = "<group>"; };
+		9E1051581E8E533600B83411 /* FilterCellViewModelFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterCellViewModelFactory.swift; sourceTree = "<group>"; };
+		9E10515A1E8E538F00B83411 /* FilterCellViewModelFactoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterCellViewModelFactoryImplementation.swift; sourceTree = "<group>"; };
+		9E1051621E8EBB5700B83411 /* RealmConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmConfigurator.swift; sourceTree = "<group>"; };
+		9E1051641E8EBB8400B83411 /* RealmConfiguratorImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmConfiguratorImplementation.swift; sourceTree = "<group>"; };
 		9E5D0CB91E8996E500E8B226 /* CoordinatorConfigurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorConfigurable.swift; sourceTree = "<group>"; };
 		9E5D0CBC1E89975900E8B226 /* ModuleInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleInput.swift; sourceTree = "<group>"; };
 		9E5D0CBE1E899D9F00E8B226 /* CoordinatorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorOutput.swift; sourceTree = "<group>"; };
@@ -212,6 +224,33 @@
 				9E1051501E8D93EF00B83411 /* FilterServiceImplementation.swift */,
 			);
 			path = FilterService;
+			sourceTree = "<group>";
+		};
+		9E1051521E8E46B000B83411 /* FilterFactory */ = {
+			isa = PBXGroup;
+			children = (
+				9E1051531E8E46EF00B83411 /* FilterFactory.swift */,
+				9E1051551E8E470600B83411 /* FilterFactoryImplementation.swift */,
+			);
+			path = FilterFactory;
+			sourceTree = "<group>";
+		};
+		9E1051571E8E52E800B83411 /* FiltersCellViewModelFactory */ = {
+			isa = PBXGroup;
+			children = (
+				9E1051581E8E533600B83411 /* FilterCellViewModelFactory.swift */,
+				9E10515A1E8E538F00B83411 /* FilterCellViewModelFactoryImplementation.swift */,
+			);
+			path = FiltersCellViewModelFactory;
+			sourceTree = "<group>";
+		};
+		9E1051611E8EBB4B00B83411 /* RealmConfigurator */ = {
+			isa = PBXGroup;
+			children = (
+				9E1051621E8EBB5700B83411 /* RealmConfigurator.swift */,
+				9E1051641E8EBB8400B83411 /* RealmConfiguratorImplementation.swift */,
+			);
+			path = RealmConfigurator;
 			sourceTree = "<group>";
 		};
 		9E5D0CBB1E89974F00E8B226 /* ModuleInput */ = {
@@ -332,6 +371,7 @@
 		9ED9028A1E86B949004CBEFD /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				9E1051521E8E46B000B83411 /* FilterFactory */,
 				9E5D0CBB1E89974F00E8B226 /* ModuleInput */,
 				9ED902F81E880D9B004CBEFD /* ConfigurableCell */,
 				9ED902CC1E87C51E004CBEFD /* ModuleOutput */,
@@ -355,6 +395,7 @@
 		9ED9028C1E86B949004CBEFD /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				9E1051611E8EBB4B00B83411 /* RealmConfigurator */,
 				9ED902B11E87A5CE004CBEFD /* Assembly */,
 			);
 			name = Core;
@@ -667,6 +708,7 @@
 		9ED9030D1E890F2A004CBEFD /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				9E1051571E8E52E800B83411 /* FiltersCellViewModelFactory */,
 				9ED903111E8913AE004CBEFD /* FiltersViewModel.swift */,
 				9ED903131E8913BE004CBEFD /* FiltersViewModelImplementation.swift */,
 				9ED903151E8913D6004CBEFD /* FilterModuleOutput.swift */,
@@ -852,6 +894,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E1051631E8EBB5700B83411 /* RealmConfigurator.swift in Sources */,
 				9E10513C1E8B5FC100B83411 /* UIStoryboard.swift in Sources */,
 				9ED902DA1E87C82B004CBEFD /* FeedViewController.swift in Sources */,
 				9E5D0CC51E899E7700E8B226 /* Filter.swift in Sources */,
@@ -877,13 +920,17 @@
 				9ED902F41E87E3D5004CBEFD /* FavouritesCoordinatorImplementation.swift in Sources */,
 				9ED902B81E87A662004CBEFD /* CoordinatorAssemblyImplementation.swift in Sources */,
 				9ED902FA1E880DA7004CBEFD /* ConfigurableCell.swift in Sources */,
+				9E10515B1E8E538F00B83411 /* FilterCellViewModelFactoryImplementation.swift in Sources */,
 				9ED903141E8913BE004CBEFD /* FiltersViewModelImplementation.swift in Sources */,
+				9E1051651E8EBB8400B83411 /* RealmConfiguratorImplementation.swift in Sources */,
 				9ED902E71E87DB0C004CBEFD /* FavouritesFeedModuleOutput.swift in Sources */,
 				9ED902951E86BA25004CBEFD /* CoordinatorWithDependencies.swift in Sources */,
+				9E1051541E8E46EF00B83411 /* FilterFactory.swift in Sources */,
 				9E5D0CBD1E89975900E8B226 /* ModuleInput.swift in Sources */,
 				9ED902C21E87A770004CBEFD /* CoreAssembly.swift in Sources */,
 				9ED903101E890F59004CBEFD /* FiltersViewController.swift in Sources */,
 				9ED902E11E87D467004CBEFD /* ConferencesCoordinatorImplementation.swift in Sources */,
+				9E1051591E8E533600B83411 /* FilterCellViewModelFactory.swift in Sources */,
 				9ED902EB1E87DD9F004CBEFD /* FavouritesFeedViewModel.swift in Sources */,
 				9ED902A01E86BC4A004CBEFD /* ApplicationCoordinatorImplementation.swift in Sources */,
 				9E5D0CBA1E8996E500E8B226 /* CoordinatorConfigurable.swift in Sources */,
@@ -905,6 +952,7 @@
 				9ED9030A1E88E69E004CBEFD /* OnboardingViewController.swift in Sources */,
 				9ED902E91E87DCC1004CBEFD /* FeedViewModel.swift in Sources */,
 				9ED902F21E87E3BD004CBEFD /* FavouritesCoordinator.swift in Sources */,
+				9E1051561E8E470600B83411 /* FilterFactoryImplementation.swift in Sources */,
 				9ED902B71E87A662004CBEFD /* CoordinatorAssembly.swift in Sources */,
 				9ED903061E8845CC004CBEFD /* FeedModuleOutput.swift in Sources */,
 				9ED903021E882901004CBEFD /* UIImage.swift in Sources */,

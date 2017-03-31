@@ -15,4 +15,8 @@ class CoreAssemblyImplementation: CoreAssembly {
     init(assemblyFactory: AssemblyFactory) {
         self.assemblyFactory =  assemblyFactory
     }
+
+    func realmConfigurator() -> RealmConfigurator {
+        return RealmConfiguratorImplementation()
+    }
 }

@@ -8,4 +8,6 @@
 
 import Foundation
 
-protocol HelperAssembly: Assembly {}
+protocol HelperAssembly: Assembly {
+    func filterFactory() -> FilterFactory
+}

@@ -16,7 +16,7 @@ class ServiceAssemblyImplementation: ServiceAssembly {
     }()
 
     init(assemblyFactory: AssemblyFactory) {
-        self.assemblyFactory =  assemblyFactory
+        self.assemblyFactory = assemblyFactory
     }
 
     func filterService() -> FilterService {

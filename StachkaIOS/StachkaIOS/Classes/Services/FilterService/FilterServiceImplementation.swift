@@ -18,15 +18,16 @@ class FilterServiceImplementation: FilterService {
     }
 
     func save(_ filters: [Filter]) -> Observable<Void> {
-        return Observable.create { [weak self] observer in
-            guard let realm = self?.realm else {
+        return Observable.create { observer in
+            guard let backgroundRealm = try? Realm() else {
                 observer.onCompleted()
                 return Disposables.create()
             }
-            let filterObjects = filters.flatMap { $0 as? Object }
+            let filterObjects = filters
+                .flatMap { $0 as? AutoObject }
             do {
-                try realm.write {
-                    realm.add(filterObjects)
+                try backgroundRealm.write {
+                    backgroundRealm.add(filterObjects)
                 }
             } catch let error {
                 observer.onError(error)
