@@ -7,8 +7,9 @@
 //
 
 import Foundation
+import RealmSwift
 
-struct SectionFilter: Filter {
-    let title: String
-    var selected: Bool 
+class SectionFilter: Object, Filter {
+    dynamic var title: String = ""
+    dynamic var selected: Bool = false
 }

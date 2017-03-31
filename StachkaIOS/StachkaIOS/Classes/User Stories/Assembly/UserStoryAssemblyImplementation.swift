@@ -42,8 +42,10 @@ class UserStoryAssemblyImplementation: UserStoryAssembly {
     }
 
     func conferencesFilterModule() -> UIViewController {
+        let filterService = assemblyFactory.services().filterService()
         let viewController: FiltersViewController = UIStoryboard.createController(withStoryboardId: Constants.StoryboardIds.conferences)
-        let viewModel = FiltersViewModelImplementation(view: viewController)
+        let viewModel = FiltersViewModelImplementation(view: viewController,
+                                                       filterService: filterService)
         viewController.viewModel = viewModel
 
         return viewController

@@ -8,4 +8,6 @@
 
 import Foundation
 
-protocol ServiceAssembly: Assembly {}
+protocol ServiceAssembly: Assembly {
+    func filterService() -> FilterService
+}

@@ -15,10 +15,12 @@ class FiltersViewModelImplementation: FiltersViewModel {
     var _filters: Variable<[FilterCellViewModel]> = Variable([])
     let disposeBag = DisposeBag()
 
+    let filterService: FilterService
     weak var view: FiltersView?
 
-    init(view: FiltersView) {
+    init(view: FiltersView, filterService: FilterService) {
         self.view = view
+        self.filterService = filterService
         let filters = [SectionFilterCellViewModel(sectionName: "Abcd"),  SectionFilterCellViewModel(sectionName: "Bcde")]
 
         _filters.value = filters

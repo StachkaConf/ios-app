@@ -7,11 +7,19 @@
 //
 
 import Foundation
+import RealmSwift
 
 class ServiceAssemblyImplementation: ServiceAssembly {
     let assemblyFactory: AssemblyFactory
+    lazy var realm = {
+        return try! Realm()
+    }()
 
     init(assemblyFactory: AssemblyFactory) {
         self.assemblyFactory =  assemblyFactory
+    }
+
+    func filterService() -> FilterService {
+        return FilterServiceImplementation(realm: realm)
     }
 }
