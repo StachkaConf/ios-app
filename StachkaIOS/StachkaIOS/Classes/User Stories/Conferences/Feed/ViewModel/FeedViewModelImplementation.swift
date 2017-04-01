@@ -11,10 +11,18 @@ import RxSwift
 
 class FeedViewModelImplementation {
     weak var view: FeedView?
+    let presentationService: PresentationService
+    let filterService: FilterService
+
     var disposeBag = DisposeBag()
 
-    init(view: FeedView) {
+    init(view: FeedView,
+         filterService: FilterService,
+         presentationService: PresentationService) {
+        
         self.view = view
+        self.filterService = filterService
+        self.presentationService = presentationService
         let firstCellViewModel = PresentationCellViewModel(title: "Ancd")
         let secondCellViewModel = PresentationCellViewModel(title: "Bvcd")
         _presentations.value = [firstCellViewModel, secondCellViewModel]

@@ -10,4 +10,8 @@ import Foundation
 
 protocol CoreAssembly: Assembly {
     func realmConfigurator() -> RealmConfigurator
+    func networkClient() -> NetworkClient
+    func requestBuilder() -> RequestBuilder
+    func urlBuilder() -> URLBuilder
+    func jsonDeserializer() -> Deserializer
 }
