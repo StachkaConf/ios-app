@@ -19,4 +19,8 @@ class HelperAssemblyImplementation: HelperAssembly {
     func filterFactory() -> FilterFactory {
         return FilterFactoryImplementation()
     }
+
+    func searchConfigurationFactory() -> SearchConfigurationFactory {
+        return SearchConfigurationFactoryImplementation()
+    }
 }

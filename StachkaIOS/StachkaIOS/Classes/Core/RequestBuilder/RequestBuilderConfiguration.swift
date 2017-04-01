@@ -12,4 +12,6 @@ struct RequestBuilderConfiguration {
     let method: NetworkRequestConstants.HTTPMethod
     let timoutInterval: Double
     let url: URL
+    let username: String
+    let password: String
 }

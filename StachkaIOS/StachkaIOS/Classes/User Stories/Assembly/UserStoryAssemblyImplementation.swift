@@ -33,11 +33,13 @@ class UserStoryAssemblyImplementation: UserStoryAssembly {
     func conferencesFeedModule() -> UIViewController {
         let filterService = assemblyFactory.services().filterService()
         let presentationService = assemblyFactory.services().presentationService()
+        let searchConfigurationFactory = assemblyFactory.helpers().searchConfigurationFactory()
         let viewController: FeedViewController =
             UIStoryboard.createController(withStoryboardId: Constants.StoryboardIds.conferences)
         let viewModel = FeedViewModelImplementation(view: viewController,
                                                     filterService: filterService,
-                                                    presentationService: presentationService)
+                                                    presentationService: presentationService,
+                                                    searchConfigurationFactory: searchConfigurationFactory)
         viewController.viewModel = viewModel
 
         return viewController

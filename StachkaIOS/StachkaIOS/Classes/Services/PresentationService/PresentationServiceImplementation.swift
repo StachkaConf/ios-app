@@ -11,6 +11,12 @@ import RxSwift
 
 class PresentationServcieImplementation: PresentationService {
 
+    enum Constants {
+        static let username = "application@nastachku.ru"
+        static let password = "3V9q9414137qwpV3R9z35175c436G68g"
+        static let timeoutInterval = 30.0
+    }
+
     let urlBuilder: URLBuilder
     let jsonDeserializer: Deserializer
     let requestBuilder: RequestBuilder
@@ -26,23 +32,26 @@ class PresentationServcieImplementation: PresentationService {
         self.networkClient = networkClient
     }
 
-    func presentations(with configuration: PresentationServcieConfiguration) -> Observable<Presentation> {
+    func presentations(with configuration: PresentationServcieConfiguration) -> Observable<[Presentation]> {
 
         do {
-            let url = try urlBuilder.build(withAPIPath: NetworkRequestConstants.APIPath.defaultPath,
-                                           APIMethod: NetworkRequestConstants.APIMethodName.products,
+            let url = try urlBuilder.build(withAPIPath: .defaultPath,
+                                           APIMethod: .products,
                                            configuration: configuration)
             let requestBuilderConfiguration = RequestBuilderConfiguration(method: .GET,
-                                                                          timoutInterval: 30.0,
-                                                                          url: url)
+                                                                          timoutInterval: Constants.timeoutInterval,
+                                                                          url: url,
+                                                                          username: Constants.username,
+                                                                          password: Constants.password)
             let request = requestBuilder.build(requestBuilderConfiguration)
             return networkClient
                 .perform(request: request)
+                .observeOn(ConcurrentDispatchQueueScheduler(qos: .default))
                 .map { [weak self] data in
-                    guard let strongSelf = self else { return Presentation() }
+                    guard let strongSelf = self else { return [] }
                     let deserialized = try strongSelf.jsonDeserializer.deserialize(data: data)
 
-                    return Presentation()
+                    return [Presentation()]
                 }
 
         } catch let error {

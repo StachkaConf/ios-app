@@ -10,5 +10,5 @@ import Foundation
 import RxSwift
 
 protocol PresentationService {
-    func presentations(with configuration: PresentationServcieConfiguration) -> Observable<Presentation>
+    func presentations(with configuration: PresentationServcieConfiguration) -> Observable<[Presentation]>
 }

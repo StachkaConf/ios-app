@@ -17,6 +17,7 @@ class RequestBuilderImplementation: RequestBuilder {
         
         request.httpMethod = configuration.method.rawValue
         addHeaders(to: &request)
+        addAuthorization(to: &request, configuration: configuration)
         
         return request
     }
@@ -24,5 +25,12 @@ class RequestBuilderImplementation: RequestBuilder {
     func addHeaders(to request: inout URLRequest) {
         request.setValue("application/json", forHTTPHeaderField: NetworkRequestConstants.HeaderName.contentType.rawValue)
         request.setValue("application/json", forHTTPHeaderField: NetworkRequestConstants.HeaderName.accept.rawValue)
+    }
+
+    func addAuthorization(to request: inout URLRequest, configuration: RequestBuilderConfiguration) {
+        let loginString = String(format: "%@:%@", configuration.username, configuration.password)
+        let loginData = loginString.data(using: String.Encoding.utf8)!
+        let base64LoginString = loginData.base64EncodedString()
+        request.setValue("Basic \(base64LoginString)", forHTTPHeaderField: "Authorization")
     }
 }

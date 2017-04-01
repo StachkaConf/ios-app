@@ -37,6 +37,8 @@
 		9E10518E1E8F8FC300B83411 /* PresentationServcieConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E10518D1E8F8FC300B83411 /* PresentationServcieConfiguration.swift */; };
 		9E1051901E8F90FC00B83411 /* PresentationServiceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E10518F1E8F90FC00B83411 /* PresentationServiceImplementation.swift */; };
 		9E1051921E8F938300B83411 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1051911E8F938300B83411 /* Observable.swift */; };
+		9E1051951E8F9C8100B83411 /* SearchConfigurationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1051941E8F9C8100B83411 /* SearchConfigurationFactory.swift */; };
+		9E1051971E8F9CCB00B83411 /* SearchConfigurationFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1051961E8F9CCB00B83411 /* SearchConfigurationFactoryImplementation.swift */; };
 		9E5D0CBA1E8996E500E8B226 /* CoordinatorConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5D0CB91E8996E500E8B226 /* CoordinatorConfigurable.swift */; };
 		9E5D0CBD1E89975900E8B226 /* ModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5D0CBC1E89975900E8B226 /* ModuleInput.swift */; };
 		9E5D0CBF1E899D9F00E8B226 /* CoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5D0CBE1E899D9F00E8B226 /* CoordinatorOutput.swift */; };
@@ -155,6 +157,8 @@
 		9E10518D1E8F8FC300B83411 /* PresentationServcieConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationServcieConfiguration.swift; sourceTree = "<group>"; };
 		9E10518F1E8F90FC00B83411 /* PresentationServiceImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationServiceImplementation.swift; sourceTree = "<group>"; };
 		9E1051911E8F938300B83411 /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		9E1051941E8F9C8100B83411 /* SearchConfigurationFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchConfigurationFactory.swift; sourceTree = "<group>"; };
+		9E1051961E8F9CCB00B83411 /* SearchConfigurationFactoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchConfigurationFactoryImplementation.swift; sourceTree = "<group>"; };
 		9E5D0CB91E8996E500E8B226 /* CoordinatorConfigurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorConfigurable.swift; sourceTree = "<group>"; };
 		9E5D0CBC1E89975900E8B226 /* ModuleInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleInput.swift; sourceTree = "<group>"; };
 		9E5D0CBE1E899D9F00E8B226 /* CoordinatorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorOutput.swift; sourceTree = "<group>"; };
@@ -345,6 +349,15 @@
 			path = Presentation;
 			sourceTree = "<group>";
 		};
+		9E1051931E8F9C7100B83411 /* SearchConfigurationFactory */ = {
+			isa = PBXGroup;
+			children = (
+				9E1051941E8F9C8100B83411 /* SearchConfigurationFactory.swift */,
+				9E1051961E8F9CCB00B83411 /* SearchConfigurationFactoryImplementation.swift */,
+			);
+			path = SearchConfigurationFactory;
+			sourceTree = "<group>";
+		};
 		9E5D0CBB1E89974F00E8B226 /* ModuleInput */ = {
 			isa = PBXGroup;
 			children = (
@@ -464,6 +477,7 @@
 		9ED9028A1E86B949004CBEFD /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				9E1051931E8F9C7100B83411 /* SearchConfigurationFactory */,
 				9E1051521E8E46B000B83411 /* FilterFactory */,
 				9E5D0CBB1E89974F00E8B226 /* ModuleInput */,
 				9ED902F81E880D9B004CBEFD /* ConfigurableCell */,
@@ -1031,6 +1045,7 @@
 				9ED902FA1E880DA7004CBEFD /* ConfigurableCell.swift in Sources */,
 				9E10515B1E8E538F00B83411 /* FilterCellViewModelFactoryImplementation.swift in Sources */,
 				9E1051861E8F07F500B83411 /* URLParametersTransformable.swift in Sources */,
+				9E1051951E8F9C8100B83411 /* SearchConfigurationFactory.swift in Sources */,
 				9ED903141E8913BE004CBEFD /* FiltersViewModelImplementation.swift in Sources */,
 				9E1051651E8EBB8400B83411 /* RealmConfiguratorImplementation.swift in Sources */,
 				9ED902E71E87DB0C004CBEFD /* FavouritesFeedModuleOutput.swift in Sources */,
@@ -1066,6 +1081,7 @@
 				9ED9030A1E88E69E004CBEFD /* OnboardingViewController.swift in Sources */,
 				9ED902E91E87DCC1004CBEFD /* FeedViewModel.swift in Sources */,
 				9ED902F21E87E3BD004CBEFD /* FavouritesCoordinator.swift in Sources */,
+				9E1051971E8F9CCB00B83411 /* SearchConfigurationFactoryImplementation.swift in Sources */,
 				9E1051561E8E470600B83411 /* FilterFactoryImplementation.swift in Sources */,
 				9ED902B71E87A662004CBEFD /* CoordinatorAssembly.swift in Sources */,
 				9ED903061E8845CC004CBEFD /* FeedModuleOutput.swift in Sources */,
