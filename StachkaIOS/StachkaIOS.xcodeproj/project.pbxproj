@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		128AEF521E8FC90A003FD79A /* ApplicationCoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128AEF511E8FC90A003FD79A /* ApplicationCoordinatorFactory.swift */; };
+		128AEF551E8FCF1A003FD79A /* UserStoryCoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128AEF541E8FCF1A003FD79A /* UserStoryCoordinatorFactory.swift */; };
+		128AEF571E8FCFEE003FD79A /* UserStoryCoordinatorFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128AEF561E8FCFEE003FD79A /* UserStoryCoordinatorFactoryImplementation.swift */; };
 		5AF5A1545E1A8BF150582F85 /* Pods_StachkaIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19E758D4E38E6E1B9BEB60EF /* Pods_StachkaIOS.framework */; };
 		9E1051381E8B592500B83411 /* FiltersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1051371E8B592500B83411 /* FiltersView.swift */; };
 		9E10513A1E8B5BD900B83411 /* FilterCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1051391E8B5BD900B83411 /* FilterCellViewModel.swift */; };
@@ -127,6 +130,9 @@
 
 /* Begin PBXFileReference section */
 		03D475E69874851AD2BBC16E /* Pods-StachkaIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StachkaIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-StachkaIOS/Pods-StachkaIOS.release.xcconfig"; sourceTree = "<group>"; };
+		128AEF511E8FC90A003FD79A /* ApplicationCoordinatorFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinatorFactory.swift; sourceTree = "<group>"; };
+		128AEF541E8FCF1A003FD79A /* UserStoryCoordinatorFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserStoryCoordinatorFactory.swift; sourceTree = "<group>"; };
+		128AEF561E8FCFEE003FD79A /* UserStoryCoordinatorFactoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserStoryCoordinatorFactoryImplementation.swift; sourceTree = "<group>"; };
 		19E758D4E38E6E1B9BEB60EF /* Pods_StachkaIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StachkaIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E1051371E8B592500B83411 /* FiltersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltersView.swift; sourceTree = "<group>"; };
 		9E1051391E8B5BD900B83411 /* FilterCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterCellViewModel.swift; sourceTree = "<group>"; };
@@ -246,6 +252,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		128AEF501E8FC8FA003FD79A /* ApplicationCoordinatorFactory */ = {
+			isa = PBXGroup;
+			children = (
+				128AEF511E8FC90A003FD79A /* ApplicationCoordinatorFactory.swift */,
+			);
+			path = ApplicationCoordinatorFactory;
+			sourceTree = "<group>";
+		};
+		128AEF531E8FCF0E003FD79A /* UserStoryCoordinatorFactory */ = {
+			isa = PBXGroup;
+			children = (
+				128AEF541E8FCF1A003FD79A /* UserStoryCoordinatorFactory.swift */,
+				128AEF561E8FCFEE003FD79A /* UserStoryCoordinatorFactoryImplementation.swift */,
+			);
+			path = UserStoryCoordinatorFactory;
+			sourceTree = "<group>";
+		};
 		9A43D1B1BE2F9F15D41DDA93 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -449,6 +472,7 @@
 		9ED902841E86B8D7004CBEFD /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				9ED902851E86B940004CBEFD /* Application */,
 				9E5D0CC21E899E6B00E8B226 /* Entities */,
 				9ED902DB1E87C903004CBEFD /* Extensions */,
 				9ED9028E1E86B97D004CBEFD /* Coordinators */,
@@ -456,7 +480,6 @@
 				9ED9028B1E86B949004CBEFD /* Services */,
 				9ED9028C1E86B949004CBEFD /* Core */,
 				9ED9028D1E86B949004CBEFD /* User Stories */,
-				9ED902851E86B940004CBEFD /* Application */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -464,6 +487,7 @@
 		9ED902851E86B940004CBEFD /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				128AEF501E8FC8FA003FD79A /* ApplicationCoordinatorFactory */,
 				9ED902A91E86C087004CBEFD /* TabBar */,
 				9ED9029C1E86BC12004CBEFD /* Coordinator */,
 				9ED902961E86BA5E004CBEFD /* AssemblyFactory */,
@@ -557,6 +581,7 @@
 		9ED9029C1E86BC12004CBEFD /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				128AEF531E8FCF0E003FD79A /* UserStoryCoordinatorFactory */,
 				9ED9029D1E86BC1E004CBEFD /* ApplicationCoordinator.swift */,
 				9ED9029F1E86BC4A004CBEFD /* ApplicationCoordinatorImplementation.swift */,
 			);
@@ -1018,6 +1043,7 @@
 				9ED903121E8913AE004CBEFD /* FiltersViewModel.swift in Sources */,
 				9E7F8A411E8B534000BD1169 /* UITableView.swift in Sources */,
 				9E1051851E8F07F500B83411 /* URLBuilderImplementation.swift in Sources */,
+				128AEF551E8FCF1A003FD79A /* UserStoryCoordinatorFactory.swift in Sources */,
 				9E1051901E8F90FC00B83411 /* PresentationServiceImplementation.swift in Sources */,
 				9E10513E1E8B673000B83411 /* SectionFilterCellViewModel.swift in Sources */,
 				9ED902C41E87A7A6004CBEFD /* CoreAssemblyImplementation.swift in Sources */,
@@ -1033,6 +1059,7 @@
 				9ED902981E86BA6F004CBEFD /* AssemblyFactory.swift in Sources */,
 				9E10517F1E8F07F500B83411 /* RequestBuilder.swift in Sources */,
 				9E7F8A3B1E8B51B300BD1169 /* TickFilterCell.swift in Sources */,
+				128AEF521E8FC90A003FD79A /* ApplicationCoordinatorFactory.swift in Sources */,
 				9E10517E1E8F07F500B83411 /* NetworkRequestErrors.swift in Sources */,
 				9ED903001E880EE8004CBEFD /* PresentationCellViewModel.swift in Sources */,
 				9ED902AF1E87A1A2004CBEFD /* AssemblyFactoryImplementation.swift in Sources */,
@@ -1049,6 +1076,7 @@
 				9ED903141E8913BE004CBEFD /* FiltersViewModelImplementation.swift in Sources */,
 				9E1051651E8EBB8400B83411 /* RealmConfiguratorImplementation.swift in Sources */,
 				9ED902E71E87DB0C004CBEFD /* FavouritesFeedModuleOutput.swift in Sources */,
+				128AEF571E8FCFEE003FD79A /* UserStoryCoordinatorFactoryImplementation.swift in Sources */,
 				9ED902951E86BA25004CBEFD /* CoordinatorWithDependencies.swift in Sources */,
 				9E1051541E8E46EF00B83411 /* FilterFactory.swift in Sources */,
 				9E5D0CBD1E89975900E8B226 /* ModuleInput.swift in Sources */,
