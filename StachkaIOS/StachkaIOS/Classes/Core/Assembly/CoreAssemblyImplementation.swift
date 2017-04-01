@@ -19,4 +19,21 @@ class CoreAssemblyImplementation: CoreAssembly {
     func realmConfigurator() -> RealmConfigurator {
         return RealmConfiguratorImplementation()
     }
+    
+    func networkClient() -> NetworkClient {
+        return NetworkClientImplementation(session: URLSession.shared)
+    }
+
+    func requestBuilder() -> RequestBuilder {
+        return RequestBuilderImplementation()
+    }
+
+    func urlBuilder() -> URLBuilder {
+        return URLBuilderImplementation()
+    }
+
+    func jsonDeserializer() -> Deserializer {
+        return JSONDeserializer()
+    }
+
 }

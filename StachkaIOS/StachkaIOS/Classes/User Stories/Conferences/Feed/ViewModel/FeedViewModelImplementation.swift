@@ -11,13 +11,39 @@ import RxSwift
 
 class FeedViewModelImplementation {
     weak var view: FeedView?
+    let presentationService: PresentationService
+    let filterService: FilterService
+    let searchConfigurationFactory: SearchConfigurationFactory
     var disposeBag = DisposeBag()
 
-    init(view: FeedView) {
+    init(view: FeedView,
+         filterService: FilterService,
+         presentationService: PresentationService,
+         searchConfigurationFactory: SearchConfigurationFactory) {
+        
         self.view = view
+        self.filterService = filterService
+        self.presentationService = presentationService
+        self.searchConfigurationFactory = searchConfigurationFactory
+
         let firstCellViewModel = PresentationCellViewModel(title: "Ancd")
         let secondCellViewModel = PresentationCellViewModel(title: "Bvcd")
         _presentations.value = [firstCellViewModel, secondCellViewModel]
+
+        filterService
+            .updateFilters([SectionFilter.self])
+            .map { [weak self] filters -> PresentationServcieConfiguration in
+                guard let strongSelf = self else { return PresentationServcieConfiguration() }
+                return strongSelf.searchConfigurationFactory.searchConfiguration(from: filters)
+            }
+            .flatMap { [weak self] configuration -> Observable<[Presentation]> in
+                guard let strongSelf = self else { return Observable.just([]) }
+                return strongSelf.presentationService.presentations(with: configuration)
+            }
+            .subscribeOn(MainScheduler.instance)
+            .subscribe(onNext: { presentation in
+                print("Received")
+            })
 
         view.indexSelected
             .subscribe(onNext: { indexPath in

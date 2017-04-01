@@ -10,4 +10,5 @@ import Foundation
 
 protocol HelperAssembly: Assembly {
     func filterFactory() -> FilterFactory
+    func searchConfigurationFactory() -> SearchConfigurationFactory
 }

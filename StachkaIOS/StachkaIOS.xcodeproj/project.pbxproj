@@ -20,6 +20,25 @@
 		9E10515B1E8E538F00B83411 /* FilterCellViewModelFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E10515A1E8E538F00B83411 /* FilterCellViewModelFactoryImplementation.swift */; };
 		9E1051631E8EBB5700B83411 /* RealmConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1051621E8EBB5700B83411 /* RealmConfigurator.swift */; };
 		9E1051651E8EBB8400B83411 /* RealmConfiguratorImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1051641E8EBB8400B83411 /* RealmConfiguratorImplementation.swift */; };
+		9E1051791E8F07F500B83411 /* Deserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1051671E8F07F500B83411 /* Deserializer.swift */; };
+		9E10517A1E8F07F500B83411 /* JSONDeserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1051681E8F07F500B83411 /* JSONDeserializer.swift */; };
+		9E10517B1E8F07F500B83411 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E10516A1E8F07F500B83411 /* NetworkClient.swift */; };
+		9E10517C1E8F07F500B83411 /* NetworkClientImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E10516B1E8F07F500B83411 /* NetworkClientImplementation.swift */; };
+		9E10517D1E8F07F500B83411 /* NetworkRequestConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E10516D1E8F07F500B83411 /* NetworkRequestConstants.swift */; };
+		9E10517E1E8F07F500B83411 /* NetworkRequestErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E10516E1E8F07F500B83411 /* NetworkRequestErrors.swift */; };
+		9E10517F1E8F07F500B83411 /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E10516F1E8F07F500B83411 /* RequestBuilder.swift */; };
+		9E1051801E8F07F500B83411 /* RequestBuilderConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1051701E8F07F500B83411 /* RequestBuilderConfiguration.swift */; };
+		9E1051811E8F07F500B83411 /* RequestBuilderImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1051711E8F07F500B83411 /* RequestBuilderImplementation.swift */; };
+		9E1051841E8F07F500B83411 /* URLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1051761E8F07F500B83411 /* URLBuilder.swift */; };
+		9E1051851E8F07F500B83411 /* URLBuilderImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1051771E8F07F500B83411 /* URLBuilderImplementation.swift */; };
+		9E1051861E8F07F500B83411 /* URLParametersTransformable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1051781E8F07F500B83411 /* URLParametersTransformable.swift */; };
+		9E1051891E8F0C7900B83411 /* PresentationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1051881E8F0C7900B83411 /* PresentationService.swift */; };
+		9E10518C1E8F8F4200B83411 /* Presentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E10518B1E8F8F4200B83411 /* Presentation.swift */; };
+		9E10518E1E8F8FC300B83411 /* PresentationServcieConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E10518D1E8F8FC300B83411 /* PresentationServcieConfiguration.swift */; };
+		9E1051901E8F90FC00B83411 /* PresentationServiceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E10518F1E8F90FC00B83411 /* PresentationServiceImplementation.swift */; };
+		9E1051921E8F938300B83411 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1051911E8F938300B83411 /* Observable.swift */; };
+		9E1051951E8F9C8100B83411 /* SearchConfigurationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1051941E8F9C8100B83411 /* SearchConfigurationFactory.swift */; };
+		9E1051971E8F9CCB00B83411 /* SearchConfigurationFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1051961E8F9CCB00B83411 /* SearchConfigurationFactoryImplementation.swift */; };
 		9E5D0CBA1E8996E500E8B226 /* CoordinatorConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5D0CB91E8996E500E8B226 /* CoordinatorConfigurable.swift */; };
 		9E5D0CBD1E89975900E8B226 /* ModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5D0CBC1E89975900E8B226 /* ModuleInput.swift */; };
 		9E5D0CBF1E899D9F00E8B226 /* CoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5D0CBE1E899D9F00E8B226 /* CoordinatorOutput.swift */; };
@@ -121,6 +140,25 @@
 		9E10515A1E8E538F00B83411 /* FilterCellViewModelFactoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterCellViewModelFactoryImplementation.swift; sourceTree = "<group>"; };
 		9E1051621E8EBB5700B83411 /* RealmConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmConfigurator.swift; sourceTree = "<group>"; };
 		9E1051641E8EBB8400B83411 /* RealmConfiguratorImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmConfiguratorImplementation.swift; sourceTree = "<group>"; };
+		9E1051671E8F07F500B83411 /* Deserializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deserializer.swift; sourceTree = "<group>"; };
+		9E1051681E8F07F500B83411 /* JSONDeserializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDeserializer.swift; sourceTree = "<group>"; };
+		9E10516A1E8F07F500B83411 /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		9E10516B1E8F07F500B83411 /* NetworkClientImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClientImplementation.swift; sourceTree = "<group>"; };
+		9E10516D1E8F07F500B83411 /* NetworkRequestConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequestConstants.swift; sourceTree = "<group>"; };
+		9E10516E1E8F07F500B83411 /* NetworkRequestErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequestErrors.swift; sourceTree = "<group>"; };
+		9E10516F1E8F07F500B83411 /* RequestBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
+		9E1051701E8F07F500B83411 /* RequestBuilderConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestBuilderConfiguration.swift; sourceTree = "<group>"; };
+		9E1051711E8F07F500B83411 /* RequestBuilderImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestBuilderImplementation.swift; sourceTree = "<group>"; };
+		9E1051761E8F07F500B83411 /* URLBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLBuilder.swift; sourceTree = "<group>"; };
+		9E1051771E8F07F500B83411 /* URLBuilderImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLBuilderImplementation.swift; sourceTree = "<group>"; };
+		9E1051781E8F07F500B83411 /* URLParametersTransformable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLParametersTransformable.swift; sourceTree = "<group>"; };
+		9E1051881E8F0C7900B83411 /* PresentationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationService.swift; sourceTree = "<group>"; };
+		9E10518B1E8F8F4200B83411 /* Presentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presentation.swift; sourceTree = "<group>"; };
+		9E10518D1E8F8FC300B83411 /* PresentationServcieConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationServcieConfiguration.swift; sourceTree = "<group>"; };
+		9E10518F1E8F90FC00B83411 /* PresentationServiceImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationServiceImplementation.swift; sourceTree = "<group>"; };
+		9E1051911E8F938300B83411 /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		9E1051941E8F9C8100B83411 /* SearchConfigurationFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchConfigurationFactory.swift; sourceTree = "<group>"; };
+		9E1051961E8F9CCB00B83411 /* SearchConfigurationFactoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchConfigurationFactoryImplementation.swift; sourceTree = "<group>"; };
 		9E5D0CB91E8996E500E8B226 /* CoordinatorConfigurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorConfigurable.swift; sourceTree = "<group>"; };
 		9E5D0CBC1E89975900E8B226 /* ModuleInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleInput.swift; sourceTree = "<group>"; };
 		9E5D0CBE1E899D9F00E8B226 /* CoordinatorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorOutput.swift; sourceTree = "<group>"; };
@@ -253,6 +291,73 @@
 			path = RealmConfigurator;
 			sourceTree = "<group>";
 		};
+		9E1051661E8F07F500B83411 /* Deserializer */ = {
+			isa = PBXGroup;
+			children = (
+				9E1051671E8F07F500B83411 /* Deserializer.swift */,
+				9E1051681E8F07F500B83411 /* JSONDeserializer.swift */,
+			);
+			path = Deserializer;
+			sourceTree = "<group>";
+		};
+		9E1051691E8F07F500B83411 /* NetworkClient */ = {
+			isa = PBXGroup;
+			children = (
+				9E10516A1E8F07F500B83411 /* NetworkClient.swift */,
+				9E10516B1E8F07F500B83411 /* NetworkClientImplementation.swift */,
+			);
+			path = NetworkClient;
+			sourceTree = "<group>";
+		};
+		9E10516C1E8F07F500B83411 /* RequestBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				9E10516D1E8F07F500B83411 /* NetworkRequestConstants.swift */,
+				9E10516E1E8F07F500B83411 /* NetworkRequestErrors.swift */,
+				9E10516F1E8F07F500B83411 /* RequestBuilder.swift */,
+				9E1051701E8F07F500B83411 /* RequestBuilderConfiguration.swift */,
+				9E1051711E8F07F500B83411 /* RequestBuilderImplementation.swift */,
+			);
+			path = RequestBuilder;
+			sourceTree = "<group>";
+		};
+		9E1051721E8F07F500B83411 /* URLBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				9E1051761E8F07F500B83411 /* URLBuilder.swift */,
+				9E1051771E8F07F500B83411 /* URLBuilderImplementation.swift */,
+				9E1051781E8F07F500B83411 /* URLParametersTransformable.swift */,
+			);
+			path = URLBuilder;
+			sourceTree = "<group>";
+		};
+		9E1051871E8F0C6C00B83411 /* PresentationService */ = {
+			isa = PBXGroup;
+			children = (
+				9E1051881E8F0C7900B83411 /* PresentationService.swift */,
+				9E10518D1E8F8FC300B83411 /* PresentationServcieConfiguration.swift */,
+				9E10518F1E8F90FC00B83411 /* PresentationServiceImplementation.swift */,
+			);
+			path = PresentationService;
+			sourceTree = "<group>";
+		};
+		9E10518A1E8F8F3200B83411 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				9E10518B1E8F8F4200B83411 /* Presentation.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		9E1051931E8F9C7100B83411 /* SearchConfigurationFactory */ = {
+			isa = PBXGroup;
+			children = (
+				9E1051941E8F9C8100B83411 /* SearchConfigurationFactory.swift */,
+				9E1051961E8F9CCB00B83411 /* SearchConfigurationFactoryImplementation.swift */,
+			);
+			path = SearchConfigurationFactory;
+			sourceTree = "<group>";
+		};
 		9E5D0CBB1E89974F00E8B226 /* ModuleInput */ = {
 			isa = PBXGroup;
 			children = (
@@ -264,6 +369,7 @@
 		9E5D0CC21E899E6B00E8B226 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				9E10518A1E8F8F3200B83411 /* Presentation */,
 				9E5D0CC31E899E6B00E8B226 /* Filter */,
 			);
 			name = Entities;
@@ -371,6 +477,7 @@
 		9ED9028A1E86B949004CBEFD /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				9E1051931E8F9C7100B83411 /* SearchConfigurationFactory */,
 				9E1051521E8E46B000B83411 /* FilterFactory */,
 				9E5D0CBB1E89974F00E8B226 /* ModuleInput */,
 				9ED902F81E880D9B004CBEFD /* ConfigurableCell */,
@@ -385,6 +492,7 @@
 		9ED9028B1E86B949004CBEFD /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				9E1051871E8F0C6C00B83411 /* PresentationService */,
 				9E10514D1E8D939000B83411 /* FilterService */,
 				9ED902B21E87A5E6004CBEFD /* Assembly */,
 			);
@@ -395,6 +503,10 @@
 		9ED9028C1E86B949004CBEFD /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				9E1051661E8F07F500B83411 /* Deserializer */,
+				9E1051691E8F07F500B83411 /* NetworkClient */,
+				9E10516C1E8F07F500B83411 /* RequestBuilder */,
+				9E1051721E8F07F500B83411 /* URLBuilder */,
 				9E1051611E8EBB4B00B83411 /* RealmConfigurator */,
 				9ED902B11E87A5CE004CBEFD /* Assembly */,
 			);
@@ -609,6 +721,7 @@
 				9ED903031E882D99004CBEFD /* UIColor.swift */,
 				9E7F8A401E8B534000BD1169 /* UITableView.swift */,
 				9E10513B1E8B5FC100B83411 /* UIStoryboard.swift */,
+				9E1051911E8F938300B83411 /* Observable.swift */,
 			);
 			name = Extensions;
 			path = Classes/Extensions;
@@ -900,27 +1013,39 @@
 				9E5D0CC51E899E7700E8B226 /* Filter.swift in Sources */,
 				9ED902891E86B940004CBEFD /* ViewController.swift in Sources */,
 				9ED902C01E87A74C004CBEFD /* ServiceAssemblyImplementation.swift in Sources */,
+				9E10517A1E8F07F500B83411 /* JSONDeserializer.swift in Sources */,
 				9E1051381E8B592500B83411 /* FiltersView.swift in Sources */,
 				9ED903121E8913AE004CBEFD /* FiltersViewModel.swift in Sources */,
 				9E7F8A411E8B534000BD1169 /* UITableView.swift in Sources */,
+				9E1051851E8F07F500B83411 /* URLBuilderImplementation.swift in Sources */,
+				9E1051901E8F90FC00B83411 /* PresentationServiceImplementation.swift in Sources */,
 				9E10513E1E8B673000B83411 /* SectionFilterCellViewModel.swift in Sources */,
 				9ED902C41E87A7A6004CBEFD /* CoreAssemblyImplementation.swift in Sources */,
 				9ED902CB1E87C4C7004CBEFD /* ModuleOutputProvider.swift in Sources */,
 				9E10514F1E8D939E00B83411 /* FilterService.swift in Sources */,
 				9E5D0CC71E899F1500E8B226 /* SectionFilter.swift in Sources */,
 				9E7F8A3D1E8B528800BD1169 /* TickFilterCellViewModel.swift in Sources */,
+				9E1051841E8F07F500B83411 /* URLBuilder.swift in Sources */,
 				9ED903161E8913D6004CBEFD /* FilterModuleOutput.swift in Sources */,
 				9E5D0CBF1E899D9F00E8B226 /* CoordinatorOutput.swift in Sources */,
+				9E1051801E8F07F500B83411 /* RequestBuilderConfiguration.swift in Sources */,
 				9ED902FE1E880ED5004CBEFD /* PresentationCell.swift in Sources */,
 				9ED902981E86BA6F004CBEFD /* AssemblyFactory.swift in Sources */,
+				9E10517F1E8F07F500B83411 /* RequestBuilder.swift in Sources */,
 				9E7F8A3B1E8B51B300BD1169 /* TickFilterCell.swift in Sources */,
+				9E10517E1E8F07F500B83411 /* NetworkRequestErrors.swift in Sources */,
 				9ED903001E880EE8004CBEFD /* PresentationCellViewModel.swift in Sources */,
 				9ED902AF1E87A1A2004CBEFD /* AssemblyFactoryImplementation.swift in Sources */,
+				9E1051921E8F938300B83411 /* Observable.swift in Sources */,
+				9E10517D1E8F07F500B83411 /* NetworkRequestConstants.swift in Sources */,
+				9E10517C1E8F07F500B83411 /* NetworkClientImplementation.swift in Sources */,
 				9ED902ED1E87DE20004CBEFD /* FeedViewModelImplementation.swift in Sources */,
 				9ED902F41E87E3D5004CBEFD /* FavouritesCoordinatorImplementation.swift in Sources */,
 				9ED902B81E87A662004CBEFD /* CoordinatorAssemblyImplementation.swift in Sources */,
 				9ED902FA1E880DA7004CBEFD /* ConfigurableCell.swift in Sources */,
 				9E10515B1E8E538F00B83411 /* FilterCellViewModelFactoryImplementation.swift in Sources */,
+				9E1051861E8F07F500B83411 /* URLParametersTransformable.swift in Sources */,
+				9E1051951E8F9C8100B83411 /* SearchConfigurationFactory.swift in Sources */,
 				9ED903141E8913BE004CBEFD /* FiltersViewModelImplementation.swift in Sources */,
 				9E1051651E8EBB8400B83411 /* RealmConfiguratorImplementation.swift in Sources */,
 				9ED902E71E87DB0C004CBEFD /* FavouritesFeedModuleOutput.swift in Sources */,
@@ -937,28 +1062,35 @@
 				9E1051511E8D93EF00B83411 /* FilterServiceImplementation.swift in Sources */,
 				9ED902881E86B940004CBEFD /* AppDelegate.swift in Sources */,
 				9ED902AD1E86C0E4004CBEFD /* TabBarEmbedding.swift in Sources */,
+				9E10517B1E8F07F500B83411 /* NetworkClient.swift in Sources */,
 				9ED902C61E87A7D0004CBEFD /* UserStoryAssembly.swift in Sources */,
 				9ED903041E882D99004CBEFD /* UIColor.swift in Sources */,
 				9ED902DD1E87C925004CBEFD /* UIViewController.swift in Sources */,
 				9ED902AB1E86C0B4004CBEFD /* TabBarController.swift in Sources */,
 				9ED902DF1E87D41A004CBEFD /* ConferencesCoordinator.swift in Sources */,
+				9E1051791E8F07F500B83411 /* Deserializer.swift in Sources */,
 				9ED902E51E87DAEE004CBEFD /* FavouritesFeedViewModelImplementation.swift in Sources */,
 				9ED902BE1E87A718004CBEFD /* ServiceAssembly.swift in Sources */,
+				9E10518E1E8F8FC300B83411 /* PresentationServcieConfiguration.swift in Sources */,
 				9ED902C81E87A7EC004CBEFD /* UserStoryAssemblyImplementation.swift in Sources */,
 				9ED902EF1E87DF22004CBEFD /* FeedView.swift in Sources */,
 				9ED902CE1E87C52B004CBEFD /* ModuleOutput.swift in Sources */,
 				9ED902931E86BA02004CBEFD /* Coordinator.swift in Sources */,
+				9E1051891E8F0C7900B83411 /* PresentationService.swift in Sources */,
 				9ED9029E1E86BC1E004CBEFD /* ApplicationCoordinator.swift in Sources */,
 				9ED9030A1E88E69E004CBEFD /* OnboardingViewController.swift in Sources */,
 				9ED902E91E87DCC1004CBEFD /* FeedViewModel.swift in Sources */,
 				9ED902F21E87E3BD004CBEFD /* FavouritesCoordinator.swift in Sources */,
+				9E1051971E8F9CCB00B83411 /* SearchConfigurationFactoryImplementation.swift in Sources */,
 				9E1051561E8E470600B83411 /* FilterFactoryImplementation.swift in Sources */,
 				9ED902B71E87A662004CBEFD /* CoordinatorAssembly.swift in Sources */,
 				9ED903061E8845CC004CBEFD /* FeedModuleOutput.swift in Sources */,
+				9E10518C1E8F8F4200B83411 /* Presentation.swift in Sources */,
 				9ED903021E882901004CBEFD /* UIImage.swift in Sources */,
 				9ED902BA1E87A6BF004CBEFD /* HelperAssembly.swift in Sources */,
 				9ED902BC1E87A6DC004CBEFD /* HelperAssemblyImplementation.swift in Sources */,
 				9E10513A1E8B5BD900B83411 /* FilterCellViewModel.swift in Sources */,
+				9E1051811E8F07F500B83411 /* RequestBuilderImplementation.swift in Sources */,
 				9E5D0CC11E899E1800E8B226 /* ConferencesCoordinatorOutput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

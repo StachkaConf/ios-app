@@ -24,14 +24,22 @@ class UserStoryAssemblyImplementation: UserStoryAssembly {
     }
 
     func onboardingModule() -> UIViewController {
-        let viewController: OnboardingViewController = UIStoryboard.createController(withStoryboardId: Constants.StoryboardIds.main)
+        let viewController: OnboardingViewController = UIStoryboard
+            .createController(withStoryboardId: Constants.StoryboardIds.main)
 
         return viewController
     }
 
     func conferencesFeedModule() -> UIViewController {
-        let viewController: FeedViewController = UIStoryboard.createController(withStoryboardId: Constants.StoryboardIds.conferences)
-        let viewModel = FeedViewModelImplementation(view: viewController)
+        let filterService = assemblyFactory.services().filterService()
+        let presentationService = assemblyFactory.services().presentationService()
+        let searchConfigurationFactory = assemblyFactory.helpers().searchConfigurationFactory()
+        let viewController: FeedViewController =
+            UIStoryboard.createController(withStoryboardId: Constants.StoryboardIds.conferences)
+        let viewModel = FeedViewModelImplementation(view: viewController,
+                                                    filterService: filterService,
+                                                    presentationService: presentationService,
+                                                    searchConfigurationFactory: searchConfigurationFactory)
         viewController.viewModel = viewModel
 
         return viewController
@@ -45,7 +53,8 @@ class UserStoryAssemblyImplementation: UserStoryAssembly {
         let filterService = assemblyFactory.services().filterService()
         let filterFactory = assemblyFactory.helpers().filterFactory()
         let filterCellViewModelFactory = FilterCellViewModelFactoryImplementation()
-        let viewController: FiltersViewController = UIStoryboard.createController(withStoryboardId: Constants.StoryboardIds.conferences)
+        let viewController: FiltersViewController =
+            UIStoryboard.createController(withStoryboardId: Constants.StoryboardIds.conferences)
         let viewModel = FiltersViewModelImplementation(view: viewController,
                                                        filterService: filterService,
                                                        filterFactory: filterFactory,

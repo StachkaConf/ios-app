@@ -22,4 +22,16 @@ class ServiceAssemblyImplementation: ServiceAssembly {
     func filterService() -> FilterService {
         return FilterServiceImplementation(realm: realm)
     }
+
+    func presentationService() -> PresentationService {
+        let urlBuilder = assemblyFactory.core().urlBuilder()
+        let jsonDeserializer = assemblyFactory.core().jsonDeserializer()
+        let networkClient = assemblyFactory.core().networkClient()
+        let requestBuilder = assemblyFactory.core().requestBuilder()
+
+        return PresentationServcieImplementation(urlBuilder: urlBuilder,
+                                                 jsonDeserializer: jsonDeserializer,
+                                                 requestBuilder: requestBuilder,
+                                                 networkClient: networkClient)
+    }
 }

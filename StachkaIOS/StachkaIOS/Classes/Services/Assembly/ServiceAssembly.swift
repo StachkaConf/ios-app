@@ -10,4 +10,5 @@ import Foundation
 
 protocol ServiceAssembly: Assembly {
     func filterService() -> FilterService
+    func presentationService() -> PresentationService
 }
