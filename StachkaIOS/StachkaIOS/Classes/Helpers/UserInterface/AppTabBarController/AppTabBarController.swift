@@ -9,11 +9,10 @@
 import UIKit
 
 enum TabBarConstants {
-    static let imageInsets = UIEdgeInsetsMake(6, 0, -6, 0)
+    static let imageInsets = UIEdgeInsetsMake(6.0, 0.0, -6.0, 0.0)
 }
 
 class AppTabBarController: UITabBarController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
         tabBar.isTranslucent = false

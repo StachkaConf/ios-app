@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		128AEF521E8FC90A003FD79A /* ApplicationCoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128AEF511E8FC90A003FD79A /* ApplicationCoordinatorFactory.swift */; };
 		128AEF5B1E91069A003FD79A /* ModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128AEF5A1E91069A003FD79A /* ModuleAssembly.swift */; };
 		128AEF5D1E91070F003FD79A /* OnboardingAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128AEF5C1E91070F003FD79A /* OnboardingAssembly.swift */; };
 		128AEF601E9107E4003FD79A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128AEF5F1E9107E4003FD79A /* Constants.swift */; };
 		128AEF641E910944003FD79A /* InitialUserStoriesCoordinatorsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128AEF621E910944003FD79A /* InitialUserStoriesCoordinatorsFactory.swift */; };
 		128AEF651E910944003FD79A /* InitialUserStoriesCoordinatorsFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128AEF631E910944003FD79A /* InitialUserStoriesCoordinatorsFactoryImplementation.swift */; };
 		12C793B81E912BF300B9389F /* TabBarEmbedding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C793B71E912BF300B9389F /* TabBarEmbedding.swift */; };
+		12C793BB1E912C6B00B9389F /* ApplicationCoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C793BA1E912C6B00B9389F /* ApplicationCoordinatorFactory.swift */; };
+		12C793C31E912D4B00B9389F /* AppTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C793C21E912D4B00B9389F /* AppTabBarController.swift */; };
 		5AF5A1545E1A8BF150582F85 /* Pods_StachkaIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19E758D4E38E6E1B9BEB60EF /* Pods_StachkaIOS.framework */; };
 		9E1051381E8B592500B83411 /* FiltersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1051371E8B592500B83411 /* FiltersView.swift */; };
 		9E10513A1E8B5BD900B83411 /* FilterCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1051391E8B5BD900B83411 /* FilterCellViewModel.swift */; };
@@ -66,7 +67,6 @@
 		9ED902981E86BA6F004CBEFD /* AssemblyFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902971E86BA6F004CBEFD /* AssemblyFactory.swift */; };
 		9ED9029E1E86BC1E004CBEFD /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED9029D1E86BC1E004CBEFD /* ApplicationCoordinator.swift */; };
 		9ED902A01E86BC4A004CBEFD /* ApplicationCoordinatorImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED9029F1E86BC4A004CBEFD /* ApplicationCoordinatorImplementation.swift */; };
-		9ED902AB1E86C0B4004CBEFD /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902AA1E86C0B4004CBEFD /* TabBarController.swift */; };
 		9ED902AF1E87A1A2004CBEFD /* AssemblyFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902AE1E87A1A2004CBEFD /* AssemblyFactoryImplementation.swift */; };
 		9ED902B71E87A662004CBEFD /* CoordinatorAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902B51E87A662004CBEFD /* CoordinatorAssembly.swift */; };
 		9ED902B81E87A662004CBEFD /* CoordinatorAssemblyImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902B61E87A662004CBEFD /* CoordinatorAssemblyImplementation.swift */; };
@@ -132,13 +132,14 @@
 
 /* Begin PBXFileReference section */
 		03D475E69874851AD2BBC16E /* Pods-StachkaIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StachkaIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-StachkaIOS/Pods-StachkaIOS.release.xcconfig"; sourceTree = "<group>"; };
-		128AEF511E8FC90A003FD79A /* ApplicationCoordinatorFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinatorFactory.swift; sourceTree = "<group>"; };
 		128AEF5A1E91069A003FD79A /* ModuleAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleAssembly.swift; sourceTree = "<group>"; };
 		128AEF5C1E91070F003FD79A /* OnboardingAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingAssembly.swift; sourceTree = "<group>"; };
 		128AEF5F1E9107E4003FD79A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		128AEF621E910944003FD79A /* InitialUserStoriesCoordinatorsFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialUserStoriesCoordinatorsFactory.swift; sourceTree = "<group>"; };
 		128AEF631E910944003FD79A /* InitialUserStoriesCoordinatorsFactoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialUserStoriesCoordinatorsFactoryImplementation.swift; sourceTree = "<group>"; };
 		12C793B71E912BF300B9389F /* TabBarEmbedding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarEmbedding.swift; sourceTree = "<group>"; };
+		12C793BA1E912C6B00B9389F /* ApplicationCoordinatorFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinatorFactory.swift; sourceTree = "<group>"; };
+		12C793C21E912D4B00B9389F /* AppTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTabBarController.swift; sourceTree = "<group>"; };
 		19E758D4E38E6E1B9BEB60EF /* Pods_StachkaIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StachkaIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E1051371E8B592500B83411 /* FiltersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltersView.swift; sourceTree = "<group>"; };
 		9E1051391E8B5BD900B83411 /* FilterCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterCellViewModel.swift; sourceTree = "<group>"; };
@@ -195,7 +196,6 @@
 		9ED902971E86BA6F004CBEFD /* AssemblyFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssemblyFactory.swift; sourceTree = "<group>"; };
 		9ED9029D1E86BC1E004CBEFD /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		9ED9029F1E86BC4A004CBEFD /* ApplicationCoordinatorImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinatorImplementation.swift; sourceTree = "<group>"; };
-		9ED902AA1E86C0B4004CBEFD /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		9ED902AE1E87A1A2004CBEFD /* AssemblyFactoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssemblyFactoryImplementation.swift; sourceTree = "<group>"; };
 		9ED902B51E87A662004CBEFD /* CoordinatorAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorAssembly.swift; sourceTree = "<group>"; };
 		9ED902B61E87A662004CBEFD /* CoordinatorAssemblyImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorAssemblyImplementation.swift; sourceTree = "<group>"; };
@@ -256,14 +256,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		128AEF501E8FC8FA003FD79A /* ApplicationCoordinatorFactory */ = {
-			isa = PBXGroup;
-			children = (
-				128AEF511E8FC90A003FD79A /* ApplicationCoordinatorFactory.swift */,
-			);
-			path = ApplicationCoordinatorFactory;
-			sourceTree = "<group>";
-		};
 		128AEF581E9104AD003FD79A /* Assembly */ = {
 			isa = PBXGroup;
 			children = (
@@ -295,6 +287,30 @@
 				128AEF631E910944003FD79A /* InitialUserStoriesCoordinatorsFactoryImplementation.swift */,
 			);
 			path = InitialUserStoriesCoordinatorsFactory;
+			sourceTree = "<group>";
+		};
+		12C793B91E912C6B00B9389F /* ApplicationCoordinatorFactory */ = {
+			isa = PBXGroup;
+			children = (
+				12C793BA1E912C6B00B9389F /* ApplicationCoordinatorFactory.swift */,
+			);
+			path = ApplicationCoordinatorFactory;
+			sourceTree = "<group>";
+		};
+		12C793C01E912D4B00B9389F /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				12C793C11E912D4B00B9389F /* AppTabBarController */,
+			);
+			path = UserInterface;
+			sourceTree = "<group>";
+		};
+		12C793C11E912D4B00B9389F /* AppTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				12C793C21E912D4B00B9389F /* AppTabBarController.swift */,
+			);
+			path = AppTabBarController;
 			sourceTree = "<group>";
 		};
 		9A43D1B1BE2F9F15D41DDA93 /* Pods */ = {
@@ -515,8 +531,6 @@
 		9ED902851E86B940004CBEFD /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				128AEF501E8FC8FA003FD79A /* ApplicationCoordinatorFactory */,
-				9ED902A91E86C087004CBEFD /* TabBar */,
 				9ED9029C1E86BC12004CBEFD /* Coordinator */,
 				9ED902961E86BA5E004CBEFD /* AssemblyFactory */,
 				9ED902861E86B940004CBEFD /* AppDelegate.swift */,
@@ -537,6 +551,7 @@
 				9ED902CC1E87C51E004CBEFD /* ModuleOutput */,
 				9ED902C91E87C4BA004CBEFD /* ModuleOutputProvider */,
 				9ED902B31E87A600004CBEFD /* Assembly */,
+				12C793C01E912D4B00B9389F /* UserInterface */,
 			);
 			name = Helpers;
 			path = Classes/Helpers;
@@ -610,19 +625,12 @@
 		9ED9029C1E86BC12004CBEFD /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				12C793B91E912C6B00B9389F /* ApplicationCoordinatorFactory */,
 				128AEF611E910944003FD79A /* InitialUserStoriesCoordinatorsFactory */,
 				9ED9029D1E86BC1E004CBEFD /* ApplicationCoordinator.swift */,
 				9ED9029F1E86BC4A004CBEFD /* ApplicationCoordinatorImplementation.swift */,
 			);
 			path = Coordinator;
-			sourceTree = "<group>";
-		};
-		9ED902A91E86C087004CBEFD /* TabBar */ = {
-			isa = PBXGroup;
-			children = (
-				9ED902AA1E86C0B4004CBEFD /* TabBarController.swift */,
-			);
-			path = TabBar;
 			sourceTree = "<group>";
 		};
 		9ED902B01E87A5AD004CBEFD /* Assembly */ = {
@@ -1089,13 +1097,13 @@
 				9ED902981E86BA6F004CBEFD /* AssemblyFactory.swift in Sources */,
 				9E10517F1E8F07F500B83411 /* RequestBuilder.swift in Sources */,
 				9E7F8A3B1E8B51B300BD1169 /* TickFilterCell.swift in Sources */,
-				128AEF521E8FC90A003FD79A /* ApplicationCoordinatorFactory.swift in Sources */,
 				9E10517E1E8F07F500B83411 /* NetworkRequestErrors.swift in Sources */,
 				9ED903001E880EE8004CBEFD /* PresentationCellViewModel.swift in Sources */,
 				9ED902AF1E87A1A2004CBEFD /* AssemblyFactoryImplementation.swift in Sources */,
 				9E1051921E8F938300B83411 /* Observable.swift in Sources */,
 				9E10517D1E8F07F500B83411 /* NetworkRequestConstants.swift in Sources */,
 				12C793B81E912BF300B9389F /* TabBarEmbedding.swift in Sources */,
+				12C793C31E912D4B00B9389F /* AppTabBarController.swift in Sources */,
 				9E10517C1E8F07F500B83411 /* NetworkClientImplementation.swift in Sources */,
 				9ED902ED1E87DE20004CBEFD /* FeedViewModelImplementation.swift in Sources */,
 				9ED902F41E87E3D5004CBEFD /* FavouritesCoordinatorImplementation.swift in Sources */,
@@ -1125,8 +1133,8 @@
 				9ED902C61E87A7D0004CBEFD /* UserStoryAssembly.swift in Sources */,
 				9ED903041E882D99004CBEFD /* UIColor.swift in Sources */,
 				9ED902DD1E87C925004CBEFD /* UIViewController.swift in Sources */,
-				9ED902AB1E86C0B4004CBEFD /* TabBarController.swift in Sources */,
 				9ED902DF1E87D41A004CBEFD /* ConferencesCoordinator.swift in Sources */,
+				12C793BB1E912C6B00B9389F /* ApplicationCoordinatorFactory.swift in Sources */,
 				9E1051791E8F07F500B83411 /* Deserializer.swift in Sources */,
 				9ED902E51E87DAEE004CBEFD /* FavouritesFeedViewModelImplementation.swift in Sources */,
 				9ED902BE1E87A718004CBEFD /* ServiceAssembly.swift in Sources */,
