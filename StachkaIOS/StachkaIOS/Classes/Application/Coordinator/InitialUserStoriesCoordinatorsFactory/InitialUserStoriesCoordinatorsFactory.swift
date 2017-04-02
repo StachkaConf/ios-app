@@ -1,5 +1,5 @@
 //
-//  UserStoryCoordinatorFactory.swift
+//  InitialUserStoriesCoordinatorsFactory.swift
 //  StachkaIOS
 //
 //  Created by Konstantin Mordan on 01/04/2017.
@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
-protocol UserStoryCoordinatorFactory {
+protocol InitialUserStoriesCoordinatorsFactory {
     func reportsCoordinator(rootTabBarController: UITabBarController) -> ConferencesCoordinator
+    func favouritesCoordinator(rootTabBarController: UITabBarController) -> FavouritesCoordinator
 }

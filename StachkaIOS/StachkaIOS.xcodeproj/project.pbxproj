@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		128AEF521E8FC90A003FD79A /* ApplicationCoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128AEF511E8FC90A003FD79A /* ApplicationCoordinatorFactory.swift */; };
-		128AEF551E8FCF1A003FD79A /* UserStoryCoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128AEF541E8FCF1A003FD79A /* UserStoryCoordinatorFactory.swift */; };
-		128AEF571E8FCFEE003FD79A /* UserStoryCoordinatorFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128AEF561E8FCFEE003FD79A /* UserStoryCoordinatorFactoryImplementation.swift */; };
 		128AEF5B1E91069A003FD79A /* ModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128AEF5A1E91069A003FD79A /* ModuleAssembly.swift */; };
 		128AEF5D1E91070F003FD79A /* OnboardingAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128AEF5C1E91070F003FD79A /* OnboardingAssembly.swift */; };
 		128AEF601E9107E4003FD79A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128AEF5F1E9107E4003FD79A /* Constants.swift */; };
+		128AEF641E910944003FD79A /* InitialUserStoriesCoordinatorsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128AEF621E910944003FD79A /* InitialUserStoriesCoordinatorsFactory.swift */; };
+		128AEF651E910944003FD79A /* InitialUserStoriesCoordinatorsFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128AEF631E910944003FD79A /* InitialUserStoriesCoordinatorsFactoryImplementation.swift */; };
 		5AF5A1545E1A8BF150582F85 /* Pods_StachkaIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19E758D4E38E6E1B9BEB60EF /* Pods_StachkaIOS.framework */; };
 		9E1051381E8B592500B83411 /* FiltersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1051371E8B592500B83411 /* FiltersView.swift */; };
 		9E10513A1E8B5BD900B83411 /* FilterCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1051391E8B5BD900B83411 /* FilterCellViewModel.swift */; };
@@ -134,11 +134,11 @@
 /* Begin PBXFileReference section */
 		03D475E69874851AD2BBC16E /* Pods-StachkaIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StachkaIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-StachkaIOS/Pods-StachkaIOS.release.xcconfig"; sourceTree = "<group>"; };
 		128AEF511E8FC90A003FD79A /* ApplicationCoordinatorFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinatorFactory.swift; sourceTree = "<group>"; };
-		128AEF541E8FCF1A003FD79A /* UserStoryCoordinatorFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserStoryCoordinatorFactory.swift; sourceTree = "<group>"; };
-		128AEF561E8FCFEE003FD79A /* UserStoryCoordinatorFactoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserStoryCoordinatorFactoryImplementation.swift; sourceTree = "<group>"; };
 		128AEF5A1E91069A003FD79A /* ModuleAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleAssembly.swift; sourceTree = "<group>"; };
 		128AEF5C1E91070F003FD79A /* OnboardingAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingAssembly.swift; sourceTree = "<group>"; };
 		128AEF5F1E9107E4003FD79A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		128AEF621E910944003FD79A /* InitialUserStoriesCoordinatorsFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialUserStoriesCoordinatorsFactory.swift; sourceTree = "<group>"; };
+		128AEF631E910944003FD79A /* InitialUserStoriesCoordinatorsFactoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialUserStoriesCoordinatorsFactoryImplementation.swift; sourceTree = "<group>"; };
 		19E758D4E38E6E1B9BEB60EF /* Pods_StachkaIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StachkaIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E1051371E8B592500B83411 /* FiltersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltersView.swift; sourceTree = "<group>"; };
 		9E1051391E8B5BD900B83411 /* FilterCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterCellViewModel.swift; sourceTree = "<group>"; };
@@ -266,15 +266,6 @@
 			path = ApplicationCoordinatorFactory;
 			sourceTree = "<group>";
 		};
-		128AEF531E8FCF0E003FD79A /* UserStoryCoordinatorFactory */ = {
-			isa = PBXGroup;
-			children = (
-				128AEF541E8FCF1A003FD79A /* UserStoryCoordinatorFactory.swift */,
-				128AEF561E8FCFEE003FD79A /* UserStoryCoordinatorFactoryImplementation.swift */,
-			);
-			path = UserStoryCoordinatorFactory;
-			sourceTree = "<group>";
-		};
 		128AEF581E9104AD003FD79A /* Assembly */ = {
 			isa = PBXGroup;
 			children = (
@@ -297,6 +288,15 @@
 				128AEF5F1E9107E4003FD79A /* Constants.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		128AEF611E910944003FD79A /* InitialUserStoriesCoordinatorsFactory */ = {
+			isa = PBXGroup;
+			children = (
+				128AEF621E910944003FD79A /* InitialUserStoriesCoordinatorsFactory.swift */,
+				128AEF631E910944003FD79A /* InitialUserStoriesCoordinatorsFactoryImplementation.swift */,
+			);
+			path = InitialUserStoriesCoordinatorsFactory;
 			sourceTree = "<group>";
 		};
 		9A43D1B1BE2F9F15D41DDA93 /* Pods */ = {
@@ -613,7 +613,7 @@
 		9ED9029C1E86BC12004CBEFD /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				128AEF531E8FCF0E003FD79A /* UserStoryCoordinatorFactory */,
+				128AEF611E910944003FD79A /* InitialUserStoriesCoordinatorsFactory */,
 				9ED9029D1E86BC1E004CBEFD /* ApplicationCoordinator.swift */,
 				9ED9029F1E86BC4A004CBEFD /* ApplicationCoordinatorImplementation.swift */,
 			);
@@ -1070,6 +1070,7 @@
 				9ED902DA1E87C82B004CBEFD /* FeedViewController.swift in Sources */,
 				9E5D0CC51E899E7700E8B226 /* Filter.swift in Sources */,
 				9ED902891E86B940004CBEFD /* ViewController.swift in Sources */,
+				128AEF641E910944003FD79A /* InitialUserStoriesCoordinatorsFactory.swift in Sources */,
 				9ED902C01E87A74C004CBEFD /* ServiceAssemblyImplementation.swift in Sources */,
 				128AEF5D1E91070F003FD79A /* OnboardingAssembly.swift in Sources */,
 				9E10517A1E8F07F500B83411 /* JSONDeserializer.swift in Sources */,
@@ -1077,7 +1078,6 @@
 				9ED903121E8913AE004CBEFD /* FiltersViewModel.swift in Sources */,
 				9E7F8A411E8B534000BD1169 /* UITableView.swift in Sources */,
 				9E1051851E8F07F500B83411 /* URLBuilderImplementation.swift in Sources */,
-				128AEF551E8FCF1A003FD79A /* UserStoryCoordinatorFactory.swift in Sources */,
 				9E1051901E8F90FC00B83411 /* PresentationServiceImplementation.swift in Sources */,
 				9E10513E1E8B673000B83411 /* SectionFilterCellViewModel.swift in Sources */,
 				9ED902C41E87A7A6004CBEFD /* CoreAssemblyImplementation.swift in Sources */,
@@ -1109,8 +1109,8 @@
 				9E1051951E8F9C8100B83411 /* SearchConfigurationFactory.swift in Sources */,
 				9ED903141E8913BE004CBEFD /* FiltersViewModelImplementation.swift in Sources */,
 				9E1051651E8EBB8400B83411 /* RealmConfiguratorImplementation.swift in Sources */,
+				128AEF651E910944003FD79A /* InitialUserStoriesCoordinatorsFactoryImplementation.swift in Sources */,
 				9ED902E71E87DB0C004CBEFD /* FavouritesFeedModuleOutput.swift in Sources */,
-				128AEF571E8FCFEE003FD79A /* UserStoryCoordinatorFactoryImplementation.swift in Sources */,
 				128AEF601E9107E4003FD79A /* Constants.swift in Sources */,
 				9ED902951E86BA25004CBEFD /* CoordinatorWithDependencies.swift in Sources */,
 				9E1051541E8E46EF00B83411 /* FilterFactory.swift in Sources */,
