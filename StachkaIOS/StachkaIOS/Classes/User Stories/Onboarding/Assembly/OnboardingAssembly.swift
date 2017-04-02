@@ -7,9 +7,13 @@
 //
 
 import Foundation
+import UIKit
 
 class OnboardingAssembly: ModuleAssembly {
     func module() -> UIViewController {
+        let viewController: OnboardingViewController = UIStoryboard
+            .createController(withStoryboardId: StoryboardIdentifier.main)
         
+        return viewController
     }
 }

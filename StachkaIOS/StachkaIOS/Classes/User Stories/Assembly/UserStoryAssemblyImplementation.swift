@@ -10,13 +10,6 @@ import UIKit
 
 class UserStoryAssemblyImplementation: UserStoryAssembly {
 
-    enum Constants {
-        enum StoryboardIds {
-            static let conferences = "Conferences"
-            static let main = "Main"
-        }
-    }
-
     let assemblyFactory: AssemblyFactory
 
     init(assemblyFactory: AssemblyFactory) {
@@ -25,7 +18,7 @@ class UserStoryAssemblyImplementation: UserStoryAssembly {
 
     func onboardingModule() -> UIViewController {
         let viewController: OnboardingViewController = UIStoryboard
-            .createController(withStoryboardId: Constants.StoryboardIds.main)
+            .createController(withStoryboardId: StoryboardIdentifier.main)
 
         return viewController
     }
@@ -35,7 +28,7 @@ class UserStoryAssemblyImplementation: UserStoryAssembly {
         let presentationService = assemblyFactory.services().presentationService()
         let searchConfigurationFactory = assemblyFactory.helpers().searchConfigurationFactory()
         let viewController: FeedViewController =
-            UIStoryboard.createController(withStoryboardId: Constants.StoryboardIds.conferences)
+            UIStoryboard.createController(withStoryboardId: StoryboardIdentifier.conferences)
         let viewModel = FeedViewModelImplementation(view: viewController,
                                                     filterService: filterService,
                                                     presentationService: presentationService,
@@ -54,7 +47,7 @@ class UserStoryAssemblyImplementation: UserStoryAssembly {
         let filterFactory = assemblyFactory.helpers().filterFactory()
         let filterCellViewModelFactory = FilterCellViewModelFactoryImplementation()
         let viewController: FiltersViewController =
-            UIStoryboard.createController(withStoryboardId: Constants.StoryboardIds.conferences)
+            UIStoryboard.createController(withStoryboardId: StoryboardIdentifier.conferences)
         let viewModel = FiltersViewModelImplementation(view: viewController,
                                                        filterService: filterService,
                                                        filterFactory: filterFactory,
@@ -69,7 +62,7 @@ class UserStoryAssemblyImplementation: UserStoryAssembly {
     }
 
     func favouritesFeedModule() -> UIViewController {
-        let storyboardId = Constants.StoryboardIds.conferences
+        let storyboardId = StoryboardIdentifier.conferences
         let storyboard = UIStoryboard(name: storyboardId, bundle: Bundle.main)
         let viewController = storyboard.instantiateInitialViewController() as! FeedViewController
         let viewModel = FavouritesFeedViewModelImplementation(view: viewController)
