@@ -11,8 +11,7 @@ import UIKit
 
 class OnboardingAssembly: ModuleAssembly {
     func module() -> UIViewController {
-        let viewController: OnboardingViewController = UIStoryboard
-            .createController(withStoryboardId: StoryboardName.main)
+        let viewController: OnboardingViewController = UIStoryboard.createControllerFromStoryboardWith(name: StoryboardName.main)
         
         return viewController
     }

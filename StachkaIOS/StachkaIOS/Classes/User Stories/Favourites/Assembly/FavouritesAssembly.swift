@@ -11,7 +11,7 @@ import UIKit
 
 class FavouritesAssembly: ModuleAssembly {
     func module() -> UIViewController {
-        let viewController: FeedViewController = UIStoryboard.createController(withStoryboardId: StoryboardName.reports)
+        let viewController: FeedViewController = UIStoryboard.createControllerFromStoryboardWith(name: StoryboardName.reports)
         let viewModel = FavouritesFeedViewModelImplementation(view: viewController)
         viewController.viewModel = viewModel
         // FIXME: это заглушка, чтобы проверить работу табов

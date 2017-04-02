@@ -22,7 +22,7 @@ class UserStoryAssemblyImplementation: UserStoryAssembly {
         let presentationService = assemblyFactory.services().presentationService()
         let searchConfigurationFactory = assemblyFactory.helpers().searchConfigurationFactory()
         let viewController: FeedViewController =
-            UIStoryboard.createController(withStoryboardId: StoryboardName.reports)
+            UIStoryboard.createControllerFromStoryboardWith(name: StoryboardName.reports)
         let viewModel = FeedViewModelImplementation(view: viewController,
                                                     filterService: filterService,
                                                     presentationService: presentationService,
@@ -41,7 +41,7 @@ class UserStoryAssemblyImplementation: UserStoryAssembly {
         let filterFactory = assemblyFactory.helpers().filterFactory()
         let filterCellViewModelFactory = FilterCellViewModelFactoryImplementation()
         let viewController: FiltersViewController =
-            UIStoryboard.createController(withStoryboardId: StoryboardName.reports)
+            UIStoryboard.createControllerFromStoryboardWith(name: StoryboardName.reports)
         let viewModel = FiltersViewModelImplementation(view: viewController,
                                                        filterService: filterService,
                                                        filterFactory: filterFactory,

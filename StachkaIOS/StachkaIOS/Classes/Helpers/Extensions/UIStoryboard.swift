@@ -9,9 +9,9 @@
 import UIKit
 
 extension UIStoryboard {
-    static func createController<T: UIViewController>(withStoryboardId storyboardId: String) -> T {
+    static func createControllerFromStoryboardWith<T: UIViewController>(name storyboardName: String) -> T {
 
-        let storyboard = UIStoryboard(name: storyboardId, bundle: Bundle.main)
+        let storyboard = UIStoryboard(name: storyboardName, bundle: Bundle.main)
         guard let vc = storyboard.instantiateViewController(withIdentifier: T.storyboardId) as? T else {
             fatalError()
         }
