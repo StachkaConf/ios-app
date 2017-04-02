@@ -48,6 +48,8 @@
 		12C794161E913D6400B9389F /* FavouritesFeedAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C794151E913D6400B9389F /* FavouritesFeedAssembly.swift */; };
 		12C794191E913DEB00B9389F /* ReportsFeedAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C794181E913DEB00B9389F /* ReportsFeedAssembly.swift */; };
 		12C7941C1E913E8100B9389F /* ReportsFiltersAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C7941B1E913E8100B9389F /* ReportsFiltersAssembly.swift */; };
+		12C7941F1E913F8E00B9389F /* ReportsUserStoryAssembliesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C7941E1E913F8E00B9389F /* ReportsUserStoryAssembliesFactory.swift */; };
+		12C794211E913FF800B9389F /* ReportsUserStoryAssembliesFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C794201E913FF800B9389F /* ReportsUserStoryAssembliesFactoryImplementation.swift */; };
 		5AF5A1545E1A8BF150582F85 /* Pods_StachkaIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19E758D4E38E6E1B9BEB60EF /* Pods_StachkaIOS.framework */; };
 		9E10514F1E8D939E00B83411 /* FilterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E10514E1E8D939E00B83411 /* FilterService.swift */; };
 		9E1051511E8D93EF00B83411 /* FilterServiceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1051501E8D93EF00B83411 /* FilterServiceImplementation.swift */; };
@@ -176,6 +178,8 @@
 		12C794151E913D6400B9389F /* FavouritesFeedAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouritesFeedAssembly.swift; sourceTree = "<group>"; };
 		12C794181E913DEB00B9389F /* ReportsFeedAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportsFeedAssembly.swift; sourceTree = "<group>"; };
 		12C7941B1E913E8100B9389F /* ReportsFiltersAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportsFiltersAssembly.swift; sourceTree = "<group>"; };
+		12C7941E1E913F8E00B9389F /* ReportsUserStoryAssembliesFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportsUserStoryAssembliesFactory.swift; sourceTree = "<group>"; };
+		12C794201E913FF800B9389F /* ReportsUserStoryAssembliesFactoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportsUserStoryAssembliesFactoryImplementation.swift; sourceTree = "<group>"; };
 		19E758D4E38E6E1B9BEB60EF /* Pods_StachkaIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StachkaIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E10514E1E8D939E00B83411 /* FilterService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterService.swift; sourceTree = "<group>"; };
 		9E1051501E8D93EF00B83411 /* FilterServiceImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterServiceImplementation.swift; sourceTree = "<group>"; };
@@ -347,6 +351,7 @@
 		12C793D71E9135F300B9389F /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				12C7941D1E913F7E00B9389F /* ReportsUserStoryAssembliesFactory */,
 				12C793D81E9135F300B9389F /* ReportsCoordinator.swift */,
 				12C793D91E9135F300B9389F /* ReportsCoordinatorImplementation.swift */,
 				12C793DA1E9135F300B9389F /* ReportsCoordinatorOutput.swift */,
@@ -484,6 +489,15 @@
 				12C7941B1E913E8100B9389F /* ReportsFiltersAssembly.swift */,
 			);
 			path = Assembly;
+			sourceTree = "<group>";
+		};
+		12C7941D1E913F7E00B9389F /* ReportsUserStoryAssembliesFactory */ = {
+			isa = PBXGroup;
+			children = (
+				12C7941E1E913F8E00B9389F /* ReportsUserStoryAssembliesFactory.swift */,
+				12C794201E913FF800B9389F /* ReportsUserStoryAssembliesFactoryImplementation.swift */,
+			);
+			path = ReportsUserStoryAssembliesFactory;
 			sourceTree = "<group>";
 		};
 		9A43D1B1BE2F9F15D41DDA93 /* Pods */ = {
@@ -1077,6 +1091,7 @@
 				128AEF5D1E91070F003FD79A /* OnboardingAssembly.swift in Sources */,
 				9E10517A1E8F07F500B83411 /* JSONDeserializer.swift in Sources */,
 				9E1051851E8F07F500B83411 /* URLBuilderImplementation.swift in Sources */,
+				12C7941F1E913F8E00B9389F /* ReportsUserStoryAssembliesFactory.swift in Sources */,
 				9E1051901E8F90FC00B83411 /* PresentationServiceImplementation.swift in Sources */,
 				12C794011E9135F300B9389F /* FeedView.swift in Sources */,
 				9ED902C41E87A7A6004CBEFD /* CoreAssemblyImplementation.swift in Sources */,
@@ -1163,6 +1178,7 @@
 				9ED902BC1E87A6DC004CBEFD /* HelperAssemblyImplementation.swift in Sources */,
 				12C793D11E912DAD00B9389F /* UITableView.swift in Sources */,
 				9E1051811E8F07F500B83411 /* RequestBuilderImplementation.swift in Sources */,
+				12C794211E913FF800B9389F /* ReportsUserStoryAssembliesFactoryImplementation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
