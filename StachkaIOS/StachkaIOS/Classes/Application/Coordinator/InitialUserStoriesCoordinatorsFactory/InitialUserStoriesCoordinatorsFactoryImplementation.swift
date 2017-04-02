@@ -15,8 +15,8 @@ class InitialUserStoriesCoordinatorsFactoryImplementation: InitialUserStoriesCoo
     }
     
     func favouritesCoordinator(rootTabBarController: UITabBarController) -> FavouritesCoordinator {
+        let moduleAssembly = FavouritesFeedAssembly()
         
-        let moduleAssembly = FavouritesAssembly()
         return FavouritesCoordinatorImplemenation(rootTabBarController: rootTabBarController,
                                                   moduleAssembly: moduleAssembly)
     }

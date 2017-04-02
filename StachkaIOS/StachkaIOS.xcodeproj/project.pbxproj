@@ -21,7 +21,6 @@
 		12C793D01E912DAD00B9389F /* UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C793C91E912DAD00B9389F /* UIStoryboard.swift */; };
 		12C793D11E912DAD00B9389F /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C793CA1E912DAD00B9389F /* UITableView.swift */; };
 		12C793D21E912DAD00B9389F /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C793CB1E912DAD00B9389F /* UIViewController.swift */; };
-		12C793D51E91319D00B9389F /* FavouritesAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C793D41E91319D00B9389F /* FavouritesAssembly.swift */; };
 		12C793FB1E9135F300B9389F /* ReportsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C793D81E9135F300B9389F /* ReportsCoordinator.swift */; };
 		12C793FC1E9135F300B9389F /* ReportsCoordinatorImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C793D91E9135F300B9389F /* ReportsCoordinatorImplementation.swift */; };
 		12C793FD1E9135F300B9389F /* ReportsCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C793DA1E9135F300B9389F /* ReportsCoordinatorOutput.swift */; };
@@ -46,6 +45,7 @@
 		12C794101E9135F300B9389F /* FiltersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C793F81E9135F300B9389F /* FiltersViewModel.swift */; };
 		12C794111E9135F300B9389F /* FiltersViewModelImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C793F91E9135F300B9389F /* FiltersViewModelImplementation.swift */; };
 		12C794121E9135F300B9389F /* Reports.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12C793FA1E9135F300B9389F /* Reports.storyboard */; };
+		12C794161E913D6400B9389F /* FavouritesFeedAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C794151E913D6400B9389F /* FavouritesFeedAssembly.swift */; };
 		5AF5A1545E1A8BF150582F85 /* Pods_StachkaIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19E758D4E38E6E1B9BEB60EF /* Pods_StachkaIOS.framework */; };
 		9E10514F1E8D939E00B83411 /* FilterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E10514E1E8D939E00B83411 /* FilterService.swift */; };
 		9E1051511E8D93EF00B83411 /* FilterServiceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1051501E8D93EF00B83411 /* FilterServiceImplementation.swift */; };
@@ -147,7 +147,6 @@
 		12C793C91E912DAD00B9389F /* UIStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboard.swift; sourceTree = "<group>"; };
 		12C793CA1E912DAD00B9389F /* UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		12C793CB1E912DAD00B9389F /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
-		12C793D41E91319D00B9389F /* FavouritesAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouritesAssembly.swift; sourceTree = "<group>"; };
 		12C793D81E9135F300B9389F /* ReportsCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportsCoordinator.swift; sourceTree = "<group>"; };
 		12C793D91E9135F300B9389F /* ReportsCoordinatorImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportsCoordinatorImplementation.swift; sourceTree = "<group>"; };
 		12C793DA1E9135F300B9389F /* ReportsCoordinatorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportsCoordinatorOutput.swift; sourceTree = "<group>"; };
@@ -172,6 +171,7 @@
 		12C793F81E9135F300B9389F /* FiltersViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltersViewModel.swift; sourceTree = "<group>"; };
 		12C793F91E9135F300B9389F /* FiltersViewModelImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltersViewModelImplementation.swift; sourceTree = "<group>"; };
 		12C793FA1E9135F300B9389F /* Reports.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Reports.storyboard; sourceTree = "<group>"; };
+		12C794151E913D6400B9389F /* FavouritesFeedAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouritesFeedAssembly.swift; sourceTree = "<group>"; };
 		19E758D4E38E6E1B9BEB60EF /* Pods_StachkaIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StachkaIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E10514E1E8D939E00B83411 /* FilterService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterService.swift; sourceTree = "<group>"; };
 		9E1051501E8D93EF00B83411 /* FilterServiceImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterServiceImplementation.swift; sourceTree = "<group>"; };
@@ -329,14 +329,6 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		12C793D31E91318800B9389F /* Assembly */ = {
-			isa = PBXGroup;
-			children = (
-				12C793D41E91319D00B9389F /* FavouritesAssembly.swift */,
-			);
-			path = Assembly;
-			sourceTree = "<group>";
-		};
 		12C793D61E9135F300B9389F /* Reports */ = {
 			isa = PBXGroup;
 			children = (
@@ -462,6 +454,14 @@
 				12C793F71E9135F300B9389F /* FilterCellViewModelFactoryImplementation.swift */,
 			);
 			path = FiltersCellViewModelFactory;
+			sourceTree = "<group>";
+		};
+		12C794141E913D6400B9389F /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				12C794151E913D6400B9389F /* FavouritesFeedAssembly.swift */,
+			);
+			path = Assembly;
 			sourceTree = "<group>";
 		};
 		9A43D1B1BE2F9F15D41DDA93 /* Pods */ = {
@@ -821,7 +821,6 @@
 		9ED902D31E87C64B004CBEFD /* Favourites */ = {
 			isa = PBXGroup;
 			children = (
-				12C793D31E91318800B9389F /* Assembly */,
 				9ED902F01E87E380004CBEFD /* Coordinator */,
 				9ED902E21E87DAB6004CBEFD /* Feed */,
 			);
@@ -831,6 +830,7 @@
 		9ED902E21E87DAB6004CBEFD /* Feed */ = {
 			isa = PBXGroup;
 			children = (
+				12C794141E913D6400B9389F /* Assembly */,
 				9ED902E31E87DAB6004CBEFD /* ViewModel */,
 			);
 			path = Feed;
@@ -1070,7 +1070,6 @@
 				9E10517F1E8F07F500B83411 /* RequestBuilder.swift in Sources */,
 				9E10517E1E8F07F500B83411 /* NetworkRequestErrors.swift in Sources */,
 				12C794071E9135F300B9389F /* SectionFilterCellViewModel.swift in Sources */,
-				12C793D51E91319D00B9389F /* FavouritesAssembly.swift in Sources */,
 				9ED902AF1E87A1A2004CBEFD /* AssemblyFactoryImplementation.swift in Sources */,
 				9E10517D1E8F07F500B83411 /* NetworkRequestConstants.swift in Sources */,
 				12C794031E9135F300B9389F /* FeedModuleOutput.swift in Sources */,
@@ -1134,6 +1133,7 @@
 				9E1051561E8E470600B83411 /* FilterFactoryImplementation.swift in Sources */,
 				9ED902B71E87A662004CBEFD /* CoordinatorAssembly.swift in Sources */,
 				12C793FC1E9135F300B9389F /* ReportsCoordinatorImplementation.swift in Sources */,
+				12C794161E913D6400B9389F /* FavouritesFeedAssembly.swift in Sources */,
 				9E10518C1E8F8F4200B83411 /* Presentation.swift in Sources */,
 				9ED902BA1E87A6BF004CBEFD /* HelperAssembly.swift in Sources */,
 				9ED902BC1E87A6DC004CBEFD /* HelperAssemblyImplementation.swift in Sources */,

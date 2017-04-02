@@ -1,5 +1,5 @@
 //
-//  FavouritesAssembly.swift
+//  FavouritesFeedAssembly.swift
 //  StachkaIOS
 //
 //  Created by Konstantin Mordan on 02/04/2017.
@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class FavouritesAssembly: ModuleAssembly {
+class FavouritesFeedAssembly: ModuleAssembly {
     func module() -> UIViewController {
         let viewController: FeedViewController = UIStoryboard.createControllerFromStoryboardWith(name: StoryboardName.reports)
         let viewModel = FavouritesFeedViewModelImplementation(view: viewController)

@@ -58,11 +58,6 @@ class ApplicationCoordinatorImplementation: ApplicationCoordinator, CoordinatorW
 
     // MARK: Private
 
-//    private func embedInTabBarWithNavigationController(controller: UIViewController) {
-//        let navigationController = UINavigationController(rootViewController: controller)
-//        tabBarController?.embed(viewController: navigationController)
-//    }
-
     private func createDismissOnboardingAndShowTabBar() -> Observable<Void> {
 
         return Observable.create { [weak self] observer in
