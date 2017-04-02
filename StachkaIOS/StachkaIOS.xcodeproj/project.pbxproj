@@ -12,6 +12,7 @@
 		128AEF571E8FCFEE003FD79A /* UserStoryCoordinatorFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128AEF561E8FCFEE003FD79A /* UserStoryCoordinatorFactoryImplementation.swift */; };
 		128AEF5B1E91069A003FD79A /* ModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128AEF5A1E91069A003FD79A /* ModuleAssembly.swift */; };
 		128AEF5D1E91070F003FD79A /* OnboardingAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128AEF5C1E91070F003FD79A /* OnboardingAssembly.swift */; };
+		128AEF601E9107E4003FD79A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128AEF5F1E9107E4003FD79A /* Constants.swift */; };
 		5AF5A1545E1A8BF150582F85 /* Pods_StachkaIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19E758D4E38E6E1B9BEB60EF /* Pods_StachkaIOS.framework */; };
 		9E1051381E8B592500B83411 /* FiltersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1051371E8B592500B83411 /* FiltersView.swift */; };
 		9E10513A1E8B5BD900B83411 /* FilterCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1051391E8B5BD900B83411 /* FilterCellViewModel.swift */; };
@@ -137,6 +138,7 @@
 		128AEF561E8FCFEE003FD79A /* UserStoryCoordinatorFactoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserStoryCoordinatorFactoryImplementation.swift; sourceTree = "<group>"; };
 		128AEF5A1E91069A003FD79A /* ModuleAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleAssembly.swift; sourceTree = "<group>"; };
 		128AEF5C1E91070F003FD79A /* OnboardingAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingAssembly.swift; sourceTree = "<group>"; };
+		128AEF5F1E9107E4003FD79A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		19E758D4E38E6E1B9BEB60EF /* Pods_StachkaIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StachkaIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E1051371E8B592500B83411 /* FiltersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltersView.swift; sourceTree = "<group>"; };
 		9E1051391E8B5BD900B83411 /* FilterCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterCellViewModel.swift; sourceTree = "<group>"; };
@@ -287,6 +289,14 @@
 				128AEF5A1E91069A003FD79A /* ModuleAssembly.swift */,
 			);
 			path = ModuleAssembly;
+			sourceTree = "<group>";
+		};
+		128AEF5E1E9107DE003FD79A /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				128AEF5F1E9107E4003FD79A /* Constants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		9A43D1B1BE2F9F15D41DDA93 /* Pods */ = {
@@ -526,6 +536,7 @@
 				128AEF591E91068E003FD79A /* ModuleAssembly */,
 				9E5D0CBB1E89974F00E8B226 /* ModuleInput */,
 				9ED902F81E880D9B004CBEFD /* ConfigurableCell */,
+				128AEF5E1E9107DE003FD79A /* Constants */,
 				9ED902CC1E87C51E004CBEFD /* ModuleOutput */,
 				9ED902C91E87C4BA004CBEFD /* ModuleOutputProvider */,
 				9ED902B31E87A600004CBEFD /* Assembly */,
@@ -1100,6 +1111,7 @@
 				9E1051651E8EBB8400B83411 /* RealmConfiguratorImplementation.swift in Sources */,
 				9ED902E71E87DB0C004CBEFD /* FavouritesFeedModuleOutput.swift in Sources */,
 				128AEF571E8FCFEE003FD79A /* UserStoryCoordinatorFactoryImplementation.swift in Sources */,
+				128AEF601E9107E4003FD79A /* Constants.swift in Sources */,
 				9ED902951E86BA25004CBEFD /* CoordinatorWithDependencies.swift in Sources */,
 				9E1051541E8E46EF00B83411 /* FilterFactory.swift in Sources */,
 				9E5D0CBD1E89975900E8B226 /* ModuleInput.swift in Sources */,
