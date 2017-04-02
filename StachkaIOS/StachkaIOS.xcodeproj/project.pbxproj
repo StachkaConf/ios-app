@@ -12,13 +12,18 @@
 		128AEF601E9107E4003FD79A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128AEF5F1E9107E4003FD79A /* Constants.swift */; };
 		128AEF641E910944003FD79A /* InitialUserStoriesCoordinatorsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128AEF621E910944003FD79A /* InitialUserStoriesCoordinatorsFactory.swift */; };
 		128AEF651E910944003FD79A /* InitialUserStoriesCoordinatorsFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128AEF631E910944003FD79A /* InitialUserStoriesCoordinatorsFactoryImplementation.swift */; };
-		12C793B81E912BF300B9389F /* TabBarEmbedding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C793B71E912BF300B9389F /* TabBarEmbedding.swift */; };
 		12C793BB1E912C6B00B9389F /* ApplicationCoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C793BA1E912C6B00B9389F /* ApplicationCoordinatorFactory.swift */; };
 		12C793C31E912D4B00B9389F /* AppTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C793C21E912D4B00B9389F /* AppTabBarController.swift */; };
+		12C793CC1E912DAD00B9389F /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C793C51E912DAD00B9389F /* Observable.swift */; };
+		12C793CD1E912DAD00B9389F /* TabBarEmbedding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C793C61E912DAD00B9389F /* TabBarEmbedding.swift */; };
+		12C793CE1E912DAD00B9389F /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C793C71E912DAD00B9389F /* UIColor.swift */; };
+		12C793CF1E912DAD00B9389F /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C793C81E912DAD00B9389F /* UIImage.swift */; };
+		12C793D01E912DAD00B9389F /* UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C793C91E912DAD00B9389F /* UIStoryboard.swift */; };
+		12C793D11E912DAD00B9389F /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C793CA1E912DAD00B9389F /* UITableView.swift */; };
+		12C793D21E912DAD00B9389F /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C793CB1E912DAD00B9389F /* UIViewController.swift */; };
 		5AF5A1545E1A8BF150582F85 /* Pods_StachkaIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19E758D4E38E6E1B9BEB60EF /* Pods_StachkaIOS.framework */; };
 		9E1051381E8B592500B83411 /* FiltersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1051371E8B592500B83411 /* FiltersView.swift */; };
 		9E10513A1E8B5BD900B83411 /* FilterCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1051391E8B5BD900B83411 /* FilterCellViewModel.swift */; };
-		9E10513C1E8B5FC100B83411 /* UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E10513B1E8B5FC100B83411 /* UIStoryboard.swift */; };
 		9E10513E1E8B673000B83411 /* SectionFilterCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E10513D1E8B673000B83411 /* SectionFilterCellViewModel.swift */; };
 		9E10514F1E8D939E00B83411 /* FilterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E10514E1E8D939E00B83411 /* FilterService.swift */; };
 		9E1051511E8D93EF00B83411 /* FilterServiceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1051501E8D93EF00B83411 /* FilterServiceImplementation.swift */; };
@@ -44,7 +49,6 @@
 		9E10518C1E8F8F4200B83411 /* Presentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E10518B1E8F8F4200B83411 /* Presentation.swift */; };
 		9E10518E1E8F8FC300B83411 /* PresentationServcieConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E10518D1E8F8FC300B83411 /* PresentationServcieConfiguration.swift */; };
 		9E1051901E8F90FC00B83411 /* PresentationServiceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E10518F1E8F90FC00B83411 /* PresentationServiceImplementation.swift */; };
-		9E1051921E8F938300B83411 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1051911E8F938300B83411 /* Observable.swift */; };
 		9E1051951E8F9C8100B83411 /* SearchConfigurationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1051941E8F9C8100B83411 /* SearchConfigurationFactory.swift */; };
 		9E1051971E8F9CCB00B83411 /* SearchConfigurationFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1051961E8F9CCB00B83411 /* SearchConfigurationFactoryImplementation.swift */; };
 		9E5D0CBA1E8996E500E8B226 /* CoordinatorConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5D0CB91E8996E500E8B226 /* CoordinatorConfigurable.swift */; };
@@ -56,7 +60,6 @@
 		9E7F8A3B1E8B51B300BD1169 /* TickFilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7F8A3A1E8B51B300BD1169 /* TickFilterCell.swift */; };
 		9E7F8A3D1E8B528800BD1169 /* TickFilterCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7F8A3C1E8B528800BD1169 /* TickFilterCellViewModel.swift */; };
 		9E7F8A3F1E8B52D000BD1169 /* TickFilterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E7F8A3E1E8B52D000BD1169 /* TickFilterCell.xib */; };
-		9E7F8A411E8B534000BD1169 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7F8A401E8B534000BD1169 /* UITableView.swift */; };
 		9ED9026A1E86B8BC004CBEFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ED902681E86B8BC004CBEFD /* Main.storyboard */; };
 		9ED9026C1E86B8BC004CBEFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9ED9026B1E86B8BC004CBEFD /* Assets.xcassets */; };
 		9ED9026F1E86B8BC004CBEFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ED9026D1E86B8BC004CBEFD /* LaunchScreen.storyboard */; };
@@ -82,7 +85,6 @@
 		9ED902CE1E87C52B004CBEFD /* ModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902CD1E87C52B004CBEFD /* ModuleOutput.swift */; };
 		9ED902D61E87C715004CBEFD /* Conferences.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ED902D51E87C715004CBEFD /* Conferences.storyboard */; };
 		9ED902DA1E87C82B004CBEFD /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902D91E87C82B004CBEFD /* FeedViewController.swift */; };
-		9ED902DD1E87C925004CBEFD /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902DC1E87C925004CBEFD /* UIViewController.swift */; };
 		9ED902DF1E87D41A004CBEFD /* ConferencesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902DE1E87D41A004CBEFD /* ConferencesCoordinator.swift */; };
 		9ED902E11E87D467004CBEFD /* ConferencesCoordinatorImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902E01E87D467004CBEFD /* ConferencesCoordinatorImplementation.swift */; };
 		9ED902E51E87DAEE004CBEFD /* FavouritesFeedViewModelImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902E41E87DAEE004CBEFD /* FavouritesFeedViewModelImplementation.swift */; };
@@ -97,8 +99,6 @@
 		9ED902FC1E880EBC004CBEFD /* PresentationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ED902FB1E880EBC004CBEFD /* PresentationCell.xib */; };
 		9ED902FE1E880ED5004CBEFD /* PresentationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902FD1E880ED5004CBEFD /* PresentationCell.swift */; };
 		9ED903001E880EE8004CBEFD /* PresentationCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902FF1E880EE8004CBEFD /* PresentationCellViewModel.swift */; };
-		9ED903021E882901004CBEFD /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED903011E882901004CBEFD /* UIImage.swift */; };
-		9ED903041E882D99004CBEFD /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED903031E882D99004CBEFD /* UIColor.swift */; };
 		9ED903061E8845CC004CBEFD /* FeedModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED903051E8845CC004CBEFD /* FeedModuleOutput.swift */; };
 		9ED9030A1E88E69E004CBEFD /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED903091E88E69E004CBEFD /* OnboardingViewController.swift */; };
 		9ED903101E890F59004CBEFD /* FiltersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED9030F1E890F59004CBEFD /* FiltersViewController.swift */; };
@@ -137,13 +137,18 @@
 		128AEF5F1E9107E4003FD79A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		128AEF621E910944003FD79A /* InitialUserStoriesCoordinatorsFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialUserStoriesCoordinatorsFactory.swift; sourceTree = "<group>"; };
 		128AEF631E910944003FD79A /* InitialUserStoriesCoordinatorsFactoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialUserStoriesCoordinatorsFactoryImplementation.swift; sourceTree = "<group>"; };
-		12C793B71E912BF300B9389F /* TabBarEmbedding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarEmbedding.swift; sourceTree = "<group>"; };
 		12C793BA1E912C6B00B9389F /* ApplicationCoordinatorFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinatorFactory.swift; sourceTree = "<group>"; };
 		12C793C21E912D4B00B9389F /* AppTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTabBarController.swift; sourceTree = "<group>"; };
+		12C793C51E912DAD00B9389F /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		12C793C61E912DAD00B9389F /* TabBarEmbedding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarEmbedding.swift; sourceTree = "<group>"; };
+		12C793C71E912DAD00B9389F /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		12C793C81E912DAD00B9389F /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		12C793C91E912DAD00B9389F /* UIStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboard.swift; sourceTree = "<group>"; };
+		12C793CA1E912DAD00B9389F /* UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		12C793CB1E912DAD00B9389F /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		19E758D4E38E6E1B9BEB60EF /* Pods_StachkaIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StachkaIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E1051371E8B592500B83411 /* FiltersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltersView.swift; sourceTree = "<group>"; };
 		9E1051391E8B5BD900B83411 /* FilterCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterCellViewModel.swift; sourceTree = "<group>"; };
-		9E10513B1E8B5FC100B83411 /* UIStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboard.swift; sourceTree = "<group>"; };
 		9E10513D1E8B673000B83411 /* SectionFilterCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionFilterCellViewModel.swift; sourceTree = "<group>"; };
 		9E10514E1E8D939E00B83411 /* FilterService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterService.swift; sourceTree = "<group>"; };
 		9E1051501E8D93EF00B83411 /* FilterServiceImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterServiceImplementation.swift; sourceTree = "<group>"; };
@@ -169,7 +174,6 @@
 		9E10518B1E8F8F4200B83411 /* Presentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presentation.swift; sourceTree = "<group>"; };
 		9E10518D1E8F8FC300B83411 /* PresentationServcieConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationServcieConfiguration.swift; sourceTree = "<group>"; };
 		9E10518F1E8F90FC00B83411 /* PresentationServiceImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationServiceImplementation.swift; sourceTree = "<group>"; };
-		9E1051911E8F938300B83411 /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		9E1051941E8F9C8100B83411 /* SearchConfigurationFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchConfigurationFactory.swift; sourceTree = "<group>"; };
 		9E1051961E8F9CCB00B83411 /* SearchConfigurationFactoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchConfigurationFactoryImplementation.swift; sourceTree = "<group>"; };
 		9E5D0CB91E8996E500E8B226 /* CoordinatorConfigurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorConfigurable.swift; sourceTree = "<group>"; };
@@ -181,7 +185,6 @@
 		9E7F8A3A1E8B51B300BD1169 /* TickFilterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TickFilterCell.swift; sourceTree = "<group>"; };
 		9E7F8A3C1E8B528800BD1169 /* TickFilterCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TickFilterCellViewModel.swift; sourceTree = "<group>"; };
 		9E7F8A3E1E8B52D000BD1169 /* TickFilterCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TickFilterCell.xib; sourceTree = "<group>"; };
-		9E7F8A401E8B534000BD1169 /* UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		9ED902611E86B8BC004CBEFD /* StachkaIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StachkaIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ED902691E86B8BC004CBEFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9ED9026B1E86B8BC004CBEFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -211,7 +214,6 @@
 		9ED902CD1E87C52B004CBEFD /* ModuleOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleOutput.swift; sourceTree = "<group>"; };
 		9ED902D51E87C715004CBEFD /* Conferences.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Conferences.storyboard; sourceTree = "<group>"; };
 		9ED902D91E87C82B004CBEFD /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
-		9ED902DC1E87C925004CBEFD /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		9ED902DE1E87D41A004CBEFD /* ConferencesCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConferencesCoordinator.swift; sourceTree = "<group>"; };
 		9ED902E01E87D467004CBEFD /* ConferencesCoordinatorImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConferencesCoordinatorImplementation.swift; sourceTree = "<group>"; };
 		9ED902E41E87DAEE004CBEFD /* FavouritesFeedViewModelImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouritesFeedViewModelImplementation.swift; sourceTree = "<group>"; };
@@ -226,8 +228,6 @@
 		9ED902FB1E880EBC004CBEFD /* PresentationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PresentationCell.xib; sourceTree = "<group>"; };
 		9ED902FD1E880ED5004CBEFD /* PresentationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationCell.swift; sourceTree = "<group>"; };
 		9ED902FF1E880EE8004CBEFD /* PresentationCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationCellViewModel.swift; sourceTree = "<group>"; };
-		9ED903011E882901004CBEFD /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
-		9ED903031E882D99004CBEFD /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		9ED903051E8845CC004CBEFD /* FeedModuleOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedModuleOutput.swift; sourceTree = "<group>"; };
 		9ED903091E88E69E004CBEFD /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		9ED9030F1E890F59004CBEFD /* FiltersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltersViewController.swift; sourceTree = "<group>"; };
@@ -311,6 +311,20 @@
 				12C793C21E912D4B00B9389F /* AppTabBarController.swift */,
 			);
 			path = AppTabBarController;
+			sourceTree = "<group>";
+		};
+		12C793C41E912DAD00B9389F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				12C793C51E912DAD00B9389F /* Observable.swift */,
+				12C793C61E912DAD00B9389F /* TabBarEmbedding.swift */,
+				12C793C71E912DAD00B9389F /* UIColor.swift */,
+				12C793C81E912DAD00B9389F /* UIImage.swift */,
+				12C793C91E912DAD00B9389F /* UIStoryboard.swift */,
+				12C793CA1E912DAD00B9389F /* UITableView.swift */,
+				12C793CB1E912DAD00B9389F /* UIViewController.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		9A43D1B1BE2F9F15D41DDA93 /* Pods */ = {
@@ -518,7 +532,6 @@
 			children = (
 				9ED902851E86B940004CBEFD /* Application */,
 				9E5D0CC21E899E6B00E8B226 /* Entities */,
-				9ED902DB1E87C903004CBEFD /* Extensions */,
 				9ED9028E1E86B97D004CBEFD /* Coordinators */,
 				9ED9028A1E86B949004CBEFD /* Helpers */,
 				9ED9028B1E86B949004CBEFD /* Services */,
@@ -542,15 +555,16 @@
 		9ED9028A1E86B949004CBEFD /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				9E1051931E8F9C7100B83411 /* SearchConfigurationFactory */,
+				9ED902B31E87A600004CBEFD /* Assembly */,
+				9ED902F81E880D9B004CBEFD /* ConfigurableCell */,
+				128AEF5E1E9107DE003FD79A /* Constants */,
+				12C793C41E912DAD00B9389F /* Extensions */,
 				9E1051521E8E46B000B83411 /* FilterFactory */,
 				128AEF591E91068E003FD79A /* ModuleAssembly */,
 				9E5D0CBB1E89974F00E8B226 /* ModuleInput */,
-				9ED902F81E880D9B004CBEFD /* ConfigurableCell */,
-				128AEF5E1E9107DE003FD79A /* Constants */,
 				9ED902CC1E87C51E004CBEFD /* ModuleOutput */,
 				9ED902C91E87C4BA004CBEFD /* ModuleOutputProvider */,
-				9ED902B31E87A600004CBEFD /* Assembly */,
+				9E1051931E8F9C7100B83411 /* SearchConfigurationFactory */,
 				12C793C01E912D4B00B9389F /* UserInterface */,
 			);
 			name = Helpers;
@@ -772,21 +786,6 @@
 				9ED902EE1E87DF22004CBEFD /* FeedView.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		9ED902DB1E87C903004CBEFD /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				12C793B71E912BF300B9389F /* TabBarEmbedding.swift */,
-				9ED902DC1E87C925004CBEFD /* UIViewController.swift */,
-				9ED903011E882901004CBEFD /* UIImage.swift */,
-				9ED903031E882D99004CBEFD /* UIColor.swift */,
-				9E7F8A401E8B534000BD1169 /* UITableView.swift */,
-				9E10513B1E8B5FC100B83411 /* UIStoryboard.swift */,
-				9E1051911E8F938300B83411 /* Observable.swift */,
-			);
-			name = Extensions;
-			path = Classes/Extensions;
 			sourceTree = "<group>";
 		};
 		9ED902E21E87DAB6004CBEFD /* Feed */ = {
@@ -1071,7 +1070,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E1051631E8EBB5700B83411 /* RealmConfigurator.swift in Sources */,
-				9E10513C1E8B5FC100B83411 /* UIStoryboard.swift in Sources */,
 				9ED902DA1E87C82B004CBEFD /* FeedViewController.swift in Sources */,
 				9E5D0CC51E899E7700E8B226 /* Filter.swift in Sources */,
 				128AEF641E910944003FD79A /* InitialUserStoriesCoordinatorsFactory.swift in Sources */,
@@ -1080,7 +1078,6 @@
 				9E10517A1E8F07F500B83411 /* JSONDeserializer.swift in Sources */,
 				9E1051381E8B592500B83411 /* FiltersView.swift in Sources */,
 				9ED903121E8913AE004CBEFD /* FiltersViewModel.swift in Sources */,
-				9E7F8A411E8B534000BD1169 /* UITableView.swift in Sources */,
 				9E1051851E8F07F500B83411 /* URLBuilderImplementation.swift in Sources */,
 				9E1051901E8F90FC00B83411 /* PresentationServiceImplementation.swift in Sources */,
 				9E10513E1E8B673000B83411 /* SectionFilterCellViewModel.swift in Sources */,
@@ -1100,9 +1097,7 @@
 				9E10517E1E8F07F500B83411 /* NetworkRequestErrors.swift in Sources */,
 				9ED903001E880EE8004CBEFD /* PresentationCellViewModel.swift in Sources */,
 				9ED902AF1E87A1A2004CBEFD /* AssemblyFactoryImplementation.swift in Sources */,
-				9E1051921E8F938300B83411 /* Observable.swift in Sources */,
 				9E10517D1E8F07F500B83411 /* NetworkRequestConstants.swift in Sources */,
-				12C793B81E912BF300B9389F /* TabBarEmbedding.swift in Sources */,
 				12C793C31E912D4B00B9389F /* AppTabBarController.swift in Sources */,
 				9E10517C1E8F07F500B83411 /* NetworkClientImplementation.swift in Sources */,
 				9ED902ED1E87DE20004CBEFD /* FeedViewModelImplementation.swift in Sources */,
@@ -1118,21 +1113,22 @@
 				9ED902E71E87DB0C004CBEFD /* FavouritesFeedModuleOutput.swift in Sources */,
 				128AEF601E9107E4003FD79A /* Constants.swift in Sources */,
 				9ED902951E86BA25004CBEFD /* CoordinatorWithDependencies.swift in Sources */,
+				12C793D01E912DAD00B9389F /* UIStoryboard.swift in Sources */,
 				9E1051541E8E46EF00B83411 /* FilterFactory.swift in Sources */,
 				9E5D0CBD1E89975900E8B226 /* ModuleInput.swift in Sources */,
 				9ED902C21E87A770004CBEFD /* CoreAssembly.swift in Sources */,
 				9ED903101E890F59004CBEFD /* FiltersViewController.swift in Sources */,
+				12C793CF1E912DAD00B9389F /* UIImage.swift in Sources */,
 				9ED902E11E87D467004CBEFD /* ConferencesCoordinatorImplementation.swift in Sources */,
 				9E1051591E8E533600B83411 /* FilterCellViewModelFactory.swift in Sources */,
 				9ED902EB1E87DD9F004CBEFD /* FavouritesFeedViewModel.swift in Sources */,
 				9ED902A01E86BC4A004CBEFD /* ApplicationCoordinatorImplementation.swift in Sources */,
+				12C793CC1E912DAD00B9389F /* Observable.swift in Sources */,
 				9E5D0CBA1E8996E500E8B226 /* CoordinatorConfigurable.swift in Sources */,
 				9E1051511E8D93EF00B83411 /* FilterServiceImplementation.swift in Sources */,
 				9ED902881E86B940004CBEFD /* AppDelegate.swift in Sources */,
 				9E10517B1E8F07F500B83411 /* NetworkClient.swift in Sources */,
 				9ED902C61E87A7D0004CBEFD /* UserStoryAssembly.swift in Sources */,
-				9ED903041E882D99004CBEFD /* UIColor.swift in Sources */,
-				9ED902DD1E87C925004CBEFD /* UIViewController.swift in Sources */,
 				9ED902DF1E87D41A004CBEFD /* ConferencesCoordinator.swift in Sources */,
 				12C793BB1E912C6B00B9389F /* ApplicationCoordinatorFactory.swift in Sources */,
 				9E1051791E8F07F500B83411 /* Deserializer.swift in Sources */,
@@ -1142,22 +1138,25 @@
 				9ED902C81E87A7EC004CBEFD /* UserStoryAssemblyImplementation.swift in Sources */,
 				9ED902EF1E87DF22004CBEFD /* FeedView.swift in Sources */,
 				9ED902CE1E87C52B004CBEFD /* ModuleOutput.swift in Sources */,
+				12C793CE1E912DAD00B9389F /* UIColor.swift in Sources */,
 				9ED902931E86BA02004CBEFD /* Coordinator.swift in Sources */,
 				9E1051891E8F0C7900B83411 /* PresentationService.swift in Sources */,
 				128AEF5B1E91069A003FD79A /* ModuleAssembly.swift in Sources */,
 				9ED9029E1E86BC1E004CBEFD /* ApplicationCoordinator.swift in Sources */,
+				12C793D21E912DAD00B9389F /* UIViewController.swift in Sources */,
 				9ED9030A1E88E69E004CBEFD /* OnboardingViewController.swift in Sources */,
 				9ED902E91E87DCC1004CBEFD /* FeedViewModel.swift in Sources */,
+				12C793CD1E912DAD00B9389F /* TabBarEmbedding.swift in Sources */,
 				9ED902F21E87E3BD004CBEFD /* FavouritesCoordinator.swift in Sources */,
 				9E1051971E8F9CCB00B83411 /* SearchConfigurationFactoryImplementation.swift in Sources */,
 				9E1051561E8E470600B83411 /* FilterFactoryImplementation.swift in Sources */,
 				9ED902B71E87A662004CBEFD /* CoordinatorAssembly.swift in Sources */,
 				9ED903061E8845CC004CBEFD /* FeedModuleOutput.swift in Sources */,
 				9E10518C1E8F8F4200B83411 /* Presentation.swift in Sources */,
-				9ED903021E882901004CBEFD /* UIImage.swift in Sources */,
 				9ED902BA1E87A6BF004CBEFD /* HelperAssembly.swift in Sources */,
 				9ED902BC1E87A6DC004CBEFD /* HelperAssemblyImplementation.swift in Sources */,
 				9E10513A1E8B5BD900B83411 /* FilterCellViewModel.swift in Sources */,
+				12C793D11E912DAD00B9389F /* UITableView.swift in Sources */,
 				9E1051811E8F07F500B83411 /* RequestBuilderImplementation.swift in Sources */,
 				9E5D0CC11E899E1800E8B226 /* ConferencesCoordinatorOutput.swift in Sources */,
 			);
