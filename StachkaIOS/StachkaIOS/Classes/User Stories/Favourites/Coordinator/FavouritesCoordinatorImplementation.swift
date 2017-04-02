@@ -9,8 +9,8 @@
 import UIKit
 
 class FavouritesCoordinatorImplemenation: FavouritesCoordinator, CoordinatorWithDependencies {
-    weak var rootController: UITabBarController?
-    let moduleAssembly: ModuleAssembly
+    private weak var rootController: UITabBarController?
+    private let moduleAssembly: ModuleAssembly
 
     var childCoordinators: [Coordinator] = []
     

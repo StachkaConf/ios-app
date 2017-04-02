@@ -35,27 +35,26 @@ class ReportsCoordinatorImplementation: ReportsCoordinator {
         let nc = UINavigationController(rootViewController: userStoryRootController)
         rootTabBarController.embed(viewController: nc)
         
-        guard let moduleOutputProvider = userStoryRootController as? ModuleOutputProvider
-            else {
+        guard let moduleOutputProvider = userStoryRootController as? ModuleOutputProvider else {
                 return
         }
         
-        guard let configurableOutput = moduleOutputProvider.moduleOutput as? FeedModuleOutput else {
+        guard let feedModuleOutput = moduleOutputProvider.moduleOutput as? FeedModuleOutput else {
             return
         }
 
-        configurableOutput
+        feedModuleOutput
             .filterSelected
             .subscribe(onNext: { [weak self] in
                 self?.openFilters()
             })
             .disposed(by: disposeBag)
 
-        guard let df = configurableOutput as? CoordinatorConfigurable else {
+        guard let configurableOutput =  feedModuleOutput as? CoordinatorConfigurable else {
             return
         }
         
-        df.configure(withCoordinator: self)
+        configurableOutput.configure(withCoordinator: self)
     }
     
     // MARK: ReportsCoordinatorOutput

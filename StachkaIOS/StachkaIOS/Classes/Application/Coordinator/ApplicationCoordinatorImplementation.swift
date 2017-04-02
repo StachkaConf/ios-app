@@ -22,14 +22,14 @@ class ApplicationCoordinatorImplementation: ApplicationCoordinator, CoordinatorW
                                                                                   tempo: 1000.0)
     }
 
-    weak var window: UIWindow?
-    var tabBarController: UITabBarController
-    var onboardingModuleAssembly: ModuleAssembly
-    var initialUserStoriesCoordinatorsFactory: InitialUserStoriesCoordinatorsFactory
+    private weak var window: UIWindow?
+    private var tabBarController: UITabBarController
+    private var onboardingModuleAssembly: ModuleAssembly
+    private var initialUserStoriesCoordinatorsFactory: InitialUserStoriesCoordinatorsFactory
 
     var childCoordinators: [Coordinator] = []
 
-    let disposeBag = DisposeBag()
+    private let disposeBag = DisposeBag()
 
     init(window: UIWindow?,
          rootTabBarController: UITabBarController,
@@ -44,22 +44,20 @@ class ApplicationCoordinatorImplementation: ApplicationCoordinator, CoordinatorW
     func start() {
         let reportsCoordinator = initialUserStoriesCoordinatorsFactory.reportsCoordinator(rootTabBarController: tabBarController)
         add(coordinator: reportsCoordinator)
+        reportsCoordinator.start()
 
         let favouritesCoordinator = initialUserStoriesCoordinatorsFactory.favouritesCoordinator(rootTabBarController: tabBarController)
         add(coordinator: favouritesCoordinator)
-
+        favouritesCoordinator.start()
+        
         createDismissOnboardingAndShowTabBar()
-            .subscribe(onCompleted: {
-                reportsCoordinator.start()
-                favouritesCoordinator.start()
-            })
+            .subscribe()
             .disposed(by: disposeBag)
     }
 
     // MARK: Private
 
     private func createDismissOnboardingAndShowTabBar() -> Observable<Void> {
-
         return Observable.create { [weak self] observer in
             guard let strongSelf = self else {
                 observer.onCompleted()
