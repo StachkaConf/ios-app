@@ -16,8 +16,8 @@ class CoordinatorAssemblyImplementation: CoordinatorAssembly {
         self.assemblyFactory =  assemblyFactory
     }
 
-    func conferencesCoordinator(rootController: UIViewController) -> ConferencesCoordinator {
-        return ConferencesCoordinatorImplementation(assembly: assemblyFactory, rootController: rootController)
+    func conferencesCoordinator(rootController: UIViewController) -> ReportsCoordinator {
+        return ReportsCoordinatorImplementation(assembly: assemblyFactory, rootController: rootController)
     }
 
 }

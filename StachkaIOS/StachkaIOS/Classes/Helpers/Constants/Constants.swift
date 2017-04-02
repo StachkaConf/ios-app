@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum StoryboardIdentifier {
-    static let conferences = "Conferences"
-    static let main        = "Main"
+enum StoryboardName {
+    static let reports = "Reports"
+    static let main    = "Main"
 }

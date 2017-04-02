@@ -10,8 +10,8 @@ import Foundation
 import UIKit
 
 class InitialUserStoriesCoordinatorsFactoryImplementation: InitialUserStoriesCoordinatorsFactory {
-    func reportsCoordinator(rootTabBarController: UITabBarController) -> ConferencesCoordinator {
-        return ConferencesCoordinatorImplementation(assembly: AssemblyFactoryImplementation(), rootController: rootTabBarController)
+    func reportsCoordinator(rootTabBarController: UITabBarController) -> ReportsCoordinator {
+        return ReportsCoordinatorImplementation(assembly: AssemblyFactoryImplementation(), rootController: rootTabBarController)
     }
     
     func favouritesCoordinator(rootTabBarController: UITabBarController) -> FavouritesCoordinator {

@@ -10,5 +10,5 @@ import Foundation
 import UIKit
 
 protocol CoordinatorAssembly {
-    func conferencesCoordinator(rootController: UIViewController) -> ConferencesCoordinator
+    func conferencesCoordinator(rootController: UIViewController) -> ReportsCoordinator
 }

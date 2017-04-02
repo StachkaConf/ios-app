@@ -12,7 +12,7 @@ import UIKit
 class OnboardingAssembly: ModuleAssembly {
     func module() -> UIViewController {
         let viewController: OnboardingViewController = UIStoryboard
-            .createController(withStoryboardId: StoryboardIdentifier.main)
+            .createController(withStoryboardId: StoryboardName.main)
         
         return viewController
     }

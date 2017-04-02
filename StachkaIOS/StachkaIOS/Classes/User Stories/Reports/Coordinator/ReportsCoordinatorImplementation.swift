@@ -1,5 +1,5 @@
 //
-//  ConferencesCoordinatorImplementation.swift
+//  ReportsCoordinatorImplementation.swift
 //  StachkaIOS
 //
 //  Created by m.rakhmanov on 26.03.17.
@@ -9,7 +9,7 @@
 import UIKit
 import RxSwift
 
-class ConferencesCoordinatorImplementation: ConferencesCoordinator {
+class ReportsCoordinatorImplementation: ReportsCoordinator {
 
     private let rootController: UIViewController
     private let assembly: AssemblyFactory
@@ -43,7 +43,7 @@ class ConferencesCoordinatorImplementation: ConferencesCoordinator {
         rootController.navigationController?.pushViewController(filtersModule, animated: true)
     }
 
-    // MARK: ConferncesCoordinatorOutput
+    // MARK: ReportsCoordinatorOutput
 
     var filtersChanged: Observable<[Filter]> {
         return filters.asObservable()

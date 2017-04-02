@@ -77,7 +77,7 @@ extension FeedViewModelImplementation: FeedModuleOutput, CoordinatorConfigurable
     }
 
     func configure(withCoordinator coordinator: Coordinator) {
-        guard let coordinator = coordinator as? ConferencesCoordinatorOutput else {
+        guard let coordinator = coordinator as? ReportsCoordinatorOutput else {
             return
         }
         coordinator
