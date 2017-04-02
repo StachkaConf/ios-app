@@ -8,11 +8,7 @@
 
 import Foundation
 
-class AssemblyFactoryImplementation: AssemblyFactory {
-    func userStories() -> UserStoryAssembly {
-        return UserStoryAssemblyImplementation(assemblyFactory: self)
-    }
-    
+class AssemblyFactoryImplementation: AssemblyFactory {    
     func services() -> ServiceAssembly {
         return ServiceAssemblyImplementation(assemblyFactory: self)
     }
@@ -23,9 +19,5 @@ class AssemblyFactoryImplementation: AssemblyFactory {
 
     func helpers() -> HelperAssembly {
         return HelperAssemblyImplementation(assemblyFactory: self)
-    }
-
-    func coordinators() -> CoordinatorAssembly {
-        return CoordinatorAssemblyImplementation(assemblyFactory: self)
     }
 }

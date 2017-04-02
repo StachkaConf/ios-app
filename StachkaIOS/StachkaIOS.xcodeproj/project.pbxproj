@@ -91,16 +91,12 @@
 		9ED9029E1E86BC1E004CBEFD /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED9029D1E86BC1E004CBEFD /* ApplicationCoordinator.swift */; };
 		9ED902A01E86BC4A004CBEFD /* ApplicationCoordinatorImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED9029F1E86BC4A004CBEFD /* ApplicationCoordinatorImplementation.swift */; };
 		9ED902AF1E87A1A2004CBEFD /* AssemblyFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902AE1E87A1A2004CBEFD /* AssemblyFactoryImplementation.swift */; };
-		9ED902B71E87A662004CBEFD /* CoordinatorAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902B51E87A662004CBEFD /* CoordinatorAssembly.swift */; };
-		9ED902B81E87A662004CBEFD /* CoordinatorAssemblyImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902B61E87A662004CBEFD /* CoordinatorAssemblyImplementation.swift */; };
 		9ED902BA1E87A6BF004CBEFD /* HelperAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902B91E87A6BF004CBEFD /* HelperAssembly.swift */; };
 		9ED902BC1E87A6DC004CBEFD /* HelperAssemblyImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902BB1E87A6DC004CBEFD /* HelperAssemblyImplementation.swift */; };
 		9ED902BE1E87A718004CBEFD /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902BD1E87A718004CBEFD /* ServiceAssembly.swift */; };
 		9ED902C01E87A74C004CBEFD /* ServiceAssemblyImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902BF1E87A74C004CBEFD /* ServiceAssemblyImplementation.swift */; };
 		9ED902C21E87A770004CBEFD /* CoreAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902C11E87A770004CBEFD /* CoreAssembly.swift */; };
 		9ED902C41E87A7A6004CBEFD /* CoreAssemblyImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902C31E87A7A6004CBEFD /* CoreAssemblyImplementation.swift */; };
-		9ED902C61E87A7D0004CBEFD /* UserStoryAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902C51E87A7D0004CBEFD /* UserStoryAssembly.swift */; };
-		9ED902C81E87A7EC004CBEFD /* UserStoryAssemblyImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902C71E87A7EC004CBEFD /* UserStoryAssemblyImplementation.swift */; };
 		9ED902CB1E87C4C7004CBEFD /* ModuleOutputProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902CA1E87C4C7004CBEFD /* ModuleOutputProvider.swift */; };
 		9ED902CE1E87C52B004CBEFD /* ModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902CD1E87C52B004CBEFD /* ModuleOutput.swift */; };
 		9ED902E51E87DAEE004CBEFD /* FavouritesFeedViewModelImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902E41E87DAEE004CBEFD /* FavouritesFeedViewModelImplementation.swift */; };
@@ -225,16 +221,12 @@
 		9ED9029D1E86BC1E004CBEFD /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		9ED9029F1E86BC4A004CBEFD /* ApplicationCoordinatorImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinatorImplementation.swift; sourceTree = "<group>"; };
 		9ED902AE1E87A1A2004CBEFD /* AssemblyFactoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssemblyFactoryImplementation.swift; sourceTree = "<group>"; };
-		9ED902B51E87A662004CBEFD /* CoordinatorAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorAssembly.swift; sourceTree = "<group>"; };
-		9ED902B61E87A662004CBEFD /* CoordinatorAssemblyImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorAssemblyImplementation.swift; sourceTree = "<group>"; };
 		9ED902B91E87A6BF004CBEFD /* HelperAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperAssembly.swift; sourceTree = "<group>"; };
 		9ED902BB1E87A6DC004CBEFD /* HelperAssemblyImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperAssemblyImplementation.swift; sourceTree = "<group>"; };
 		9ED902BD1E87A718004CBEFD /* ServiceAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
 		9ED902BF1E87A74C004CBEFD /* ServiceAssemblyImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceAssemblyImplementation.swift; sourceTree = "<group>"; };
 		9ED902C11E87A770004CBEFD /* CoreAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreAssembly.swift; sourceTree = "<group>"; };
 		9ED902C31E87A7A6004CBEFD /* CoreAssemblyImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreAssemblyImplementation.swift; sourceTree = "<group>"; };
-		9ED902C51E87A7D0004CBEFD /* UserStoryAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserStoryAssembly.swift; sourceTree = "<group>"; };
-		9ED902C71E87A7EC004CBEFD /* UserStoryAssemblyImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserStoryAssemblyImplementation.swift; sourceTree = "<group>"; };
 		9ED902CA1E87C4C7004CBEFD /* ModuleOutputProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleOutputProvider.swift; sourceTree = "<group>"; };
 		9ED902CD1E87C52B004CBEFD /* ModuleOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleOutput.swift; sourceTree = "<group>"; };
 		9ED902E41E87DAEE004CBEFD /* FavouritesFeedViewModelImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouritesFeedViewModelImplementation.swift; sourceTree = "<group>"; };
@@ -743,7 +735,6 @@
 		9ED9028D1E86B949004CBEFD /* User Stories */ = {
 			isa = PBXGroup;
 			children = (
-				9ED902B01E87A5AD004CBEFD /* Assembly */,
 				9ED902D31E87C64B004CBEFD /* Favourites */,
 				9ED903071E88E68D004CBEFD /* Onboarding */,
 				12C793D61E9135F300B9389F /* Reports */,
@@ -755,7 +746,6 @@
 		9ED9028E1E86B97D004CBEFD /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
-				9ED902B41E87A662004CBEFD /* Assembly */,
 				9ED902911E86BA02004CBEFD /* Abstract */,
 			);
 			name = Coordinators;
@@ -791,15 +781,6 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
-		9ED902B01E87A5AD004CBEFD /* Assembly */ = {
-			isa = PBXGroup;
-			children = (
-				9ED902C51E87A7D0004CBEFD /* UserStoryAssembly.swift */,
-				9ED902C71E87A7EC004CBEFD /* UserStoryAssemblyImplementation.swift */,
-			);
-			path = Assembly;
-			sourceTree = "<group>";
-		};
 		9ED902B11E87A5CE004CBEFD /* Assembly */ = {
 			isa = PBXGroup;
 			children = (
@@ -823,15 +804,6 @@
 			children = (
 				9ED902B91E87A6BF004CBEFD /* HelperAssembly.swift */,
 				9ED902BB1E87A6DC004CBEFD /* HelperAssemblyImplementation.swift */,
-			);
-			path = Assembly;
-			sourceTree = "<group>";
-		};
-		9ED902B41E87A662004CBEFD /* Assembly */ = {
-			isa = PBXGroup;
-			children = (
-				9ED902B51E87A662004CBEFD /* CoordinatorAssembly.swift */,
-				9ED902B61E87A662004CBEFD /* CoordinatorAssemblyImplementation.swift */,
 			);
 			path = Assembly;
 			sourceTree = "<group>";
@@ -1113,7 +1085,6 @@
 				12C793C31E912D4B00B9389F /* AppTabBarController.swift in Sources */,
 				9E10517C1E8F07F500B83411 /* NetworkClientImplementation.swift in Sources */,
 				9ED902F41E87E3D5004CBEFD /* FavouritesCoordinatorImplementation.swift in Sources */,
-				9ED902B81E87A662004CBEFD /* CoordinatorAssemblyImplementation.swift in Sources */,
 				9ED902FA1E880DA7004CBEFD /* ConfigurableCell.swift in Sources */,
 				9E1051861E8F07F500B83411 /* URLParametersTransformable.swift in Sources */,
 				12C7940C1E9135F300B9389F /* FiltersViewController.swift in Sources */,
@@ -1143,7 +1114,6 @@
 				9ED902881E86B940004CBEFD /* AppDelegate.swift in Sources */,
 				12C793FB1E9135F300B9389F /* ReportsCoordinator.swift in Sources */,
 				9E10517B1E8F07F500B83411 /* NetworkClient.swift in Sources */,
-				9ED902C61E87A7D0004CBEFD /* UserStoryAssembly.swift in Sources */,
 				12C794191E913DEB00B9389F /* ReportsFeedAssembly.swift in Sources */,
 				12C793BB1E912C6B00B9389F /* ApplicationCoordinatorFactory.swift in Sources */,
 				9E1051791E8F07F500B83411 /* Deserializer.swift in Sources */,
@@ -1151,7 +1121,6 @@
 				12C794051E9135F300B9389F /* FeedViewModelImplementation.swift in Sources */,
 				9ED902BE1E87A718004CBEFD /* ServiceAssembly.swift in Sources */,
 				9E10518E1E8F8FC300B83411 /* PresentationServcieConfiguration.swift in Sources */,
-				9ED902C81E87A7EC004CBEFD /* UserStoryAssemblyImplementation.swift in Sources */,
 				9ED902CE1E87C52B004CBEFD /* ModuleOutput.swift in Sources */,
 				12C793CE1E912DAD00B9389F /* UIColor.swift in Sources */,
 				12C7940E1E9135F300B9389F /* FilterCellViewModelFactory.swift in Sources */,
@@ -1169,7 +1138,6 @@
 				9ED902F21E87E3BD004CBEFD /* FavouritesCoordinator.swift in Sources */,
 				9E1051971E8F9CCB00B83411 /* SearchConfigurationFactoryImplementation.swift in Sources */,
 				9E1051561E8E470600B83411 /* FilterFactoryImplementation.swift in Sources */,
-				9ED902B71E87A662004CBEFD /* CoordinatorAssembly.swift in Sources */,
 				12C793FC1E9135F300B9389F /* ReportsCoordinatorImplementation.swift in Sources */,
 				12C7941C1E913E8100B9389F /* ReportsFiltersAssembly.swift in Sources */,
 				12C794161E913D6400B9389F /* FavouritesFeedAssembly.swift in Sources */,

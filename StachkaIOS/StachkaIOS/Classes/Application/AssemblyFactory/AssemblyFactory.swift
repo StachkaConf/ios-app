@@ -14,10 +14,8 @@ protocol Assembly {}
 class TemporaryAssembly: Assembly {}
 
 protocol AssemblyFactory {
-    func userStories() -> UserStoryAssembly
     func services() -> ServiceAssembly
     func core() -> CoreAssembly
     func helpers() -> HelperAssembly
-    func coordinators() -> CoordinatorAssembly
 }
 
