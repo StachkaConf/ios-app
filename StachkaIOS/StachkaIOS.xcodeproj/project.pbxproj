@@ -13,6 +13,7 @@
 		128AEF601E9107E4003FD79A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128AEF5F1E9107E4003FD79A /* Constants.swift */; };
 		128AEF641E910944003FD79A /* InitialUserStoriesCoordinatorsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128AEF621E910944003FD79A /* InitialUserStoriesCoordinatorsFactory.swift */; };
 		128AEF651E910944003FD79A /* InitialUserStoriesCoordinatorsFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128AEF631E910944003FD79A /* InitialUserStoriesCoordinatorsFactoryImplementation.swift */; };
+		12C793B81E912BF300B9389F /* TabBarEmbedding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C793B71E912BF300B9389F /* TabBarEmbedding.swift */; };
 		5AF5A1545E1A8BF150582F85 /* Pods_StachkaIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19E758D4E38E6E1B9BEB60EF /* Pods_StachkaIOS.framework */; };
 		9E1051381E8B592500B83411 /* FiltersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1051371E8B592500B83411 /* FiltersView.swift */; };
 		9E10513A1E8B5BD900B83411 /* FilterCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1051391E8B5BD900B83411 /* FilterCellViewModel.swift */; };
@@ -67,7 +68,6 @@
 		9ED9029E1E86BC1E004CBEFD /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED9029D1E86BC1E004CBEFD /* ApplicationCoordinator.swift */; };
 		9ED902A01E86BC4A004CBEFD /* ApplicationCoordinatorImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED9029F1E86BC4A004CBEFD /* ApplicationCoordinatorImplementation.swift */; };
 		9ED902AB1E86C0B4004CBEFD /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902AA1E86C0B4004CBEFD /* TabBarController.swift */; };
-		9ED902AD1E86C0E4004CBEFD /* TabBarEmbedding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902AC1E86C0E4004CBEFD /* TabBarEmbedding.swift */; };
 		9ED902AF1E87A1A2004CBEFD /* AssemblyFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902AE1E87A1A2004CBEFD /* AssemblyFactoryImplementation.swift */; };
 		9ED902B71E87A662004CBEFD /* CoordinatorAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902B51E87A662004CBEFD /* CoordinatorAssembly.swift */; };
 		9ED902B81E87A662004CBEFD /* CoordinatorAssemblyImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902B61E87A662004CBEFD /* CoordinatorAssemblyImplementation.swift */; };
@@ -139,6 +139,7 @@
 		128AEF5F1E9107E4003FD79A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		128AEF621E910944003FD79A /* InitialUserStoriesCoordinatorsFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialUserStoriesCoordinatorsFactory.swift; sourceTree = "<group>"; };
 		128AEF631E910944003FD79A /* InitialUserStoriesCoordinatorsFactoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialUserStoriesCoordinatorsFactoryImplementation.swift; sourceTree = "<group>"; };
+		12C793B71E912BF300B9389F /* TabBarEmbedding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarEmbedding.swift; sourceTree = "<group>"; };
 		19E758D4E38E6E1B9BEB60EF /* Pods_StachkaIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StachkaIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E1051371E8B592500B83411 /* FiltersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltersView.swift; sourceTree = "<group>"; };
 		9E1051391E8B5BD900B83411 /* FilterCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterCellViewModel.swift; sourceTree = "<group>"; };
@@ -197,7 +198,6 @@
 		9ED9029D1E86BC1E004CBEFD /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		9ED9029F1E86BC4A004CBEFD /* ApplicationCoordinatorImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinatorImplementation.swift; sourceTree = "<group>"; };
 		9ED902AA1E86C0B4004CBEFD /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		9ED902AC1E86C0E4004CBEFD /* TabBarEmbedding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarEmbedding.swift; sourceTree = "<group>"; };
 		9ED902AE1E87A1A2004CBEFD /* AssemblyFactoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssemblyFactoryImplementation.swift; sourceTree = "<group>"; };
 		9ED902B51E87A662004CBEFD /* CoordinatorAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorAssembly.swift; sourceTree = "<group>"; };
 		9ED902B61E87A662004CBEFD /* CoordinatorAssemblyImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorAssemblyImplementation.swift; sourceTree = "<group>"; };
@@ -624,7 +624,6 @@
 			isa = PBXGroup;
 			children = (
 				9ED902AA1E86C0B4004CBEFD /* TabBarController.swift */,
-				9ED902AC1E86C0E4004CBEFD /* TabBarEmbedding.swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -773,6 +772,7 @@
 		9ED902DB1E87C903004CBEFD /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				12C793B71E912BF300B9389F /* TabBarEmbedding.swift */,
 				9ED902DC1E87C925004CBEFD /* UIViewController.swift */,
 				9ED903011E882901004CBEFD /* UIImage.swift */,
 				9ED903031E882D99004CBEFD /* UIColor.swift */,
@@ -1099,6 +1099,7 @@
 				9ED902AF1E87A1A2004CBEFD /* AssemblyFactoryImplementation.swift in Sources */,
 				9E1051921E8F938300B83411 /* Observable.swift in Sources */,
 				9E10517D1E8F07F500B83411 /* NetworkRequestConstants.swift in Sources */,
+				12C793B81E912BF300B9389F /* TabBarEmbedding.swift in Sources */,
 				9E10517C1E8F07F500B83411 /* NetworkClientImplementation.swift in Sources */,
 				9ED902ED1E87DE20004CBEFD /* FeedViewModelImplementation.swift in Sources */,
 				9ED902F41E87E3D5004CBEFD /* FavouritesCoordinatorImplementation.swift in Sources */,
@@ -1124,7 +1125,6 @@
 				9E5D0CBA1E8996E500E8B226 /* CoordinatorConfigurable.swift in Sources */,
 				9E1051511E8D93EF00B83411 /* FilterServiceImplementation.swift in Sources */,
 				9ED902881E86B940004CBEFD /* AppDelegate.swift in Sources */,
-				9ED902AD1E86C0E4004CBEFD /* TabBarEmbedding.swift in Sources */,
 				9E10517B1E8F07F500B83411 /* NetworkClient.swift in Sources */,
 				9ED902C61E87A7D0004CBEFD /* UserStoryAssembly.swift in Sources */,
 				9ED903041E882D99004CBEFD /* UIColor.swift in Sources */,
