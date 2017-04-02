@@ -97,6 +97,6 @@ class FilterServiceImplementation: FilterService {
             observables.append(observable)
         }
         let concatSequence = Observable.concat(observables)
-        return concatSequence.map { $0 as! [Filter] }
+        return concatSequence.map { $0.flatMap { $0 as? Filter } }
     }
 }

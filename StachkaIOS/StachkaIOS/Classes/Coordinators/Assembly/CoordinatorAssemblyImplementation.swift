@@ -16,10 +16,6 @@ class CoordinatorAssemblyImplementation: CoordinatorAssembly {
         self.assemblyFactory =  assemblyFactory
     }
 
-    func applicationCoordinator(window: UIWindow) -> ApplicationCoordinator {
-        return ApplicationCoordinatorImplementation(assembly: AssemblyFactoryImplementation(), window: window)
-    }
-
     func conferencesCoordinator(rootController: UIViewController) -> ConferencesCoordinator {
         return ConferencesCoordinatorImplementation(assembly: assemblyFactory, rootController: rootController)
     }
