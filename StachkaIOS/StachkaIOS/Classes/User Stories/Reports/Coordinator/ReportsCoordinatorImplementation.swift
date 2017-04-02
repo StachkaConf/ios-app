@@ -11,21 +11,37 @@ import RxSwift
 
 class ReportsCoordinatorImplementation: ReportsCoordinator {
 
-    private let rootController: UIViewController
-    private let assembly: AssemblyFactory
+    private let rootTabBarController: UITabBarController
+    private let reportsUserStoryAssembliesFactory: ReportsUserStoryAssembliesFactory
+    
     private let disposeBag = DisposeBag()
     private var filters = PublishSubject<[Filter]>()
 
-    init(assembly: AssemblyFactory, rootController: UIViewController) {
-        self.rootController = rootController
-        self.assembly = assembly
+    private var reportsUserStoryRootController: UIViewController?
+    
+    init(rootTabBarController: UITabBarController,
+         reportsUserStoryAssembliesFactory: ReportsUserStoryAssembliesFactory) {
+        self.rootTabBarController = rootTabBarController
+        self.reportsUserStoryAssembliesFactory = reportsUserStoryAssembliesFactory
     }
 
     func start() {
-        guard let moduleOutputProvider = rootController as? ModuleOutputProvider,
-              let configurableOutput = moduleOutputProvider.moduleOutput as? FeedModuleOutput & CoordinatorConfigurable
+        reportsUserStoryRootController = reportsUserStoryAssembliesFactory.reportsFeedAssembly().module()
+        
+        guard let userStoryRootController = self.reportsUserStoryRootController else {
+            return
+        }
+        
+        let nc = UINavigationController(rootViewController: userStoryRootController)
+        rootTabBarController.embed(viewController: nc)
+        
+        guard let moduleOutputProvider = userStoryRootController as? ModuleOutputProvider
             else {
                 return
+        }
+        
+        guard let configurableOutput = moduleOutputProvider.moduleOutput as? FeedModuleOutput else {
+            return
         }
 
         configurableOutput
@@ -35,18 +51,24 @@ class ReportsCoordinatorImplementation: ReportsCoordinator {
             })
             .disposed(by: disposeBag)
 
-        configurableOutput.configure(withCoordinator: self)
+        guard let df = configurableOutput as? CoordinatorConfigurable else {
+            return
+        }
+        
+        df.configure(withCoordinator: self)
     }
-
-    private func openFilters() {
-        let filtersModule = assembly.userStories().conferencesFilterModule()
-        rootController.navigationController?.pushViewController(filtersModule, animated: true)
-    }
-
+    
     // MARK: ReportsCoordinatorOutput
-
+    
     var filtersChanged: Observable<[Filter]> {
         return filters.asObservable()
+    }
+    
+    // MARK: - Вспомогательные методы
+ 
+    private func openFilters() {
+        let filtersModule = reportsUserStoryAssembliesFactory.reportsFiltersAssembly().module()
+        reportsUserStoryRootController?.navigationController?.pushViewController(filtersModule, animated: true)
     }
 }
 

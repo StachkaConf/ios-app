@@ -11,7 +11,9 @@ import UIKit
 
 class InitialUserStoriesCoordinatorsFactoryImplementation: InitialUserStoriesCoordinatorsFactory {
     func reportsCoordinator(rootTabBarController: UITabBarController) -> ReportsCoordinator {
-        return ReportsCoordinatorImplementation(assembly: AssemblyFactoryImplementation(), rootController: rootTabBarController)
+        let reportsUserStoryAssembliesFactory = ReportsUserStoryAssembliesFactoryImplementation()
+        return ReportsCoordinatorImplementation(rootTabBarController: rootTabBarController,
+                                                reportsUserStoryAssembliesFactory: reportsUserStoryAssembliesFactory)
     }
     
     func favouritesCoordinator(rootTabBarController: UITabBarController) -> FavouritesCoordinator {
