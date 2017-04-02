@@ -11,6 +11,7 @@
 		128AEF551E8FCF1A003FD79A /* UserStoryCoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128AEF541E8FCF1A003FD79A /* UserStoryCoordinatorFactory.swift */; };
 		128AEF571E8FCFEE003FD79A /* UserStoryCoordinatorFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128AEF561E8FCFEE003FD79A /* UserStoryCoordinatorFactoryImplementation.swift */; };
 		128AEF5B1E91069A003FD79A /* ModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128AEF5A1E91069A003FD79A /* ModuleAssembly.swift */; };
+		128AEF5D1E91070F003FD79A /* OnboardingAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128AEF5C1E91070F003FD79A /* OnboardingAssembly.swift */; };
 		5AF5A1545E1A8BF150582F85 /* Pods_StachkaIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19E758D4E38E6E1B9BEB60EF /* Pods_StachkaIOS.framework */; };
 		9E1051381E8B592500B83411 /* FiltersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1051371E8B592500B83411 /* FiltersView.swift */; };
 		9E10513A1E8B5BD900B83411 /* FilterCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1051391E8B5BD900B83411 /* FilterCellViewModel.swift */; };
@@ -135,6 +136,7 @@
 		128AEF541E8FCF1A003FD79A /* UserStoryCoordinatorFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserStoryCoordinatorFactory.swift; sourceTree = "<group>"; };
 		128AEF561E8FCFEE003FD79A /* UserStoryCoordinatorFactoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserStoryCoordinatorFactoryImplementation.swift; sourceTree = "<group>"; };
 		128AEF5A1E91069A003FD79A /* ModuleAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleAssembly.swift; sourceTree = "<group>"; };
+		128AEF5C1E91070F003FD79A /* OnboardingAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingAssembly.swift; sourceTree = "<group>"; };
 		19E758D4E38E6E1B9BEB60EF /* Pods_StachkaIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StachkaIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E1051371E8B592500B83411 /* FiltersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltersView.swift; sourceTree = "<group>"; };
 		9E1051391E8B5BD900B83411 /* FilterCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterCellViewModel.swift; sourceTree = "<group>"; };
@@ -274,6 +276,7 @@
 		128AEF581E9104AD003FD79A /* Assembly */ = {
 			isa = PBXGroup;
 			children = (
+				128AEF5C1E91070F003FD79A /* OnboardingAssembly.swift */,
 			);
 			path = Assembly;
 			sourceTree = "<group>";
@@ -1057,6 +1060,7 @@
 				9E5D0CC51E899E7700E8B226 /* Filter.swift in Sources */,
 				9ED902891E86B940004CBEFD /* ViewController.swift in Sources */,
 				9ED902C01E87A74C004CBEFD /* ServiceAssemblyImplementation.swift in Sources */,
+				128AEF5D1E91070F003FD79A /* OnboardingAssembly.swift in Sources */,
 				9E10517A1E8F07F500B83411 /* JSONDeserializer.swift in Sources */,
 				9E1051381E8B592500B83411 /* FiltersView.swift in Sources */,
 				9ED903121E8913AE004CBEFD /* FiltersViewModel.swift in Sources */,
