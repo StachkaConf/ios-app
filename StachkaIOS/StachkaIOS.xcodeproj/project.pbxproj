@@ -50,6 +50,8 @@
 		12C7941C1E913E8100B9389F /* ReportsFiltersAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C7941B1E913E8100B9389F /* ReportsFiltersAssembly.swift */; };
 		12C7941F1E913F8E00B9389F /* ReportsUserStoryAssembliesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C7941E1E913F8E00B9389F /* ReportsUserStoryAssembliesFactory.swift */; };
 		12C794211E913FF800B9389F /* ReportsUserStoryAssembliesFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C794201E913FF800B9389F /* ReportsUserStoryAssembliesFactoryImplementation.swift */; };
+		12C794261E91814E00B9389F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C794241E91814E00B9389F /* Coordinator.swift */; };
+		12C794271E91814E00B9389F /* CoordinatorWithDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C794251E91814E00B9389F /* CoordinatorWithDependencies.swift */; };
 		5AF5A1545E1A8BF150582F85 /* Pods_StachkaIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19E758D4E38E6E1B9BEB60EF /* Pods_StachkaIOS.framework */; };
 		9E10514F1E8D939E00B83411 /* FilterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E10514E1E8D939E00B83411 /* FilterService.swift */; };
 		9E1051511E8D93EF00B83411 /* FilterServiceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1051501E8D93EF00B83411 /* FilterServiceImplementation.swift */; };
@@ -85,8 +87,6 @@
 		9ED9026F1E86B8BC004CBEFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ED9026D1E86B8BC004CBEFD /* LaunchScreen.storyboard */; };
 		9ED9027A1E86B8BC004CBEFD /* StachkaIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902791E86B8BC004CBEFD /* StachkaIOSTests.swift */; };
 		9ED902881E86B940004CBEFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902861E86B940004CBEFD /* AppDelegate.swift */; };
-		9ED902931E86BA02004CBEFD /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902921E86BA02004CBEFD /* Coordinator.swift */; };
-		9ED902951E86BA25004CBEFD /* CoordinatorWithDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902941E86BA25004CBEFD /* CoordinatorWithDependencies.swift */; };
 		9ED902981E86BA6F004CBEFD /* AssemblyFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902971E86BA6F004CBEFD /* AssemblyFactory.swift */; };
 		9ED9029E1E86BC1E004CBEFD /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED9029D1E86BC1E004CBEFD /* ApplicationCoordinator.swift */; };
 		9ED902A01E86BC4A004CBEFD /* ApplicationCoordinatorImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED9029F1E86BC4A004CBEFD /* ApplicationCoordinatorImplementation.swift */; };
@@ -176,6 +176,8 @@
 		12C7941B1E913E8100B9389F /* ReportsFiltersAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportsFiltersAssembly.swift; sourceTree = "<group>"; };
 		12C7941E1E913F8E00B9389F /* ReportsUserStoryAssembliesFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportsUserStoryAssembliesFactory.swift; sourceTree = "<group>"; };
 		12C794201E913FF800B9389F /* ReportsUserStoryAssembliesFactoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportsUserStoryAssembliesFactoryImplementation.swift; sourceTree = "<group>"; };
+		12C794241E91814E00B9389F /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		12C794251E91814E00B9389F /* CoordinatorWithDependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorWithDependencies.swift; sourceTree = "<group>"; };
 		19E758D4E38E6E1B9BEB60EF /* Pods_StachkaIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StachkaIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E10514E1E8D939E00B83411 /* FilterService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterService.swift; sourceTree = "<group>"; };
 		9E1051501E8D93EF00B83411 /* FilterServiceImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterServiceImplementation.swift; sourceTree = "<group>"; };
@@ -215,8 +217,6 @@
 		9ED902791E86B8BC004CBEFD /* StachkaIOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StachkaIOSTests.swift; sourceTree = "<group>"; };
 		9ED9027B1E86B8BC004CBEFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9ED902861E86B940004CBEFD /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9ED902921E86BA02004CBEFD /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		9ED902941E86BA25004CBEFD /* CoordinatorWithDependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorWithDependencies.swift; sourceTree = "<group>"; };
 		9ED902971E86BA6F004CBEFD /* AssemblyFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssemblyFactory.swift; sourceTree = "<group>"; };
 		9ED9029D1E86BC1E004CBEFD /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		9ED9029F1E86BC4A004CBEFD /* ApplicationCoordinatorImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinatorImplementation.swift; sourceTree = "<group>"; };
@@ -492,6 +492,23 @@
 			path = ReportsUserStoryAssembliesFactory;
 			sourceTree = "<group>";
 		};
+		12C794221E91814E00B9389F /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				12C794231E91814E00B9389F /* Abstract */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		12C794231E91814E00B9389F /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				12C794241E91814E00B9389F /* Coordinator.swift */,
+				12C794251E91814E00B9389F /* CoordinatorWithDependencies.swift */,
+			);
+			path = Abstract;
+			sourceTree = "<group>";
+		};
 		9A43D1B1BE2F9F15D41DDA93 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -668,7 +685,6 @@
 			children = (
 				9ED902851E86B940004CBEFD /* Application */,
 				9E5D0CC21E899E6B00E8B226 /* Entities */,
-				9ED9028E1E86B97D004CBEFD /* Coordinators */,
 				9ED9028A1E86B949004CBEFD /* Helpers */,
 				9ED9028B1E86B949004CBEFD /* Services */,
 				9ED9028C1E86B949004CBEFD /* Core */,
@@ -694,6 +710,7 @@
 				9ED902B31E87A600004CBEFD /* Assembly */,
 				9ED902F81E880D9B004CBEFD /* ConfigurableCell */,
 				128AEF5E1E9107DE003FD79A /* Constants */,
+				12C794221E91814E00B9389F /* Coordinators */,
 				12C793C41E912DAD00B9389F /* Extensions */,
 				9E1051521E8E46B000B83411 /* FilterFactory */,
 				128AEF591E91068E003FD79A /* ModuleAssembly */,
@@ -741,24 +758,6 @@
 			);
 			name = "User Stories";
 			path = "Classes/User Stories";
-			sourceTree = "<group>";
-		};
-		9ED9028E1E86B97D004CBEFD /* Coordinators */ = {
-			isa = PBXGroup;
-			children = (
-				9ED902911E86BA02004CBEFD /* Abstract */,
-			);
-			name = Coordinators;
-			path = Classes/Coordinators;
-			sourceTree = "<group>";
-		};
-		9ED902911E86BA02004CBEFD /* Abstract */ = {
-			isa = PBXGroup;
-			children = (
-				9ED902921E86BA02004CBEFD /* Coordinator.swift */,
-				9ED902941E86BA25004CBEFD /* CoordinatorWithDependencies.swift */,
-			);
-			path = Abstract;
 			sourceTree = "<group>";
 		};
 		9ED902961E86BA5E004CBEFD /* AssemblyFactory */ = {
@@ -1098,10 +1097,10 @@
 				9ED902E71E87DB0C004CBEFD /* FavouritesFeedModuleOutput.swift in Sources */,
 				12C7940A1E9135F300B9389F /* TickFilterCellViewModel.swift in Sources */,
 				128AEF601E9107E4003FD79A /* Constants.swift in Sources */,
-				9ED902951E86BA25004CBEFD /* CoordinatorWithDependencies.swift in Sources */,
 				12C793D01E912DAD00B9389F /* UIStoryboard.swift in Sources */,
 				9E1051541E8E46EF00B83411 /* FilterFactory.swift in Sources */,
 				9E5D0CBD1E89975900E8B226 /* ModuleInput.swift in Sources */,
+				12C794271E91814E00B9389F /* CoordinatorWithDependencies.swift in Sources */,
 				9ED902C21E87A770004CBEFD /* CoreAssembly.swift in Sources */,
 				12C793FE1E9135F300B9389F /* PresentationCell.swift in Sources */,
 				12C793CF1E912DAD00B9389F /* UIImage.swift in Sources */,
@@ -1119,12 +1118,12 @@
 				9E1051791E8F07F500B83411 /* Deserializer.swift in Sources */,
 				9ED902E51E87DAEE004CBEFD /* FavouritesFeedViewModelImplementation.swift in Sources */,
 				12C794051E9135F300B9389F /* FeedViewModelImplementation.swift in Sources */,
+				12C794261E91814E00B9389F /* Coordinator.swift in Sources */,
 				9ED902BE1E87A718004CBEFD /* ServiceAssembly.swift in Sources */,
 				9E10518E1E8F8FC300B83411 /* PresentationServcieConfiguration.swift in Sources */,
 				9ED902CE1E87C52B004CBEFD /* ModuleOutput.swift in Sources */,
 				12C793CE1E912DAD00B9389F /* UIColor.swift in Sources */,
 				12C7940E1E9135F300B9389F /* FilterCellViewModelFactory.swift in Sources */,
-				9ED902931E86BA02004CBEFD /* Coordinator.swift in Sources */,
 				12C794001E9135F300B9389F /* PresentationCellViewModel.swift in Sources */,
 				9E1051891E8F0C7900B83411 /* PresentationService.swift in Sources */,
 				128AEF5B1E91069A003FD79A /* ModuleAssembly.swift in Sources */,
