@@ -61,7 +61,6 @@
 		9ED9026F1E86B8BC004CBEFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ED9026D1E86B8BC004CBEFD /* LaunchScreen.storyboard */; };
 		9ED9027A1E86B8BC004CBEFD /* StachkaIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902791E86B8BC004CBEFD /* StachkaIOSTests.swift */; };
 		9ED902881E86B940004CBEFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902861E86B940004CBEFD /* AppDelegate.swift */; };
-		9ED902891E86B940004CBEFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902871E86B940004CBEFD /* ViewController.swift */; };
 		9ED902931E86BA02004CBEFD /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902921E86BA02004CBEFD /* Coordinator.swift */; };
 		9ED902951E86BA25004CBEFD /* CoordinatorWithDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902941E86BA25004CBEFD /* CoordinatorWithDependencies.swift */; };
 		9ED902981E86BA6F004CBEFD /* AssemblyFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902971E86BA6F004CBEFD /* AssemblyFactory.swift */; };
@@ -191,7 +190,6 @@
 		9ED902791E86B8BC004CBEFD /* StachkaIOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StachkaIOSTests.swift; sourceTree = "<group>"; };
 		9ED9027B1E86B8BC004CBEFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9ED902861E86B940004CBEFD /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9ED902871E86B940004CBEFD /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9ED902921E86BA02004CBEFD /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		9ED902941E86BA25004CBEFD /* CoordinatorWithDependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorWithDependencies.swift; sourceTree = "<group>"; };
 		9ED902971E86BA6F004CBEFD /* AssemblyFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssemblyFactory.swift; sourceTree = "<group>"; };
@@ -522,7 +520,6 @@
 				9ED9029C1E86BC12004CBEFD /* Coordinator */,
 				9ED902961E86BA5E004CBEFD /* AssemblyFactory */,
 				9ED902861E86B940004CBEFD /* AppDelegate.swift */,
-				9ED902871E86B940004CBEFD /* ViewController.swift */,
 			);
 			name = Application;
 			path = Classes/Application;
@@ -1069,7 +1066,6 @@
 				9E10513C1E8B5FC100B83411 /* UIStoryboard.swift in Sources */,
 				9ED902DA1E87C82B004CBEFD /* FeedViewController.swift in Sources */,
 				9E5D0CC51E899E7700E8B226 /* Filter.swift in Sources */,
-				9ED902891E86B940004CBEFD /* ViewController.swift in Sources */,
 				128AEF641E910944003FD79A /* InitialUserStoriesCoordinatorsFactory.swift in Sources */,
 				9ED902C01E87A74C004CBEFD /* ServiceAssemblyImplementation.swift in Sources */,
 				128AEF5D1E91070F003FD79A /* OnboardingAssembly.swift in Sources */,
