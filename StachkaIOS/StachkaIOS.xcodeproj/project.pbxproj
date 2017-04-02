@@ -46,6 +46,8 @@
 		12C794111E9135F300B9389F /* FiltersViewModelImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C793F91E9135F300B9389F /* FiltersViewModelImplementation.swift */; };
 		12C794121E9135F300B9389F /* Reports.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12C793FA1E9135F300B9389F /* Reports.storyboard */; };
 		12C794161E913D6400B9389F /* FavouritesFeedAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C794151E913D6400B9389F /* FavouritesFeedAssembly.swift */; };
+		12C794191E913DEB00B9389F /* ReportsFeedAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C794181E913DEB00B9389F /* ReportsFeedAssembly.swift */; };
+		12C7941C1E913E8100B9389F /* ReportsFiltersAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C7941B1E913E8100B9389F /* ReportsFiltersAssembly.swift */; };
 		5AF5A1545E1A8BF150582F85 /* Pods_StachkaIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19E758D4E38E6E1B9BEB60EF /* Pods_StachkaIOS.framework */; };
 		9E10514F1E8D939E00B83411 /* FilterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E10514E1E8D939E00B83411 /* FilterService.swift */; };
 		9E1051511E8D93EF00B83411 /* FilterServiceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1051501E8D93EF00B83411 /* FilterServiceImplementation.swift */; };
@@ -172,6 +174,8 @@
 		12C793F91E9135F300B9389F /* FiltersViewModelImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltersViewModelImplementation.swift; sourceTree = "<group>"; };
 		12C793FA1E9135F300B9389F /* Reports.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Reports.storyboard; sourceTree = "<group>"; };
 		12C794151E913D6400B9389F /* FavouritesFeedAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouritesFeedAssembly.swift; sourceTree = "<group>"; };
+		12C794181E913DEB00B9389F /* ReportsFeedAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportsFeedAssembly.swift; sourceTree = "<group>"; };
+		12C7941B1E913E8100B9389F /* ReportsFiltersAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportsFiltersAssembly.swift; sourceTree = "<group>"; };
 		19E758D4E38E6E1B9BEB60EF /* Pods_StachkaIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StachkaIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E10514E1E8D939E00B83411 /* FilterService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterService.swift; sourceTree = "<group>"; };
 		9E1051501E8D93EF00B83411 /* FilterServiceImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterServiceImplementation.swift; sourceTree = "<group>"; };
@@ -353,6 +357,7 @@
 		12C793DB1E9135F300B9389F /* Feed */ = {
 			isa = PBXGroup;
 			children = (
+				12C794171E913DD700B9389F /* Assembly */,
 				12C793DC1E9135F300B9389F /* View */,
 				12C793E41E9135F300B9389F /* ViewModel */,
 			);
@@ -400,6 +405,7 @@
 		12C793E81E9135F300B9389F /* Filters */ = {
 			isa = PBXGroup;
 			children = (
+				12C7941A1E913E6D00B9389F /* Assembly */,
 				12C793E91E9135F300B9389F /* View */,
 				12C793F31E9135F300B9389F /* ViewModel */,
 			);
@@ -460,6 +466,22 @@
 			isa = PBXGroup;
 			children = (
 				12C794151E913D6400B9389F /* FavouritesFeedAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		12C794171E913DD700B9389F /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				12C794181E913DEB00B9389F /* ReportsFeedAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		12C7941A1E913E6D00B9389F /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				12C7941B1E913E8100B9389F /* ReportsFiltersAssembly.swift */,
 			);
 			path = Assembly;
 			sourceTree = "<group>";
@@ -1107,6 +1129,7 @@
 				12C793FB1E9135F300B9389F /* ReportsCoordinator.swift in Sources */,
 				9E10517B1E8F07F500B83411 /* NetworkClient.swift in Sources */,
 				9ED902C61E87A7D0004CBEFD /* UserStoryAssembly.swift in Sources */,
+				12C794191E913DEB00B9389F /* ReportsFeedAssembly.swift in Sources */,
 				12C793BB1E912C6B00B9389F /* ApplicationCoordinatorFactory.swift in Sources */,
 				9E1051791E8F07F500B83411 /* Deserializer.swift in Sources */,
 				9ED902E51E87DAEE004CBEFD /* FavouritesFeedViewModelImplementation.swift in Sources */,
@@ -1133,6 +1156,7 @@
 				9E1051561E8E470600B83411 /* FilterFactoryImplementation.swift in Sources */,
 				9ED902B71E87A662004CBEFD /* CoordinatorAssembly.swift in Sources */,
 				12C793FC1E9135F300B9389F /* ReportsCoordinatorImplementation.swift in Sources */,
+				12C7941C1E913E8100B9389F /* ReportsFiltersAssembly.swift in Sources */,
 				12C794161E913D6400B9389F /* FavouritesFeedAssembly.swift in Sources */,
 				9E10518C1E8F8F4200B83411 /* Presentation.swift in Sources */,
 				9ED902BA1E87A6BF004CBEFD /* HelperAssembly.swift in Sources */,
