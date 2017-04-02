@@ -11,10 +11,13 @@ import UIKit
 
 class InitialUserStoriesCoordinatorsFactoryImplementation: InitialUserStoriesCoordinatorsFactory {
     func reportsCoordinator(rootTabBarController: UITabBarController) -> ConferencesCoordinator {
-        return ConferencesCoordinatorImplementation(assembly: AssemblyFactoryImplementation(), rootController: rootTabBarController);
+        return ConferencesCoordinatorImplementation(assembly: AssemblyFactoryImplementation(), rootController: rootTabBarController)
     }
     
     func favouritesCoordinator(rootTabBarController: UITabBarController) -> FavouritesCoordinator {
-        return FavouritesCoordinatorImplemenation(assembly: AssemblyFactoryImplementation(), rootController: rootTabBarController);
+        
+        let moduleAssembly = FavouritesAssembly()
+        return FavouritesCoordinatorImplemenation(rootTabBarController: rootTabBarController,
+                                                  moduleAssembly: moduleAssembly)
     }
 }

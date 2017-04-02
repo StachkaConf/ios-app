@@ -11,5 +11,4 @@ import UIKit
 
 protocol CoordinatorAssembly {
     func conferencesCoordinator(rootController: UIViewController) -> ConferencesCoordinator
-    func favouritesCoordinator(rootController: UIViewController) -> FavouritesCoordinator
 }

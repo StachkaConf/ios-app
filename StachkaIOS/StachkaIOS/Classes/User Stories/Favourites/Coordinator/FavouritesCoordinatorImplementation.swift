@@ -9,14 +9,18 @@
 import UIKit
 
 class FavouritesCoordinatorImplemenation: FavouritesCoordinator, CoordinatorWithDependencies {
-    var childCoordinators: [Coordinator] = []
-    weak var rootController: UIViewController?
-    let assembly: AssemblyFactory
+    weak var rootController: UITabBarController?
+    let moduleAssembly: ModuleAssembly
 
-    init(assembly: AssemblyFactory, rootController: UIViewController) {
-        self.assembly = assembly
-        self.rootController = rootController
+    var childCoordinators: [Coordinator] = []
+    
+    init(rootTabBarController: UITabBarController, moduleAssembly: ModuleAssembly) {
+        self.rootController = rootTabBarController
+        self.moduleAssembly = moduleAssembly
     }
 
-    func start() {}
+    func start() {
+        let nc = UINavigationController(rootViewController: moduleAssembly.module())
+        self.rootController?.embed(viewController: nc)
+    }
 }
