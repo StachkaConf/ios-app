@@ -10,6 +10,7 @@
 		128AEF521E8FC90A003FD79A /* ApplicationCoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128AEF511E8FC90A003FD79A /* ApplicationCoordinatorFactory.swift */; };
 		128AEF551E8FCF1A003FD79A /* UserStoryCoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128AEF541E8FCF1A003FD79A /* UserStoryCoordinatorFactory.swift */; };
 		128AEF571E8FCFEE003FD79A /* UserStoryCoordinatorFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128AEF561E8FCFEE003FD79A /* UserStoryCoordinatorFactoryImplementation.swift */; };
+		128AEF5B1E91069A003FD79A /* ModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128AEF5A1E91069A003FD79A /* ModuleAssembly.swift */; };
 		5AF5A1545E1A8BF150582F85 /* Pods_StachkaIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19E758D4E38E6E1B9BEB60EF /* Pods_StachkaIOS.framework */; };
 		9E1051381E8B592500B83411 /* FiltersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1051371E8B592500B83411 /* FiltersView.swift */; };
 		9E10513A1E8B5BD900B83411 /* FilterCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1051391E8B5BD900B83411 /* FilterCellViewModel.swift */; };
@@ -133,6 +134,7 @@
 		128AEF511E8FC90A003FD79A /* ApplicationCoordinatorFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinatorFactory.swift; sourceTree = "<group>"; };
 		128AEF541E8FCF1A003FD79A /* UserStoryCoordinatorFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserStoryCoordinatorFactory.swift; sourceTree = "<group>"; };
 		128AEF561E8FCFEE003FD79A /* UserStoryCoordinatorFactoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserStoryCoordinatorFactoryImplementation.swift; sourceTree = "<group>"; };
+		128AEF5A1E91069A003FD79A /* ModuleAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleAssembly.swift; sourceTree = "<group>"; };
 		19E758D4E38E6E1B9BEB60EF /* Pods_StachkaIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StachkaIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E1051371E8B592500B83411 /* FiltersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltersView.swift; sourceTree = "<group>"; };
 		9E1051391E8B5BD900B83411 /* FilterCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterCellViewModel.swift; sourceTree = "<group>"; };
@@ -267,6 +269,21 @@
 				128AEF561E8FCFEE003FD79A /* UserStoryCoordinatorFactoryImplementation.swift */,
 			);
 			path = UserStoryCoordinatorFactory;
+			sourceTree = "<group>";
+		};
+		128AEF581E9104AD003FD79A /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		128AEF591E91068E003FD79A /* ModuleAssembly */ = {
+			isa = PBXGroup;
+			children = (
+				128AEF5A1E91069A003FD79A /* ModuleAssembly.swift */,
+			);
+			path = ModuleAssembly;
 			sourceTree = "<group>";
 		};
 		9A43D1B1BE2F9F15D41DDA93 /* Pods */ = {
@@ -503,6 +520,7 @@
 			children = (
 				9E1051931E8F9C7100B83411 /* SearchConfigurationFactory */,
 				9E1051521E8E46B000B83411 /* FilterFactory */,
+				128AEF591E91068E003FD79A /* ModuleAssembly */,
 				9E5D0CBB1E89974F00E8B226 /* ModuleInput */,
 				9ED902F81E880D9B004CBEFD /* ConfigurableCell */,
 				9ED902CC1E87C51E004CBEFD /* ModuleOutput */,
@@ -816,6 +834,7 @@
 		9ED903071E88E68D004CBEFD /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				128AEF581E9104AD003FD79A /* Assembly */,
 				9ED903081E88E68D004CBEFD /* View */,
 			);
 			path = Onboarding;
@@ -1105,6 +1124,7 @@
 				9ED902CE1E87C52B004CBEFD /* ModuleOutput.swift in Sources */,
 				9ED902931E86BA02004CBEFD /* Coordinator.swift in Sources */,
 				9E1051891E8F0C7900B83411 /* PresentationService.swift in Sources */,
+				128AEF5B1E91069A003FD79A /* ModuleAssembly.swift in Sources */,
 				9ED9029E1E86BC1E004CBEFD /* ApplicationCoordinator.swift in Sources */,
 				9ED9030A1E88E69E004CBEFD /* OnboardingViewController.swift in Sources */,
 				9ED902E91E87DCC1004CBEFD /* FeedViewModel.swift in Sources */,
