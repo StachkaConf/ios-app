@@ -42,11 +42,15 @@ class ApplicationCoordinatorImplementation: ApplicationCoordinator, CoordinatorW
     }
 
     func start() {
-        let reportsCoordinator = initialUserStoriesCoordinatorsFactory.reportsCoordinator(rootTabBarController: tabBarController)
-        add(coordinator: reportsCoordinator)
-        reportsCoordinator.start()
+        let talksNavigationController = UINavigationController()
+        tabBarController.embed(viewController: talksNavigationController)
+        let talksCoordinator = initialUserStoriesCoordinatorsFactory.talksCoordinator(rootNavigationController: talksNavigationController)
+        add(coordinator: talksCoordinator)
+        talksCoordinator.start()
 
-        let favouritesCoordinator = initialUserStoriesCoordinatorsFactory.favouritesCoordinator(rootTabBarController: tabBarController)
+        let favouritesNavigationController = UINavigationController()
+        tabBarController.embed(viewController: favouritesNavigationController)
+        let favouritesCoordinator = initialUserStoriesCoordinatorsFactory.favouritesCoordinator(rootNavigationController: favouritesNavigationController)
         add(coordinator: favouritesCoordinator)
         favouritesCoordinator.start()
         

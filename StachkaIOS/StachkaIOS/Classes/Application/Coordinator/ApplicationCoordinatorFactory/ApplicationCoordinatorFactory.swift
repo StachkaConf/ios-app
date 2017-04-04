@@ -9,15 +9,6 @@
 import Foundation
 import UIKit
 
-class ApplicationCoordinatorFactory {
-    func applicationCoordinator(window: UIWindow) -> ApplicationCoordinator {
-        let tabBarController = AppTabBarController()
-        let onboardingModuleAssembly = OnboardingAssembly()
-        let initialUserStoriesCoordinatorsFactory = InitialUserStoriesCoordinatorsFactoryImplementation()
-        
-        return ApplicationCoordinatorImplementation(window: window,
-                                                    rootTabBarController: tabBarController,
-                                                    onboardingModuleAssembly: onboardingModuleAssembly,
-                                                    initialUserStoriesCoordinatorsFactory: initialUserStoriesCoordinatorsFactory)
-    }
+protocol ApplicationCoordinatorFactory {
+    func applicationCoordinator(window: UIWindow) -> ApplicationCoordinator
 }

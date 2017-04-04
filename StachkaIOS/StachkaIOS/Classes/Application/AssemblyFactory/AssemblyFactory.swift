@@ -10,12 +10,11 @@ import Foundation
 
 protocol Assembly {}
 
-/// нужен только временно, чтобы не создавать сразу фабрики модулей
-class TemporaryAssembly: Assembly {}
-
 protocol AssemblyFactory {
     func services() -> ServiceAssembly
     func core() -> CoreAssembly
     func helpers() -> HelperAssembly
+    func userStory() -> UserStoryAssemblyFactory
+    func coordinators() -> CoordinatorFactory
 }
 

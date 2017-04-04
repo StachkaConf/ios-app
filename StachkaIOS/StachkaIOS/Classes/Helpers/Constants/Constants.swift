@@ -9,6 +9,6 @@
 import Foundation
 
 enum StoryboardName {
-    static let reports = "Reports"
+    static let talks = "Talks"
     static let main    = "Main"
 }

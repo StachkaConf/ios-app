@@ -21,35 +21,7 @@
 		12C793D01E912DAD00B9389F /* UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C793C91E912DAD00B9389F /* UIStoryboard.swift */; };
 		12C793D11E912DAD00B9389F /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C793CA1E912DAD00B9389F /* UITableView.swift */; };
 		12C793D21E912DAD00B9389F /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C793CB1E912DAD00B9389F /* UIViewController.swift */; };
-		12C793FB1E9135F300B9389F /* ReportsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C793D81E9135F300B9389F /* ReportsCoordinator.swift */; };
-		12C793FC1E9135F300B9389F /* ReportsCoordinatorImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C793D91E9135F300B9389F /* ReportsCoordinatorImplementation.swift */; };
-		12C793FD1E9135F300B9389F /* ReportsCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C793DA1E9135F300B9389F /* ReportsCoordinatorOutput.swift */; };
-		12C793FE1E9135F300B9389F /* PresentationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C793DF1E9135F300B9389F /* PresentationCell.swift */; };
-		12C793FF1E9135F300B9389F /* PresentationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12C793E01E9135F300B9389F /* PresentationCell.xib */; };
-		12C794001E9135F300B9389F /* PresentationCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C793E11E9135F300B9389F /* PresentationCellViewModel.swift */; };
-		12C794011E9135F300B9389F /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C793E21E9135F300B9389F /* FeedView.swift */; };
-		12C794021E9135F300B9389F /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C793E31E9135F300B9389F /* FeedViewController.swift */; };
-		12C794031E9135F300B9389F /* FeedModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C793E51E9135F300B9389F /* FeedModuleOutput.swift */; };
-		12C794041E9135F300B9389F /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C793E61E9135F300B9389F /* FeedViewModel.swift */; };
-		12C794051E9135F300B9389F /* FeedViewModelImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C793E71E9135F300B9389F /* FeedViewModelImplementation.swift */; };
-		12C794061E9135F300B9389F /* FilterCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C793EB1E9135F300B9389F /* FilterCellViewModel.swift */; };
-		12C794071E9135F300B9389F /* SectionFilterCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C793EC1E9135F300B9389F /* SectionFilterCellViewModel.swift */; };
-		12C794081E9135F300B9389F /* TickFilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C793EE1E9135F300B9389F /* TickFilterCell.swift */; };
-		12C794091E9135F300B9389F /* TickFilterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12C793EF1E9135F300B9389F /* TickFilterCell.xib */; };
-		12C7940A1E9135F300B9389F /* TickFilterCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C793F01E9135F300B9389F /* TickFilterCellViewModel.swift */; };
-		12C7940B1E9135F300B9389F /* FiltersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C793F11E9135F300B9389F /* FiltersView.swift */; };
-		12C7940C1E9135F300B9389F /* FiltersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C793F21E9135F300B9389F /* FiltersViewController.swift */; };
-		12C7940D1E9135F300B9389F /* FilterModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C793F41E9135F300B9389F /* FilterModuleOutput.swift */; };
-		12C7940E1E9135F300B9389F /* FilterCellViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C793F61E9135F300B9389F /* FilterCellViewModelFactory.swift */; };
-		12C7940F1E9135F300B9389F /* FilterCellViewModelFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C793F71E9135F300B9389F /* FilterCellViewModelFactoryImplementation.swift */; };
-		12C794101E9135F300B9389F /* FiltersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C793F81E9135F300B9389F /* FiltersViewModel.swift */; };
-		12C794111E9135F300B9389F /* FiltersViewModelImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C793F91E9135F300B9389F /* FiltersViewModelImplementation.swift */; };
-		12C794121E9135F300B9389F /* Reports.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12C793FA1E9135F300B9389F /* Reports.storyboard */; };
 		12C794161E913D6400B9389F /* FavouritesFeedAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C794151E913D6400B9389F /* FavouritesFeedAssembly.swift */; };
-		12C794191E913DEB00B9389F /* ReportsFeedAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C794181E913DEB00B9389F /* ReportsFeedAssembly.swift */; };
-		12C7941C1E913E8100B9389F /* ReportsFiltersAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C7941B1E913E8100B9389F /* ReportsFiltersAssembly.swift */; };
-		12C7941F1E913F8E00B9389F /* ReportsUserStoryAssembliesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C7941E1E913F8E00B9389F /* ReportsUserStoryAssembliesFactory.swift */; };
-		12C794211E913FF800B9389F /* ReportsUserStoryAssembliesFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C794201E913FF800B9389F /* ReportsUserStoryAssembliesFactoryImplementation.swift */; };
 		12C794261E91814E00B9389F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C794241E91814E00B9389F /* Coordinator.swift */; };
 		12C794271E91814E00B9389F /* CoordinatorWithDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C794251E91814E00B9389F /* CoordinatorWithDependencies.swift */; };
 		5AF5A1545E1A8BF150582F85 /* Pods_StachkaIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19E758D4E38E6E1B9BEB60EF /* Pods_StachkaIOS.framework */; };
@@ -106,6 +78,41 @@
 		9ED902F41E87E3D5004CBEFD /* FavouritesCoordinatorImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902F31E87E3D5004CBEFD /* FavouritesCoordinatorImplementation.swift */; };
 		9ED902FA1E880DA7004CBEFD /* ConfigurableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED902F91E880DA7004CBEFD /* ConfigurableCell.swift */; };
 		9ED9030A1E88E69E004CBEFD /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED903091E88E69E004CBEFD /* OnboardingViewController.swift */; };
+		9EE3F5A71E9397CA000471B6 /* TalksCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE3F57D1E9397CA000471B6 /* TalksCoordinator.swift */; };
+		9EE3F5A81E9397CA000471B6 /* TalksCoordinatorImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE3F57E1E9397CA000471B6 /* TalksCoordinatorImplementation.swift */; };
+		9EE3F5A91E9397CA000471B6 /* TalksCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE3F57F1E9397CA000471B6 /* TalksCoordinatorOutput.swift */; };
+		9EE3F5AC1E9397CA000471B6 /* TalksFeedAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE3F5851E9397CA000471B6 /* TalksFeedAssembly.swift */; };
+		9EE3F5AD1E9397CA000471B6 /* PresentationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE3F5891E9397CA000471B6 /* PresentationCell.swift */; };
+		9EE3F5AE1E9397CA000471B6 /* PresentationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EE3F58A1E9397CA000471B6 /* PresentationCell.xib */; };
+		9EE3F5AF1E9397CA000471B6 /* PresentationCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE3F58B1E9397CA000471B6 /* PresentationCellViewModel.swift */; };
+		9EE3F5B01E9397CA000471B6 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE3F58C1E9397CA000471B6 /* FeedView.swift */; };
+		9EE3F5B11E9397CA000471B6 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE3F58D1E9397CA000471B6 /* FeedViewController.swift */; };
+		9EE3F5B21E9397CA000471B6 /* FeedModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE3F58F1E9397CA000471B6 /* FeedModuleOutput.swift */; };
+		9EE3F5B31E9397CA000471B6 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE3F5901E9397CA000471B6 /* FeedViewModel.swift */; };
+		9EE3F5B41E9397CA000471B6 /* FeedViewModelImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE3F5911E9397CA000471B6 /* FeedViewModelImplementation.swift */; };
+		9EE3F5B51E9397CA000471B6 /* TalksFiltersAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE3F5941E9397CA000471B6 /* TalksFiltersAssembly.swift */; };
+		9EE3F5B61E9397CA000471B6 /* FilterCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE3F5971E9397CA000471B6 /* FilterCellViewModel.swift */; };
+		9EE3F5B71E9397CA000471B6 /* SectionFilterCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE3F5981E9397CA000471B6 /* SectionFilterCellViewModel.swift */; };
+		9EE3F5B81E9397CA000471B6 /* TickFilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE3F59A1E9397CA000471B6 /* TickFilterCell.swift */; };
+		9EE3F5B91E9397CA000471B6 /* TickFilterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EE3F59B1E9397CA000471B6 /* TickFilterCell.xib */; };
+		9EE3F5BA1E9397CA000471B6 /* TickFilterCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE3F59C1E9397CA000471B6 /* TickFilterCellViewModel.swift */; };
+		9EE3F5BB1E9397CA000471B6 /* FiltersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE3F59D1E9397CA000471B6 /* FiltersView.swift */; };
+		9EE3F5BC1E9397CA000471B6 /* FiltersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE3F59E1E9397CA000471B6 /* FiltersViewController.swift */; };
+		9EE3F5BD1E9397CA000471B6 /* FilterModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE3F5A01E9397CA000471B6 /* FilterModuleOutput.swift */; };
+		9EE3F5BE1E9397CA000471B6 /* FilterCellViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE3F5A21E9397CA000471B6 /* FilterCellViewModelFactory.swift */; };
+		9EE3F5BF1E9397CA000471B6 /* FilterCellViewModelFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE3F5A31E9397CA000471B6 /* FilterCellViewModelFactoryImplementation.swift */; };
+		9EE3F5C01E9397CA000471B6 /* FiltersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE3F5A41E9397CA000471B6 /* FiltersViewModel.swift */; };
+		9EE3F5C11E9397CA000471B6 /* FiltersViewModelImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE3F5A51E9397CA000471B6 /* FiltersViewModelImplementation.swift */; };
+		9EE3F5C21E9397CA000471B6 /* Talks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EE3F5A61E9397CA000471B6 /* Talks.storyboard */; };
+		9EE3F5C61E93988D000471B6 /* TalksUserStoryAssemblyFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE3F5C41E93988D000471B6 /* TalksUserStoryAssemblyFactory.swift */; };
+		9EE3F5C71E93988D000471B6 /* TalksUserStoryAssemblyFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE3F5C51E93988D000471B6 /* TalksUserStoryAssemblyFactoryImplementation.swift */; };
+		9EE3F5CA1E93A2C0000471B6 /* UserStoryAssemblyFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE3F5C91E93A2C0000471B6 /* UserStoryAssemblyFactory.swift */; };
+		9EE3F5CC1E93A2D5000471B6 /* UserStoryAssemblyFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE3F5CB1E93A2D5000471B6 /* UserStoryAssemblyFactoryImplementation.swift */; };
+		9EE3F5CF1E93A345000471B6 /* FavouritesAssemblyFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE3F5CE1E93A345000471B6 /* FavouritesAssemblyFactory.swift */; };
+		9EE3F5D11E93A353000471B6 /* FavouritesAssemblyFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE3F5D01E93A353000471B6 /* FavouritesAssemblyFactoryImplementation.swift */; };
+		9EE3F5D31E93A96B000471B6 /* ApplicationCoordinatorFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE3F5D21E93A96B000471B6 /* ApplicationCoordinatorFactoryImplementation.swift */; };
+		9EE3F5D61E93AB0B000471B6 /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE3F5D51E93AB0B000471B6 /* CoordinatorFactory.swift */; };
+		9EE3F5D81E93AB55000471B6 /* CoordinatorFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE3F5D71E93AB55000471B6 /* CoordinatorFactoryImplementation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -147,35 +154,7 @@
 		12C793C91E912DAD00B9389F /* UIStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboard.swift; sourceTree = "<group>"; };
 		12C793CA1E912DAD00B9389F /* UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		12C793CB1E912DAD00B9389F /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
-		12C793D81E9135F300B9389F /* ReportsCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportsCoordinator.swift; sourceTree = "<group>"; };
-		12C793D91E9135F300B9389F /* ReportsCoordinatorImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportsCoordinatorImplementation.swift; sourceTree = "<group>"; };
-		12C793DA1E9135F300B9389F /* ReportsCoordinatorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportsCoordinatorOutput.swift; sourceTree = "<group>"; };
-		12C793DF1E9135F300B9389F /* PresentationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationCell.swift; sourceTree = "<group>"; };
-		12C793E01E9135F300B9389F /* PresentationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PresentationCell.xib; sourceTree = "<group>"; };
-		12C793E11E9135F300B9389F /* PresentationCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationCellViewModel.swift; sourceTree = "<group>"; };
-		12C793E21E9135F300B9389F /* FeedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
-		12C793E31E9135F300B9389F /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
-		12C793E51E9135F300B9389F /* FeedModuleOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedModuleOutput.swift; sourceTree = "<group>"; };
-		12C793E61E9135F300B9389F /* FeedViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
-		12C793E71E9135F300B9389F /* FeedViewModelImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewModelImplementation.swift; sourceTree = "<group>"; };
-		12C793EB1E9135F300B9389F /* FilterCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterCellViewModel.swift; sourceTree = "<group>"; };
-		12C793EC1E9135F300B9389F /* SectionFilterCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionFilterCellViewModel.swift; sourceTree = "<group>"; };
-		12C793EE1E9135F300B9389F /* TickFilterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TickFilterCell.swift; sourceTree = "<group>"; };
-		12C793EF1E9135F300B9389F /* TickFilterCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TickFilterCell.xib; sourceTree = "<group>"; };
-		12C793F01E9135F300B9389F /* TickFilterCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TickFilterCellViewModel.swift; sourceTree = "<group>"; };
-		12C793F11E9135F300B9389F /* FiltersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltersView.swift; sourceTree = "<group>"; };
-		12C793F21E9135F300B9389F /* FiltersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltersViewController.swift; sourceTree = "<group>"; };
-		12C793F41E9135F300B9389F /* FilterModuleOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterModuleOutput.swift; sourceTree = "<group>"; };
-		12C793F61E9135F300B9389F /* FilterCellViewModelFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterCellViewModelFactory.swift; sourceTree = "<group>"; };
-		12C793F71E9135F300B9389F /* FilterCellViewModelFactoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterCellViewModelFactoryImplementation.swift; sourceTree = "<group>"; };
-		12C793F81E9135F300B9389F /* FiltersViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltersViewModel.swift; sourceTree = "<group>"; };
-		12C793F91E9135F300B9389F /* FiltersViewModelImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltersViewModelImplementation.swift; sourceTree = "<group>"; };
-		12C793FA1E9135F300B9389F /* Reports.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Reports.storyboard; sourceTree = "<group>"; };
 		12C794151E913D6400B9389F /* FavouritesFeedAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouritesFeedAssembly.swift; sourceTree = "<group>"; };
-		12C794181E913DEB00B9389F /* ReportsFeedAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportsFeedAssembly.swift; sourceTree = "<group>"; };
-		12C7941B1E913E8100B9389F /* ReportsFiltersAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportsFiltersAssembly.swift; sourceTree = "<group>"; };
-		12C7941E1E913F8E00B9389F /* ReportsUserStoryAssembliesFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportsUserStoryAssembliesFactory.swift; sourceTree = "<group>"; };
-		12C794201E913FF800B9389F /* ReportsUserStoryAssembliesFactoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportsUserStoryAssembliesFactoryImplementation.swift; sourceTree = "<group>"; };
 		12C794241E91814E00B9389F /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		12C794251E91814E00B9389F /* CoordinatorWithDependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorWithDependencies.swift; sourceTree = "<group>"; };
 		19E758D4E38E6E1B9BEB60EF /* Pods_StachkaIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StachkaIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -236,6 +215,41 @@
 		9ED902F31E87E3D5004CBEFD /* FavouritesCoordinatorImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouritesCoordinatorImplementation.swift; sourceTree = "<group>"; };
 		9ED902F91E880DA7004CBEFD /* ConfigurableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurableCell.swift; sourceTree = "<group>"; };
 		9ED903091E88E69E004CBEFD /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		9EE3F57D1E9397CA000471B6 /* TalksCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalksCoordinator.swift; sourceTree = "<group>"; };
+		9EE3F57E1E9397CA000471B6 /* TalksCoordinatorImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalksCoordinatorImplementation.swift; sourceTree = "<group>"; };
+		9EE3F57F1E9397CA000471B6 /* TalksCoordinatorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalksCoordinatorOutput.swift; sourceTree = "<group>"; };
+		9EE3F5851E9397CA000471B6 /* TalksFeedAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalksFeedAssembly.swift; sourceTree = "<group>"; };
+		9EE3F5891E9397CA000471B6 /* PresentationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationCell.swift; sourceTree = "<group>"; };
+		9EE3F58A1E9397CA000471B6 /* PresentationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PresentationCell.xib; sourceTree = "<group>"; };
+		9EE3F58B1E9397CA000471B6 /* PresentationCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationCellViewModel.swift; sourceTree = "<group>"; };
+		9EE3F58C1E9397CA000471B6 /* FeedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		9EE3F58D1E9397CA000471B6 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		9EE3F58F1E9397CA000471B6 /* FeedModuleOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedModuleOutput.swift; sourceTree = "<group>"; };
+		9EE3F5901E9397CA000471B6 /* FeedViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		9EE3F5911E9397CA000471B6 /* FeedViewModelImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewModelImplementation.swift; sourceTree = "<group>"; };
+		9EE3F5941E9397CA000471B6 /* TalksFiltersAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalksFiltersAssembly.swift; sourceTree = "<group>"; };
+		9EE3F5971E9397CA000471B6 /* FilterCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterCellViewModel.swift; sourceTree = "<group>"; };
+		9EE3F5981E9397CA000471B6 /* SectionFilterCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionFilterCellViewModel.swift; sourceTree = "<group>"; };
+		9EE3F59A1E9397CA000471B6 /* TickFilterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TickFilterCell.swift; sourceTree = "<group>"; };
+		9EE3F59B1E9397CA000471B6 /* TickFilterCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TickFilterCell.xib; sourceTree = "<group>"; };
+		9EE3F59C1E9397CA000471B6 /* TickFilterCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TickFilterCellViewModel.swift; sourceTree = "<group>"; };
+		9EE3F59D1E9397CA000471B6 /* FiltersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltersView.swift; sourceTree = "<group>"; };
+		9EE3F59E1E9397CA000471B6 /* FiltersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltersViewController.swift; sourceTree = "<group>"; };
+		9EE3F5A01E9397CA000471B6 /* FilterModuleOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterModuleOutput.swift; sourceTree = "<group>"; };
+		9EE3F5A21E9397CA000471B6 /* FilterCellViewModelFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterCellViewModelFactory.swift; sourceTree = "<group>"; };
+		9EE3F5A31E9397CA000471B6 /* FilterCellViewModelFactoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterCellViewModelFactoryImplementation.swift; sourceTree = "<group>"; };
+		9EE3F5A41E9397CA000471B6 /* FiltersViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltersViewModel.swift; sourceTree = "<group>"; };
+		9EE3F5A51E9397CA000471B6 /* FiltersViewModelImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltersViewModelImplementation.swift; sourceTree = "<group>"; };
+		9EE3F5A61E9397CA000471B6 /* Talks.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Talks.storyboard; sourceTree = "<group>"; };
+		9EE3F5C41E93988D000471B6 /* TalksUserStoryAssemblyFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalksUserStoryAssemblyFactory.swift; sourceTree = "<group>"; };
+		9EE3F5C51E93988D000471B6 /* TalksUserStoryAssemblyFactoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalksUserStoryAssemblyFactoryImplementation.swift; sourceTree = "<group>"; };
+		9EE3F5C91E93A2C0000471B6 /* UserStoryAssemblyFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserStoryAssemblyFactory.swift; sourceTree = "<group>"; };
+		9EE3F5CB1E93A2D5000471B6 /* UserStoryAssemblyFactoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserStoryAssemblyFactoryImplementation.swift; sourceTree = "<group>"; };
+		9EE3F5CE1E93A345000471B6 /* FavouritesAssemblyFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouritesAssemblyFactory.swift; sourceTree = "<group>"; };
+		9EE3F5D01E93A353000471B6 /* FavouritesAssemblyFactoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouritesAssemblyFactoryImplementation.swift; sourceTree = "<group>"; };
+		9EE3F5D21E93A96B000471B6 /* ApplicationCoordinatorFactoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinatorFactoryImplementation.swift; sourceTree = "<group>"; };
+		9EE3F5D51E93AB0B000471B6 /* CoordinatorFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
+		9EE3F5D71E93AB55000471B6 /* CoordinatorFactoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorFactoryImplementation.swift; sourceTree = "<group>"; };
 		CEA2A6E714E84E1F33ADB781 /* Pods-StachkaIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StachkaIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StachkaIOS/Pods-StachkaIOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -295,6 +309,7 @@
 			isa = PBXGroup;
 			children = (
 				12C793BA1E912C6B00B9389F /* ApplicationCoordinatorFactory.swift */,
+				9EE3F5D21E93A96B000471B6 /* ApplicationCoordinatorFactoryImplementation.swift */,
 			);
 			path = ApplicationCoordinatorFactory;
 			sourceTree = "<group>";
@@ -329,167 +344,12 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		12C793D61E9135F300B9389F /* Reports */ = {
-			isa = PBXGroup;
-			children = (
-				12C793D71E9135F300B9389F /* Coordinator */,
-				12C793DB1E9135F300B9389F /* Feed */,
-				12C793E81E9135F300B9389F /* Filters */,
-				12C793FA1E9135F300B9389F /* Reports.storyboard */,
-			);
-			path = Reports;
-			sourceTree = "<group>";
-		};
-		12C793D71E9135F300B9389F /* Coordinator */ = {
-			isa = PBXGroup;
-			children = (
-				12C7941D1E913F7E00B9389F /* ReportsUserStoryAssembliesFactory */,
-				12C793D81E9135F300B9389F /* ReportsCoordinator.swift */,
-				12C793D91E9135F300B9389F /* ReportsCoordinatorImplementation.swift */,
-				12C793DA1E9135F300B9389F /* ReportsCoordinatorOutput.swift */,
-			);
-			path = Coordinator;
-			sourceTree = "<group>";
-		};
-		12C793DB1E9135F300B9389F /* Feed */ = {
-			isa = PBXGroup;
-			children = (
-				12C794171E913DD700B9389F /* Assembly */,
-				12C793DC1E9135F300B9389F /* View */,
-				12C793E41E9135F300B9389F /* ViewModel */,
-			);
-			path = Feed;
-			sourceTree = "<group>";
-		};
-		12C793DC1E9135F300B9389F /* View */ = {
-			isa = PBXGroup;
-			children = (
-				12C793DD1E9135F300B9389F /* Cells */,
-				12C793E21E9135F300B9389F /* FeedView.swift */,
-				12C793E31E9135F300B9389F /* FeedViewController.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		12C793DD1E9135F300B9389F /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				12C793DE1E9135F300B9389F /* PresentationCell */,
-			);
-			path = Cells;
-			sourceTree = "<group>";
-		};
-		12C793DE1E9135F300B9389F /* PresentationCell */ = {
-			isa = PBXGroup;
-			children = (
-				12C793DF1E9135F300B9389F /* PresentationCell.swift */,
-				12C793E01E9135F300B9389F /* PresentationCell.xib */,
-				12C793E11E9135F300B9389F /* PresentationCellViewModel.swift */,
-			);
-			path = PresentationCell;
-			sourceTree = "<group>";
-		};
-		12C793E41E9135F300B9389F /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				12C793E51E9135F300B9389F /* FeedModuleOutput.swift */,
-				12C793E61E9135F300B9389F /* FeedViewModel.swift */,
-				12C793E71E9135F300B9389F /* FeedViewModelImplementation.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		12C793E81E9135F300B9389F /* Filters */ = {
-			isa = PBXGroup;
-			children = (
-				12C7941A1E913E6D00B9389F /* Assembly */,
-				12C793E91E9135F300B9389F /* View */,
-				12C793F31E9135F300B9389F /* ViewModel */,
-			);
-			path = Filters;
-			sourceTree = "<group>";
-		};
-		12C793E91E9135F300B9389F /* View */ = {
-			isa = PBXGroup;
-			children = (
-				12C793EA1E9135F300B9389F /* Cells */,
-				12C793F11E9135F300B9389F /* FiltersView.swift */,
-				12C793F21E9135F300B9389F /* FiltersViewController.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		12C793EA1E9135F300B9389F /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				12C793EB1E9135F300B9389F /* FilterCellViewModel.swift */,
-				12C793EC1E9135F300B9389F /* SectionFilterCellViewModel.swift */,
-				12C793ED1E9135F300B9389F /* TickFilterCell */,
-			);
-			path = Cells;
-			sourceTree = "<group>";
-		};
-		12C793ED1E9135F300B9389F /* TickFilterCell */ = {
-			isa = PBXGroup;
-			children = (
-				12C793EE1E9135F300B9389F /* TickFilterCell.swift */,
-				12C793EF1E9135F300B9389F /* TickFilterCell.xib */,
-				12C793F01E9135F300B9389F /* TickFilterCellViewModel.swift */,
-			);
-			path = TickFilterCell;
-			sourceTree = "<group>";
-		};
-		12C793F31E9135F300B9389F /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				12C793F41E9135F300B9389F /* FilterModuleOutput.swift */,
-				12C793F51E9135F300B9389F /* FiltersCellViewModelFactory */,
-				12C793F81E9135F300B9389F /* FiltersViewModel.swift */,
-				12C793F91E9135F300B9389F /* FiltersViewModelImplementation.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		12C793F51E9135F300B9389F /* FiltersCellViewModelFactory */ = {
-			isa = PBXGroup;
-			children = (
-				12C793F61E9135F300B9389F /* FilterCellViewModelFactory.swift */,
-				12C793F71E9135F300B9389F /* FilterCellViewModelFactoryImplementation.swift */,
-			);
-			path = FiltersCellViewModelFactory;
-			sourceTree = "<group>";
-		};
 		12C794141E913D6400B9389F /* Assembly */ = {
 			isa = PBXGroup;
 			children = (
 				12C794151E913D6400B9389F /* FavouritesFeedAssembly.swift */,
 			);
 			path = Assembly;
-			sourceTree = "<group>";
-		};
-		12C794171E913DD700B9389F /* Assembly */ = {
-			isa = PBXGroup;
-			children = (
-				12C794181E913DEB00B9389F /* ReportsFeedAssembly.swift */,
-			);
-			path = Assembly;
-			sourceTree = "<group>";
-		};
-		12C7941A1E913E6D00B9389F /* Assembly */ = {
-			isa = PBXGroup;
-			children = (
-				12C7941B1E913E8100B9389F /* ReportsFiltersAssembly.swift */,
-			);
-			path = Assembly;
-			sourceTree = "<group>";
-		};
-		12C7941D1E913F7E00B9389F /* ReportsUserStoryAssembliesFactory */ = {
-			isa = PBXGroup;
-			children = (
-				12C7941E1E913F8E00B9389F /* ReportsUserStoryAssembliesFactory.swift */,
-				12C794201E913FF800B9389F /* ReportsUserStoryAssembliesFactoryImplementation.swift */,
-			);
-			path = ReportsUserStoryAssembliesFactory;
 			sourceTree = "<group>";
 		};
 		12C794221E91814E00B9389F /* Coordinators */ = {
@@ -752,9 +612,10 @@
 		9ED9028D1E86B949004CBEFD /* User Stories */ = {
 			isa = PBXGroup;
 			children = (
+				9EE3F5C81E93A2AC000471B6 /* AssemblyFactory */,
+				9EE3F57B1E9397CA000471B6 /* Talks */,
 				9ED902D31E87C64B004CBEFD /* Favourites */,
 				9ED903071E88E68D004CBEFD /* Onboarding */,
-				12C793D61E9135F300B9389F /* Reports */,
 			);
 			name = "User Stories";
 			path = "Classes/User Stories";
@@ -772,6 +633,7 @@
 		9ED9029C1E86BC12004CBEFD /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				9EE3F5D41E93AADB000471B6 /* CoordinatorFactory */,
 				12C793B91E912C6B00B9389F /* ApplicationCoordinatorFactory */,
 				128AEF611E910944003FD79A /* InitialUserStoriesCoordinatorsFactory */,
 				9ED9029D1E86BC1E004CBEFD /* ApplicationCoordinator.swift */,
@@ -828,6 +690,7 @@
 		9ED902D31E87C64B004CBEFD /* Favourites */ = {
 			isa = PBXGroup;
 			children = (
+				9EE3F5CD1E93A32A000471B6 /* AssemblyFactory */,
 				9ED902F01E87E380004CBEFD /* Coordinator */,
 				9ED902E21E87DAB6004CBEFD /* Feed */,
 			);
@@ -885,6 +748,188 @@
 				9ED903091E88E69E004CBEFD /* OnboardingViewController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		9EE3F57B1E9397CA000471B6 /* Talks */ = {
+			isa = PBXGroup;
+			children = (
+				9EE3F57C1E9397CA000471B6 /* Coordinator */,
+				9EE3F5831E9397CA000471B6 /* Feed */,
+				9EE3F5921E9397CA000471B6 /* Filters */,
+				9EE3F5A61E9397CA000471B6 /* Talks.storyboard */,
+			);
+			path = Talks;
+			sourceTree = "<group>";
+		};
+		9EE3F57C1E9397CA000471B6 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				9EE3F5C31E93988D000471B6 /* TalksUserStoryAssemblyFactory */,
+				9EE3F57D1E9397CA000471B6 /* TalksCoordinator.swift */,
+				9EE3F57E1E9397CA000471B6 /* TalksCoordinatorImplementation.swift */,
+				9EE3F57F1E9397CA000471B6 /* TalksCoordinatorOutput.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		9EE3F5831E9397CA000471B6 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				9EE3F5841E9397CA000471B6 /* Assembly */,
+				9EE3F5861E9397CA000471B6 /* View */,
+				9EE3F58E1E9397CA000471B6 /* ViewModel */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		9EE3F5841E9397CA000471B6 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				9EE3F5851E9397CA000471B6 /* TalksFeedAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		9EE3F5861E9397CA000471B6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9EE3F5871E9397CA000471B6 /* Cells */,
+				9EE3F58C1E9397CA000471B6 /* FeedView.swift */,
+				9EE3F58D1E9397CA000471B6 /* FeedViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9EE3F5871E9397CA000471B6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9EE3F5881E9397CA000471B6 /* PresentationCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		9EE3F5881E9397CA000471B6 /* PresentationCell */ = {
+			isa = PBXGroup;
+			children = (
+				9EE3F5891E9397CA000471B6 /* PresentationCell.swift */,
+				9EE3F58A1E9397CA000471B6 /* PresentationCell.xib */,
+				9EE3F58B1E9397CA000471B6 /* PresentationCellViewModel.swift */,
+			);
+			path = PresentationCell;
+			sourceTree = "<group>";
+		};
+		9EE3F58E1E9397CA000471B6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9EE3F58F1E9397CA000471B6 /* FeedModuleOutput.swift */,
+				9EE3F5901E9397CA000471B6 /* FeedViewModel.swift */,
+				9EE3F5911E9397CA000471B6 /* FeedViewModelImplementation.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9EE3F5921E9397CA000471B6 /* Filters */ = {
+			isa = PBXGroup;
+			children = (
+				9EE3F5931E9397CA000471B6 /* Assembly */,
+				9EE3F5951E9397CA000471B6 /* View */,
+				9EE3F59F1E9397CA000471B6 /* ViewModel */,
+			);
+			path = Filters;
+			sourceTree = "<group>";
+		};
+		9EE3F5931E9397CA000471B6 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				9EE3F5941E9397CA000471B6 /* TalksFiltersAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		9EE3F5951E9397CA000471B6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9EE3F5961E9397CA000471B6 /* Cells */,
+				9EE3F59D1E9397CA000471B6 /* FiltersView.swift */,
+				9EE3F59E1E9397CA000471B6 /* FiltersViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9EE3F5961E9397CA000471B6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9EE3F5971E9397CA000471B6 /* FilterCellViewModel.swift */,
+				9EE3F5981E9397CA000471B6 /* SectionFilterCellViewModel.swift */,
+				9EE3F5991E9397CA000471B6 /* TickFilterCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		9EE3F5991E9397CA000471B6 /* TickFilterCell */ = {
+			isa = PBXGroup;
+			children = (
+				9EE3F59A1E9397CA000471B6 /* TickFilterCell.swift */,
+				9EE3F59B1E9397CA000471B6 /* TickFilterCell.xib */,
+				9EE3F59C1E9397CA000471B6 /* TickFilterCellViewModel.swift */,
+			);
+			path = TickFilterCell;
+			sourceTree = "<group>";
+		};
+		9EE3F59F1E9397CA000471B6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9EE3F5A11E9397CA000471B6 /* FiltersCellViewModelFactory */,
+				9EE3F5A01E9397CA000471B6 /* FilterModuleOutput.swift */,
+				9EE3F5A41E9397CA000471B6 /* FiltersViewModel.swift */,
+				9EE3F5A51E9397CA000471B6 /* FiltersViewModelImplementation.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9EE3F5A11E9397CA000471B6 /* FiltersCellViewModelFactory */ = {
+			isa = PBXGroup;
+			children = (
+				9EE3F5A21E9397CA000471B6 /* FilterCellViewModelFactory.swift */,
+				9EE3F5A31E9397CA000471B6 /* FilterCellViewModelFactoryImplementation.swift */,
+			);
+			path = FiltersCellViewModelFactory;
+			sourceTree = "<group>";
+		};
+		9EE3F5C31E93988D000471B6 /* TalksUserStoryAssemblyFactory */ = {
+			isa = PBXGroup;
+			children = (
+				9EE3F5C41E93988D000471B6 /* TalksUserStoryAssemblyFactory.swift */,
+				9EE3F5C51E93988D000471B6 /* TalksUserStoryAssemblyFactoryImplementation.swift */,
+			);
+			path = TalksUserStoryAssemblyFactory;
+			sourceTree = "<group>";
+		};
+		9EE3F5C81E93A2AC000471B6 /* AssemblyFactory */ = {
+			isa = PBXGroup;
+			children = (
+				9EE3F5C91E93A2C0000471B6 /* UserStoryAssemblyFactory.swift */,
+				9EE3F5CB1E93A2D5000471B6 /* UserStoryAssemblyFactoryImplementation.swift */,
+			);
+			path = AssemblyFactory;
+			sourceTree = "<group>";
+		};
+		9EE3F5CD1E93A32A000471B6 /* AssemblyFactory */ = {
+			isa = PBXGroup;
+			children = (
+				9EE3F5CE1E93A345000471B6 /* FavouritesAssemblyFactory.swift */,
+				9EE3F5D01E93A353000471B6 /* FavouritesAssemblyFactoryImplementation.swift */,
+			);
+			path = AssemblyFactory;
+			sourceTree = "<group>";
+		};
+		9EE3F5D41E93AADB000471B6 /* CoordinatorFactory */ = {
+			isa = PBXGroup;
+			children = (
+				9EE3F5D51E93AB0B000471B6 /* CoordinatorFactory.swift */,
+				9EE3F5D71E93AB55000471B6 /* CoordinatorFactoryImplementation.swift */,
+			);
+			path = CoordinatorFactory;
 			sourceTree = "<group>";
 		};
 		E164D3AA8056481FDA9D5DE5 /* Frameworks */ = {
@@ -985,10 +1030,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9ED9026F1E86B8BC004CBEFD /* LaunchScreen.storyboard in Resources */,
-				12C793FF1E9135F300B9389F /* PresentationCell.xib in Resources */,
-				12C794121E9135F300B9389F /* Reports.storyboard in Resources */,
+				9EE3F5AE1E9397CA000471B6 /* PresentationCell.xib in Resources */,
+				9EE3F5C21E9397CA000471B6 /* Talks.storyboard in Resources */,
 				9ED9026C1E86B8BC004CBEFD /* Assets.xcassets in Resources */,
-				12C794091E9135F300B9389F /* TickFilterCell.xib in Resources */,
+				9EE3F5B91E9397CA000471B6 /* TickFilterCell.xib in Resources */,
 				9ED9026A1E86B8BC004CBEFD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1058,94 +1103,101 @@
 				9E1051631E8EBB5700B83411 /* RealmConfigurator.swift in Sources */,
 				9E5D0CC51E899E7700E8B226 /* Filter.swift in Sources */,
 				128AEF641E910944003FD79A /* InitialUserStoriesCoordinatorsFactory.swift in Sources */,
+				9EE3F5D11E93A353000471B6 /* FavouritesAssemblyFactoryImplementation.swift in Sources */,
 				9ED902C01E87A74C004CBEFD /* ServiceAssemblyImplementation.swift in Sources */,
+				9EE3F5D81E93AB55000471B6 /* CoordinatorFactoryImplementation.swift in Sources */,
 				128AEF5D1E91070F003FD79A /* OnboardingAssembly.swift in Sources */,
 				9E10517A1E8F07F500B83411 /* JSONDeserializer.swift in Sources */,
+				9EE3F5A91E9397CA000471B6 /* TalksCoordinatorOutput.swift in Sources */,
 				9E1051851E8F07F500B83411 /* URLBuilderImplementation.swift in Sources */,
-				12C7941F1E913F8E00B9389F /* ReportsUserStoryAssembliesFactory.swift in Sources */,
 				9E1051901E8F90FC00B83411 /* PresentationServiceImplementation.swift in Sources */,
-				12C794011E9135F300B9389F /* FeedView.swift in Sources */,
+				9EE3F5B21E9397CA000471B6 /* FeedModuleOutput.swift in Sources */,
 				9ED902C41E87A7A6004CBEFD /* CoreAssemblyImplementation.swift in Sources */,
+				9EE3F5B01E9397CA000471B6 /* FeedView.swift in Sources */,
 				9ED902CB1E87C4C7004CBEFD /* ModuleOutputProvider.swift in Sources */,
+				9EE3F5CA1E93A2C0000471B6 /* UserStoryAssemblyFactory.swift in Sources */,
 				9E10514F1E8D939E00B83411 /* FilterService.swift in Sources */,
 				9E5D0CC71E899F1500E8B226 /* SectionFilter.swift in Sources */,
+				9EE3F5B51E9397CA000471B6 /* TalksFiltersAssembly.swift in Sources */,
+				9EE3F5B61E9397CA000471B6 /* FilterCellViewModel.swift in Sources */,
+				9EE3F5B81E9397CA000471B6 /* TickFilterCell.swift in Sources */,
 				9E1051841E8F07F500B83411 /* URLBuilder.swift in Sources */,
 				9E5D0CBF1E899D9F00E8B226 /* CoordinatorOutput.swift in Sources */,
+				9EE3F5C71E93988D000471B6 /* TalksUserStoryAssemblyFactoryImplementation.swift in Sources */,
+				9EE3F5AD1E9397CA000471B6 /* PresentationCell.swift in Sources */,
+				9EE3F5B71E9397CA000471B6 /* SectionFilterCellViewModel.swift in Sources */,
+				9EE3F5D61E93AB0B000471B6 /* CoordinatorFactory.swift in Sources */,
 				9E1051801E8F07F500B83411 /* RequestBuilderConfiguration.swift in Sources */,
-				12C794061E9135F300B9389F /* FilterCellViewModel.swift in Sources */,
-				12C794081E9135F300B9389F /* TickFilterCell.swift in Sources */,
 				9ED902981E86BA6F004CBEFD /* AssemblyFactory.swift in Sources */,
 				9E10517F1E8F07F500B83411 /* RequestBuilder.swift in Sources */,
 				9E10517E1E8F07F500B83411 /* NetworkRequestErrors.swift in Sources */,
-				12C794071E9135F300B9389F /* SectionFilterCellViewModel.swift in Sources */,
 				9ED902AF1E87A1A2004CBEFD /* AssemblyFactoryImplementation.swift in Sources */,
 				9E10517D1E8F07F500B83411 /* NetworkRequestConstants.swift in Sources */,
-				12C794031E9135F300B9389F /* FeedModuleOutput.swift in Sources */,
 				12C793C31E912D4B00B9389F /* AppTabBarController.swift in Sources */,
 				9E10517C1E8F07F500B83411 /* NetworkClientImplementation.swift in Sources */,
 				9ED902F41E87E3D5004CBEFD /* FavouritesCoordinatorImplementation.swift in Sources */,
+				9EE3F5D31E93A96B000471B6 /* ApplicationCoordinatorFactoryImplementation.swift in Sources */,
 				9ED902FA1E880DA7004CBEFD /* ConfigurableCell.swift in Sources */,
+				9EE3F5BC1E9397CA000471B6 /* FiltersViewController.swift in Sources */,
 				9E1051861E8F07F500B83411 /* URLParametersTransformable.swift in Sources */,
-				12C7940C1E9135F300B9389F /* FiltersViewController.swift in Sources */,
+				9EE3F5C01E9397CA000471B6 /* FiltersViewModel.swift in Sources */,
 				9E1051951E8F9C8100B83411 /* SearchConfigurationFactory.swift in Sources */,
-				12C794101E9135F300B9389F /* FiltersViewModel.swift in Sources */,
-				12C794041E9135F300B9389F /* FeedViewModel.swift in Sources */,
 				9E1051651E8EBB8400B83411 /* RealmConfiguratorImplementation.swift in Sources */,
-				12C7940D1E9135F300B9389F /* FilterModuleOutput.swift in Sources */,
-				12C7940F1E9135F300B9389F /* FilterCellViewModelFactoryImplementation.swift in Sources */,
+				9EE3F5BD1E9397CA000471B6 /* FilterModuleOutput.swift in Sources */,
+				9EE3F5BF1E9397CA000471B6 /* FilterCellViewModelFactoryImplementation.swift in Sources */,
 				128AEF651E910944003FD79A /* InitialUserStoriesCoordinatorsFactoryImplementation.swift in Sources */,
+				9EE3F5BA1E9397CA000471B6 /* TickFilterCellViewModel.swift in Sources */,
 				9ED902E71E87DB0C004CBEFD /* FavouritesFeedModuleOutput.swift in Sources */,
-				12C7940A1E9135F300B9389F /* TickFilterCellViewModel.swift in Sources */,
 				128AEF601E9107E4003FD79A /* Constants.swift in Sources */,
 				12C793D01E912DAD00B9389F /* UIStoryboard.swift in Sources */,
 				9E1051541E8E46EF00B83411 /* FilterFactory.swift in Sources */,
 				9E5D0CBD1E89975900E8B226 /* ModuleInput.swift in Sources */,
+				9EE3F5B31E9397CA000471B6 /* FeedViewModel.swift in Sources */,
 				12C794271E91814E00B9389F /* CoordinatorWithDependencies.swift in Sources */,
 				9ED902C21E87A770004CBEFD /* CoreAssembly.swift in Sources */,
-				12C793FE1E9135F300B9389F /* PresentationCell.swift in Sources */,
 				12C793CF1E912DAD00B9389F /* UIImage.swift in Sources */,
 				9ED902EB1E87DD9F004CBEFD /* FavouritesFeedViewModel.swift in Sources */,
+				9EE3F5AC1E9397CA000471B6 /* TalksFeedAssembly.swift in Sources */,
+				9EE3F5C11E9397CA000471B6 /* FiltersViewModelImplementation.swift in Sources */,
+				9EE3F5CC1E93A2D5000471B6 /* UserStoryAssemblyFactoryImplementation.swift in Sources */,
+				9EE3F5B11E9397CA000471B6 /* FeedViewController.swift in Sources */,
 				9ED902A01E86BC4A004CBEFD /* ApplicationCoordinatorImplementation.swift in Sources */,
 				12C793CC1E912DAD00B9389F /* Observable.swift in Sources */,
-				12C794111E9135F300B9389F /* FiltersViewModelImplementation.swift in Sources */,
 				9E5D0CBA1E8996E500E8B226 /* CoordinatorConfigurable.swift in Sources */,
+				9EE3F5AF1E9397CA000471B6 /* PresentationCellViewModel.swift in Sources */,
 				9E1051511E8D93EF00B83411 /* FilterServiceImplementation.swift in Sources */,
 				9ED902881E86B940004CBEFD /* AppDelegate.swift in Sources */,
-				12C793FB1E9135F300B9389F /* ReportsCoordinator.swift in Sources */,
 				9E10517B1E8F07F500B83411 /* NetworkClient.swift in Sources */,
-				12C794191E913DEB00B9389F /* ReportsFeedAssembly.swift in Sources */,
 				12C793BB1E912C6B00B9389F /* ApplicationCoordinatorFactory.swift in Sources */,
 				9E1051791E8F07F500B83411 /* Deserializer.swift in Sources */,
+				9EE3F5B41E9397CA000471B6 /* FeedViewModelImplementation.swift in Sources */,
 				9ED902E51E87DAEE004CBEFD /* FavouritesFeedViewModelImplementation.swift in Sources */,
-				12C794051E9135F300B9389F /* FeedViewModelImplementation.swift in Sources */,
 				12C794261E91814E00B9389F /* Coordinator.swift in Sources */,
 				9ED902BE1E87A718004CBEFD /* ServiceAssembly.swift in Sources */,
+				9EE3F5BE1E9397CA000471B6 /* FilterCellViewModelFactory.swift in Sources */,
 				9E10518E1E8F8FC300B83411 /* PresentationServcieConfiguration.swift in Sources */,
 				9ED902CE1E87C52B004CBEFD /* ModuleOutput.swift in Sources */,
+				9EE3F5A81E9397CA000471B6 /* TalksCoordinatorImplementation.swift in Sources */,
 				12C793CE1E912DAD00B9389F /* UIColor.swift in Sources */,
-				12C7940E1E9135F300B9389F /* FilterCellViewModelFactory.swift in Sources */,
-				12C794001E9135F300B9389F /* PresentationCellViewModel.swift in Sources */,
 				9E1051891E8F0C7900B83411 /* PresentationService.swift in Sources */,
 				128AEF5B1E91069A003FD79A /* ModuleAssembly.swift in Sources */,
 				9ED9029E1E86BC1E004CBEFD /* ApplicationCoordinator.swift in Sources */,
-				12C794021E9135F300B9389F /* FeedViewController.swift in Sources */,
 				12C793D21E912DAD00B9389F /* UIViewController.swift in Sources */,
 				9ED9030A1E88E69E004CBEFD /* OnboardingViewController.swift in Sources */,
 				12C793CD1E912DAD00B9389F /* TabBarEmbedding.swift in Sources */,
-				12C793FD1E9135F300B9389F /* ReportsCoordinatorOutput.swift in Sources */,
-				12C7940B1E9135F300B9389F /* FiltersView.swift in Sources */,
+				9EE3F5BB1E9397CA000471B6 /* FiltersView.swift in Sources */,
 				9ED902F21E87E3BD004CBEFD /* FavouritesCoordinator.swift in Sources */,
 				9E1051971E8F9CCB00B83411 /* SearchConfigurationFactoryImplementation.swift in Sources */,
+				9EE3F5CF1E93A345000471B6 /* FavouritesAssemblyFactory.swift in Sources */,
 				9E1051561E8E470600B83411 /* FilterFactoryImplementation.swift in Sources */,
-				12C793FC1E9135F300B9389F /* ReportsCoordinatorImplementation.swift in Sources */,
-				12C7941C1E913E8100B9389F /* ReportsFiltersAssembly.swift in Sources */,
 				12C794161E913D6400B9389F /* FavouritesFeedAssembly.swift in Sources */,
+				9EE3F5C61E93988D000471B6 /* TalksUserStoryAssemblyFactory.swift in Sources */,
+				9EE3F5A71E9397CA000471B6 /* TalksCoordinator.swift in Sources */,
 				9E10518C1E8F8F4200B83411 /* Presentation.swift in Sources */,
 				9ED902BA1E87A6BF004CBEFD /* HelperAssembly.swift in Sources */,
 				9ED902BC1E87A6DC004CBEFD /* HelperAssemblyImplementation.swift in Sources */,
 				12C793D11E912DAD00B9389F /* UITableView.swift in Sources */,
 				9E1051811E8F07F500B83411 /* RequestBuilderImplementation.swift in Sources */,
-				12C794211E913FF800B9389F /* ReportsUserStoryAssembliesFactoryImplementation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

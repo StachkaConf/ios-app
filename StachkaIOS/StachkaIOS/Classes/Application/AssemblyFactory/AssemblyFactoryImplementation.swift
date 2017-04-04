@@ -20,4 +20,12 @@ class AssemblyFactoryImplementation: AssemblyFactory {
     func helpers() -> HelperAssembly {
         return HelperAssemblyImplementation(assemblyFactory: self)
     }
+
+    func userStory() -> UserStoryAssemblyFactory {
+        return UserStoryAssemblyFactoryImplementation(assemblyFactory: self)
+    }
+
+    func coordinators() -> CoordinatorFactory {
+        return CoordinatorFactoryImplementation(assemblyFactory: self)
+    }
 }

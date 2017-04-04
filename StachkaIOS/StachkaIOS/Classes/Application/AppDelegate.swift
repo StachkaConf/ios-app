@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let assemblyFactory = AssemblyFactoryImplementation()
         assemblyFactory.core().realmConfigurator().configure()
         
-        let appCoordinatorFactory = ApplicationCoordinatorFactory()
+        let appCoordinatorFactory = assemblyFactory.coordinators().applicationCoordinatorFactory()
         coordinator = appCoordinatorFactory.applicationCoordinator(window: window)
         coordinator?.start()
         

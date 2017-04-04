@@ -10,6 +10,6 @@ import Foundation
 import UIKit
 
 protocol InitialUserStoriesCoordinatorsFactory {
-    func reportsCoordinator(rootTabBarController: UITabBarController) -> ReportsCoordinator
-    func favouritesCoordinator(rootTabBarController: UITabBarController) -> FavouritesCoordinator
+    func talksCoordinator(rootNavigationController: UINavigationController) -> TalksCoordinator
+    func favouritesCoordinator(rootNavigationController: UINavigationController) -> FavouritesCoordinator
 }

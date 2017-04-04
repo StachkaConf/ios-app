@@ -1,5 +1,5 @@
 //
-//  ReportsFiltersAssembly.swift
+//  TalksFiltersAssembly.swift
 //  StachkaIOS
 //
 //  Created by Konstantin Mordan on 02/04/2017.
@@ -9,15 +9,20 @@
 import Foundation
 import UIKit
 
-class ReportsFiltersAssembly: ModuleAssembly {
-    func module() -> UIViewController {
-        let assemblyFactory = AssemblyFactoryImplementation()
+class TalksFiltersAssembly: ModuleAssembly {
 
+    let assemblyFactory: AssemblyFactory
+
+    init(assemblyFactory: AssemblyFactory) {
+        self.assemblyFactory = assemblyFactory
+    }
+
+    func module() -> UIViewController {
         let filterService = assemblyFactory.services().filterService()
         let filterFactory = assemblyFactory.helpers().filterFactory()
         let filterCellViewModelFactory = FilterCellViewModelFactoryImplementation()
         let viewController: FiltersViewController =
-            UIStoryboard.createControllerFromStoryboardWith(name: StoryboardName.reports)
+            UIStoryboard.createControllerFromStoryboardWith(name: StoryboardName.talks)
         let viewModel = FiltersViewModelImplementation(view: viewController,
                                                        filterService: filterService,
                                                        filterFactory: filterFactory,

@@ -1,5 +1,5 @@
 //
-//  ReportsCoordinatorOutput.swift
+//  TalksCoordinatorOutput.swift
 //  StachkaIOS
 //
 //  Created by m.rakhmanov on 27.03.17.
@@ -8,6 +8,6 @@
 
 import RxSwift
 
-protocol ReportsCoordinatorOutput {
+protocol TalksCoordinatorOutput {
     var filtersChanged: Observable<[Filter]> { get }
 }

@@ -10,16 +10,22 @@ import Foundation
 import UIKit
 
 class InitialUserStoriesCoordinatorsFactoryImplementation: InitialUserStoriesCoordinatorsFactory {
-    func reportsCoordinator(rootTabBarController: UITabBarController) -> ReportsCoordinator {
-        let reportsUserStoryAssembliesFactory = ReportsUserStoryAssembliesFactoryImplementation()
-        return ReportsCoordinatorImplementation(rootTabBarController: rootTabBarController,
-                                                reportsUserStoryAssembliesFactory: reportsUserStoryAssembliesFactory)
+    let assemblyFactory: AssemblyFactory
+
+    init(assemblyFactory: AssemblyFactory) {
+        self.assemblyFactory = assemblyFactory
+    }
+
+    func talksCoordinator(rootNavigationController: UINavigationController) -> TalksCoordinator {
+        let talksUserStoryAssemblyFactory = assemblyFactory.userStory().talksAssemblyFactory()
+        return TalksCoordinatorImplementation(rootNavigationController: rootNavigationController,
+                                              talksUserStoryAssemblyFactory: talksUserStoryAssemblyFactory)
     }
     
-    func favouritesCoordinator(rootTabBarController: UITabBarController) -> FavouritesCoordinator {
-        let moduleAssembly = FavouritesFeedAssembly()
+    func favouritesCoordinator(rootNavigationController: UINavigationController) -> FavouritesCoordinator {
+        let userStoryAssemblyFactory = assemblyFactory.userStory().favouritesAssemblyFactory()
         
-        return FavouritesCoordinatorImplemenation(rootTabBarController: rootTabBarController,
-                                                  moduleAssembly: moduleAssembly)
+        return FavouritesCoordinatorImplemenation(rootNavigationController: rootNavigationController,
+                                                  userStoryAssemblyFactory: userStoryAssemblyFactory)
     }
 }
