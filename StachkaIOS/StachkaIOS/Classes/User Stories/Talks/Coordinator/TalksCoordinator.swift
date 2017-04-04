@@ -1,5 +1,5 @@
 //
-//  ConferencesCoordinator.swift
+//  TalksCoordinator.swift
 //  StachkaIOS
 //
 //  Created by m.rakhmanov on 26.03.17.
@@ -8,4 +8,4 @@
 
 import Foundation
 
-protocol ConferencesCoordinator: Coordinator, ConferencesCoordinatorOutput {}
+protocol TalksCoordinator: Coordinator, TalksCoordinatorOutput {}

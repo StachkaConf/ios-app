@@ -15,67 +15,67 @@ class ApplicationCoordinatorImplementation: ApplicationCoordinator, CoordinatorW
 
     enum Constants {
         static let animationDelay = 1.0
-        static let animatorConfiguration = RectangleDissolveAnimatorConfiguration(rectanglesVertical: 14, rectanglesHorizontal: 8, batchSize: 10, fadeAnimationDuration: 0.5, tempo: 1000.0)
+        static let animatorConfiguration = RectangleDissolveAnimatorConfiguration(rectanglesVertical: 14,
+                                                                                  rectanglesHorizontal: 8,
+                                                                                  batchSize: 10,
+                                                                                  fadeAnimationDuration: 0.5,
+                                                                                  tempo: 1000.0)
     }
 
+    private weak var window: UIWindow?
+    private var tabBarController: UITabBarController
+    private var onboardingModuleAssembly: ModuleAssembly
+    private var initialUserStoriesCoordinatorsFactory: InitialUserStoriesCoordinatorsFactory
+
     var childCoordinators: [Coordinator] = []
-    let assembly: AssemblyFactory
-    weak var window: UIWindow?
-    var tabBarController: UITabBarController?
 
-    let disposeBag = DisposeBag()
+    private let disposeBag = DisposeBag()
 
-    init(assembly: AssemblyFactory, window: UIWindow?) {
-        self.assembly = assembly
+    init(window: UIWindow?,
+         rootTabBarController: UITabBarController,
+         onboardingModuleAssembly: ModuleAssembly,
+         initialUserStoriesCoordinatorsFactory: InitialUserStoriesCoordinatorsFactory) {
         self.window = window
+        self.tabBarController = rootTabBarController
+        self.onboardingModuleAssembly = onboardingModuleAssembly
+        self.initialUserStoriesCoordinatorsFactory = initialUserStoriesCoordinatorsFactory
     }
 
     func start() {
-        tabBarController = assembly.userStories().tabBar()
-        let feed = assembly.userStories().conferencesFeedModule()
-        embedInTabBarWithNavigationController(controller: feed)
-        let conferencesCoordinator = assembly.coordinators().conferencesCoordinator(rootController: feed)
-        add(coordinator: conferencesCoordinator)
+        let talksNavigationController = UINavigationController()
+        tabBarController.embed(viewController: talksNavigationController)
+        let talksCoordinator = initialUserStoriesCoordinatorsFactory.talksCoordinator(rootNavigationController: talksNavigationController)
+        add(coordinator: talksCoordinator)
+        talksCoordinator.start()
 
-        let favourites = assembly.userStories().favouritesFeedModule()
-        embedInTabBarWithNavigationController(controller: favourites)
-        let favouritesCoordinator = assembly.coordinators().favouritesCoordinator(rootController: favourites)
+        let favouritesNavigationController = UINavigationController()
+        tabBarController.embed(viewController: favouritesNavigationController)
+        let favouritesCoordinator = initialUserStoriesCoordinatorsFactory.favouritesCoordinator(rootNavigationController: favouritesNavigationController)
         add(coordinator: favouritesCoordinator)
-
+        favouritesCoordinator.start()
+        
         createDismissOnboardingAndShowTabBar()
-            .subscribe(onCompleted: {
-                conferencesCoordinator.start()
-                favouritesCoordinator.start()
-            })
+            .subscribe()
             .disposed(by: disposeBag)
     }
 
     // MARK: Private
 
-    private func embedInTabBarWithNavigationController(controller: UIViewController) {
-        let navigationController = UINavigationController(rootViewController: controller)
-        tabBarController?.embed(viewController: navigationController)
-    }
-
     private func createDismissOnboardingAndShowTabBar() -> Observable<Void> {
-
         return Observable.create { [weak self] observer in
             guard let strongSelf = self else {
                 observer.onCompleted()
                 return Disposables.create()
             }
-            let onboarding = strongSelf.assembly.userStories().onboardingModule()
+            let onboarding = strongSelf.onboardingModuleAssembly.module()
             let animator = RectangleDissolveAnimator(configuration: Constants.animatorConfiguration)
 
             strongSelf.window?.rootViewController = onboarding
             strongSelf.window?.makeKeyAndVisible()
 
             DispatchQueue.main.asyncAfter(deadline: .now() + Constants.animationDelay) {
-                guard let tabBarController = strongSelf.tabBarController else {
-                    return
-                }
-                tabBarController.transitioningDelegate = animator
-                onboarding.present(tabBarController, animated: true, completion: {
+                strongSelf.tabBarController.transitioningDelegate = animator
+                onboarding.present(strongSelf.tabBarController, animated: true, completion: {
                     observer.onCompleted()
                 })
             }

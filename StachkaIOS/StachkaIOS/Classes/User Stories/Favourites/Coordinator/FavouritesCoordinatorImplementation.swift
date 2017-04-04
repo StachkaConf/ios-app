@@ -9,14 +9,18 @@
 import UIKit
 
 class FavouritesCoordinatorImplemenation: FavouritesCoordinator, CoordinatorWithDependencies {
-    var childCoordinators: [Coordinator] = []
-    weak var rootController: UIViewController?
-    let assembly: AssemblyFactory
+    private let rootNavigationController: UINavigationController
+    private let userStoryAssemblyFactory: FavouritesAssemblyFactory
 
-    init(assembly: AssemblyFactory, rootController: UIViewController) {
-        self.assembly = assembly
-        self.rootController = rootController
+    var childCoordinators: [Coordinator] = []
+    
+    init(rootNavigationController: UINavigationController, userStoryAssemblyFactory: FavouritesAssemblyFactory) {
+        self.rootNavigationController = rootNavigationController
+        self.userStoryAssemblyFactory = userStoryAssemblyFactory
     }
 
-    func start() {}
+    func start() {
+        let favouritesModule = userStoryAssemblyFactory.favouritesAssembly().module()
+        rootNavigationController.setViewControllers([favouritesModule], animated: false)
+    }
 }
