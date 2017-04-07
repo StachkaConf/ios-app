@@ -24,18 +24,18 @@ class Presentation: AutoObject, Mappable {
     dynamic var shortDescription: String = ""
 
     enum Constants {
-        private static var UTCDateFormatter = { () -> DateFormatter in 
-            let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
-            dateFormatter.timeZone = TimeZone(abbreviation: "UTC")!
-            return dateFormatter
-        }()
-
         static let dateTransform = TransformOf<NSDate, String>(fromJSON: { (string: String?) -> NSDate? in
-            return Constants.UTCDateFormatter.date(from: string ?? "") as NSDate?
+            guard let string = string,
+                  let timeInterval = TimeInterval(string)
+                else {
+                    return nil
+            }
+            return Date(timeIntervalSince1970: timeInterval) as NSDate
         }, toJSON: { (date: NSDate?) -> String? in
-            let date = date as Date?
-            return Constants.UTCDateFormatter.string(from: date ?? Date())
+            guard let date = date as? Date else {
+                return nil
+            }
+            return String(date.timeIntervalSince1970)
         })
 
         static let intStringTransform = TransformOf<Int, String>(fromJSON: { (string: String?) -> Int? in
@@ -51,7 +51,7 @@ class Presentation: AutoObject, Mappable {
 
     func mapping(map: Map) {
         presentationName <- map["product"]
-        date <- (map["updated_timestamp"], Constants.dateTransform)
+        date <- (map["day"], Constants.dateTransform)
         metaDescription <- map["meta_description"]
         hoursTo <- (map["hours_to"], Constants.intStringTransform)
         hoursFrom <- (map["hours_from"], Constants.intStringTransform)
