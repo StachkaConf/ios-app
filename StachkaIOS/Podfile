@@ -8,4 +8,6 @@ target 'StachkaIOS' do
     pod 'RxSwift', '~> 3.0'
     pod 'RxCocoa', '~> 3.0'
     pod 'RxRealm'
+    pod 'ObjectMapper', '~> 2.2'
+    pod 'ObjectMapper+Realm'
 end

@@ -8,7 +8,17 @@
 
 import Foundation
 import RealmSwift
+import ObjectMapper
+import ObjectMapper_Realm
 
-class Presentation: AutoObject {
+class Presentation: AutoObject, Mappable {
     dynamic var name: String = ""
+
+    required convenience init?(map: Map) {
+        self.init()
+    }
+
+    func mapping(map: Map) {
+
+    }
 }

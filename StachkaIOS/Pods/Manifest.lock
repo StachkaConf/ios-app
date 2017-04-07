@@ -1,4 +1,8 @@
 PODS:
+  - ObjectMapper (2.2.5)
+  - ObjectMapper+Realm (0.2):
+    - ObjectMapper
+    - RealmSwift
   - Realm (2.4.3):
     - Realm/Headers (= 2.4.3)
   - Realm/Headers (2.4.3)
@@ -13,12 +17,16 @@ PODS:
   - RxSwift (3.2.0)
 
 DEPENDENCIES:
+  - ObjectMapper (~> 2.2)
+  - ObjectMapper+Realm
   - RectangleDissolve (~> 0.1.1)
   - RxCocoa (~> 3.0)
   - RxRealm
   - RxSwift (~> 3.0)
 
 SPEC CHECKSUMS:
+  ObjectMapper: fb30f71e08470d1e5a20b199fafe1246281db898
+  ObjectMapper+Realm: 8b45dbfa1be145e311a6f93a306c183d630b40a9
   Realm: e08d60b0048ccccd3949c8c28a92c4db5712d7e9
   RealmSwift: 30d49739ccb3385d201242736ca4dda56aec9dfc
   RectangleDissolve: f00b2482ecc00800cec5026e82a16ac68f0916e2
@@ -26,6 +34,6 @@ SPEC CHECKSUMS:
   RxRealm: c80d17d42fc362f4d8af4ac62de360b014be5c3f
   RxSwift: 46574f70d416b7923c237195939cc488a7fbf3a0
 
-PODFILE CHECKSUM: bb19b1bb35f1d9017e86e9636caddf8ab187d2b8
+PODFILE CHECKSUM: 9d142908714a9220fd24a2d98035e7fcf06b730b
 
 COCOAPODS: 1.1.1

@@ -7,7 +7,16 @@
 //
 
 import Foundation
+import ObjectMapper
+import ObjectMapper_Realm
 
-class Author: AutoObject {
-    
+class Author: AutoObject, Mappable {
+
+    required convenience init?(map: Map) {
+        self.init()
+    }
+
+    func mapping(map: Map) {
+
+    }
 }
