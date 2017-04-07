@@ -14,4 +14,6 @@ protocol CoreAssembly: Assembly {
     func requestBuilder() -> RequestBuilder
     func urlBuilder() -> URLBuilder
     func jsonDeserializer() -> Deserializer
+    func realmStorage() -> RealmStorage
+    func presentationMapper() -> PresentationMapper
 }

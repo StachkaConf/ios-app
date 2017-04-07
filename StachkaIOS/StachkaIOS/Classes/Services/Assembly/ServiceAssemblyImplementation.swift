@@ -28,10 +28,14 @@ class ServiceAssemblyImplementation: ServiceAssembly {
         let jsonDeserializer = assemblyFactory.core().jsonDeserializer()
         let networkClient = assemblyFactory.core().networkClient()
         let requestBuilder = assemblyFactory.core().requestBuilder()
-
+        let realmStorage = assemblyFactory.core().realmStorage()
+        let presentationMapper = assemblyFactory.core().presentationMapper()
+        
         return PresentationServcieImplementation(urlBuilder: urlBuilder,
                                                  jsonDeserializer: jsonDeserializer,
                                                  requestBuilder: requestBuilder,
-                                                 networkClient: networkClient)
+                                                 networkClient: networkClient,
+                                                 realmStorage: realmStorage,
+                                                 presentationMapper: presentationMapper)
     }
 }

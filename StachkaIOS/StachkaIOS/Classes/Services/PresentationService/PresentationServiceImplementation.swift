@@ -21,15 +21,21 @@ class PresentationServcieImplementation: PresentationService {
     let jsonDeserializer: Deserializer
     let requestBuilder: RequestBuilder
     let networkClient: NetworkClient
+    let realmStorage: RealmStorage
+    let presentationMapper: PresentationMapper
 
     init(urlBuilder: URLBuilder,
          jsonDeserializer: Deserializer,
          requestBuilder: RequestBuilder,
-         networkClient: NetworkClient) {
+         networkClient: NetworkClient,
+         realmStorage: RealmStorage,
+         presentationMapper: PresentationMapper) {
         self.urlBuilder = urlBuilder
         self.jsonDeserializer = jsonDeserializer
         self.requestBuilder = requestBuilder
         self.networkClient = networkClient
+        self.realmStorage = realmStorage
+        self.presentationMapper = presentationMapper
     }
 
     func presentations(with configuration: PresentationServcieConfiguration) -> Observable<[Presentation]> {
@@ -47,11 +53,14 @@ class PresentationServcieImplementation: PresentationService {
             return networkClient
                 .perform(request: request)
                 .observeOn(ConcurrentDispatchQueueScheduler(qos: .default))
-                .map { [weak self] data in
+                .map { [weak self] (data: Data) -> [Presentation] in
                     guard let strongSelf = self else { return [] }
-                    let deserialized = try strongSelf.jsonDeserializer.deserialize(data: data)
 
-                    return [Presentation()]
+                    let deserialized = try strongSelf.jsonDeserializer.deserialize(data: data) as? [String: Any]
+                    return strongSelf.presentationMapper.mapArray(deserialized?["products"])
+                }
+                .flatMap { [weak self] objects in
+                    return self?.realmStorage.replaceAllAndReturnOnMain(objects) ?? Observable.empty()
                 }
 
         } catch let error {

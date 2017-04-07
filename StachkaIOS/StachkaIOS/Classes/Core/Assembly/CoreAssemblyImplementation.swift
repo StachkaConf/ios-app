@@ -36,4 +36,11 @@ class CoreAssemblyImplementation: CoreAssembly {
         return JSONDeserializer()
     }
 
+    func realmStorage() -> RealmStorage {
+        return RealmStorageImplementation()
+    }
+
+    func presentationMapper() -> PresentationMapper {
+        return PresentationMapperImplementation()
+    }
 }

@@ -50,6 +50,10 @@
 		9E1051951E8F9C8100B83411 /* SearchConfigurationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1051941E8F9C8100B83411 /* SearchConfigurationFactory.swift */; };
 		9E1051971E8F9CCB00B83411 /* SearchConfigurationFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1051961E8F9CCB00B83411 /* SearchConfigurationFactoryImplementation.swift */; };
 		9E5010F81E980E4F00691896 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5010F71E980E4F00691896 /* Author.swift */; };
+		9E5010FB1E981F8700691896 /* PresentationMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5010FA1E981F8700691896 /* PresentationMapper.swift */; };
+		9E5010FE1E98215D00691896 /* RealmStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5010FD1E98215D00691896 /* RealmStorage.swift */; };
+		9E5011001E9821D300691896 /* RealmStorageImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5010FF1E9821D300691896 /* RealmStorageImplementation.swift */; };
+		9E5011021E982DCA00691896 /* PresentationMapperImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5011011E982DCA00691896 /* PresentationMapperImplementation.swift */; };
 		9E5D0CBA1E8996E500E8B226 /* CoordinatorConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5D0CB91E8996E500E8B226 /* CoordinatorConfigurable.swift */; };
 		9E5D0CBD1E89975900E8B226 /* ModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5D0CBC1E89975900E8B226 /* ModuleInput.swift */; };
 		9E5D0CBF1E899D9F00E8B226 /* CoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5D0CBE1E899D9F00E8B226 /* CoordinatorOutput.swift */; };
@@ -184,6 +188,10 @@
 		9E1051941E8F9C8100B83411 /* SearchConfigurationFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchConfigurationFactory.swift; sourceTree = "<group>"; };
 		9E1051961E8F9CCB00B83411 /* SearchConfigurationFactoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchConfigurationFactoryImplementation.swift; sourceTree = "<group>"; };
 		9E5010F71E980E4F00691896 /* Author.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
+		9E5010FA1E981F8700691896 /* PresentationMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationMapper.swift; sourceTree = "<group>"; };
+		9E5010FD1E98215D00691896 /* RealmStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmStorage.swift; sourceTree = "<group>"; };
+		9E5010FF1E9821D300691896 /* RealmStorageImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmStorageImplementation.swift; sourceTree = "<group>"; };
+		9E5011011E982DCA00691896 /* PresentationMapperImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationMapperImplementation.swift; sourceTree = "<group>"; };
 		9E5D0CB91E8996E500E8B226 /* CoordinatorConfigurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorConfigurable.swift; sourceTree = "<group>"; };
 		9E5D0CBC1E89975900E8B226 /* ModuleInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleInput.swift; sourceTree = "<group>"; };
 		9E5D0CBE1E899D9F00E8B226 /* CoordinatorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorOutput.swift; sourceTree = "<group>"; };
@@ -482,6 +490,24 @@
 			path = Author;
 			sourceTree = "<group>";
 		};
+		9E5010F91E981F5E00691896 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				9E5010FA1E981F8700691896 /* PresentationMapper.swift */,
+				9E5011011E982DCA00691896 /* PresentationMapperImplementation.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		9E5010FC1E98214D00691896 /* RealmStorage */ = {
+			isa = PBXGroup;
+			children = (
+				9E5010FD1E98215D00691896 /* RealmStorage.swift */,
+				9E5010FF1E9821D300691896 /* RealmStorageImplementation.swift */,
+			);
+			path = RealmStorage;
+			sourceTree = "<group>";
+		};
 		9E5D0CBB1E89974F00E8B226 /* ModuleInput */ = {
 			isa = PBXGroup;
 			children = (
@@ -609,6 +635,8 @@
 		9ED9028C1E86B949004CBEFD /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				9E5010FC1E98214D00691896 /* RealmStorage */,
+				9E5010F91E981F5E00691896 /* Mapper */,
 				9E1051661E8F07F500B83411 /* Deserializer */,
 				9E1051691E8F07F500B83411 /* NetworkClient */,
 				9E10516C1E8F07F500B83411 /* RequestBuilder */,
@@ -1131,6 +1159,8 @@
 				9E5D0CC71E899F1500E8B226 /* SectionFilter.swift in Sources */,
 				9EE3F5B51E9397CA000471B6 /* TalksFiltersAssembly.swift in Sources */,
 				9EE3F5B61E9397CA000471B6 /* FilterCellViewModel.swift in Sources */,
+				9E5010FB1E981F8700691896 /* PresentationMapper.swift in Sources */,
+				9E5011021E982DCA00691896 /* PresentationMapperImplementation.swift in Sources */,
 				9EE3F5B81E9397CA000471B6 /* TickFilterCell.swift in Sources */,
 				9E1051841E8F07F500B83411 /* URLBuilder.swift in Sources */,
 				9E5D0CBF1E899D9F00E8B226 /* CoordinatorOutput.swift in Sources */,
@@ -1154,6 +1184,7 @@
 				9EE3F5C01E9397CA000471B6 /* FiltersViewModel.swift in Sources */,
 				9E1051951E8F9C8100B83411 /* SearchConfigurationFactory.swift in Sources */,
 				9E1051651E8EBB8400B83411 /* RealmConfiguratorImplementation.swift in Sources */,
+				9E5011001E9821D300691896 /* RealmStorageImplementation.swift in Sources */,
 				9EE3F5BD1E9397CA000471B6 /* FilterModuleOutput.swift in Sources */,
 				9EE3F5BF1E9397CA000471B6 /* FilterCellViewModelFactoryImplementation.swift in Sources */,
 				128AEF651E910944003FD79A /* InitialUserStoriesCoordinatorsFactoryImplementation.swift in Sources */,
@@ -1191,6 +1222,7 @@
 				9EE3F5A81E9397CA000471B6 /* TalksCoordinatorImplementation.swift in Sources */,
 				12C793CE1E912DAD00B9389F /* UIColor.swift in Sources */,
 				9E1051891E8F0C7900B83411 /* PresentationService.swift in Sources */,
+				9E5010FE1E98215D00691896 /* RealmStorage.swift in Sources */,
 				128AEF5B1E91069A003FD79A /* ModuleAssembly.swift in Sources */,
 				9ED9029E1E86BC1E004CBEFD /* ApplicationCoordinator.swift in Sources */,
 				12C793D21E912DAD00B9389F /* UIViewController.swift in Sources */,
