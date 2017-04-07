@@ -25,23 +25,15 @@ class Presentation: AutoObject, Mappable {
 
     enum Constants {
         static let dateTransform = TransformOf<NSDate, String>(fromJSON: { (string: String?) -> NSDate? in
-            guard let string = string,
-                  let timeInterval = TimeInterval(string)
-                else {
-                    return nil
-            }
-            return Date(timeIntervalSince1970: timeInterval) as NSDate
+            return string.flatMap { TimeInterval($0) }.map { Date(timeIntervalSince1970: $0) as NSDate }
         }, toJSON: { (date: NSDate?) -> String? in
-            guard let date = date as? Date else {
-                return nil
-            }
-            return String(date.timeIntervalSince1970)
+            return date.map { String($0.timeIntervalSince1970) }
         })
 
         static let intStringTransform = TransformOf<Int, String>(fromJSON: { (string: String?) -> Int? in
-            return Int(string ?? "0")
+            return string.flatMap { Int($0) }
         }, toJSON: { (int: Int?) -> String? in
-            return String(int ?? 0)
+            return int.map(String.init)
         })
     }
 
