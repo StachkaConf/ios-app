@@ -49,6 +49,7 @@
 		9E1051901E8F90FC00B83411 /* PresentationServiceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E10518F1E8F90FC00B83411 /* PresentationServiceImplementation.swift */; };
 		9E1051951E8F9C8100B83411 /* SearchConfigurationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1051941E8F9C8100B83411 /* SearchConfigurationFactory.swift */; };
 		9E1051971E8F9CCB00B83411 /* SearchConfigurationFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1051961E8F9CCB00B83411 /* SearchConfigurationFactoryImplementation.swift */; };
+		9E5010F81E980E4F00691896 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5010F71E980E4F00691896 /* Author.swift */; };
 		9E5D0CBA1E8996E500E8B226 /* CoordinatorConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5D0CB91E8996E500E8B226 /* CoordinatorConfigurable.swift */; };
 		9E5D0CBD1E89975900E8B226 /* ModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5D0CBC1E89975900E8B226 /* ModuleInput.swift */; };
 		9E5D0CBF1E899D9F00E8B226 /* CoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5D0CBE1E899D9F00E8B226 /* CoordinatorOutput.swift */; };
@@ -182,6 +183,7 @@
 		9E10518F1E8F90FC00B83411 /* PresentationServiceImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationServiceImplementation.swift; sourceTree = "<group>"; };
 		9E1051941E8F9C8100B83411 /* SearchConfigurationFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchConfigurationFactory.swift; sourceTree = "<group>"; };
 		9E1051961E8F9CCB00B83411 /* SearchConfigurationFactoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchConfigurationFactoryImplementation.swift; sourceTree = "<group>"; };
+		9E5010F71E980E4F00691896 /* Author.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
 		9E5D0CB91E8996E500E8B226 /* CoordinatorConfigurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorConfigurable.swift; sourceTree = "<group>"; };
 		9E5D0CBC1E89975900E8B226 /* ModuleInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleInput.swift; sourceTree = "<group>"; };
 		9E5D0CBE1E899D9F00E8B226 /* CoordinatorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorOutput.swift; sourceTree = "<group>"; };
@@ -472,6 +474,14 @@
 			path = SearchConfigurationFactory;
 			sourceTree = "<group>";
 		};
+		9E5010F61E980E4700691896 /* Author */ = {
+			isa = PBXGroup;
+			children = (
+				9E5010F71E980E4F00691896 /* Author.swift */,
+			);
+			path = Author;
+			sourceTree = "<group>";
+		};
 		9E5D0CBB1E89974F00E8B226 /* ModuleInput */ = {
 			isa = PBXGroup;
 			children = (
@@ -483,6 +493,7 @@
 		9E5D0CC21E899E6B00E8B226 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				9E5010F61E980E4700691896 /* Author */,
 				9E10518A1E8F8F3200B83411 /* Presentation */,
 				9E5D0CC31E899E6B00E8B226 /* Filter */,
 			);
@@ -1184,6 +1195,7 @@
 				9ED9029E1E86BC1E004CBEFD /* ApplicationCoordinator.swift in Sources */,
 				12C793D21E912DAD00B9389F /* UIViewController.swift in Sources */,
 				9ED9030A1E88E69E004CBEFD /* OnboardingViewController.swift in Sources */,
+				9E5010F81E980E4F00691896 /* Author.swift in Sources */,
 				12C793CD1E912DAD00B9389F /* TabBarEmbedding.swift in Sources */,
 				9EE3F5BB1E9397CA000471B6 /* FiltersView.swift in Sources */,
 				9ED902F21E87E3BD004CBEFD /* FavouritesCoordinator.swift in Sources */,

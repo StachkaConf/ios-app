@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,14 +20,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         guard let window = window else {
             return true
         }
-
+        
         let assemblyFactory = AssemblyFactoryImplementation()
         assemblyFactory.core().realmConfigurator().configure()
         
         let appCoordinatorFactory = assemblyFactory.coordinators().applicationCoordinatorFactory()
         coordinator = appCoordinatorFactory.applicationCoordinator(window: window)
         coordinator?.start()
-        
+
         return true
     }
 }

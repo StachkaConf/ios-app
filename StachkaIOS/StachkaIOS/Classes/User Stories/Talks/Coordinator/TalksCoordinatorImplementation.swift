@@ -24,10 +24,10 @@ class TalksCoordinatorImplementation: TalksCoordinator {
     }
 
     func start() {
-        let talksUserStoryRootController = talksUserStoryAssemblyFactory.talksFeedAssembly().module()
-        rootNavigationController.setViewControllers([talksUserStoryRootController], animated: false)
+        let feedViewController = talksUserStoryAssemblyFactory.talksFeedAssembly().module()
+        rootNavigationController.setViewControllers([feedViewController], animated: false)
 
-        guard let moduleOutputProvider = talksUserStoryRootController as? ModuleOutputProvider,
+        guard let moduleOutputProvider = feedViewController as? ModuleOutputProvider,
               let feedModuleOutput = moduleOutputProvider.moduleOutput as? FeedModuleOutput else {
             return
         }

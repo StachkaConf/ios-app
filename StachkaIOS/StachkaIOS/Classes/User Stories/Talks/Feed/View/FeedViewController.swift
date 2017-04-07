@@ -51,23 +51,18 @@ class FeedViewController: UIViewController {
     private func setupBindings() {
         navigationItem.rightBarButtonItem?.rx
             .tap
-            .subscribe(onNext: { [weak self] in
-                self?.filterSelecter.onNext()
-            })
+            .bindTo(self.filterSelecter)
             .disposed(by: disposeBag)
 
         tableView.rx
             .willDisplayCell
-            .subscribe(onNext: { [weak self] event in
-                self?.indexPublisher.onNext(event.indexPath)
-            })
+            .map { $0.indexPath }
+            .bindTo(self.indexPublisher)
             .disposed(by: disposeBag)
 
         tableView.rx
             .itemSelected
-            .subscribe(onNext: { [weak self] indexPath in
-                self?.indexSelecter.onNext(indexPath)
-            })
+            .bindTo(self.indexSelecter)
             .disposed(by: disposeBag)
 
         viewModel?
@@ -81,6 +76,7 @@ class FeedViewController: UIViewController {
             }
             .disposed(by: disposeBag)
     }
+
 }
 
 extension FeedViewController: ModuleOutputProvider {

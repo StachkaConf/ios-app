@@ -35,9 +35,7 @@ class FiltersViewController: UIViewController {
     private func setupBindings() {
         tableView.rx
             .itemSelected
-            .subscribe(onNext: { [weak self] indexPath in
-                self?.indexSelecter.onNext(indexPath)
-            })
+            .bindTo(self.indexSelecter)
             .disposed(by: disposeBag)
 
         viewModel?

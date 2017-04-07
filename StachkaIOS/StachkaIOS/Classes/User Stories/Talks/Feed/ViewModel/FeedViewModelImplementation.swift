@@ -38,7 +38,7 @@ class FeedViewModelImplementation {
             }
             .flatMap { [weak self] configuration -> Observable<[Presentation]> in
                 guard let strongSelf = self else { return Observable.just([]) }
-                return strongSelf.presentationService.presentations(with: configuration)
+                return strongSelf.presentationService.presentations(with: configuration).catchErrorJustReturn([])
             }
             .subscribeOn(MainScheduler.instance)
             .subscribe(onNext: { presentation in
