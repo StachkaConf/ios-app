@@ -22,12 +22,14 @@ class TalksFeedAssembly: ModuleAssembly {
         let presentationService = assemblyFactory.services().presentationService()
         let searchConfigurationFactory = assemblyFactory.helpers().searchConfigurationFactory()
         let dateFormatter = assemblyFactory.helpers().dateFormatter()
+        let filterFactory = assemblyFactory.helpers().filterFactory()
         let cellViewModelFactory = PresentationCellViewModelFactoryImplementation(dateFormatter: dateFormatter)
         let viewController: FeedViewController =
             UIStoryboard.createControllerFromStoryboardWith(name: StoryboardName.talks)
         let viewModel = FeedViewModelImplementation(view: viewController,
                                                     filterService: filterService,
                                                     presentationService: presentationService,
+                                                    filterFactory: filterFactory,
                                                     searchConfigurationFactory: searchConfigurationFactory,
                                                     cellViewModelFactory: cellViewModelFactory)
         viewController.viewModel = viewModel

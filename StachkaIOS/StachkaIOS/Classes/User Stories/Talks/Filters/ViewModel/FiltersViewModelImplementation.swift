@@ -16,10 +16,10 @@ class FiltersViewModelImplementation: FiltersViewModel {
     var _filters: Variable<[FilterCellViewModel]> = Variable([])
     let disposeBag = DisposeBag()
 
-    let filterFactory: FilterFactory
-    let filterCellViewModelFactory: FilterCellViewModelFactory
-    let filterService: FilterService
-    weak var view: FiltersView?
+    fileprivate let filterFactory: FilterFactory
+    fileprivate let filterCellViewModelFactory: FilterCellViewModelFactory
+    fileprivate let filterService: FilterService
+    fileprivate weak var view: FiltersView?
 
     init(view: FiltersView,
          filterService: FilterService,
@@ -33,14 +33,6 @@ class FiltersViewModelImplementation: FiltersViewModel {
         let types: [Object.Type] = [SectionFilter.self]
         filterService
             .updateFilters(types)
-            .do(onNext: { [weak self] filters in
-                guard let strongSelf = self else { return }
-                if filters.count == 0 {
-                    let filters = strongSelf.filterFactory.createFilters()
-                    strongSelf.filterService.saveNew(filters).subscribe().addDisposableTo(strongSelf.disposeBag)
-                    return
-                }
-            })
             .map { [weak self] filters -> [FilterCellViewModel] in
                 guard let strongSelf = self else { return [] }
                 return strongSelf.filterCellViewModelFactory.viewModels(from: filters)

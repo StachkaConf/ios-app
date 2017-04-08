@@ -10,9 +10,21 @@ import Foundation
 import RealmSwift
 
 class AutoObject: Object {
-    dynamic var compoundKey: String = UUID().uuidString
 
-    override class func primaryKey() -> String? {
+    static let dateFormatter: DateFormatter = {
+        let dateFormatter = DateFormatter()
+        let locale = Locale(identifier: "ru_RU")
+        let dateFormat = "d MMMM yyyy года HH:mm"
+        let timeZone = TimeZone(abbreviation: "GMT+4")
+        dateFormatter.timeZone = timeZone
+        dateFormatter.locale = locale
+        dateFormatter.dateFormat = dateFormat
+        return dateFormatter
+    }()
+
+    dynamic var compoundKey: String = UUID().uuidString + AutoObject.dateFormatter.string(from: Date())
+
+    override static func primaryKey() -> String? {
         return "compoundKey"
     }
 }

@@ -10,10 +10,6 @@ import Foundation
 
 class PresentationDateCombinatorImplementation: PresentationDateCombinator {
 
-    enum Constants {
-        static let timeDifferenceHours: Int = 1
-    }
-
     func combineDates(in presentations: [Presentation]) -> [Presentation] {
         return presentations.map(combineDate)
     }
@@ -35,7 +31,7 @@ class PresentationDateCombinatorImplementation: PresentationDateCombinator {
     private func convertDate(fromDate date: NSDate, minutes: Int, hours: Int) -> NSDate {
         let calendar = Calendar.current
         var newDate = calendar.date(byAdding: .hour,
-                                    value: hours - Constants.timeDifferenceHours,
+                                    value: hours,
                                     to: date as Date) ?? Date()
         newDate = calendar.date(byAdding: .minute,
                                 value: minutes,

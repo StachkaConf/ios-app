@@ -10,6 +10,6 @@ import RxSwift
 import Foundation
 
 protocol RealmStorage {
-    func saveAndReturnOnMain<T: AutoObject>(_ objects: [T]) -> Observable<[T]>
-    func replaceAllAndReturnOnMain<T: AutoObject>(_ objects: [T]) -> Observable<[T]>
+    func save<T: AutoObject>(_ objects: [T]) -> Observable<Void>
+    func replaceAll<T: AutoObject>(_ objects: [T]) -> Observable<Void>
 }

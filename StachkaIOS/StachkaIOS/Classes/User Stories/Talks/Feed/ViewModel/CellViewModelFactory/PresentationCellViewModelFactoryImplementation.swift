@@ -17,6 +17,8 @@ class PresentationCellViewModelFactoryImplementation: PresentationCellViewModelF
     }
 
     func sections(from presentations: [Presentation]) -> [PresentationSectionModel] {
+        guard presentations.count > 0 else { return [] }
+
         let sortedPresentations = presentations.sorted(by: { first, second in
             first.actualStartDate.compare(second.actualStartDate as Date) == .orderedAscending
         })

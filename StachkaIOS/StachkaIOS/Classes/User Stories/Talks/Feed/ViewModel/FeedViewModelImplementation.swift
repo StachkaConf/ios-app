@@ -22,19 +22,17 @@ class FeedViewModelImplementation {
     fileprivate let filterService: FilterService
     fileprivate let searchConfigurationFactory: SearchConfigurationFactory
     fileprivate let cellViewModelFactory: PresentationCellViewModelFactory
+    fileprivate let filterFactory: FilterFactory
 
     fileprivate var disposeBag = DisposeBag()
     fileprivate var currentFilters = Variable<[Filter]>([])
-
-    fileprivate func shouldLoadNextPage(visiblePage: Int) -> Bool {
-        return _presentations.value.count % Constants.pageInterval < visiblePage % Constants.pageInterval
-    }
 
     fileprivate var _presentations: Variable<[PresentationSectionModel]> = Variable([])
 
     init(view: FeedView,
          filterService: FilterService,
          presentationService: PresentationService,
+         filterFactory: FilterFactory,
          searchConfigurationFactory: SearchConfigurationFactory,
          cellViewModelFactory: PresentationCellViewModelFactory) {
         
@@ -43,20 +41,32 @@ class FeedViewModelImplementation {
         self.presentationService = presentationService
         self.searchConfigurationFactory = searchConfigurationFactory
         self.cellViewModelFactory = cellViewModelFactory
-
+        self.filterFactory = filterFactory
+        
         filterService
             .updateFilters([SectionFilter.self])
+            .do(onNext: { [weak self] filters in
+                guard let strongSelf = self else { return }
+                if filters.count == 0 {
+                    let filters = strongSelf.filterFactory.createFilters()
+                    strongSelf.filterService.saveNew(filters).subscribe().addDisposableTo(strongSelf.disposeBag)
+                    return
+                }
+            })
             .bindTo(currentFilters)
             .disposed(by: disposeBag)
 
-        currentFilters.asObservable()
-            .map { [weak self] filters -> PresentationServcieConfiguration in
-                guard let strongSelf = self else { return PresentationServcieConfiguration() }
-                return strongSelf.searchConfigurationFactory.searchConfiguration(from: filters)
+        presentationService
+            .updatePresentationsAndSave()
+            .subscribe()
+            .disposed(by: disposeBag)
+
+        Observable<[Filter]>.combineLatest(presentationService.presentationsUpdated(),
+                                           currentFilters.asObservable()) { _, filters in
+                return filters
             }
-            .flatMap { [weak self] configuration -> Observable<[Presentation]> in
-                guard let strongSelf = self else { return Observable.empty() }
-                return strongSelf.presentationService.presentations(with: configuration).catchErrorJustReturn([])
+            .flatMap { [weak self] filters in
+                return self?.presentationService.filteredPresentations(with: filters) ?? Observable.empty()
             }
             .map { [weak self] presentations in
                 return self?.cellViewModelFactory.sections(from: presentations) ?? []

@@ -11,7 +11,7 @@ import RealmSwift
 
 protocol FilterService {
     func updateFilters(_ types: [Object.Type]) -> Observable<[Filter]>
-    func deleteAndSave(_ filters: [Filter]) -> Observable<[Filter]>
+    func deleteAndSave(_ filters: [Filter]) -> Observable<Void>
     func saveNew(_ filters: [Filter]) -> Observable<Void>
     func save(_ filters: [Filter]) -> Observable<Void>
 }

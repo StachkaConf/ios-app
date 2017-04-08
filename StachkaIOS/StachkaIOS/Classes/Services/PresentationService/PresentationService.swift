@@ -10,5 +10,8 @@ import Foundation
 import RxSwift
 
 protocol PresentationService {
-    func presentations(with configuration: PresentationServcieConfiguration) -> Observable<[Presentation]>
+    func updatePresentationsAndSave() -> Observable<Void>
+    func updatePresentationsAndSave(with configuration: PresentationServcieConfiguration) -> Observable<Void>
+    func presentationsUpdated() -> Observable<Void>
+    func filteredPresentations(with: [Filter]) -> Observable<[Presentation]>
 }

@@ -60,7 +60,7 @@ class FilterServiceImplementation: FilterService {
         .subscribeOn(ConcurrentDispatchQueueScheduler(qos: .background))
     }
 
-    func deleteAndSave(_ filters: [Filter]) -> Observable<[Filter]> {
+    func deleteAndSave(_ filters: [Filter]) -> Observable<Void> {
         var types: [AnyClass] = []
         filters.forEach { element in
             if !types.contains(where: { $0 == type(of: element) }) {
@@ -81,6 +81,7 @@ class FilterServiceImplementation: FilterService {
                         .forEach { backgroundRealm.delete(backgroundRealm.objects($0)) }
                     backgroundRealm.add(filterObjects)
                 }
+                observer.onCompleted()
             } catch let error {
                 observer.onError(error)
             }
