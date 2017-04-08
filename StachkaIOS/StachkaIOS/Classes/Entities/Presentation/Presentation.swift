@@ -23,6 +23,9 @@ class Presentation: AutoObject, Mappable {
     dynamic var fullDescription: String = ""
     dynamic var shortDescription: String = ""
 
+    dynamic var actualStartDate: NSDate = NSDate()
+    dynamic var actualEndDate: NSDate = NSDate()
+
     enum Constants {
         static let dateTransform = TransformOf<NSDate, String>(fromJSON: { (string: String?) -> NSDate? in
             return string.flatMap { TimeInterval($0) }.map { Date(timeIntervalSince1970: $0) as NSDate }

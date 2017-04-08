@@ -54,6 +54,13 @@
 		9E5010FE1E98215D00691896 /* RealmStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5010FD1E98215D00691896 /* RealmStorage.swift */; };
 		9E5011001E9821D300691896 /* RealmStorageImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5010FF1E9821D300691896 /* RealmStorageImplementation.swift */; };
 		9E5011021E982DCA00691896 /* PresentationMapperImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5011011E982DCA00691896 /* PresentationMapperImplementation.swift */; };
+		9E50110B1E984ED900691896 /* PresentationCellViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5011091E984ED900691896 /* PresentationCellViewModelFactory.swift */; };
+		9E50110C1E984ED900691896 /* PresentationCellViewModelFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E50110A1E984ED900691896 /* PresentationCellViewModelFactoryImplementation.swift */; };
+		9E5011101E98D3AA00691896 /* PresentationSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E50110F1E98D3AA00691896 /* PresentationSectionModel.swift */; };
+		9E5011191E98DD1F00691896 /* PresentationDateCombinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5011171E98DD1F00691896 /* PresentationDateCombinator.swift */; };
+		9E50111A1E98DD1F00691896 /* PresentationDateCombinatorImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5011181E98DD1F00691896 /* PresentationDateCombinatorImplementation.swift */; };
+		9E50111D1E98F94500691896 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E50111C1E98F94500691896 /* SectionHeader.swift */; };
+		9E5011201E98FB5A00691896 /* RxCustomTableViewDelegateDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E50111F1E98FB5A00691896 /* RxCustomTableViewDelegateDataSource.swift */; };
 		9E5D0CBA1E8996E500E8B226 /* CoordinatorConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5D0CB91E8996E500E8B226 /* CoordinatorConfigurable.swift */; };
 		9E5D0CBD1E89975900E8B226 /* ModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5D0CBC1E89975900E8B226 /* ModuleInput.swift */; };
 		9E5D0CBF1E899D9F00E8B226 /* CoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5D0CBE1E899D9F00E8B226 /* CoordinatorOutput.swift */; };
@@ -192,6 +199,13 @@
 		9E5010FD1E98215D00691896 /* RealmStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmStorage.swift; sourceTree = "<group>"; };
 		9E5010FF1E9821D300691896 /* RealmStorageImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmStorageImplementation.swift; sourceTree = "<group>"; };
 		9E5011011E982DCA00691896 /* PresentationMapperImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationMapperImplementation.swift; sourceTree = "<group>"; };
+		9E5011091E984ED900691896 /* PresentationCellViewModelFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationCellViewModelFactory.swift; sourceTree = "<group>"; };
+		9E50110A1E984ED900691896 /* PresentationCellViewModelFactoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationCellViewModelFactoryImplementation.swift; sourceTree = "<group>"; };
+		9E50110F1E98D3AA00691896 /* PresentationSectionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationSectionModel.swift; sourceTree = "<group>"; };
+		9E5011171E98DD1F00691896 /* PresentationDateCombinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationDateCombinator.swift; sourceTree = "<group>"; };
+		9E5011181E98DD1F00691896 /* PresentationDateCombinatorImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationDateCombinatorImplementation.swift; sourceTree = "<group>"; };
+		9E50111C1E98F94500691896 /* SectionHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
+		9E50111F1E98FB5A00691896 /* RxCustomTableViewDelegateDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxCustomTableViewDelegateDataSource.swift; sourceTree = "<group>"; };
 		9E5D0CB91E8996E500E8B226 /* CoordinatorConfigurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorConfigurable.swift; sourceTree = "<group>"; };
 		9E5D0CBC1E89975900E8B226 /* ModuleInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleInput.swift; sourceTree = "<group>"; };
 		9E5D0CBE1E899D9F00E8B226 /* CoordinatorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorOutput.swift; sourceTree = "<group>"; };
@@ -508,6 +522,41 @@
 			path = RealmStorage;
 			sourceTree = "<group>";
 		};
+		9E5011081E984ED900691896 /* CellViewModelFactory */ = {
+			isa = PBXGroup;
+			children = (
+				9E5011091E984ED900691896 /* PresentationCellViewModelFactory.swift */,
+				9E50110A1E984ED900691896 /* PresentationCellViewModelFactoryImplementation.swift */,
+				9E50110F1E98D3AA00691896 /* PresentationSectionModel.swift */,
+			);
+			path = CellViewModelFactory;
+			sourceTree = "<group>";
+		};
+		9E5011161E98DD1F00691896 /* PresentationDateCombinator */ = {
+			isa = PBXGroup;
+			children = (
+				9E5011171E98DD1F00691896 /* PresentationDateCombinator.swift */,
+				9E5011181E98DD1F00691896 /* PresentationDateCombinatorImplementation.swift */,
+			);
+			path = PresentationDateCombinator;
+			sourceTree = "<group>";
+		};
+		9E50111B1E98F93B00691896 /* SectionHeader */ = {
+			isa = PBXGroup;
+			children = (
+				9E50111C1E98F94500691896 /* SectionHeader.swift */,
+			);
+			path = SectionHeader;
+			sourceTree = "<group>";
+		};
+		9E50111E1E98FB4800691896 /* RxCustomTableViewDelegateDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				9E50111F1E98FB5A00691896 /* RxCustomTableViewDelegateDataSource.swift */,
+			);
+			path = RxCustomTableViewDelegateDataSource;
+			sourceTree = "<group>";
+		};
 		9E5D0CBB1E89974F00E8B226 /* ModuleInput */ = {
 			isa = PBXGroup;
 			children = (
@@ -604,6 +653,9 @@
 		9ED9028A1E86B949004CBEFD /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				9E50111E1E98FB4800691896 /* RxCustomTableViewDelegateDataSource */,
+				9E50111B1E98F93B00691896 /* SectionHeader */,
+				9E5011161E98DD1F00691896 /* PresentationDateCombinator */,
 				9ED902B31E87A600004CBEFD /* Assembly */,
 				9ED902F81E880D9B004CBEFD /* ConfigurableCell */,
 				128AEF5E1E9107DE003FD79A /* Constants */,
@@ -860,6 +912,7 @@
 		9EE3F58E1E9397CA000471B6 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				9E5011081E984ED900691896 /* CellViewModelFactory */,
 				9EE3F58F1E9397CA000471B6 /* FeedModuleOutput.swift */,
 				9EE3F5901E9397CA000471B6 /* FeedViewModel.swift */,
 				9EE3F5911E9397CA000471B6 /* FeedViewModelImplementation.swift */,
@@ -1139,6 +1192,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E5011201E98FB5A00691896 /* RxCustomTableViewDelegateDataSource.swift in Sources */,
 				9E1051631E8EBB5700B83411 /* RealmConfigurator.swift in Sources */,
 				9E5D0CC51E899E7700E8B226 /* Filter.swift in Sources */,
 				128AEF641E910944003FD79A /* InitialUserStoriesCoordinatorsFactory.swift in Sources */,
@@ -1156,20 +1210,25 @@
 				9ED902CB1E87C4C7004CBEFD /* ModuleOutputProvider.swift in Sources */,
 				9EE3F5CA1E93A2C0000471B6 /* UserStoryAssemblyFactory.swift in Sources */,
 				9E10514F1E8D939E00B83411 /* FilterService.swift in Sources */,
+				9E50110B1E984ED900691896 /* PresentationCellViewModelFactory.swift in Sources */,
+				9E50110C1E984ED900691896 /* PresentationCellViewModelFactoryImplementation.swift in Sources */,
 				9E5D0CC71E899F1500E8B226 /* SectionFilter.swift in Sources */,
 				9EE3F5B51E9397CA000471B6 /* TalksFiltersAssembly.swift in Sources */,
 				9EE3F5B61E9397CA000471B6 /* FilterCellViewModel.swift in Sources */,
 				9E5010FB1E981F8700691896 /* PresentationMapper.swift in Sources */,
+				9E5011101E98D3AA00691896 /* PresentationSectionModel.swift in Sources */,
 				9E5011021E982DCA00691896 /* PresentationMapperImplementation.swift in Sources */,
 				9EE3F5B81E9397CA000471B6 /* TickFilterCell.swift in Sources */,
 				9E1051841E8F07F500B83411 /* URLBuilder.swift in Sources */,
 				9E5D0CBF1E899D9F00E8B226 /* CoordinatorOutput.swift in Sources */,
+				9E5011191E98DD1F00691896 /* PresentationDateCombinator.swift in Sources */,
 				9EE3F5C71E93988D000471B6 /* TalksUserStoryAssemblyFactoryImplementation.swift in Sources */,
 				9EE3F5AD1E9397CA000471B6 /* PresentationCell.swift in Sources */,
 				9EE3F5B71E9397CA000471B6 /* SectionFilterCellViewModel.swift in Sources */,
 				9EE3F5D61E93AB0B000471B6 /* CoordinatorFactory.swift in Sources */,
 				9E1051801E8F07F500B83411 /* RequestBuilderConfiguration.swift in Sources */,
 				9ED902981E86BA6F004CBEFD /* AssemblyFactory.swift in Sources */,
+				9E50111A1E98DD1F00691896 /* PresentationDateCombinatorImplementation.swift in Sources */,
 				9E10517F1E8F07F500B83411 /* RequestBuilder.swift in Sources */,
 				9E10517E1E8F07F500B83411 /* NetworkRequestErrors.swift in Sources */,
 				9ED902AF1E87A1A2004CBEFD /* AssemblyFactoryImplementation.swift in Sources */,
@@ -1184,6 +1243,7 @@
 				9EE3F5C01E9397CA000471B6 /* FiltersViewModel.swift in Sources */,
 				9E1051951E8F9C8100B83411 /* SearchConfigurationFactory.swift in Sources */,
 				9E1051651E8EBB8400B83411 /* RealmConfiguratorImplementation.swift in Sources */,
+				9E50111D1E98F94500691896 /* SectionHeader.swift in Sources */,
 				9E5011001E9821D300691896 /* RealmStorageImplementation.swift in Sources */,
 				9EE3F5BD1E9397CA000471B6 /* FilterModuleOutput.swift in Sources */,
 				9EE3F5BF1E9397CA000471B6 /* FilterCellViewModelFactoryImplementation.swift in Sources */,

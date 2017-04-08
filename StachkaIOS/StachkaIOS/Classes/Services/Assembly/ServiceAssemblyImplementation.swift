@@ -30,12 +30,14 @@ class ServiceAssemblyImplementation: ServiceAssembly {
         let requestBuilder = assemblyFactory.core().requestBuilder()
         let realmStorage = assemblyFactory.core().realmStorage()
         let presentationMapper = assemblyFactory.core().presentationMapper()
-        
+        let dateCombinator = assemblyFactory.helpers().presentationDateCombinator()
+
         return PresentationServcieImplementation(urlBuilder: urlBuilder,
                                                  jsonDeserializer: jsonDeserializer,
                                                  requestBuilder: requestBuilder,
                                                  networkClient: networkClient,
                                                  realmStorage: realmStorage,
-                                                 presentationMapper: presentationMapper)
+                                                 presentationMapper: presentationMapper,
+                                                 dateCombinator: dateCombinator)
     }
 }

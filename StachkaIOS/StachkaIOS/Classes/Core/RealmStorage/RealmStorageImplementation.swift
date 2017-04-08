@@ -61,6 +61,6 @@ class RealmStorageImplementation: RealmStorage {
         guard let realm = try? Realm() else {
             return []
         }
-        return identifiers.flatMap { realm.object(ofType: T.self, forPrimaryKey: $0) }
+        return realm.objects(T.self).toArray() // identifiers.flatMap { realm.object(ofType: T.self, forPrimaryKey: $0) }
     }
 }

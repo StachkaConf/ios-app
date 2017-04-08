@@ -11,4 +11,6 @@ import Foundation
 protocol HelperAssembly: Assembly {
     func filterFactory() -> FilterFactory
     func searchConfigurationFactory() -> SearchConfigurationFactory
+    func presentationDateCombinator() -> PresentationDateCombinator
+    func dateFormatter() -> DateFormatter
 }

@@ -8,13 +8,19 @@
 
 import UIKit
 
-class PresentationCell: UITableViewCell, ConfigurableCell {
+class PresentationCell: UITableViewCell, ConfigurableStaticHeightCell {
+
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+
+    static var cellHeight: CGFloat = 100.0
+
     func configure(with viewModel: CellViewModel) {
         guard let viewModel = viewModel as? PresentationCellViewModel else {
             return
         }
 
         titleLabel.text = viewModel.title
+        descriptionLabel.text = viewModel.description
     }
 }

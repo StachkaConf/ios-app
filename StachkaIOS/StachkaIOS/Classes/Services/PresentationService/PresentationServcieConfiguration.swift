@@ -11,6 +11,7 @@ import Foundation
 struct PresentationServcieConfiguration: URLParametersTransformable, URLBuilderConfiguration {
     var itemsPerPage: Int?
     var sortParameter: String?
+    var startingPage: Int?
 
     func toDictionary() -> [String: String] {
         var dictionary: [String: String] = [:]

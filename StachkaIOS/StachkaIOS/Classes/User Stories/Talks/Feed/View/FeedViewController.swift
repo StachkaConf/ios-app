@@ -9,8 +9,11 @@
 import UIKit
 import RxCocoa
 import RxSwift
+import RxDataSources
 
 class FeedViewController: UIViewController {
+
+    typealias FeedDataSource = RxCustomTableViewDelegateDataSource<PresentationSectionModel>
 
     enum Constants {
         static let title = "Расписание"
@@ -23,6 +26,7 @@ class FeedViewController: UIViewController {
 
     var viewModel: FeedViewModel?
     private let disposeBag = DisposeBag()
+    private let dataSource = FeedDataSource()
 
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
@@ -37,6 +41,26 @@ class FeedViewController: UIViewController {
 
     private func setupTableView() {
         tableView.register(PresentationCell.self)
+        dataSource.configureCell = { (dataSource: TableViewSectionedDataSource<PresentationSectionModel>,
+                                      tableView: UITableView,
+                                      indexPath: IndexPath,
+                                      item: PresentationCellViewModel) in
+            let cell = tableView.dequeueCell(item.associatedCell)
+            cell.configure(with: item)
+            return cell as! UITableViewCell
+        }
+        dataSource.configureCellHeight = { item, tableView in
+            if let heightCell = item.associatedCell as? ConfigurableStaticHeightCell.Type {
+                return heightCell.cellHeight
+            }
+
+            return 0
+        }
+        dataSource.titleForHeaderInSection = { (dataSource: TableViewSectionedDataSource<PresentationSectionModel>,
+                                                index: Int) in
+            let sectionModel = dataSource[index]
+            return sectionModel.timeString
+        }
     }
 
     private func setupTabBar() {
@@ -67,13 +91,11 @@ class FeedViewController: UIViewController {
 
         viewModel?
             .presentations
-            .bindTo(tableView.rx.items(cellIdentifier: PresentationCell.identifier)) {
-                index, model, cell in
-                guard let configurableCell = cell as? ConfigurableCell else {
-                    return
-                }
-                configurableCell.configure(with: model)
-            }
+            .bindTo(tableView.rx.items(dataSource: dataSource))
+            .disposed(by: disposeBag)
+
+        tableView.rx
+            .setDelegate(dataSource)
             .disposed(by: disposeBag)
     }
 

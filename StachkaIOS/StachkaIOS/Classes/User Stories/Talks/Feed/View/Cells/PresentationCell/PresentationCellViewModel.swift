@@ -12,10 +12,5 @@ struct PresentationCellViewModel: CellViewModel {
     var associatedCell: ConfigurableCell.Type = PresentationCell.self
 
     let title: String
-}
-
-extension PresentationCellViewModel {
-    init(title: String) {
-        self.init(associatedCell: PresentationCell.self, title: title)
-    }
+    let description: String
 }

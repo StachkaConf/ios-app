@@ -23,4 +23,20 @@ class HelperAssemblyImplementation: HelperAssembly {
     func searchConfigurationFactory() -> SearchConfigurationFactory {
         return SearchConfigurationFactoryImplementation()
     }
+
+    func presentationDateCombinator() -> PresentationDateCombinator {
+        return PresentationDateCombinatorImplementation()
+    }
+
+    func dateFormatter() -> DateFormatter {
+        let dateFormatter = DateFormatter()
+        let locale = Locale(identifier: "ru_RU")
+        let dateFormat = "HH:mm"
+        let timeZone = TimeZone(abbreviation: "GMT+3")
+        dateFormatter.timeZone = timeZone
+        dateFormatter.locale = locale
+        dateFormatter.dateFormat = dateFormat
+
+        return dateFormatter
+    }
 }

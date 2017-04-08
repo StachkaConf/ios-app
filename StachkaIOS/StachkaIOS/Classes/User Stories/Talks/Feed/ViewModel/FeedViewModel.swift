@@ -9,5 +9,5 @@
 import RxSwift
 
 protocol FeedViewModel {
-    var presentations: Observable<[PresentationCellViewModel]> { get }
+    var presentations: Observable<[PresentationSectionModel]> { get }
 }

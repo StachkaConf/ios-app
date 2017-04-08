@@ -23,19 +23,22 @@ class PresentationServcieImplementation: PresentationService {
     let networkClient: NetworkClient
     let realmStorage: RealmStorage
     let presentationMapper: PresentationMapper
+    let dateCombinator: PresentationDateCombinator
 
     init(urlBuilder: URLBuilder,
          jsonDeserializer: Deserializer,
          requestBuilder: RequestBuilder,
          networkClient: NetworkClient,
          realmStorage: RealmStorage,
-         presentationMapper: PresentationMapper) {
+         presentationMapper: PresentationMapper,
+         dateCombinator: PresentationDateCombinator) {
         self.urlBuilder = urlBuilder
         self.jsonDeserializer = jsonDeserializer
         self.requestBuilder = requestBuilder
         self.networkClient = networkClient
         self.realmStorage = realmStorage
         self.presentationMapper = presentationMapper
+        self.dateCombinator = dateCombinator
     }
 
     func presentations(with configuration: PresentationServcieConfiguration) -> Observable<[Presentation]> {
@@ -57,7 +60,8 @@ class PresentationServcieImplementation: PresentationService {
                     guard let strongSelf = self else { return [] }
 
                     let deserialized = try strongSelf.jsonDeserializer.deserialize(data: data) as? [String: Any]
-                    return strongSelf.presentationMapper.mapArray(deserialized?["products"])
+                    let mapped = strongSelf.presentationMapper.mapArray(deserialized?["products"])
+                    return strongSelf.dateCombinator.combineDates(in: mapped)
                 }
                 .flatMap { [weak self] objects in
                     return self?.realmStorage.replaceAllAndReturnOnMain(objects) ?? Observable.empty()

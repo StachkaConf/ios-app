@@ -23,11 +23,11 @@ class FavouritesFeedViewModelImplementation {
             .disposed(by: disposeBag)
     }
 
-    fileprivate var _presentations: Variable<[PresentationCellViewModel]> = Variable([])
+    fileprivate var _presentations: Variable<[PresentationSectionModel]> = Variable([])
 }
 
 extension FavouritesFeedViewModelImplementation: FavouritesFeedViewModel {
-    var presentations: Observable<[PresentationCellViewModel]> {
+    var presentations: Observable<[PresentationSectionModel]> {
         return _presentations.asObservable()
     }
 }

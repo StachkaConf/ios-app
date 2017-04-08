@@ -1,25 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12106.1" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12074.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PresentationCell" id="J0a-IM-eHp" customClass="PresentationCell" customModule="StachkaIOS" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PresentationCell" rowHeight="124" id="J0a-IM-eHp" customClass="PresentationCell" customModule="StachkaIOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="124"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="J0a-IM-eHp" id="94X-6q-as3">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="123.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BRU-8j-UXb">
-                        <rect key="frame" x="166" y="11" width="42" height="21"/>
+                        <rect key="frame" x="166" y="51.5" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sqd-IG-EhM">
+                        <rect key="frame" x="166.5" y="87" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -27,13 +33,16 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="BRU-8j-UXb" firstAttribute="centerY" secondItem="94X-6q-as3" secondAttribute="centerY" id="6nR-Bb-aao"/>
+                    <constraint firstItem="Sqd-IG-EhM" firstAttribute="top" secondItem="BRU-8j-UXb" secondAttribute="bottom" constant="14.5" id="72w-hD-wOc"/>
                     <constraint firstItem="BRU-8j-UXb" firstAttribute="centerX" secondItem="94X-6q-as3" secondAttribute="centerX" id="HMt-ca-SzD"/>
+                    <constraint firstItem="Sqd-IG-EhM" firstAttribute="centerX" secondItem="94X-6q-as3" secondAttribute="centerX" id="hcR-iM-1Km"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="descriptionLabel" destination="Sqd-IG-EhM" id="KzY-Kx-edY"/>
                 <outlet property="titleLabel" destination="BRU-8j-UXb" id="xGD-wD-YFZ"/>
             </connections>
-            <point key="canvasLocation" x="57" y="-10"/>
+            <point key="canvasLocation" x="-74.5" y="-25"/>
         </tableViewCell>
     </objects>
 </document>
