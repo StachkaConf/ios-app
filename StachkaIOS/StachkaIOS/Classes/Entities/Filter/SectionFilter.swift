@@ -9,7 +9,15 @@
 import Foundation
 import RealmSwift
 
-class AutoObject: Object {
+protocol RelationshipsProvider {
+    func provideRelationships() -> [AutoObject]
+}
+
+extension RelationshipsProvider {
+    func provideRelationships() -> [AutoObject] { return [] }
+}
+
+class AutoObject: Object, RelationshipsProvider {
 
     static let dateFormatter: DateFormatter = {
         let dateFormatter = DateFormatter()

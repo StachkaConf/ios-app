@@ -40,6 +40,12 @@ class RealmStorageImplementation: RealmStorage {
             do {
                 try backgroundRealm.write {
                     let oldObjects = backgroundRealm.objects(T.self)
+                    for object in oldObjects {
+                        for element in object.provideRelationships() {
+                            backgroundRealm.delete(element)
+                        }
+                    }
+
                     backgroundRealm.delete(oldObjects)
                     backgroundRealm.add(objects)
                 }

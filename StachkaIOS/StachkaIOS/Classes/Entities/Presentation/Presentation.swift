@@ -22,9 +22,13 @@ class Presentation: AutoObject, Mappable {
     dynamic var hoursTo: Int = 0
     dynamic var fullDescription: String = ""
     dynamic var shortDescription: String = ""
-
+    dynamic var place: String = ""
+    dynamic var section: String = ""
+    dynamic var category: String = ""
+    dynamic var difficulty: String = ""
     dynamic var actualStartDate: NSDate = NSDate()
     dynamic var actualEndDate: NSDate = NSDate()
+    dynamic var author: Author?
 
     enum Constants {
         static let dateTransform = TransformOf<NSDate, String>(fromJSON: { (string: String?) -> NSDate? in
@@ -46,13 +50,29 @@ class Presentation: AutoObject, Mappable {
 
     func mapping(map: Map) {
         presentationName <- map["product"]
-        date <- (map["day"], Constants.dateTransform)
-        metaDescription <- map["meta_description"]
-        hoursTo <- (map["hours_to"], Constants.intStringTransform)
-        hoursFrom <- (map["hours_from"], Constants.intStringTransform)
-        minutesTo <- (map["minutes_to"], Constants.intStringTransform)
-        minutesFrom <- (map["minutes_from"], Constants.intStringTransform)
-        fullDescription <- map["full_description"]
+        date             <- (map["day"], Constants.dateTransform)
+        metaDescription  <- map["meta_description"]
+        hoursTo          <- (map["hours_to"], Constants.intStringTransform)
+        hoursFrom        <- (map["hours_from"], Constants.intStringTransform)
+        minutesTo        <- (map["minutes_to"], Constants.intStringTransform)
+        minutesFrom      <- (map["minutes_from"], Constants.intStringTransform)
+        fullDescription  <- map["full_description"]
         shortDescription <- map["short_description"]
+        category         <- map["short_features_values.1.variant"]
+        place            <- map["short_features_values.2.variant"]
+        section          <- map["short_features_values.3.variant"]
+        difficulty       <- map["short_features_values.4.variant"]
+
+        if let speakerId = map.JSON["speaker_ids"] as? String {
+            let fullKey = "product_speaker." + speakerId
+            author <- map[fullKey]
+        }
+    }
+
+    func provideRelationships() -> [AutoObject] {
+        if let relationship = author {
+            return [relationship]
+        }
+        return []
     }
 }

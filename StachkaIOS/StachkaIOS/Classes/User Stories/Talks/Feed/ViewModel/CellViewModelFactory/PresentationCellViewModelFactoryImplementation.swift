@@ -10,6 +10,10 @@ import Foundation
 
 class PresentationCellViewModelFactoryImplementation: PresentationCellViewModelFactory {
 
+    enum Constants {
+        static let barrierDate = Date(timeIntervalSince1970: 1492142400)
+    }
+
     let dateFormatter: DateFormatter
 
     init(dateFormatter: DateFormatter) {
@@ -19,14 +23,18 @@ class PresentationCellViewModelFactoryImplementation: PresentationCellViewModelF
     func sections(from presentations: [Presentation]) -> [PresentationSectionModel] {
         guard presentations.count > 0 else { return [] }
 
-        let sortedPresentations = presentations.sorted(by: { first, second in
-            first.actualStartDate.compare(second.actualStartDate as Date) == .orderedAscending
-        })
+        let sortedPresentations = presentations
+            .sorted {
+                ($0.actualStartDate as Date) < ($1.actualStartDate as Date)
+            }
+            .filter {
+                $0.actualStartDate as Date >= Constants.barrierDate
+            }
+
         var sectionModels: [PresentationSectionModel] = []
         var currentDate = sortedPresentations[0].actualStartDate
         var currentModel = PresentationSectionModel(timeString: dateFormatter.string(from: currentDate as Date),
                                                     items: [])
-
 
         for presentation in sortedPresentations {
             let viewModel = presentationViewModel(from: presentation)

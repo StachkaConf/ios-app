@@ -17,6 +17,16 @@ class PresentationMapperImplementation: PresentationMapper {
         guard let array = array as? [[String: Any]] else {
             return []
         }
-        return mapper.mapArray(JSONArray: array) ?? []
+        let filteredArray: [[String: Any]] = array.filter(isPresentation)
+
+        return mapper.mapArray(JSONArray: filteredArray) ?? []
+    }
+
+    private func isPresentation(_ element: [String: Any]) -> Bool {
+        let isPresentation = (element["is_presentation"] as? Bool) ?? false
+        if !isPresentation { return false }
+
+        let isApproved = (element["presentation_status"] as? String ?? "") == "S"
+        return isApproved
     }
 }
