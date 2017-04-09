@@ -59,3 +59,9 @@ extension FiltersMainViewController: FiltersMainView {
         return dissappearEvent.asObservable()
     }
 }
+
+extension FiltersMainViewController: ModuleOutputProvider {
+    var moduleOutput: ModuleOutput? {
+        return viewModel as? ModuleOutput
+    }
+}

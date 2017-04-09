@@ -33,9 +33,8 @@ class FiltersMainViewModelImplementation: FiltersMainViewModel {
         self.filterFactory = filterFactory
         self.filterCellViewModelFactory = filterCellViewModelFactory
 
-        let types: [Object.Type] = [AllPlacesFilter.self, CategoryFilter.self]
         filterService
-            .updateFilters(types)
+            .updateFilters()
             .do(onNext: { [weak self] filters in
                 guard let strongSelf = self else { return }
                 strongSelf.parentFilters = filters as? [ParentFilter] ?? []

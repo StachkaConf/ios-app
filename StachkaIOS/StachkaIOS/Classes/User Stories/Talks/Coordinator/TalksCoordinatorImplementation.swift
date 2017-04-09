@@ -55,6 +55,22 @@ class TalksCoordinatorImplementation: TalksCoordinator {
     private func openFilters() {
         let filtersModule = talksUserStoryAssemblyFactory.talksFiltersMainAssembly().module()
         rootNavigationController.pushViewController(filtersModule, animated: true)
+
+        guard let moduleOutputProvider = filtersModule as? ModuleOutputProvider,
+              let moduleOutput = moduleOutputProvider.moduleOutput as? FiltersMainModuleOutput else {
+                return
+        }
+        moduleOutput
+            .parentFilterSelected
+            .subscribe(onNext: { [weak self] parentFilter in
+                self?.openDetailFilters(withParentFilter: parentFilter)
+            })
+            .disposed(by: disposeBag)
+    }
+
+    private func openDetailFilters(withParentFilter parentFilter: ParentFilter) {
+        let filtersDetailModule = talksUserStoryAssemblyFactory.talksFiltersAssembly().module(withParentFilter: parentFilter)
+        rootNavigationController.pushViewController(filtersDetailModule, animated: true)
     }
 }
 

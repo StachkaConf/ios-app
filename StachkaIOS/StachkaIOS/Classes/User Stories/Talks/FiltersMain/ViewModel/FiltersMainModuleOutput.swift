@@ -9,6 +9,6 @@
 import Foundation
 import RxSwift
 
-protocol FiltersMainModuleOutput {
+protocol FiltersMainModuleOutput: ModuleOutput {
     var parentFilterSelected: Observable<ParentFilter> { get }
 }

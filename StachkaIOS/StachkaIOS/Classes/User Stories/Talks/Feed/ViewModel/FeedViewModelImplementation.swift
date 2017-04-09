@@ -44,7 +44,7 @@ class FeedViewModelImplementation {
         self.filterFactory = filterFactory
         
         filterService
-            .updateFilters([SectionFilter.self])
+            .updateFilters()
             .do(onNext: { [weak self] filters in
                 guard let strongSelf = self else { return }
                 if filters.count == 0 {

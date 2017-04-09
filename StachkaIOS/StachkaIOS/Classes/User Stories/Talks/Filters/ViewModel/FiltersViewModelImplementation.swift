@@ -44,10 +44,12 @@ class FiltersViewModelImplementation: FiltersViewModel {
         view.dissappear
             .subscribe(onCompleted: { [weak self] in
                 guard let strongSelf = self else { return }
-                let filterViewModels = strongSelf._filters.value
-                let filters = strongSelf.filterCellViewModelFactory.filtersWithChangesReflected(viewModels: filterViewModels,
-                                                                                                parentFilter: strongSelf.parentFilter)
-                strongSelf.filterService.save(filters).subscribe().addDisposableTo(strongSelf.disposeBag)
+                let filters: [Filter] = [strongSelf.parentFilter] + strongSelf.parentFilter.childFilters
+                let updatedValues = strongSelf._filters.value.map { $0.selected }
+                strongSelf.filterService
+                    .change(filters, using: updatedValues)
+                    .subscribe()
+                    .addDisposableTo(strongSelf.disposeBag)
             })
             .disposed(by: disposeBag)
     }

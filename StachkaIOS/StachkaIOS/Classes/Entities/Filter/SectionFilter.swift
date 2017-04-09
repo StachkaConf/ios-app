@@ -31,7 +31,7 @@ class AutoObject: Object, RelationshipsProvider {
         return dateFormatter
     }()
 
-    dynamic var compoundKey: String = UUID().uuidString + AutoObject.dateFormatter.string(from: Date())
+    dynamic var compoundKey: String = UUID().uuidString //+ AutoObject.dateFormatter.string(from: Date())
 
     override static func primaryKey() -> String? {
         return "compoundKey"
