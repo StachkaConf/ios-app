@@ -11,4 +11,8 @@ import Foundation
 class PlaceFilter: AutoObject, Filter {
     dynamic var title: String = ""
     dynamic var selected: Bool = false
+
+    func query() -> String {
+        return "place = " + "'" + title + "'"
+    }
 }

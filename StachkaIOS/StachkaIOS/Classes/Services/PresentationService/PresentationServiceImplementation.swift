@@ -74,13 +74,16 @@ class PresentationServcieImplementation: PresentationService {
         return Observable.changeset(from: realm.objects(Presentation.self)).map { _ in return }
     }
 
-    func filteredPresentations(with: [Filter]) -> Observable<[Presentation]> {
+    func filteredPresentations(with filters: [Filter]) -> Observable<[Presentation]> {
         return Observable.create { [weak self] observer in
             guard let strongSelf = self else {
                 observer.onCompleted()
                 return Disposables.create()
             }
-            observer.onNext(strongSelf.realm.objects(Presentation.self).toArray())
+
+            let predicate = strongSelf.predicate(from: filters)
+            print(predicate)
+            observer.onNext(strongSelf.realm.objects(Presentation.self).filter(predicate).toArray())
             observer.onCompleted()
             return Disposables.create()
         }
@@ -100,5 +103,43 @@ class PresentationServcieImplementation: PresentationService {
             .flatMap { [weak self] (objects: [Presentation]) -> Observable<Void> in
                 return self?.realmStorage.replaceAll(objects) ?? Observable.empty()
             }
+    }
+
+    private func predicate(from filters: [Filter]) -> NSPredicate {
+        guard let parentFilters = filters as? [ParentFilter] else {
+            return NSPredicate()
+        }
+
+        let allPlacesFilters: [AllPlacesFilter] = parentFilters.flatMap { $0 as? AllPlacesFilter }
+        let categoryFilters: [CategoryFilter] = parentFilters.flatMap { $0 as? CategoryFilter }
+        var subpredicates: [NSPredicate] = []
+        if let categoryPredicates = orPredicate(from: categoryFilters) {
+            subpredicates.append(categoryPredicates)
+        }
+        if let allPlacesPredicate = orPredicate(from: allPlacesFilters) {
+            subpredicates.append(allPlacesPredicate)
+        }
+
+        return NSCompoundPredicate(andPredicateWithSubpredicates: subpredicates)
+    }
+
+    private func orPredicate(from parentFilters: [ParentFilter]) -> NSPredicate? {
+        var predicates: [NSPredicate] = []
+        for filter in parentFilters {
+            if filter.selected {
+                if filter.query() != "" {
+                    predicates.append(NSPredicate(format: filter.query()))
+                }
+                continue
+            }
+            for childFilter in filter.childFilters where childFilter.selected && childFilter.query() != "" {
+                predicates.append(NSPredicate(format: childFilter.query()))
+            }
+        }
+        if predicates.count > 0 {
+            return NSCompoundPredicate(orPredicateWithSubpredicates: predicates)
+        }
+
+        return nil
     }
 }

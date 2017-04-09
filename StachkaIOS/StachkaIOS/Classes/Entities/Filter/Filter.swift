@@ -11,4 +11,12 @@ import Foundation
 protocol Filter: class {
     var selected: Bool { get set }
     var title: String { get set }
+
+    func query() -> String
+}
+
+extension Filter {
+    func query() -> String {
+        return ""
+    }
 }

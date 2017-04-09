@@ -70,6 +70,7 @@ class FiltersViewModelImplementation: FiltersViewModel {
                 return newModel
             }
         } else {
+            _filters.value[0].selected = false
             _filters.value[index].selected = !_filters.value[index].selected
         }
     }

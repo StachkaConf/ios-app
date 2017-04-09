@@ -41,4 +41,8 @@ class AutoObject: Object, RelationshipsProvider {
 class SectionFilter: AutoObject, Filter {
     dynamic var title: String = ""
     dynamic var selected: Bool = false
+
+    func query() -> String {
+        return "section = " + "'" + title + "'"
+    }
 }

@@ -13,6 +13,10 @@ class CategoryFilter: AutoObject, Filter {
     dynamic var title: String = ""
     dynamic var selected: Bool = false
     let sectionFilters = List<SectionFilter>()
+
+    func query() -> String {
+        return "category = " + "'" + title + "'"
+    }
 }
 
 extension CategoryFilter: ParentFilter {
