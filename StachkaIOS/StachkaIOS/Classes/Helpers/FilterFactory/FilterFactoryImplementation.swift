@@ -30,6 +30,7 @@ class FilterFactoryImplementation: FilterFactory {
         return categoryNames.map {
             let categotyFilter = CategoryFilter()
             categotyFilter.title = $0
+            categotyFilter.selected = true
             let objects = createSectionFilter(withCategory: $0)
 
             // FIXME: почему-то синтаксис с append(objectsIn:) не заработал
@@ -44,9 +45,11 @@ class FilterFactoryImplementation: FilterFactory {
     private func createAllPlacesFilter() -> AllPlacesFilter {
         let allPlacesFilter = AllPlacesFilter()
         allPlacesFilter.title = "Залы"
+        allPlacesFilter.selected = true
         placeNames.forEach {
             let placeFilter = PlaceFilter()
             placeFilter.title = $0
+            placeFilter.selected = true
             allPlacesFilter.placeFilters.append(placeFilter)
         }
         return allPlacesFilter
@@ -55,6 +58,7 @@ class FilterFactoryImplementation: FilterFactory {
     private func createSectionFilter(withCategory category: String) -> [SectionFilter] {
         return sectionNames[category]?.map {
             let sectionFilter = SectionFilter()
+            sectionFilter.selected = true
             sectionFilter.title = $0
             return sectionFilter
         } ?? []
