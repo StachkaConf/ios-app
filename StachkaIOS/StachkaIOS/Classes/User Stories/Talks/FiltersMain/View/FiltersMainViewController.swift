@@ -21,6 +21,8 @@ class FiltersMainViewController: UIViewController {
         super.viewDidLoad()
         setupTableView()
         setupBindings()
+
+        title = "Фильтры"
     }
 
     override func viewWillDisappear(_ animated: Bool) {

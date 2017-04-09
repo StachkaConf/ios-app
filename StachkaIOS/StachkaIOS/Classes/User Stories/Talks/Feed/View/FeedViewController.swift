@@ -17,7 +17,7 @@ class FeedViewController: UIViewController {
 
     enum Constants {
         static let title = "Расписание"
-        static let filterButtonTitle = "Фильтр"
+        static let filterButtonTitle = "Фильтры"
     }
 
     fileprivate var indexPublisher: PublishSubject<IndexPath> = PublishSubject()

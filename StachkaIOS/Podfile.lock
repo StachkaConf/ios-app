@@ -1,4 +1,5 @@
 PODS:
+  - Kanna (2.1.1)
   - Kingfisher (3.6.0)
   - ObjectMapper (2.2.5)
   - ObjectMapper+Realm (0.2):
@@ -21,6 +22,7 @@ PODS:
   - RxSwift (3.3.1)
 
 DEPENDENCIES:
+  - Kanna (~> 2.1.0)
   - Kingfisher (~> 3.0)
   - ObjectMapper (~> 2.2)
   - ObjectMapper+Realm
@@ -31,6 +33,7 @@ DEPENDENCIES:
   - RxSwift (~> 3.3.0)
 
 SPEC CHECKSUMS:
+  Kanna: 9b4b086c218703f2b94f5b21a466217dd2f9332e
   Kingfisher: 300035f9a40634dc9b452d946c9f22250688fecd
   ObjectMapper: fb30f71e08470d1e5a20b199fafe1246281db898
   ObjectMapper+Realm: 8b45dbfa1be145e311a6f93a306c183d630b40a9
@@ -42,6 +45,6 @@ SPEC CHECKSUMS:
   RxRealm: c80d17d42fc362f4d8af4ac62de360b014be5c3f
   RxSwift: 8fc9f2de6275a9101d518444e00bf32f1a42caac
 
-PODFILE CHECKSUM: ba6457d510fd1506f154973ffeb653d1414fd82e
+PODFILE CHECKSUM: 923f698a7a222a270b203e3afc9808447c9a5032
 
 COCOAPODS: 1.1.1

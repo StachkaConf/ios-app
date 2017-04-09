@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Kanna
 
 class PresentationCellViewModelFactoryImplementation: PresentationCellViewModelFactory {
 
@@ -54,7 +55,14 @@ class PresentationCellViewModelFactoryImplementation: PresentationCellViewModelF
     private func presentationViewModel(from presentation: Presentation) -> PresentationCellViewModel {
         return PresentationCellViewModel(associatedCell: PresentationCell.self,
                                          title: presentation.presentationName,
-                                         description: presentation.fullDescription)
+                                         description: parsedHtml(presentation.fullDescription))
 
+    }
+
+    private func parsedHtml(_ string: String) -> String {
+        if let html = HTML(html: string, encoding: .utf8) {
+            return html.body?.text ?? ""
+        }
+        return string
     }
 }
