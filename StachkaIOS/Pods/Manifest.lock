@@ -18,7 +18,7 @@ PODS:
   - RxRealm (0.5.1):
     - RealmSwift (~> 2.2)
     - RxSwift (~> 3.1)
-  - RxSwift (3.2.0)
+  - RxSwift (3.3.1)
 
 DEPENDENCIES:
   - Kingfisher (~> 3.0)
@@ -28,7 +28,7 @@ DEPENDENCIES:
   - RxCocoa (~> 3.0)
   - RxDataSources (~> 1.0)
   - RxRealm
-  - RxSwift (~> 3.0)
+  - RxSwift (~> 3.3.0)
 
 SPEC CHECKSUMS:
   Kingfisher: 300035f9a40634dc9b452d946c9f22250688fecd
@@ -40,8 +40,8 @@ SPEC CHECKSUMS:
   RxCocoa: ccdf43101a70407097a29082f648ba1676075b30
   RxDataSources: a021a0e944ba5f7991259829d973afdbfa719c0b
   RxRealm: c80d17d42fc362f4d8af4ac62de360b014be5c3f
-  RxSwift: 46574f70d416b7923c237195939cc488a7fbf3a0
+  RxSwift: 8fc9f2de6275a9101d518444e00bf32f1a42caac
 
-PODFILE CHECKSUM: b884794ef3381f0d7d7c6d76a70d8622ad5f13e0
+PODFILE CHECKSUM: ba6457d510fd1506f154973ffeb653d1414fd82e
 
 COCOAPODS: 1.1.1
