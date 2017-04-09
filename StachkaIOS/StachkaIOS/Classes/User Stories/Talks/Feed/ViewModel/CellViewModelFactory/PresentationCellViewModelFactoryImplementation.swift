@@ -55,7 +55,9 @@ class PresentationCellViewModelFactoryImplementation: PresentationCellViewModelF
     private func presentationViewModel(from presentation: Presentation) -> PresentationCellViewModel {
         return PresentationCellViewModel(associatedCell: PresentationCell.self,
                                          title: presentation.presentationName,
-                                         description: parsedHtml(presentation.fullDescription))
+                                         authorImageUrl: presentation.author?.imageUrlString ?? "",
+                                         category: presentation.category,
+                                         place: presentation.place)
 
     }
 

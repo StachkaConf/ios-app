@@ -12,5 +12,7 @@ struct PresentationCellViewModel: CellViewModel {
     var associatedCell: ConfigurableCell.Type = PresentationCell.self
 
     let title: String
-    let description: String
+    let authorImageUrl: String
+    let category: String
+    let place: String
 }

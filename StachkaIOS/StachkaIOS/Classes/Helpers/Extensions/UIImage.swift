@@ -28,4 +28,26 @@ extension UIImage {
             return UIImage(named: "chevron")!
         }
     }
+
+    enum Categories {
+        static var development: UIImage {
+            return UIImage(named: "development")!
+        }
+
+        static var education: UIImage {
+            return UIImage(named: "education")!
+        }
+
+        static var business: UIImage {
+            return UIImage(named: "business")!
+        }
+
+        static var marketing: UIImage {
+            return UIImage(named: "marketing")!
+        }
+    }
+
+    static var placeholder: UIImage {
+        return UIImage(named: "nophoto")!
+    }
 }
