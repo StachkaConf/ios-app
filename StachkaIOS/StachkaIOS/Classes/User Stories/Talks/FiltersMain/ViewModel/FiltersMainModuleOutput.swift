@@ -1,5 +1,5 @@
 //
-//  Filter.swift
+//  FilterModuleOutput.swift
 //  StachkaIOS
 //
 //  Created by m.rakhmanov on 27.03.17.
@@ -7,8 +7,8 @@
 //
 
 import Foundation
+import RxSwift
 
-protocol Filter: class {
-    var selected: Bool { get set }
-    var title: String { get set }
+protocol FiltersMainModuleOutput {
+    var parentFilterSelected: Observable<ParentFilter> { get }
 }

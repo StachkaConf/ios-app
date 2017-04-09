@@ -9,6 +9,7 @@
 import Foundation
 
 protocol FilterCellViewModelFactory: class {
-    func viewModels(from filters: [Filter]) -> [FilterCellViewModel]
-    func filters(from viewModels: [FilterCellViewModel]) -> [Filter]
+    func navigationViewModels(from filters: [Filter]) -> [FilterCellViewModel]
+    func tickViewModels(from filters: [Filter]) -> [FilterCellViewModel]
+    func filtersWithChangesReflected(viewModels: [FilterCellViewModel], parentFilter: ParentFilter) -> [Filter]
 }

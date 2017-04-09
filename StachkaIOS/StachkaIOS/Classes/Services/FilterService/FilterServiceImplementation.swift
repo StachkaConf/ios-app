@@ -18,20 +18,14 @@ class FilterServiceImplementation: FilterService {
     }
 
     func save(_ filters: [Filter]) -> Observable<Void> {
-        let keys = filters
-            .flatMap { $0 as? AutoObject }
-            .map { $0.compoundKey }
-
         return Observable.create { observer in
             guard let backgroundRealm = try? Realm() else {
                 observer.onCompleted()
                 return Disposables.create()
             }
-            let filterObjects = keys
-                .flatMap { backgroundRealm.object(ofType: AutoObject.self, forPrimaryKey: $0) }
             do {
                 try backgroundRealm.write {
-                    backgroundRealm.add(filterObjects)
+                    backgroundRealm.add(filters.flatMap { $0 as? Object }, update: true)
                 }
             } catch let error {
                 observer.onError(error)

@@ -8,4 +8,6 @@
 
 import Foundation
 
-protocol FilterCellViewModel: CellViewModel {}
+protocol FilterCellViewModel: CellViewModel {
+    var selected: Bool { get set }
+}

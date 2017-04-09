@@ -9,17 +9,32 @@
 import Foundation
 
 class FilterCellViewModelFactoryImplementation: FilterCellViewModelFactory {
-    func viewModels(from filters: [Filter]) -> [FilterCellViewModel] {
-        let sectionFilters = filters as! [SectionFilter]
-        let sectionModels = sectionFilters.map {
-            SectionFilterCellViewModel(sectionName: $0.title,
+    
+    func navigationViewModels(from filters: [Filter]) -> [FilterCellViewModel] {
+        let navigationModels = filters.map {
+            SectionFilterCellViewModel(associatedCell: NavigationFilterCell.self,
+                                       sectionName: $0.title,
+                                       selected: $0.selected)
+        }
+        return navigationModels
+    }
+
+    func tickViewModels(from filters: [Filter]) -> [FilterCellViewModel] {
+        let sectionModels = filters.map {
+            SectionFilterCellViewModel(associatedCell: TickFilterCell.self,
+                                       sectionName: $0.title,
                                        selected: $0.selected)
         }
         return sectionModels
     }
 
-    func filters(from viewModels: [FilterCellViewModel]) -> [Filter] {
-        return viewModels.flatMap(transform)
+    func filtersWithChangesReflected(viewModels: [FilterCellViewModel], parentFilter: ParentFilter) -> [Filter] {
+        let allFilters = [parentFilter] + parentFilter.childFilters
+        for (offset, element) in viewModels.enumerated() {
+            allFilters[offset].selected = element.selected
+        }
+
+        return allFilters
     }
 
     private func transform(_ filterViewModel: FilterCellViewModel) -> Filter? {

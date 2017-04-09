@@ -19,6 +19,7 @@ extension RelationshipsProvider {
 
 class AutoObject: Object, RelationshipsProvider {
 
+    // FIXME: временная мера для отслеживания времени создания объектов
     static let dateFormatter: DateFormatter = {
         let dateFormatter = DateFormatter()
         let locale = Locale(identifier: "ru_RU")

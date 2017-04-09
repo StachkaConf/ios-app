@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class TalksFiltersAssembly: FilterAssembly {
+class TalksFiltersMainAssembly: ModuleAssembly {
 
     let assemblyFactory: AssemblyFactory
 
@@ -17,17 +17,16 @@ class TalksFiltersAssembly: FilterAssembly {
         self.assemblyFactory = assemblyFactory
     }
 
-    func module(withParentFilter parentFilter: ParentFilter) -> UIViewController {
+    func module() -> UIViewController {
         let filterService = assemblyFactory.services().filterService()
         let filterFactory = assemblyFactory.helpers().filterFactory()
         let filterCellViewModelFactory = FilterCellViewModelFactoryImplementation()
-        let viewController: FiltersViewController =
+        let viewController: FiltersMainViewController =
             UIStoryboard.createControllerFromStoryboardWith(name: StoryboardName.talks)
-        let viewModel = FiltersViewModelImplementation(view: viewController,
-                                                       filterService: filterService,
-                                                       filterFactory: filterFactory,
-                                                       filterCellViewModelFactory: filterCellViewModelFactory,
-                                                       parentFilter: parentFilter)
+        let viewModel = FiltersMainViewModelImplementation(view: viewController,
+                                                           filterService: filterService,
+                                                           filterFactory: filterFactory,
+                                                           filterCellViewModelFactory: filterCellViewModelFactory)
         viewController.viewModel = viewModel
         
         return viewController

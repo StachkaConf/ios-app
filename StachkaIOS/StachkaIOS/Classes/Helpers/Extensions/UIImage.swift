@@ -23,5 +23,9 @@ extension UIImage {
         static var checkmark: UIImage {
             return UIImage(named: "checkmark")!
         }
+
+        static var chevron: UIImage {
+            return UIImage(named: "chevron")!
+        }
     }
 }

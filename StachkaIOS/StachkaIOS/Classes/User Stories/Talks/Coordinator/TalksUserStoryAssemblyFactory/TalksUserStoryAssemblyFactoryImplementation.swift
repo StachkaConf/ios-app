@@ -18,8 +18,12 @@ class TalksUserStoryAssemblyFactoryImplementation: TalksUserStoryAssemblyFactory
     func talksFeedAssembly() -> ModuleAssembly {
         return TalksFeedAssembly(assemblyFactory: assemblyFactory)
     }
+
+    func talksFiltersMainAssembly() -> ModuleAssembly {
+        return TalksFiltersMainAssembly(assemblyFactory: assemblyFactory)
+    }
     
-    func talksFiltersAssembly() -> ModuleAssembly {
+    func talksFiltersAssembly() -> FilterAssembly {
         return TalksFiltersAssembly(assemblyFactory: assemblyFactory)
     }
 }

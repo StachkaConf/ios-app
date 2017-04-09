@@ -19,37 +19,25 @@ class FiltersViewModelImplementation: FiltersViewModel {
     fileprivate let filterFactory: FilterFactory
     fileprivate let filterCellViewModelFactory: FilterCellViewModelFactory
     fileprivate let filterService: FilterService
+    fileprivate let parentFilter: ParentFilter
     fileprivate weak var view: FiltersView?
 
     init(view: FiltersView,
          filterService: FilterService,
          filterFactory: FilterFactory,
-         filterCellViewModelFactory: FilterCellViewModelFactory) {
+         filterCellViewModelFactory: FilterCellViewModelFactory,
+         parentFilter: ParentFilter) {
         self.view = view
         self.filterService = filterService
         self.filterFactory = filterFactory
         self.filterCellViewModelFactory = filterCellViewModelFactory
+        self.parentFilter = parentFilter
 
-        let types: [Object.Type] = [SectionFilter.self]
-        filterService
-            .updateFilters(types)
-            .map { [weak self] filters -> [FilterCellViewModel] in
-                guard let strongSelf = self else { return [] }
-                return strongSelf.filterCellViewModelFactory.viewModels(from: filters)
-            }
-            .subscribe(onNext: { [weak self] filterModels in
-                guard let strongSelf = self else { return }
-                strongSelf._filters.value = filterModels
-            })
-            .disposed(by: disposeBag)
+        prepareViewModelsForParentFilter()
 
         view.indexSelected
             .subscribe(onNext: { [weak self] indexPath in
-                guard var viewModel = self?._filters.value[indexPath.row] as? SectionFilterCellViewModel else {
-                    return
-                }
-                viewModel.selected = !viewModel.selected
-                self?._filters.value[indexPath.row] = viewModel
+                self?.changeFilterSelection(forIndex: indexPath.row)
             })
             .disposed(by: disposeBag)
 
@@ -57,9 +45,30 @@ class FiltersViewModelImplementation: FiltersViewModel {
             .subscribe(onCompleted: { [weak self] in
                 guard let strongSelf = self else { return }
                 let filterViewModels = strongSelf._filters.value
-                let filters = strongSelf.filterCellViewModelFactory.filters(from: filterViewModels)
-                strongSelf.filterService.deleteAndSave(filters).subscribe().addDisposableTo(strongSelf.disposeBag)
+                let filters = strongSelf.filterCellViewModelFactory.filtersWithChangesReflected(viewModels: filterViewModels,
+                                                                                                parentFilter: strongSelf.parentFilter)
+                strongSelf.filterService.save(filters).subscribe().addDisposableTo(strongSelf.disposeBag)
             })
             .disposed(by: disposeBag)
+    }
+
+    private func prepareViewModelsForParentFilter()  {
+        let allFilters = [parentFilter] + parentFilter.childFilters
+        let viewModels = filterCellViewModelFactory.tickViewModels(from: allFilters)
+        _filters.value = viewModels
+    }
+
+    private func changeFilterSelection(forIndex index: Int) {
+        // если у нас родительская модель
+        if index == 0 {
+            let newValue = !_filters.value[0].selected
+            _filters.value = _filters.value.map {
+                var newModel = $0
+                newModel.selected = newValue
+                return newModel
+            }
+        } else {
+            _filters.value[index].selected = !_filters.value[index].selected
+        }
     }
 }

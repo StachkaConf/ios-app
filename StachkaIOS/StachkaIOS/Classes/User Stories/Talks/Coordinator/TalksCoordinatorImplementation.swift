@@ -53,7 +53,7 @@ class TalksCoordinatorImplementation: TalksCoordinator {
     // MARK: - Вспомогательные методы
  
     private func openFilters() {
-        let filtersModule = talksUserStoryAssemblyFactory.talksFiltersAssembly().module()
+        let filtersModule = talksUserStoryAssemblyFactory.talksFiltersMainAssembly().module()
         rootNavigationController.pushViewController(filtersModule, animated: true)
     }
 }

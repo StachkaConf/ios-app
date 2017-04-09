@@ -12,7 +12,9 @@ struct SectionFilterCellViewModel: FilterCellViewModel {
     var associatedCell: ConfigurableCell.Type = TickFilterCell.self
     var sectionName: String
     var selected: Bool = false
+}
 
+extension SectionFilterCellViewModel {
     init(sectionName: String, selected: Bool) {
         self.sectionName = sectionName
         self.selected = selected

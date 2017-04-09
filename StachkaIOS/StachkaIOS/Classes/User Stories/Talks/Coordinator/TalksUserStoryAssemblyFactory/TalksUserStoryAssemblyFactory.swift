@@ -10,5 +10,6 @@ import Foundation
 
 protocol TalksUserStoryAssemblyFactory {
     func talksFeedAssembly() -> ModuleAssembly
-    func talksFiltersAssembly() -> ModuleAssembly
+    func talksFiltersMainAssembly() -> ModuleAssembly
+    func talksFiltersAssembly() -> FilterAssembly
 }

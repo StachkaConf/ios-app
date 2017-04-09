@@ -61,11 +61,27 @@
 		9E50111A1E98DD1F00691896 /* PresentationDateCombinatorImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5011181E98DD1F00691896 /* PresentationDateCombinatorImplementation.swift */; };
 		9E50111D1E98F94500691896 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E50111C1E98F94500691896 /* SectionHeader.swift */; };
 		9E5011201E98FB5A00691896 /* RxCustomTableViewDelegateDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E50111F1E98FB5A00691896 /* RxCustomTableViewDelegateDataSource.swift */; };
+		9E5011221E99B0C300691896 /* CategoryFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5011211E99B0C300691896 /* CategoryFilter.swift */; };
+		9E5011241E99B15800691896 /* DifficultyFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5011231E99B15800691896 /* DifficultyFilter.swift */; };
+		9E5011261E99B18600691896 /* DateFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5011251E99B18600691896 /* DateFilter.swift */; };
+		9E5011281E99B21B00691896 /* PlaceFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5011271E99B21B00691896 /* PlaceFilter.swift */; };
+		9E50112A1E9A2B8700691896 /* AllPlacesFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5011291E9A2B8700691896 /* AllPlacesFilter.swift */; };
+		9E50112C1E9A2B9F00691896 /* ParentFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E50112B1E9A2B9F00691896 /* ParentFilter.swift */; };
 		9E5D0CBA1E8996E500E8B226 /* CoordinatorConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5D0CB91E8996E500E8B226 /* CoordinatorConfigurable.swift */; };
 		9E5D0CBD1E89975900E8B226 /* ModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5D0CBC1E89975900E8B226 /* ModuleInput.swift */; };
 		9E5D0CBF1E899D9F00E8B226 /* CoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5D0CBE1E899D9F00E8B226 /* CoordinatorOutput.swift */; };
 		9E5D0CC51E899E7700E8B226 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5D0CC41E899E7700E8B226 /* Filter.swift */; };
 		9E5D0CC71E899F1500E8B226 /* SectionFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5D0CC61E899F1500E8B226 /* SectionFilter.swift */; };
+		9E731E151E9A3F5A005A4B96 /* FilterAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E731E141E9A3F5A005A4B96 /* FilterAssembly.swift */; };
+		9E731E2C1E9A4034005A4B96 /* TalksFiltersMainAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E731E191E9A4034005A4B96 /* TalksFiltersMainAssembly.swift */; };
+		9E731E321E9A4034005A4B96 /* FiltersMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E731E221E9A4034005A4B96 /* FiltersMainView.swift */; };
+		9E731E331E9A4034005A4B96 /* FiltersMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E731E231E9A4034005A4B96 /* FiltersMainViewController.swift */; };
+		9E731E341E9A4034005A4B96 /* FiltersMainModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E731E251E9A4034005A4B96 /* FiltersMainModuleOutput.swift */; };
+		9E731E371E9A4034005A4B96 /* FiltersMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E731E291E9A4034005A4B96 /* FiltersMainViewModel.swift */; };
+		9E731E381E9A4034005A4B96 /* FiltersMainViewModelImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E731E2A1E9A4034005A4B96 /* FiltersMainViewModelImplementation.swift */; };
+		9E731E3D1E9A435B005A4B96 /* NavigationFilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E731E3A1E9A435B005A4B96 /* NavigationFilterCell.swift */; };
+		9E731E3E1E9A435B005A4B96 /* NavigationFilterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E731E3B1E9A435B005A4B96 /* NavigationFilterCell.xib */; };
+		9E731E3F1E9A435B005A4B96 /* NavigationFilterCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E731E3C1E9A435B005A4B96 /* NavigationFilterCellViewModel.swift */; };
 		9ED9026A1E86B8BC004CBEFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ED902681E86B8BC004CBEFD /* Main.storyboard */; };
 		9ED9026C1E86B8BC004CBEFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9ED9026B1E86B8BC004CBEFD /* Assets.xcassets */; };
 		9ED9026F1E86B8BC004CBEFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ED9026D1E86B8BC004CBEFD /* LaunchScreen.storyboard */; };
@@ -206,11 +222,27 @@
 		9E5011181E98DD1F00691896 /* PresentationDateCombinatorImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationDateCombinatorImplementation.swift; sourceTree = "<group>"; };
 		9E50111C1E98F94500691896 /* SectionHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
 		9E50111F1E98FB5A00691896 /* RxCustomTableViewDelegateDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxCustomTableViewDelegateDataSource.swift; sourceTree = "<group>"; };
+		9E5011211E99B0C300691896 /* CategoryFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryFilter.swift; sourceTree = "<group>"; };
+		9E5011231E99B15800691896 /* DifficultyFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DifficultyFilter.swift; sourceTree = "<group>"; };
+		9E5011251E99B18600691896 /* DateFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFilter.swift; sourceTree = "<group>"; };
+		9E5011271E99B21B00691896 /* PlaceFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceFilter.swift; sourceTree = "<group>"; };
+		9E5011291E9A2B8700691896 /* AllPlacesFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllPlacesFilter.swift; sourceTree = "<group>"; };
+		9E50112B1E9A2B9F00691896 /* ParentFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentFilter.swift; sourceTree = "<group>"; };
 		9E5D0CB91E8996E500E8B226 /* CoordinatorConfigurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorConfigurable.swift; sourceTree = "<group>"; };
 		9E5D0CBC1E89975900E8B226 /* ModuleInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleInput.swift; sourceTree = "<group>"; };
 		9E5D0CBE1E899D9F00E8B226 /* CoordinatorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorOutput.swift; sourceTree = "<group>"; };
 		9E5D0CC41E899E7700E8B226 /* Filter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
 		9E5D0CC61E899F1500E8B226 /* SectionFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionFilter.swift; sourceTree = "<group>"; };
+		9E731E141E9A3F5A005A4B96 /* FilterAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterAssembly.swift; sourceTree = "<group>"; };
+		9E731E191E9A4034005A4B96 /* TalksFiltersMainAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalksFiltersMainAssembly.swift; sourceTree = "<group>"; };
+		9E731E221E9A4034005A4B96 /* FiltersMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltersMainView.swift; sourceTree = "<group>"; };
+		9E731E231E9A4034005A4B96 /* FiltersMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltersMainViewController.swift; sourceTree = "<group>"; };
+		9E731E251E9A4034005A4B96 /* FiltersMainModuleOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltersMainModuleOutput.swift; sourceTree = "<group>"; };
+		9E731E291E9A4034005A4B96 /* FiltersMainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltersMainViewModel.swift; sourceTree = "<group>"; };
+		9E731E2A1E9A4034005A4B96 /* FiltersMainViewModelImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltersMainViewModelImplementation.swift; sourceTree = "<group>"; };
+		9E731E3A1E9A435B005A4B96 /* NavigationFilterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationFilterCell.swift; sourceTree = "<group>"; };
+		9E731E3B1E9A435B005A4B96 /* NavigationFilterCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavigationFilterCell.xib; sourceTree = "<group>"; };
+		9E731E3C1E9A435B005A4B96 /* NavigationFilterCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationFilterCellViewModel.swift; sourceTree = "<group>"; };
 		9ED902611E86B8BC004CBEFD /* StachkaIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StachkaIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ED902691E86B8BC004CBEFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9ED9026B1E86B8BC004CBEFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -581,8 +613,70 @@
 			children = (
 				9E5D0CC41E899E7700E8B226 /* Filter.swift */,
 				9E5D0CC61E899F1500E8B226 /* SectionFilter.swift */,
+				9E5011211E99B0C300691896 /* CategoryFilter.swift */,
+				9E5011231E99B15800691896 /* DifficultyFilter.swift */,
+				9E5011251E99B18600691896 /* DateFilter.swift */,
+				9E5011271E99B21B00691896 /* PlaceFilter.swift */,
+				9E5011291E9A2B8700691896 /* AllPlacesFilter.swift */,
+				9E50112B1E9A2B9F00691896 /* ParentFilter.swift */,
 			);
 			path = Filter;
+			sourceTree = "<group>";
+		};
+		9E731E161E9A4034005A4B96 /* FiltersMain */ = {
+			isa = PBXGroup;
+			children = (
+				9E731E171E9A4034005A4B96 /* Assembly */,
+				9E731E1A1E9A4034005A4B96 /* View */,
+				9E731E241E9A4034005A4B96 /* ViewModel */,
+			);
+			path = FiltersMain;
+			sourceTree = "<group>";
+		};
+		9E731E171E9A4034005A4B96 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				9E731E191E9A4034005A4B96 /* TalksFiltersMainAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		9E731E1A1E9A4034005A4B96 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9E731E1B1E9A4034005A4B96 /* Cells */,
+				9E731E221E9A4034005A4B96 /* FiltersMainView.swift */,
+				9E731E231E9A4034005A4B96 /* FiltersMainViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9E731E1B1E9A4034005A4B96 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9E731E391E9A435B005A4B96 /* NavigationFilterCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		9E731E241E9A4034005A4B96 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9E731E251E9A4034005A4B96 /* FiltersMainModuleOutput.swift */,
+				9E731E291E9A4034005A4B96 /* FiltersMainViewModel.swift */,
+				9E731E2A1E9A4034005A4B96 /* FiltersMainViewModelImplementation.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9E731E391E9A435B005A4B96 /* NavigationFilterCell */ = {
+			isa = PBXGroup;
+			children = (
+				9E731E3A1E9A435B005A4B96 /* NavigationFilterCell.swift */,
+				9E731E3B1E9A435B005A4B96 /* NavigationFilterCell.xib */,
+				9E731E3C1E9A435B005A4B96 /* NavigationFilterCellViewModel.swift */,
+			);
+			path = NavigationFilterCell;
 			sourceTree = "<group>";
 		};
 		9ED902581E86B8BC004CBEFD = {
@@ -846,6 +940,7 @@
 			children = (
 				9EE3F57C1E9397CA000471B6 /* Coordinator */,
 				9EE3F5831E9397CA000471B6 /* Feed */,
+				9E731E161E9A4034005A4B96 /* FiltersMain */,
 				9EE3F5921E9397CA000471B6 /* Filters */,
 				9EE3F5A61E9397CA000471B6 /* Talks.storyboard */,
 			);
@@ -934,6 +1029,7 @@
 			isa = PBXGroup;
 			children = (
 				9EE3F5941E9397CA000471B6 /* TalksFiltersAssembly.swift */,
+				9E731E141E9A3F5A005A4B96 /* FilterAssembly.swift */,
 			);
 			path = Assembly;
 			sourceTree = "<group>";
@@ -1124,6 +1220,7 @@
 				9ED9026F1E86B8BC004CBEFD /* LaunchScreen.storyboard in Resources */,
 				9EE3F5AE1E9397CA000471B6 /* PresentationCell.xib in Resources */,
 				9EE3F5C21E9397CA000471B6 /* Talks.storyboard in Resources */,
+				9E731E3E1E9A435B005A4B96 /* NavigationFilterCell.xib in Resources */,
 				9ED9026C1E86B8BC004CBEFD /* Assets.xcassets in Resources */,
 				9EE3F5B91E9397CA000471B6 /* TickFilterCell.xib in Resources */,
 				9ED9026A1E86B8BC004CBEFD /* Main.storyboard in Resources */,
@@ -1216,6 +1313,7 @@
 				9EE3F5B51E9397CA000471B6 /* TalksFiltersAssembly.swift in Sources */,
 				9EE3F5B61E9397CA000471B6 /* FilterCellViewModel.swift in Sources */,
 				9E5010FB1E981F8700691896 /* PresentationMapper.swift in Sources */,
+				9E5011261E99B18600691896 /* DateFilter.swift in Sources */,
 				9E5011101E98D3AA00691896 /* PresentationSectionModel.swift in Sources */,
 				9E5011021E982DCA00691896 /* PresentationMapperImplementation.swift in Sources */,
 				9EE3F5B81E9397CA000471B6 /* TickFilterCell.swift in Sources */,
@@ -1228,16 +1326,20 @@
 				9EE3F5D61E93AB0B000471B6 /* CoordinatorFactory.swift in Sources */,
 				9E1051801E8F07F500B83411 /* RequestBuilderConfiguration.swift in Sources */,
 				9ED902981E86BA6F004CBEFD /* AssemblyFactory.swift in Sources */,
+				9E5011221E99B0C300691896 /* CategoryFilter.swift in Sources */,
 				9E50111A1E98DD1F00691896 /* PresentationDateCombinatorImplementation.swift in Sources */,
 				9E10517F1E8F07F500B83411 /* RequestBuilder.swift in Sources */,
 				9E10517E1E8F07F500B83411 /* NetworkRequestErrors.swift in Sources */,
+				9E731E341E9A4034005A4B96 /* FiltersMainModuleOutput.swift in Sources */,
 				9ED902AF1E87A1A2004CBEFD /* AssemblyFactoryImplementation.swift in Sources */,
 				9E10517D1E8F07F500B83411 /* NetworkRequestConstants.swift in Sources */,
+				9E731E371E9A4034005A4B96 /* FiltersMainViewModel.swift in Sources */,
 				12C793C31E912D4B00B9389F /* AppTabBarController.swift in Sources */,
 				9E10517C1E8F07F500B83411 /* NetworkClientImplementation.swift in Sources */,
 				9ED902F41E87E3D5004CBEFD /* FavouritesCoordinatorImplementation.swift in Sources */,
 				9EE3F5D31E93A96B000471B6 /* ApplicationCoordinatorFactoryImplementation.swift in Sources */,
 				9ED902FA1E880DA7004CBEFD /* ConfigurableCell.swift in Sources */,
+				9E50112A1E9A2B8700691896 /* AllPlacesFilter.swift in Sources */,
 				9EE3F5BC1E9397CA000471B6 /* FiltersViewController.swift in Sources */,
 				9E1051861E8F07F500B83411 /* URLParametersTransformable.swift in Sources */,
 				9EE3F5C01E9397CA000471B6 /* FiltersViewModel.swift in Sources */,
@@ -1262,9 +1364,11 @@
 				9EE3F5AC1E9397CA000471B6 /* TalksFeedAssembly.swift in Sources */,
 				9EE3F5C11E9397CA000471B6 /* FiltersViewModelImplementation.swift in Sources */,
 				9EE3F5CC1E93A2D5000471B6 /* UserStoryAssemblyFactoryImplementation.swift in Sources */,
+				9E50112C1E9A2B9F00691896 /* ParentFilter.swift in Sources */,
 				9EE3F5B11E9397CA000471B6 /* FeedViewController.swift in Sources */,
 				9ED902A01E86BC4A004CBEFD /* ApplicationCoordinatorImplementation.swift in Sources */,
 				12C793CC1E912DAD00B9389F /* Observable.swift in Sources */,
+				9E5011241E99B15800691896 /* DifficultyFilter.swift in Sources */,
 				9E5D0CBA1E8996E500E8B226 /* CoordinatorConfigurable.swift in Sources */,
 				9EE3F5AF1E9397CA000471B6 /* PresentationCellViewModel.swift in Sources */,
 				9E1051511E8D93EF00B83411 /* FilterServiceImplementation.swift in Sources */,
@@ -1272,20 +1376,27 @@
 				9E10517B1E8F07F500B83411 /* NetworkClient.swift in Sources */,
 				12C793BB1E912C6B00B9389F /* ApplicationCoordinatorFactory.swift in Sources */,
 				9E1051791E8F07F500B83411 /* Deserializer.swift in Sources */,
+				9E731E381E9A4034005A4B96 /* FiltersMainViewModelImplementation.swift in Sources */,
+				9E731E3F1E9A435B005A4B96 /* NavigationFilterCellViewModel.swift in Sources */,
 				9EE3F5B41E9397CA000471B6 /* FeedViewModelImplementation.swift in Sources */,
 				9ED902E51E87DAEE004CBEFD /* FavouritesFeedViewModelImplementation.swift in Sources */,
+				9E731E151E9A3F5A005A4B96 /* FilterAssembly.swift in Sources */,
 				12C794261E91814E00B9389F /* Coordinator.swift in Sources */,
 				9ED902BE1E87A718004CBEFD /* ServiceAssembly.swift in Sources */,
+				9E731E331E9A4034005A4B96 /* FiltersMainViewController.swift in Sources */,
 				9EE3F5BE1E9397CA000471B6 /* FilterCellViewModelFactory.swift in Sources */,
 				9E10518E1E8F8FC300B83411 /* PresentationServcieConfiguration.swift in Sources */,
 				9ED902CE1E87C52B004CBEFD /* ModuleOutput.swift in Sources */,
 				9EE3F5A81E9397CA000471B6 /* TalksCoordinatorImplementation.swift in Sources */,
 				12C793CE1E912DAD00B9389F /* UIColor.swift in Sources */,
 				9E1051891E8F0C7900B83411 /* PresentationService.swift in Sources */,
+				9E731E321E9A4034005A4B96 /* FiltersMainView.swift in Sources */,
 				9E5010FE1E98215D00691896 /* RealmStorage.swift in Sources */,
 				128AEF5B1E91069A003FD79A /* ModuleAssembly.swift in Sources */,
+				9E731E3D1E9A435B005A4B96 /* NavigationFilterCell.swift in Sources */,
 				9ED9029E1E86BC1E004CBEFD /* ApplicationCoordinator.swift in Sources */,
 				12C793D21E912DAD00B9389F /* UIViewController.swift in Sources */,
+				9E5011281E99B21B00691896 /* PlaceFilter.swift in Sources */,
 				9ED9030A1E88E69E004CBEFD /* OnboardingViewController.swift in Sources */,
 				9E5010F81E980E4F00691896 /* Author.swift in Sources */,
 				12C793CD1E912DAD00B9389F /* TabBarEmbedding.swift in Sources */,
@@ -1302,6 +1413,7 @@
 				9ED902BC1E87A6DC004CBEFD /* HelperAssemblyImplementation.swift in Sources */,
 				12C793D11E912DAD00B9389F /* UITableView.swift in Sources */,
 				9E1051811E8F07F500B83411 /* RequestBuilderImplementation.swift in Sources */,
+				9E731E2C1E9A4034005A4B96 /* TalksFiltersMainAssembly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
