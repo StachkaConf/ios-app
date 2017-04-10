@@ -39,9 +39,16 @@ class FiltersViewController: UIViewController {
             .disposed(by: disposeBag)
 
         viewModel?
+            .title
+            .subscribe(onNext: { [weak self] title in
+                self?.title = title
+            })
+            .disposed(by: disposeBag)
+        
+        viewModel?
             .filters
             .bindTo(tableView.rx.items) { tableView, row, model in
-                let configurableCell = tableView.dequeueCell(model.associatedCell)
+                let configurableCell = tableView.dequeueCell(TickFilterCell.self)
                 configurableCell.configure(with: model)
 
                 return configurableCell as! UITableViewCell

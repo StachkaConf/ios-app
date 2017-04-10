@@ -14,4 +14,5 @@ protocol PresentationService {
     func updatePresentationsAndSave(with configuration: PresentationServcieConfiguration) -> Observable<Void>
     func presentationsUpdated() -> Observable<Void>
     func filteredPresentations(with filters: [Filter]) -> Observable<[Presentation]>
+    func presentation(withKey key: String) -> Observable<Presentation>
 }

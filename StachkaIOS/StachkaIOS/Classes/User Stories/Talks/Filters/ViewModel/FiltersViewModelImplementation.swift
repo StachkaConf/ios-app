@@ -13,7 +13,14 @@ class FiltersViewModelImplementation: FiltersViewModel {
     var filters: Observable<[FilterCellViewModel]> {
         return _filters.asObservable()
     }
+
+    var title: Observable<String> {
+        return _title.asObservable()
+    }
+
     var _filters: Variable<[FilterCellViewModel]> = Variable([])
+    var _title: Variable<String> = Variable("")
+
     let disposeBag = DisposeBag()
 
     fileprivate let filterFactory: FilterFactory
@@ -55,9 +62,9 @@ class FiltersViewModelImplementation: FiltersViewModel {
     }
 
     private func prepareViewModelsForParentFilter()  {
-        let allFilters = [parentFilter] + parentFilter.childFilters
-        let viewModels = filterCellViewModelFactory.tickViewModels(from: allFilters)
+        let viewModels = filterCellViewModelFactory.tickViewModels(fromParentFilter: parentFilter, filters: parentFilter.childFilters)
         _filters.value = viewModels
+        _title.value = parentFilter.title
     }
 
     private func changeFilterSelection(forIndex index: Int) {

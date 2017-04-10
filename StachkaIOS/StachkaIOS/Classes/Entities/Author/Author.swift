@@ -32,6 +32,7 @@ class Author: AutoObject, Mappable {
         city <- map["city"]
         skype <- map["skype"]
         phone <- map["phone"]
+        position <- map["position"]
         imageUrlString <- map["main_pair.icon.image_path"]
     }
 }

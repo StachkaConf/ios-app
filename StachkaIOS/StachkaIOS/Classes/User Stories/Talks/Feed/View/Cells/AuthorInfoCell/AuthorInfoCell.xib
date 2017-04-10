@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AuthorInfoCell" rowHeight="111" id="J0a-IM-eHp" customClass="AuthorInfoCell" customModule="StachkaIOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="111"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="J0a-IM-eHp" id="94X-6q-as3">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="110.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Об авторе:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BRU-8j-UXb">
+                        <rect key="frame" x="20" y="4" width="71" height="16"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Моя биография очень интересна" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5zO-Za-vis">
+                        <rect key="frame" x="20" y="28" width="335" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ag-xE-JsX">
+                        <rect key="frame" x="20" y="48" width="103" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="hzi-aB-869"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="12"/>
+                        <state key="normal" title="+7 925 555 05 25">
+                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eT9-4t-tMs">
+                        <rect key="frame" x="20" y="68" width="80" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="sBy-Ow-LAe"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="ya@sobaka.ru">
+                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="BRU-8j-UXb" firstAttribute="leading" secondItem="94X-6q-as3" secondAttribute="leading" constant="20" id="8W7-Wf-rxG"/>
+                    <constraint firstItem="eT9-4t-tMs" firstAttribute="top" secondItem="2ag-xE-JsX" secondAttribute="bottom" constant="4" id="NiK-rG-K9b"/>
+                    <constraint firstAttribute="trailing" secondItem="5zO-Za-vis" secondAttribute="trailing" constant="20" id="SuN-yH-Yfp"/>
+                    <constraint firstItem="5zO-Za-vis" firstAttribute="leading" secondItem="94X-6q-as3" secondAttribute="leading" constant="20" id="Ub2-20-Bey"/>
+                    <constraint firstItem="eT9-4t-tMs" firstAttribute="leading" secondItem="94X-6q-as3" secondAttribute="leading" constant="20" id="WrC-bl-beh"/>
+                    <constraint firstItem="2ag-xE-JsX" firstAttribute="top" secondItem="5zO-Za-vis" secondAttribute="bottom" constant="4" id="Zn6-cc-jCj"/>
+                    <constraint firstItem="BRU-8j-UXb" firstAttribute="top" secondItem="94X-6q-as3" secondAttribute="top" constant="4" id="ePs-hC-Shz"/>
+                    <constraint firstItem="5zO-Za-vis" firstAttribute="top" secondItem="BRU-8j-UXb" secondAttribute="bottom" constant="8" id="l4C-hj-IOy"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="eT9-4t-tMs" secondAttribute="bottom" constant="8" id="qSC-vP-EKs"/>
+                    <constraint firstItem="2ag-xE-JsX" firstAttribute="leading" secondItem="94X-6q-as3" secondAttribute="leading" constant="20" id="zjo-R6-XUJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="descriptionLabel" destination="5zO-Za-vis" id="LYe-cM-Jkn"/>
+                <outlet property="emailButton" destination="eT9-4t-tMs" id="BBD-T6-JGb"/>
+                <outlet property="phoneButton" destination="2ag-xE-JsX" id="uV4-O8-iZp"/>
+            </connections>
+            <point key="canvasLocation" x="-74.5" y="-37.5"/>
+        </tableViewCell>
+    </objects>
+</document>

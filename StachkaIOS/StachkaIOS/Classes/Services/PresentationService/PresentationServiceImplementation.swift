@@ -89,6 +89,19 @@ class PresentationServcieImplementation: PresentationService {
         }
     }
 
+    func presentation(withKey key: String) -> Observable<Presentation> {
+        return Observable.create { [weak self] observer in
+            guard let object = self?.realm.object(ofType: Presentation.self,
+                                                  forPrimaryKey: key) else {
+                observer.onCompleted()
+                return Disposables.create()
+            }
+            observer.onNext(object)
+            observer.onCompleted()
+            return Disposables.create()
+        }
+    }
+
     private func requestDataAndSave(_ request: URLRequest) -> Observable<Void> {
          return networkClient
             .perform(request: request)

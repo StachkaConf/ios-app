@@ -10,4 +10,5 @@ import RxSwift
 
 protocol FiltersViewModel {
     var filters: Observable<[FilterCellViewModel]> { get }
+    var title: Observable<String> { get }
 }

@@ -12,4 +12,5 @@ protocol TalksUserStoryAssemblyFactory {
     func talksFeedAssembly() -> ModuleAssembly
     func talksFiltersMainAssembly() -> ModuleAssembly
     func talksFiltersAssembly() -> FilterAssembly
+    func presentationInfoAssembly() -> PresentationInfoAssembly
 }

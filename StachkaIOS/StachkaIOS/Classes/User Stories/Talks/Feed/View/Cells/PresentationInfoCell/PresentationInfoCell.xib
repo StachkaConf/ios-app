@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PresentationInfoCell" rowHeight="59" id="J0a-IM-eHp" customClass="PresentationInfoCell" customModule="StachkaIOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="59"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="J0a-IM-eHp" id="94X-6q-as3">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="58.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Интересное название" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BRU-8j-UXb">
+                        <rect key="frame" x="20" y="8" width="335" height="22"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21:15 (14 апреля)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A6y-y1-Kka">
+                        <rect key="frame" x="20" y="34.5" width="99.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ФОЙЕ ЦЕХА" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G7G-uL-9rM">
+                        <rect key="frame" x="134.5" y="34.5" width="72" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="A6y-y1-Kka" firstAttribute="top" secondItem="BRU-8j-UXb" secondAttribute="bottom" constant="4" id="6On-qG-aii"/>
+                    <constraint firstItem="BRU-8j-UXb" firstAttribute="top" secondItem="94X-6q-as3" secondAttribute="topMargin" id="L6s-aZ-Y4G"/>
+                    <constraint firstItem="A6y-y1-Kka" firstAttribute="leading" secondItem="94X-6q-as3" secondAttribute="leading" constant="20" id="MWw-oT-y2v"/>
+                    <constraint firstItem="G7G-uL-9rM" firstAttribute="leading" secondItem="A6y-y1-Kka" secondAttribute="trailing" constant="15" id="S5P-HD-ykI"/>
+                    <constraint firstItem="G7G-uL-9rM" firstAttribute="baseline" secondItem="A6y-y1-Kka" secondAttribute="baseline" id="VUx-SP-ZvS"/>
+                    <constraint firstItem="BRU-8j-UXb" firstAttribute="leading" secondItem="94X-6q-as3" secondAttribute="leading" constant="20" id="dyf-Ma-QBw"/>
+                    <constraint firstAttribute="trailing" secondItem="BRU-8j-UXb" secondAttribute="trailing" constant="20" id="gTN-iq-GHz"/>
+                    <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="G7G-uL-9rM" secondAttribute="trailing" constant="20" id="hOw-AV-jgR"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="A6y-y1-Kka" secondAttribute="bottom" constant="8" id="zNR-o1-lri"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="placeLabel" destination="G7G-uL-9rM" id="lYh-fO-A4U"/>
+                <outlet property="timeLabel" destination="A6y-y1-Kka" id="pde-2W-u3u"/>
+                <outlet property="titleLabel" destination="BRU-8j-UXb" id="xGD-wD-YFZ"/>
+            </connections>
+            <point key="canvasLocation" x="-74.5" y="-63.5"/>
+        </tableViewCell>
+    </objects>
+</document>

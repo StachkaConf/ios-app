@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PresentationDescriptionCell" rowHeight="59" id="J0a-IM-eHp" customClass="PresentationDescriptionCell" customModule="StachkaIOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="59"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="J0a-IM-eHp" id="94X-6q-as3">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="58.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Такая презентация прям вся интересная" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BRU-8j-UXb">
+                        <rect key="frame" x="20" y="4" width="335" height="50.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="BRU-8j-UXb" secondAttribute="bottom" constant="4" id="GWE-eA-d6o"/>
+                    <constraint firstItem="BRU-8j-UXb" firstAttribute="leading" secondItem="94X-6q-as3" secondAttribute="leading" constant="20" id="gnQ-7e-YTx"/>
+                    <constraint firstAttribute="trailing" secondItem="BRU-8j-UXb" secondAttribute="trailing" constant="20" id="gxx-AG-YyH"/>
+                    <constraint firstItem="BRU-8j-UXb" firstAttribute="top" secondItem="94X-6q-as3" secondAttribute="top" constant="4" id="sfS-Xo-sxQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="descriptionLabel" destination="BRU-8j-UXb" id="Agn-Za-vAy"/>
+            </connections>
+            <point key="canvasLocation" x="-74.5" y="-63.5"/>
+        </tableViewCell>
+    </objects>
+</document>

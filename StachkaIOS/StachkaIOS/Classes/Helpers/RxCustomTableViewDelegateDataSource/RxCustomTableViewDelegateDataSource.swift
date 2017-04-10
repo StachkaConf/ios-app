@@ -7,17 +7,18 @@
 //
 
 import Foundation
+import RxCocoa
 import RxDataSources
 import UIKit
 
 class RxCustomTableViewDelegateDataSource<S: SectionModelType>: RxTableViewSectionedReloadDataSource<S>, UITableViewDelegate {
 
-    typealias ConfigureCellHeight = (_ item: S.Item, _ tableView: UITableView) -> CGFloat
+    typealias ConfigureCellHeight = (_ item: S.Item, _ tableView: UITableView, _ indexPath: IndexPath) -> CGFloat
 
     var configureCellHeight: ConfigureCellHeight!
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return configureCellHeight(self[indexPath], tableView)
+        return configureCellHeight(self[indexPath], tableView, indexPath)
     }
 }
 

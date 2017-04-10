@@ -10,6 +10,7 @@ import Foundation
 
 protocol FilterCellViewModelFactory: class {
     func navigationViewModels(from filters: [Filter]) -> [FilterCellViewModel]
+    func tickViewModels(fromParentFilter parentFilter: ParentFilter, filters: [Filter]) -> [FilterCellViewModel]
     func tickViewModels(from filters: [Filter]) -> [FilterCellViewModel]
     func filtersWithChangesReflected(viewModels: [FilterCellViewModel], parentFilter: ParentFilter) -> [Filter]
 }

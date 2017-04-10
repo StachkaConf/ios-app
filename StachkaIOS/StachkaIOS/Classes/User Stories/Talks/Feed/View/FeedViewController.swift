@@ -49,7 +49,7 @@ class FeedViewController: UIViewController {
             cell.configure(with: item)
             return cell as! UITableViewCell
         }
-        dataSource.configureCellHeight = { item, tableView in
+        dataSource.configureCellHeight = { item, tableView, _ in
             if let heightCell = item.associatedCell as? ConfigurableStaticHeightCell.Type {
                 return heightCell.cellHeight
             }

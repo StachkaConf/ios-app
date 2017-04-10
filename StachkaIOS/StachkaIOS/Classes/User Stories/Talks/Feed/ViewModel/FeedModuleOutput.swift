@@ -10,4 +10,5 @@ import RxSwift
 
 protocol FeedModuleOutput: ModuleOutput {
     var filterSelected: Observable<Void> { get }
+    var presentationSelected: Observable<Presentation> { get }
 }

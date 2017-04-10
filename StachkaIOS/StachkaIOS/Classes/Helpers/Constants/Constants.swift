@@ -10,5 +10,5 @@ import Foundation
 
 enum StoryboardName {
     static let talks = "Talks"
-    static let main    = "Main"
+    static let main  = "Main"
 }

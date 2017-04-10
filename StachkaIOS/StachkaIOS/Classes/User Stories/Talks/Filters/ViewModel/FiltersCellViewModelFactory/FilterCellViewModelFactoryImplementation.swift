@@ -14,16 +14,27 @@ class FilterCellViewModelFactoryImplementation: FilterCellViewModelFactory {
         let navigationModels = filters.map {
             SectionFilterCellViewModel(associatedCell: NavigationFilterCell.self,
                                        sectionName: $0.title,
-                                       selected: $0.selected)
+                                       selected: $0.selected,
+                                       isBold: false)
         }
         return navigationModels
+    }
+
+    func tickViewModels(fromParentFilter parentFilter: ParentFilter, filters: [Filter]) -> [FilterCellViewModel] {
+        let parentViewModel = SectionFilterCellViewModel(associatedCell: TickFilterCell.self,
+                                                         sectionName: "Все фильтры включены",
+                                                         selected: parentFilter.selected,
+                                                         isBold: true)
+        let filterViewModels = [parentViewModel] + tickViewModels(from: filters)
+        return filterViewModels
     }
 
     func tickViewModels(from filters: [Filter]) -> [FilterCellViewModel] {
         let sectionModels = filters.map {
             SectionFilterCellViewModel(associatedCell: TickFilterCell.self,
                                        sectionName: $0.title,
-                                       selected: $0.selected)
+                                       selected: $0.selected,
+                                       isBold: false)
         }
         return sectionModels
     }

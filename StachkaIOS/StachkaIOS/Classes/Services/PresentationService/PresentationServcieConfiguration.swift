@@ -21,6 +21,7 @@ struct PresentationServcieConfiguration: URLParametersTransformable, URLBuilderC
         if let sortParameter = sortParameter {
             dictionary["sort_by"] = sortParameter
         }
+        dictionary["sl"] = "ru"
         return dictionary
     }
 }

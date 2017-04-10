@@ -15,4 +15,5 @@ struct PresentationCellViewModel: CellViewModel {
     let authorImageUrl: String
     let category: String
     let place: String
+    let presentationKey: String
 }

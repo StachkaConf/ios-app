@@ -28,6 +28,7 @@ class FeedViewModelImplementation {
     fileprivate var currentFilters = Variable<[Filter]>([])
 
     fileprivate var _presentations: Variable<[PresentationSectionModel]> = Variable([])
+    fileprivate var presentationPublisher = PublishSubject<Presentation>()
 
     init(view: FeedView,
          filterService: FilterService,
@@ -75,9 +76,12 @@ class FeedViewModelImplementation {
             .disposed(by: disposeBag)
 
         view.indexSelected
-            .subscribe(onNext: { indexPath in
-                print("Selected: \(indexPath)")
-            })
+            .flatMap { [weak self] indexPath -> Observable<Presentation> in
+                guard let strongSelf = self else { return Observable.empty() }
+                let presentationKey = strongSelf._presentations.value[indexPath.section].items[indexPath.row].presentationKey
+                return strongSelf.presentationService.presentation(withKey: presentationKey)
+            }
+            .bindTo(presentationPublisher)
             .disposed(by: disposeBag)
 
         view.filterSelected
@@ -99,15 +103,9 @@ extension FeedViewModelImplementation: FeedModuleOutput, CoordinatorConfigurable
         return view?.filterSelected ?? Observable.empty()
     }
 
-    func configure(withCoordinator coordinator: Coordinator) {
-        guard let coordinator = coordinator as? TalksCoordinatorOutput else {
-            return
-        }
-        coordinator
-            .filtersChanged
-            .subscribe(onNext: { filter in
-                print("Filters changed")
-            })
-            .disposed(by: disposeBag)
+    var presentationSelected: Observable<Presentation> {
+        return presentationPublisher.asObserver()
     }
+
+    func configure(withCoordinator coordinator: Coordinator) {}
 }

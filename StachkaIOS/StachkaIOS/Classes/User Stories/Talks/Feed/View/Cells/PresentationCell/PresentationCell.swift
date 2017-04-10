@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Kingfisher
+import SDWebImage
 
 class PresentationCell: UITableViewCell, ConfigurableStaticHeightCell {
 
@@ -19,6 +19,11 @@ class PresentationCell: UITableViewCell, ConfigurableStaticHeightCell {
 
     static var cellHeight: CGFloat = 128.0
 
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        authorImageView.image = UIImage.placeholder
+    }
+
     func configure(with viewModel: CellViewModel) {
         guard let viewModel = viewModel as? PresentationCellViewModel else {
             return
@@ -27,7 +32,6 @@ class PresentationCell: UITableViewCell, ConfigurableStaticHeightCell {
         categoryImageView.alpha = 0.3
         setAuthorImage(viewModel.authorImageUrl)
         titleLabel.text = viewModel.title
-        //descriptionLabel.text = viewModel.description
     }
 
     func categoryImage(from category: String) -> UIImage? {
@@ -50,10 +54,6 @@ class PresentationCell: UITableViewCell, ConfigurableStaticHeightCell {
 
     func setAuthorImage(_ urlString: String) {
         guard let url = URL(string: urlString) else { return }
-        authorImageView.kf.setImage(with: url,
-                                    placeholder: UIImage.placeholder,
-                                    options: nil,
-                                    progressBlock: nil,
-                                    completionHandler: nil)
+        authorImageView.sd_setImage(with: url, placeholderImage: UIImage.placeholder)
     }
 }

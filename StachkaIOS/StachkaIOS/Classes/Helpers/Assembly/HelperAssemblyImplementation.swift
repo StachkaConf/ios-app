@@ -31,7 +31,7 @@ class HelperAssemblyImplementation: HelperAssembly {
     func dateFormatter() -> DateFormatter {
         let dateFormatter = DateFormatter()
         let locale = Locale(identifier: "ru_RU")
-        let dateFormat = "d MMMM yyyy года HH:mm"
+        let dateFormat = "HH:mm (d MMMM)"
         let timeZone = TimeZone(abbreviation: "GMT+4")
         dateFormatter.timeZone = timeZone
         dateFormatter.locale = locale

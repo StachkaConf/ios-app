@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AuthorBriefInfoCell" rowHeight="74" id="sLQ-X2-3bp" customClass="AuthorBriefInfoCell" customModule="StachkaIOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sLQ-X2-3bp" id="YG3-nL-SZN">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="73.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Василий Петрович" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vz0-9U-dxN">
+                        <rect key="frame" x="20" y="8" width="335" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Инженер - фрезеровщик" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QTa-Lu-qmg">
+                        <rect key="frame" x="20" y="30" width="147.5" height="15"/>
+                        <fontDescription key="fontDescription" type="italicSystem" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="г. Москва" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vbH-iS-HAe">
+                        <rect key="frame" x="20" y="49.5" width="56" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vbH-iS-HAe" firstAttribute="top" secondItem="QTa-Lu-qmg" secondAttribute="bottom" constant="5" id="97R-vw-hyR"/>
+                    <constraint firstItem="QTa-Lu-qmg" firstAttribute="top" secondItem="Vz0-9U-dxN" secondAttribute="bottom" constant="5" id="Ayi-22-3AW"/>
+                    <constraint firstItem="Vz0-9U-dxN" firstAttribute="leading" secondItem="YG3-nL-SZN" secondAttribute="leading" constant="20" id="Gs2-aU-HeK"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="QTa-Lu-qmg" secondAttribute="trailing" constant="20" id="Z5I-IE-9Gx"/>
+                    <constraint firstAttribute="trailing" secondItem="Vz0-9U-dxN" secondAttribute="trailing" constant="20" id="eQh-HQ-qFt"/>
+                    <constraint firstItem="vbH-iS-HAe" firstAttribute="leading" secondItem="YG3-nL-SZN" secondAttribute="leading" constant="20" id="m6F-aH-s93"/>
+                    <constraint firstItem="QTa-Lu-qmg" firstAttribute="leading" secondItem="YG3-nL-SZN" secondAttribute="leading" constant="20" id="mFX-Yo-TGJ"/>
+                    <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="vbH-iS-HAe" secondAttribute="trailing" constant="20" id="nE5-oG-gbI"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="vbH-iS-HAe" secondAttribute="bottom" constant="4" id="sID-o5-Qcc"/>
+                    <constraint firstItem="Vz0-9U-dxN" firstAttribute="top" secondItem="YG3-nL-SZN" secondAttribute="topMargin" id="xII-09-ZkK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cityLabel" destination="vbH-iS-HAe" id="Obb-b4-ZTi"/>
+                <outlet property="nameLabel" destination="Vz0-9U-dxN" id="He4-La-LIR"/>
+                <outlet property="positionLabel" destination="QTa-Lu-qmg" id="M6r-8A-esl"/>
+            </connections>
+            <point key="canvasLocation" x="-74.5" y="-56"/>
+        </tableViewCell>
+    </objects>
+</document>

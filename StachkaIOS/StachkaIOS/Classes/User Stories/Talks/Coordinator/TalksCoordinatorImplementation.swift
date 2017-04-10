@@ -38,6 +38,12 @@ class TalksCoordinatorImplementation: TalksCoordinator {
                 self?.openFilters()
             })
             .disposed(by: disposeBag)
+        feedModuleOutput
+            .presentationSelected
+            .subscribe(onNext: { [weak self] presentation in
+                self?.openPresentationInfo(withPresentation: presentation)
+            })
+            .disposed(by: disposeBag)
 
         if let configurableOutput = feedModuleOutput as? CoordinatorConfigurable {
             configurableOutput.configure(withCoordinator: self)
@@ -71,6 +77,11 @@ class TalksCoordinatorImplementation: TalksCoordinator {
     private func openDetailFilters(withParentFilter parentFilter: ParentFilter) {
         let filtersDetailModule = talksUserStoryAssemblyFactory.talksFiltersAssembly().module(withParentFilter: parentFilter)
         rootNavigationController.pushViewController(filtersDetailModule, animated: true)
+    }
+
+    private func openPresentationInfo(withPresentation presentation: Presentation) {
+        let presentationInfoModule = talksUserStoryAssemblyFactory.presentationInfoAssembly().module(withPresentation: presentation)
+        rootNavigationController.pushViewController(presentationInfoModule, animated: true)
     }
 }
 

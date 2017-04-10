@@ -26,4 +26,8 @@ class TalksUserStoryAssemblyFactoryImplementation: TalksUserStoryAssemblyFactory
     func talksFiltersAssembly() -> FilterAssembly {
         return TalksFiltersAssembly(assemblyFactory: assemblyFactory)
     }
+
+    func presentationInfoAssembly() -> PresentationInfoAssembly {
+        return PresentationInfoAssemblyImplementation(assemblyFactory: assemblyFactory)
+    }
 }

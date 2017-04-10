@@ -111,5 +111,39 @@
             </objects>
             <point key="canvasLocation" x="1796" y="-94"/>
         </scene>
+        <!--Presentation Info View Controller-->
+        <scene sceneID="406-Ta-SGh">
+            <objects>
+                <viewController storyboardIdentifier="PresentationInfoViewController" automaticallyAdjustsScrollViewInsets="NO" id="N2b-94-ucb" customClass="PresentationInfoViewController" customModule="StachkaIOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iXa-Ex-jBB"/>
+                        <viewControllerLayoutGuide type="bottom" id="gJw-wC-VBa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eFA-2Y-pFE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zoQ-Go-iZi">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="zoQ-Go-iZi" secondAttribute="trailing" id="KKa-Pj-fwY"/>
+                            <constraint firstItem="zoQ-Go-iZi" firstAttribute="leading" secondItem="eFA-2Y-pFE" secondAttribute="leading" id="LML-Ld-teI"/>
+                            <constraint firstItem="gJw-wC-VBa" firstAttribute="top" secondItem="zoQ-Go-iZi" secondAttribute="bottom" id="giA-oq-hIc"/>
+                            <constraint firstItem="zoQ-Go-iZi" firstAttribute="top" secondItem="iXa-Ex-jBB" secondAttribute="bottom" id="nnf-7o-8CE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="zoQ-Go-iZi" id="dEU-xC-lb4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ao0-T0-Fdu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2759" y="-94"/>
+        </scene>
     </scenes>
 </document>
