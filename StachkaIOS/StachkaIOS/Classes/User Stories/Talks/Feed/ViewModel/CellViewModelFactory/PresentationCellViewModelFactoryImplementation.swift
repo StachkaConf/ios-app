@@ -22,7 +22,6 @@ class PresentationCellViewModelFactoryImplementation: PresentationCellViewModelF
 
     func sections(from presentations: [Presentation]) -> [PresentationSectionModel] {
         guard presentations.count > 0 else { return [] }
-
         let sortedPresentations = presentations
             .sorted {
                 ($0.actualStartDate as Date) < ($1.actualStartDate as Date)
@@ -47,6 +46,7 @@ class PresentationCellViewModelFactoryImplementation: PresentationCellViewModelF
                                                         items: [viewModel])
             }
         }
+        sectionModels.append(currentModel)
 
         return sectionModels
     }

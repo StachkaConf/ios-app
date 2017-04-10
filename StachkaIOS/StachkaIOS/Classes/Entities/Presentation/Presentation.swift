@@ -49,6 +49,7 @@ class Presentation: AutoObject, Mappable {
     }
 
     func mapping(map: Map) {
+        name             <- map["product_id"]
         presentationName <- map["product"]
         date             <- (map["day"], Constants.dateTransform)
         metaDescription  <- map["meta_description"]

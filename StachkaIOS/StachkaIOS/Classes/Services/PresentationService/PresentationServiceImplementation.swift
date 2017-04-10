@@ -17,7 +17,7 @@ class PresentationServcieImplementation: PresentationService {
         static let username = "application@nastachku.ru"
         static let password = "3V9q9414137qwpV3R9z35175c436G68g"
         static let timeoutInterval = 30.0
-        static let defaultConfiguration = PresentationServcieConfiguration(itemsPerPage: 300,
+        static let defaultConfiguration = PresentationServcieConfiguration(itemsPerPage: 400,
                                                                            sortParameter: nil,
                                                                            startingPage: nil)
     }
