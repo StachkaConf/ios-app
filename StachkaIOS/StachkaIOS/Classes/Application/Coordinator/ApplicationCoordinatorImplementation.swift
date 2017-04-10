@@ -14,7 +14,7 @@ import RxCocoa
 class ApplicationCoordinatorImplementation: ApplicationCoordinator, CoordinatorWithDependencies {
 
     enum Constants {
-        static let animationDelay = 1.0
+        static let animationDelay = 0.5
         static let animatorConfiguration = RectangleDissolveAnimatorConfiguration(rectanglesVertical: 14,
                                                                                   rectanglesHorizontal: 8,
                                                                                   batchSize: 10,

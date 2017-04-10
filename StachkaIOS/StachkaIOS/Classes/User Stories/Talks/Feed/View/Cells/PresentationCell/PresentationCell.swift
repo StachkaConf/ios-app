@@ -34,7 +34,7 @@ class PresentationCell: UITableViewCell, ConfigurableStaticHeightCell {
             return
         }
         categoryImageView.image = categoryImage(from: viewModel.category)
-        categoryImageView.alpha = 0.3
+        categoryImageView.alpha = 0.5
         setAuthorImage(viewModel.authorImageUrl)
         titleLabel.text = viewModel.title
     }

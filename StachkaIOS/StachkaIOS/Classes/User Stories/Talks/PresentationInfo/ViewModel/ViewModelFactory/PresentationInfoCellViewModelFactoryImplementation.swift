@@ -23,30 +23,38 @@ class PresentationInfoCellViewModelFactoryImplementation: PresentationInfoCellVi
     }
 
     private func viewModels(from presentation: Presentation) -> [CellViewModel] {
-        guard let author = presentation.author else {
-            return []
-        }
+        var cellViewModels: [CellViewModel] = []
 
         let authorImageCellViewModel = AuthorImageCellViewModel(associatedCell: AuthorImageCell.self,
-                                                                authorImageUrl: author.imageUrlString, category: presentation.category)
-        let authorBriefInfoCellViewModel = AuthorBriefInfoCellViewModel(associatedCell: AuthorBriefInfoCell.self,
-                                                                        name: author.name,
-                                                                        position: author.position,
-                                                                        city: author.city)
+                                                                authorImageUrl: presentation.author?.imageUrlString ?? "", category: presentation.category)
+        cellViewModels.append(authorImageCellViewModel)
+        if let author = presentation.author {
+            let authorBriefInfoCellViewModel = AuthorBriefInfoCellViewModel(associatedCell: AuthorBriefInfoCell.self,
+                                                                            name: author.name,
+                                                                            position: author.position,
+                                                                            city: author.city)
+            cellViewModels.append(authorBriefInfoCellViewModel)
+        }
+
         let presentationInfoCellViewModel = PresentationInfoCellViewModel(associatedCell: PresentationInfoCell.self,
                                                                           dateString: dateFormatter.string(from: presentation.actualStartDate as Date),
                                                                           title: presentation.presentationName,
                                                                           place: presentation.place,
                                                                           section: presentation.section)
+        cellViewModels.append(presentationInfoCellViewModel)
         let presentationDescriptionCellViewModel = PresentationDescriptionCellViewModel(associatedCell: PresentationDescriptionCell.self,
                                                                                         fullDescription: parsedHtml(from: presentation.fullDescription))
-        let authorInfoCellViewModel = AuthorInfoCellViewModel(associatedCell: AuthorInfoCell.self,
-                                                              fullDescription: parsedHtml(from: author.fullDescription),
-                                                              phone: author.phone,
-                                                              email: author.email)
+        cellViewModels.append(presentationDescriptionCellViewModel)
 
-        return [authorImageCellViewModel, authorBriefInfoCellViewModel, presentationInfoCellViewModel, presentationDescriptionCellViewModel, authorInfoCellViewModel]
+        if let author = presentation.author {
+            let authorInfoCellViewModel = AuthorInfoCellViewModel(associatedCell: AuthorInfoCell.self,
+                                                                  fullDescription: parsedHtml(from: author.fullDescription),
+                                                                  phone: author.phone,
+                                                                  email: author.email)
+            cellViewModels.append(authorInfoCellViewModel)
+        }
 
+        return cellViewModels
     }
 
     private func parsedHtml(from string: String) -> String {

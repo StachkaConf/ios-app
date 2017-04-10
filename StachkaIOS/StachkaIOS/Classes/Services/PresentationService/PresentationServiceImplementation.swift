@@ -116,6 +116,7 @@ class PresentationServcieImplementation: PresentationService {
             .flatMap { [weak self] (objects: [Presentation]) -> Observable<Void> in
                 return self?.realmStorage.replaceAll(objects) ?? Observable.empty()
             }
+            .catchErrorJustReturn(())
     }
 
     private func predicate(from filters: [Filter]) -> NSPredicate {
