@@ -16,6 +16,11 @@ class AuthorImageCell: UITableViewCell, ConfigurableStaticHeightCell {
 
     static var cellHeight: CGFloat = 240.0
 
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        authorImageView.image = UIImage.placeholder
+    }
+
     override func prepareForReuse() {
         super.prepareForReuse()
         authorImageView.image = UIImage.placeholder

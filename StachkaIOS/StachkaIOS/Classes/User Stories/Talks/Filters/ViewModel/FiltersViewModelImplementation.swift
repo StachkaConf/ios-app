@@ -79,6 +79,9 @@ class FiltersViewModelImplementation: FiltersViewModel {
         } else {
             _filters.value[0].selected = false
             _filters.value[index].selected = !_filters.value[index].selected
+            if (_filters.value.filter { $0.selected }.count) == _filters.value.count - 1 {
+                _filters.value[0].selected = true
+            } 
         }
     }
 }

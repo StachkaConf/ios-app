@@ -43,25 +43,25 @@ class ApplicationCoordinatorImplementation: ApplicationCoordinator, CoordinatorW
 
     func start() {
         let talksNavigationController = UINavigationController()
-        tabBarController.embed(viewController: talksNavigationController)
+        //tabBarController.embed(viewController: talksNavigationController)
         let talksCoordinator = initialUserStoriesCoordinatorsFactory.talksCoordinator(rootNavigationController: talksNavigationController)
         add(coordinator: talksCoordinator)
         talksCoordinator.start()
 
-        let favouritesNavigationController = UINavigationController()
-        tabBarController.embed(viewController: favouritesNavigationController)
-        let favouritesCoordinator = initialUserStoriesCoordinatorsFactory.favouritesCoordinator(rootNavigationController: favouritesNavigationController)
-        add(coordinator: favouritesCoordinator)
-        favouritesCoordinator.start()
-        
-        createDismissOnboardingAndShowTabBar()
+//        let favouritesNavigationController = UINavigationController()
+//        tabBarController.embed(viewController: favouritesNavigationController)
+//        let favouritesCoordinator = initialUserStoriesCoordinatorsFactory.favouritesCoordinator(rootNavigationController: favouritesNavigationController)
+//        add(coordinator: favouritesCoordinator)
+//        favouritesCoordinator.start()
+
+        createDismissOnboarding(andShow: talksNavigationController)
             .subscribe()
             .disposed(by: disposeBag)
     }
 
     // MARK: Private
 
-    private func createDismissOnboardingAndShowTabBar() -> Observable<Void> {
+    private func createDismissOnboarding(andShow viewController: UIViewController) -> Observable<Void> {
         return Observable.create { [weak self] observer in
             guard let strongSelf = self else {
                 observer.onCompleted()
@@ -74,8 +74,8 @@ class ApplicationCoordinatorImplementation: ApplicationCoordinator, CoordinatorW
             strongSelf.window?.makeKeyAndVisible()
 
             DispatchQueue.main.asyncAfter(deadline: .now() + Constants.animationDelay) {
-                strongSelf.tabBarController.transitioningDelegate = animator
-                onboarding.present(strongSelf.tabBarController, animated: true, completion: {
+                viewController.transitioningDelegate = animator
+                onboarding.present(viewController, animated: true, completion: {
                     observer.onCompleted()
                 })
             }
